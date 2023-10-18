@@ -1,6 +1,8 @@
 # new-new-cetav
 
 # Prettier
+## Este comando es necesario para utilizar prettier
+
 npm install --save-dev --save-exact prettier
 
 # Iniciar Proyecto
