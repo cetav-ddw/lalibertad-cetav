@@ -1,6 +1,6 @@
 import { Providers } from './providers';
-import TabsList from './components/tabs';
-import Buttons from './components/buttons';
+import TabsList from './components/Tabs';
+import Buttons from './components/Buttons';
 
 export const metadata = {
   title: 'Create Next App',
