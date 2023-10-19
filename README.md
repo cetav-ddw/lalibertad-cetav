@@ -17,3 +17,7 @@ npm lint
 # Iniciar Prettier
 
 npm format
+
+# Iniciar Storybook
+
+npm run storybook
