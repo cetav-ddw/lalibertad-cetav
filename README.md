@@ -22,6 +22,12 @@ git clone git@github.com:cetav-ddw/lalibertad-cetav.git
 
 > 💡 Todos los comandos se corren desde el `root` del repositorio.
 
+Asegúrese de tener la versión de NodeJS correcta, v18 o superior; si tiene [nvm](https://github.com/nvm-sh/nvm) instalado puede correr
+
+```
+nvm use
+```
+
 Una vez que se clonó el repositorio, instale las dependencias:
 
 ```
