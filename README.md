@@ -7,6 +7,7 @@
 ## 📦 Instalación
 
 El proyecto corre sobre [NextJS](https://nextjs.org/), se esta usando version 13. Dependencias:
+
 - [NodeJS](https://nodejs.org/en) v18 ó superior
 
 > 💡 Se recomienda usar [nvm](https://github.com/nvm-sh/nvm) para instalar y manejar las versiones de NodeJS. Debería de funcionar si deja que `nvm` instale la version default (latest) de NodeJS y `npm`
@@ -60,4 +61,5 @@ npm run format
 ```
 
 ## 🥞 Organización del repositorio
+
 TBD - agregar detalles de que va en cada folder y convenciones, ej. cuando usar extensión `.jsx` ó `.js`
