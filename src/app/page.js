@@ -1,11 +1,7 @@
-import BoxOrange from './components/Box'
-import Btns from './components/Btns';
-
 export default function Home() {
   return (
     <main>
-      <BoxOrange />
-      <Btns />
+      <h1>HOME page</h1>
     </main>
   );
 }
