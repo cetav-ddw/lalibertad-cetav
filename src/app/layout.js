@@ -1,5 +1,5 @@
 import { Providers } from './providers';
-import Link from 'next/link';
+import Navigation from './components/navigation';
 
 export const metadata = {
   title: 'CETAV',
@@ -11,21 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         <Providers>
-          <div>
-            <Link href="/tecnicos">TECNICOS</Link>
-          </div>
-          <div>
-            <Link href="/cursos-libres">CURSOS LIBRES</Link>
-          </div>
-          <div>
-            <Link href="/about-cetav">CETAV</Link>
-          </div>
-          <div>
-            <Link href="/egresados">EGRESADOS</Link>
-          </div>
-          <div>
-            <Link href="/contacto">CONTACTO</Link>
-          </div>
+          <Navigation />
           {children}
         </Providers>
       </body>
