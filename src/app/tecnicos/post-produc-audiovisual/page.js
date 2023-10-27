@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import { Heading } from '@chakra-ui/react';
 
 export default function PostProducionPage() {
   return (
-    <main>
-      <h1>POSTPRODUCCION AUDIOVISUAL</h1>
+    <>
+      <Heading as="h1">POSTPRODUCCION AUDIOVISUAL</Heading>
       <Link href="/tecnicos">Tecnicos</Link>
-    </main>
+    </>
   );
 }

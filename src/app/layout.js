@@ -1,5 +1,6 @@
 import { Providers } from './providers';
 import Navigation from './components/navigation';
+import MainContent from './components/MainContent';
 
 export const metadata = {
   title: 'CETAV',
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <Navigation />
-          {children}
+          <MainContent>{children}</MainContent>
         </Providers>
       </body>
     </html>

@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import { Heading } from '@chakra-ui/react';
 
 export default function Tecnicos() {
   return (
-    <main>
-      <h1>TECNICOS PAGE</h1>
+    <>
+      <Heading as="h1">TECNICOS PAGE</Heading>
       <div>
         <Link href="/tecnicos/dis-y-des-web">Diseño y desarrollo web</Link>
       </div>
@@ -34,9 +35,6 @@ export default function Tecnicos() {
       <div>
         <Link href="/tecnicos/motion-graphics">Motion Graphics</Link>
       </div>
-      <div>
-        <Link href="/">HOME</Link>
-      </div>
-    </main>
+    </>
   );
 }
