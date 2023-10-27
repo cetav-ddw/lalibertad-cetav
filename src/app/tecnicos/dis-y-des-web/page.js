@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import { Heading } from '@chakra-ui/react';
 
 export default function WebPage() {
   return (
-    <main>
-      <h1>DISEÑO Y DESARROLLO WEB</h1>
+    <>
+      <Heading as="h1">DISEÑO Y DESARROLLO WEB</Heading>
       <Link href="/tecnicos">Tecnicos</Link>
-    </main>
+    </>
   );
 }

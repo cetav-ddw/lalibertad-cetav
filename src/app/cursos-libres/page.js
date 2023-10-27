@@ -1,10 +1,5 @@
-import Link from 'next/link';
+import { Heading } from '@chakra-ui/react';
 
 export default function CursosLibres() {
-  return (
-    <main>
-      <h1>CURSOS LIBRES page</h1>
-      <Link href="/">HOME</Link>
-    </main>
-  );
+  return <Heading as="h1">CURSOS LIBRES page</Heading>;
 }

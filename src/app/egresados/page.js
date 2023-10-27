@@ -1,10 +1,5 @@
-import Link from 'next/link';
+import { Heading } from '@chakra-ui/react';
 
 export default function Egresados() {
-  return (
-    <main>
-      <h1>EGRESADOS PAGE</h1>
-      <Link href="/">HOME</Link>
-    </main>
-  );
+  return <Heading as="h1">EGRESADOS PAGE</Heading>;
 }
