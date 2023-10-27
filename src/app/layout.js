@@ -1,5 +1,6 @@
 import { Providers } from './providers';
 import Navigation from './components/navigation';
+import { CardOne, CardSecond, CardThird } from './components/cards';
 
 export const metadata = {
   title: 'CETAV',
@@ -13,6 +14,9 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navigation />
           {children}
+          <CardOne />
+          <CardSecond />
+          <CardThird />
         </Providers>
       </body>
     </html>
