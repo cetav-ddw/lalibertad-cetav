@@ -1,67 +1,96 @@
-import { Box, Link, Text, Button, Grid, GridItem } from '@chakra-ui/react';
+import { Box, Text, Grid, GridItem, Link } from '@chakra-ui/react';
+import { Link as NextLink } from 'next/link';
 
 const Footer = () => {
   return (
-    <Box as="footer" p={4} bg="gray.100">
+    <Box as="footer" p={4} bg="gray.100" mx="auto" maxW="1180px">
       <Grid templateColumns="repeat(4, 1fr)" gap={4}>
         <GridItem colSpan={1}>
           <Box display="flex" flexDirection="column">
-            <Text fontSize="lg">Conozca más</Text>
-            <Link fontSize="sm" href="/about-cetav">
-              Sobre el CETAV
-            </Link>
-            <Link fontSize="sm" href="/egresados">
-              Egresados y egresadas
-            </Link>
-            <Link fontSize="sm" href="/preguntas-frecuentes">
-              Preguntas Frecuentes
-            </Link>
+            <h3 fontSize="lg">Conozca más</h3>
+            <ul style={{ listStyle: 'none'}}>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/about-cetav">
+                  Sobre el CETAV
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/egresados">
+                  Egresados y egresadas
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/preguntas-frecuentes">
+                  Preguntas Frecuentes
+                </Link>
+              </li>
+            </ul>
           </Box>
         </GridItem>
+
         <GridItem colSpan={1}>
           <Box display="flex" flexDirection="column">
-            <Text fontSize="lg">Carreras</Text>
-            <Link fontSize="sm" href="/tecnicos/dis-y-des-web">
-              Diseño y desarrollo web
-            </Link>
-            <Link fontSize="sm" href="/tecnicos/animacion-3d">
-              Animación 3D
-            </Link>
-            <Link fontSize="sm" href="/tecnicos/post-produc-audiovisual">
-              PostProducción Audiovisual
-            </Link>
-            <Link fontSize="sm" href="/tecnicos/merc-digital-y-diseno">
-              Mercadeo Digital y Diseño
-            </Link>
-            <Link fontSize="sm" href="/tecnicos/analisis-y-visuali-de-datos">
-              Análisis y Visualización de Datos
-            </Link>
-            <Link fontSize="sm" href="/tecnicos/ciberseguridad">
-              Ciberseguridad
-            </Link>
-            <Link fontSize="sm" href="/tecnicos/paid-media">
-              Paid Media
-            </Link>
-            <Link fontSize="sm" href="/tecnicos/motion-graphics">
-              Motion Graphics
-            </Link>
+            <h3 fontSize="lg">Carreras</h3>
+            <ul style={{ listStyle: 'none'}}>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/dis-y-des-web">
+                  Diseño y desarrollo web
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/animacion-3d">
+                  Animación 3D
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/post-produc-audiovisual">
+                  PostProducción Audiovisual
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/merc-digital-y-diseno">
+                  Mercadeo Digital y Diseño
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/analisis-y-visuali-de-datos">
+                  Análisis y Visualización de Datos
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/ciberseguridad">
+                  Ciberseguridad
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/paid-media">
+                  Paid Media
+                </Link>
+              </li>
+              <li>
+                <Link as={NextLink} fontSize="sm" href="/tecnicos/motion-graphics">
+                  Motion Graphics
+                </Link>
+              </li>
+            </ul>
           </Box>
         </GridItem>
+
         <GridItem colSpan={1}>
           <Box display="flex" flexDirection="column">
-            <Text fontSize="lg">¿Cómo llegar?</Text>
+            <h3 fontSize="lg">¿Cómo llegar?</h3>
             <Text fontSize="sm">
-              Parque La Libertad, 300 metros este y 100 metros norte del Palí de
-              Fátima, Desamparados
+              Parque La Libertad, 300 metros este y 100 metros norte del Palí de Fátima, Desamparados.
             </Text>
-            <Button href="#" colorScheme="blue" size="sm" mt={2}>
+            <Link as={NextLink} fontSize="sm" bg="gray.500" href="/contacto">
               Ve cómo llegar
-            </Button>
+            </Link>
           </Box>
         </GridItem>
+
         <GridItem colSpan={1}>
           <Box display="flex" flexDirection="column">
-            <Text fontSize="lg">Contacto</Text>
+            <h3 fontSize="lg">Contacto</h3>
             <Text fontSize="sm">Teléfono: 2276-9400 ext.2031</Text>
             <Text fontSize="sm">
               E-mail: admision.cetav@parquelalibertad.org
