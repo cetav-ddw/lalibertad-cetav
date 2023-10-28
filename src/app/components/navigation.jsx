@@ -8,7 +8,6 @@ const Navigation = () => {
       display="flex"
       alignItems="center"
       p={4}
-      bg="blue.500"
       justifyContent="space-between"
     >
       <Box display="flex" flex="1" justifyContent="center">
