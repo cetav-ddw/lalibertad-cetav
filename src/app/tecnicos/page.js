@@ -6,23 +6,25 @@ export default function Tecnicos() {
     <>
       <Heading as="h1">TECNICOS PAGE</Heading>
       <div>
-        <Link href="/tecnicos/dis-y-des-web">Diseño y desarrollo web</Link>
+        <Link href="/tecnicos/diseno-desarrollo-web">
+          Diseño y desarrollo web
+        </Link>
       </div>
       <div>
         <Link href="/tecnicos/animacion-3d">Animacion 3D</Link>
       </div>
       <div>
-        <Link href="/tecnicos/post-produc-audiovisual">
+        <Link href="/tecnicos/post-produccion-audiovisual">
           PostProducion Audiovisual
         </Link>
       </div>
       <div>
-        <Link href="/tecnicos/merc-digital-y-diseno">
+        <Link href="/tecnicos/mercadeo-digital-diseno">
           Mercadeo Digital y Diseño
         </Link>
       </div>
       <div>
-        <Link href="/tecnicos/analisis-y-visuali-de-datos">
+        <Link href="/tecnicos/analisis-visualizacion-de-datos">
           Analisis y Visualizacion de Datos
         </Link>
       </div>
