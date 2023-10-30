@@ -8,7 +8,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 
-export default function CareerSection() {
+export default function InscriptionBanner() {
   return (
     <Container
       maxW="container.lg"
@@ -17,13 +17,13 @@ export default function CareerSection() {
       alignItems="center"
       h="100vh"
     >
-      <Box borderWidth="1px" borderRadius="5px" display="flex" maxW="700px">
-        <Flex flex="1" p="20px" bg="#546cd4" color="#E1E7F8">
+      <Box borderWidth="1px" display="flex" maxW="1000px">
+        <Flex flex="1" p="54px 40px" bg="#546cd4" color="#E1E7F8">
           <Box>
-            <Heading fontSize="24px" mb="10px">
+            <Heading fontSize="34px" mb="10px">
               ¿Deseas iniciar tu carrera técnica con nosotros?
             </Heading>
-            <Text fontSize="18px" mb="20px">
+            <Text fontSize="22px" mb="20px">
               ¡Comienza tu proceso de admisión hoy mismo!
             </Text>
             <Link
@@ -43,7 +43,7 @@ export default function CareerSection() {
                 },
               }}
             >
-              Inscribite ahora
+              ¡Inscribite ahora!
             </Link>
           </Box>
         </Flex>
