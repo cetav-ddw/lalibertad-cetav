@@ -1,4 +1,5 @@
 import { Heading, Box, Container, Text, Image } from '@chakra-ui/react';
+import Link from 'next/link';
 
 export default function Contacto() {
   return (
@@ -7,7 +8,6 @@ export default function Contacto() {
       <Container maxW="container.lg" display="flex">
         <Box flex="1" p="20px">
           <Box
-            as="div"
             mb="20px"
             padding="10px"
             border="1px solid #ccc"
@@ -19,7 +19,6 @@ export default function Contacto() {
             <Text fontSize="16px">2276-9400 ext. 2031</Text>
           </Box>
           <Box
-            as="div"
             mb="20px"
             padding="10px"
             border="1px solid #ccc"
@@ -31,7 +30,6 @@ export default function Contacto() {
             <Text fontSize="16px">admision.cetav@parquelalibertad.org</Text>
           </Box>
           <Box
-            as="div"
             mb="20px"
             padding="10px"
             border="1px solid #ccc"
@@ -40,10 +38,15 @@ export default function Contacto() {
             <Text fontSize="18px" fontWeight="bold">
               Facebook:
             </Text>
-            <Text fontSize="16px">CETAV - Parque La Libertad</Text>
+            <Link
+              fontSize="16px"
+              color="blue.500"
+              href="https://www.facebook.com/cetavcr?mibextid=9R9pXO"
+            >
+              CETAV - Parque La Libertad
+            </Link>
           </Box>
           <Box
-            as="div"
             mb="20px"
             padding="10px"
             border="1px solid #ccc"
@@ -52,12 +55,15 @@ export default function Contacto() {
             <Text fontSize="18px" fontWeight="bold">
               Instagram:
             </Text>
-            <Text fontSize="16px">
+            <Link
+              fontSize="16px"
+              color="blue.500"
+              href="https://instagram.com/cetav_pll?igshid=OGQ5ZDc2ODk2ZA=="
+            >
               Centro de Tecnología y Artes Visuales PLL
-            </Text>
+            </Link>
           </Box>
           <Box
-            as="div"
             mb="20px"
             padding="10px"
             border="1px solid #ccc"
@@ -78,12 +84,14 @@ export default function Contacto() {
           alignItems="center"
           justifyContent="center"
         >
-          <Image
-            src="https://s3.abcstatics.com/abc/www/multimedia/tecnologia/2023/07/05/google-maps-RFfUcrluIkVKvIHstSe1oHI-1200x840@abc.jpg"
-            alt="Ubicación CETAV"
-            maxW="100%"
-            maxH="100%"
-          />
+          <Link href="https://waze.com/ul/hd1u0r8qmk">
+            <Image
+              src="/images/ubicacionCETAV.png"
+              alt="Ubicación CETAV"
+              maxW="100%"
+              maxH="100%"
+            />
+          </Link>
         </Box>
       </Container>
     </>
