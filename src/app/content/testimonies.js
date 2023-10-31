@@ -24,6 +24,13 @@ const testimonies = {
       quote:
         'El CETAV nos expuso ante nuevos escenarios al colaborar con clientes reales durante la carrera, lo cual me ayudó a explorar mis habilidades técnicas y creativas impulsándome a ser competitiva en el ámbito audiovisual.',
     },
+    {
+      id: 'esolis',
+      name: 'Elena Solís',
+      position: 'Frontend Developer',
+      quote:
+        'El CETAV nos expuso ante nuevos escenarios al colaborar con clientes reales durante la carrera, lo cual me ayudó a explorar mis habilidades técnicas y creativas impulsándome a ser competitiva en el ámbito audiovisual.',
+    },
   ],
   animacion: [],
   post: [],
