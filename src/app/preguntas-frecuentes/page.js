@@ -1,12 +1,15 @@
 'use client'
-import { Heading } from '@chakra-ui/react';
-import {
+import { 
+  Heading, 
+  ListItem, 
+  OrderedList,
   Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Box
+  Box, 
+  UnorderedList
 } from '@chakra-ui/react';
 import SectionHeading from '../components/SectionHeading';
 
@@ -16,7 +19,7 @@ export default function Faq() {
     <>
       <Heading as="h1">Preguntas frecuentes</Heading>
       <SectionHeading title="Sobre el CETAV" />
-      <Accordion defaultIndex={[0]} allowMultiple>
+      <Accordion allowMultiple>
         <AccordionItem>
           <h2>
             <AccordionButton>
@@ -36,7 +39,7 @@ export default function Faq() {
       </Accordion>
 
       <SectionHeading title="Financiamiento" />
-      <Accordion defaultIndex={[0]} allowMultiple>
+      <Accordion allowMultiple>
         <AccordionItem>
           <h2>
             <AccordionButton>
@@ -72,7 +75,7 @@ export default function Faq() {
       </Accordion>
 
       <SectionHeading title="Sobre nuestro proceso de admisión" />
-      <Accordion defaultIndex={[0]} allowMultiple>
+      <Accordion allowMultiple>
         <AccordionItem>
           <h2>
             <AccordionButton>
@@ -83,10 +86,18 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            <OrderedList>
+                <ListItem>Comprobar si cumplís con todos los requisitos y llenar el formulario:
+                  <a title="link a los requisitos" href="#"> click aquí</a></ListItem>
+                <ListItem>Si necesitás la beca de EMPLEATE debés llenar el siguiente formulario para iniciar el proceso:
+                  <a title="link al formulario" href="#"> click aquí</a></ListItem>
+                  <UnorderedList>
+                    <ListItem>Al llenar el formulario, en el punto IV. REFERENCIAS : ¿Ha sido referido por una institución o 
+                      actividad específica? debe elegir SÍ</ListItem>
+                    <ListItem>En “Indique el nombre de la institución”, especificar: CETAV Parque La Libertad.</ListItem>
+                  </UnorderedList>
+                <ListItem>Nosotros nos estaremos comunicando con vos para convocarte a las pruebas de admisión.</ListItem>
+            </OrderedList>
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
@@ -99,10 +110,16 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+          <UnorderedList>
+            <ListItem>Tener entre 17 y 27 años.</ListItem>
+            <ListItem>Bachillerato aprobado.</ListItem>
+            <ListItem>Conocimiento comprobable en Adobe Photoshop y Adobe Ilustrador básico o programas de edición de imagen similares. 
+              Si no los tienen, pueden llamar al Centro de Cómputo del Parque La Libertad al 2276-9400 ext 2092, 
+              donde estos cursos se imparten de manera regular.</ListItem>
+            <ListItem>En caso de extranjeros, tener su estatus migratorio al día.</ListItem>
+            <ListItem>Interés en aprender inglés.</ListItem>
+            <ListItem>Disponibilidad de tiempo completo.</ListItem>
+          </UnorderedList>
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
@@ -115,10 +132,7 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            Entre 17 y 27 años.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
@@ -131,16 +145,13 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            No, es requisito llevar el bloque completo.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
 
       <SectionHeading title="Inserción Laboral" />
-      <Accordion mb={10} defaultIndex={[0]} allowMultiple>
+      <Accordion mb={10} allowMultiple>
         <AccordionItem>
           <h2>
             <AccordionButton>
