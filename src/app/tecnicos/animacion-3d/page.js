@@ -1,5 +1,4 @@
 import { Heading } from '@chakra-ui/react';
-import Link from 'next/link';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
 import OurTeachers from '@/app/components/OurTeachers';
