@@ -25,9 +25,9 @@ export default function FaqsBanner() {
           // TODO agregar color al theme
           _hover={{ textDecoration: 'none' }}
         >
-          {'sección de preguntas frecuente'}
-        </Link>
-        s podes encontrar más información.
+          {'sección de preguntas frecuentes'}
+        </Link>{' '}
+        podes encontrar más información.
       </Text>
     </Box>
   );
