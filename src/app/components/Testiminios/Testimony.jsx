@@ -13,7 +13,7 @@ const TestimonyList = ({ name, position, quote, avatarSrc }) => {
   return (
     // TODO Mover el color al theme
     <Card maxW="md" mr="10px" mb="10px" bgColor="#E1E7F8">
-      <CardHeader pb="1">
+      <CardHeader>
         <Flex spacing="4">
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
             <Avatar name={name} src={avatarSrc} />
