@@ -26,10 +26,7 @@ export default function InscriptionBanner() {
             <Text fontSize="22px" mb="20px">
               ¡Comienza tu proceso de admisión hoy mismo!
             </Text>
-            <Link
-              display="inline-block"
-              textDecoration="underline"
-            >
+            <Link display="inline-block" textDecoration="underline">
               ¡Inscribite ahora!
             </Link>
           </Box>
@@ -40,6 +37,7 @@ export default function InscriptionBanner() {
             maxW="100%"
             h="auto"
             w="100%"
+            alt=""
           />
         </Flex>
       </Box>
