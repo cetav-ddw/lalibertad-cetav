@@ -1,21 +1,23 @@
 import { Box, Heading, Link } from '@chakra-ui/react';
 
-function FAQbox() {
+export default function FaqBanner() {
   return (
     <Box
       textAlign="center"
       padding="20px"
-      border="1px solid #313677"
+      // TODO agregar color al theme
+      border="4px solid #313677"
       borderRadius="5px"
       mx="auto"
       mb="40px"
     >
-      <Heading color="#313677" fontSize="24px">
+      {/* TODO agregar color al theme */}
+      <Heading as="h3" color="#313677" fontSize="24px">
         ¿Tiene preguntas para nosotros?
       </Heading>
-
       <Link
         href="/preguntas-frecuentes"
+        // TODO agregar color al theme
         color="#444444"
         textDecoration="none"
         _hover={{ textDecoration: 'underline' }}
@@ -25,5 +27,3 @@ function FAQbox() {
     </Box>
   );
 }
-
-export default FAQbox;
