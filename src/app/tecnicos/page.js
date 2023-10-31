@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Heading } from '@chakra-ui/react';
+import FAQbox from '../components/FAQcomponent';
 
 export default function Tecnicos() {
   return (
@@ -35,6 +36,7 @@ export default function Tecnicos() {
       <div>
         <Link href="/tecnicos/motion-graphics">Motion Graphics</Link>
       </div>
+      <FAQbox />
     </>
   );
 }
