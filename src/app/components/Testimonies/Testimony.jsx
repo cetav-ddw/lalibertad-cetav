@@ -12,7 +12,8 @@ import {
 const TestimonyList = ({ name, position, quote, avatarSrc }) => {
   return (
     // TODO Mover el color al theme
-    <Card flex="49% 1 0" m="1" bgColor="#E1E7F8">
+    // Si el contenido lo agregamos literal, debe ser un quote y citar al autor
+    <Card maxW="49%" flex="49% 1 0" m="1" bgColor="#E1E7F8">
       <CardHeader>
         <Flex spacing="4">
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
