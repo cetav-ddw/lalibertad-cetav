@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Heading } from '@chakra-ui/react';
-import TestimonioSection from '../../components/Testiminios/Testimonio';
+import TestimonyList from '../../components/Testiminios/TestimonyList';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 
 export default function AnalisisDatosPage() {
@@ -8,8 +8,8 @@ export default function AnalisisDatosPage() {
     <>
       <Heading as="h1">ANALISIS Y VISUALIZACION DE DATOS PAGE</Heading>
       <Link href="/tecnicos">Tecnicos</Link>
-      <TestimonioSection />
-      <InscriptionBanner/>
+      <TestimonyList />
+      <InscriptionBanner />
     </>
   );
 }
