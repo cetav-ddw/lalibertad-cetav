@@ -2,7 +2,7 @@ import { Heading } from '@chakra-ui/react';
 import Link from 'next/link';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
-import FaqBanner from '@/app/components/FAQcomponent';
+import FaqBanner from '@/app/components/FaqsBanner';
 import OurTeachers from '@/app/components/OurTeachers';
 import ExpectactionsBanner from '@/app/components/ExpectactionsBanner';
 import testimonies from '@/app/content/testimonies';

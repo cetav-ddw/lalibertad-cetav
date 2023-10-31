@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Heading } from '@chakra-ui/react';
-import FaqBanner from '../components/FAQcomponent';
+import FaqBanner from '../components/FaqsBanner';
 
 export default function Tecnicos() {
   return (

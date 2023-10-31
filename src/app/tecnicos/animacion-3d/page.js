@@ -6,7 +6,7 @@ import OurTeachers from '@/app/components/OurTeachers';
 import ExpectactionsBanner from '@/app/components/ExpectactionsBanner';
 import testimonies from '@/app/content/testimonies';
 import teachers from '@/app/content/teachers';
-import FaqBanner from '@/app/components/FAQcomponent';
+import FaqBanner from '@/app/components/FaqsBanner';
 
 export default function Animacion3D() {
   return (
