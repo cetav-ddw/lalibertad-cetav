@@ -28,8 +28,6 @@ export const handleOptionClick = (value, formId) => {
       yearList.push(intValue);
     }
   }
-  console.log(`Técnicos seleccionados: ${carreerList}`);
-  console.log(`Generaciones seleccionadas: ${yearList}`);
   timer = setTimeout(() => {
     filteredData(carreerList, yearList);
   }, 1500); 

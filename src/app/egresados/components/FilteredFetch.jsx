@@ -6,6 +6,7 @@ const base = new Airtable({
 }).base('apphEdTpWzyL0aZdp');
 
 export const filteredData = async (carreerList, yearList) => {
+  const uniqueRecords = [];
   try {
     for (let i = 0; i < carreerList.length; i++) {
       for (let j = 0; j < yearList.length; j++) {
@@ -13,11 +14,18 @@ export const filteredData = async (carreerList, yearList) => {
           view: 'Grid view',
           filterByFormula: `AND(year = "${yearList[j]}", FIND("${carreerList[i]}", {career}))`,
         }).firstPage();
+        records.forEach((record) => {
+          const isDuplicate = uniqueRecords.some((existingRecord) => existingRecord.id === record.id);
+          if (!isDuplicate) {
+            uniqueRecords.push(record);
+          }
+        });
 
-        console.log(carreerList[i], yearList[j], records);
+        console.log(uniqueRecords);
       }
     }
   } catch (error) {
     console.error(error);
   }
+  return uniqueRecords;
 };
