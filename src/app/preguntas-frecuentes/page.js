@@ -27,8 +27,10 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
+
           Cada dos años el CETAV realiza un proceso de reclutamiento, 
           el próximo dará inicio a partir de setiembre del 2023.
+
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
@@ -45,8 +47,10 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
+
           El costo mensual de la carrera técnica es de ₡100,000 en caso de obtener la beca Empleate, gestionada en conjunto con el CETAV, 
           el 50% del monto recibido es para pagar colegiatura y el 50% restante para transporte y alimentación.
+
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
@@ -59,8 +63,10 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
+
           El 50% de la beca asignada es para pagar sus estudios en el CETAV y
           el 50% restante para cubrir alimentación y transporte.
+
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
@@ -145,7 +151,9 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
+
           El promedio oscila entre 80% y 90% de inserción laboral.
+
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
@@ -158,8 +166,10 @@ export default function Faq() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
+
           Dependiendo del área de especialidad. Entre las principales destacan canales de televisión como Repretel y Televisora de Costa Rica, 
           agencias digitales como Accenture, The Hangar, estudios de diseño y arquitectura, agencias de publicidad, estudios de animación, entre otras.
+
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
