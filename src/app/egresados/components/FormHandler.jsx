@@ -2,7 +2,7 @@ let carreerList = [];
 let yearList = [];
 
 export const handleOptionClick = (value, formId) => {
-  if (formId === 'form1') {
+  if (formId === 'Career Menu') {
     if (carreerList.includes(value)) {
       // Si está seleccionado, lo eliminamos de la lista
       carreerList = carreerList.filter((v) => v !== value);
