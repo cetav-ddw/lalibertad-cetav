@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Heading } from '@chakra-ui/react';
-import TestimonyList from '../../components/Testiminios/TestimonyList';
+import TestimonyList from '@/app/components/Testimony/TestimonyList';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 
 export default function AnalisisDatosPage() {

@@ -1,7 +1,8 @@
-import Testimony from './Testimony';
-import SectionHeading from '../SectionHeading';
 import { Box } from '@chakra-ui/react';
+import Testimony from '@/app/components/Testimony/Testimony';
+import SectionHeading from '@/app/components/SectionHeading';
 
+// TODO debe recibir una lista de testimonios
 export default function TestimonyList() {
   return (
     <Box>
