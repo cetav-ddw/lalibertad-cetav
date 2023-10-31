@@ -40,7 +40,6 @@ const Footer = () => {
             </ListItem>
           </UnorderedList>
         </Box>
-
         <Box>
           <Heading as="h3" size="lg">
             Carreras
@@ -104,7 +103,6 @@ const Footer = () => {
             </ListItem>
           </UnorderedList>
         </Box>
-
         <Box>
           <Heading as="h3" size="lg">
             ¿Cómo llegar?
@@ -117,7 +115,6 @@ const Footer = () => {
             Ve cómo llegar
           </Link>
         </Box>
-
         <Box>
           <Heading as="h3" size="lg">
             Contacto
