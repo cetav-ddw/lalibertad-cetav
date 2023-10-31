@@ -1,4 +1,3 @@
-import Grid from './Grid';
 import Testimony from './Testimony';
 import SectionHeading from '../SectionHeading';
 import { Box } from '@chakra-ui/react';
@@ -7,7 +6,7 @@ export default function TestimonyList() {
   return (
     <Box>
       <SectionHeading title="Testimonios" />
-      <Grid columns={2} p={0}>
+      <Box display="flex" flexWrap="wrap" justifyContent="space-around">
         <Testimony
           name="Diana Chavarría"
           position="Frontend Developer"
@@ -29,7 +28,7 @@ export default function TestimonyList() {
           position="Frontend Developer"
           quote="Lorem ipsum something soemthin"
         />
-      </Grid>
+      </Box>
     </Box>
   );
 }

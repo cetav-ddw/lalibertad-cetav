@@ -12,11 +12,11 @@ import {
 const TestimonyList = ({ name, position, quote, avatarSrc }) => {
   return (
     // TODO Mover el color al theme
-    <Card maxW="md" mr="10px" mb="10px" bgColor="#E1E7F8">
+    <Card flex="49% 1 0" m="1" bgColor="#E1E7F8">
       <CardHeader>
         <Flex spacing="4">
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-            <Avatar name={name} src={avatarSrc} />
+            <Avatar size="md" name={name} src={avatarSrc} />
             <Box>
               <Heading as="h3" color="#313677" size="sm">
                 {name}
