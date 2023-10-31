@@ -1,25 +1,25 @@
 'use client';
-import { Box, Text, Container, Icon, Image } from '@chakra-ui/react';
+
 import Link from 'next/link';
+import { Box, Text, Flex, Icon, Image } from '@chakra-ui/react';
 import { MdCall, MdMail, MdAddToHomeScreen, MdFmdGood } from 'react-icons/md';
 
 export default function ContactDetail() {
   return (
-    <Container maxW="container.lg" display="flex">
-      <Box flex="1" p="20px">
+    <Flex>
+      <Box maxWidth="40%">
         <Box
-          width="373px"
           mb="20px"
-          padding="10px"
+          px="6"
+          py="3"
           borderRadius="5px"
           // TODO MOVER COLOR AL THEME
           bg="#E1E7F8"
           display="flex"
           flexDirection="column"
           boxShadow="md"
-          rounded="md"
         >
-          <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center" mb="2">
             <Icon as={MdCall} marginRight="5px" size="24px" color="#313677" />
             {/* TODO MOVER COLOR AL THEME */}
             <Text fontSize="18px" fontWeight="bold" color="#313677">
@@ -33,18 +33,17 @@ export default function ContactDetail() {
         </Box>
 
         <Box
-          width="373px"
           mb="20px"
-          padding="10px"
+          px="6"
+          py="3"
           borderRadius="5px"
           // TODO MOVER COLOR AL THEME
           bg="#E1E7F8"
           display="flex"
           flexDirection="column"
           boxShadow="md"
-          rounded="md"
         >
-          <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center" mb="2">
             <Icon as={MdMail} size="24px" color="#313677" marginRight="5px" />
             {/* TODO MOVER COLOR AL THEME */}
             <Text fontSize="18px" fontWeight="bold" color="#313677">
@@ -58,18 +57,17 @@ export default function ContactDetail() {
         </Box>
 
         <Box
-          width="373px"
           mb="20px"
-          padding="10px"
+          px="6"
+          py="3"
           borderRadius="5px"
           // TODO MOVER COLOR AL THEME
           bg="#E1E7F8"
           display="flex"
           flexDirection="column"
           boxShadow="md"
-          rounded="md"
         >
-          <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center" mb="2">
             <Icon
               as={MdAddToHomeScreen}
               size="24px"
@@ -92,18 +90,17 @@ export default function ContactDetail() {
         </Box>
 
         <Box
-          width="373px"
           mb="20px"
-          padding="10px"
+          px="6"
+          py="3"
           borderRadius="5px"
           // TODO MOVER COLOR AL THEME
           bg="#E1E7F8"
           display="flex"
           flexDirection="column"
           boxShadow="md"
-          rounded="md"
         >
-          <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center" mb="2">
             <Icon
               as={MdAddToHomeScreen}
               size="24px"
@@ -126,18 +123,17 @@ export default function ContactDetail() {
         </Box>
 
         <Box
-          width="373px"
           mb="20px"
-          padding="10px"
+          px="6"
+          py="3"
           borderRadius="5px"
           // TODO MOVER COLOR AL THEME
           bg="#E1E7F8"
           display="flex"
           flexDirection="column"
           boxShadow="md"
-          rounded="md"
         >
-          <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center" mb="2">
             <Icon
               as={MdFmdGood}
               size="24px"
@@ -157,7 +153,13 @@ export default function ContactDetail() {
         </Box>
       </Box>
 
-      <Box flex="1" display="flex" alignItems="center" justifyContent="center">
+      <Box
+        flex="1"
+        display="flex"
+        alignItems="center"
+        mb="2"
+        justifyContent="center"
+      >
         <Link href="https://waze.com/ul/hd1u0r8qmk">
           <Image
             src="/images/ubicacionCETAV.png"
@@ -167,6 +169,6 @@ export default function ContactDetail() {
           />
         </Link>
       </Box>
-    </Container>
+    </Flex>
   );
 }

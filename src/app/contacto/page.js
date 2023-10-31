@@ -13,6 +13,7 @@ export default function Contacto() {
           </Text>
         </Heading>
       </Box>
+
       <ContactDetail />
     </>
   );
