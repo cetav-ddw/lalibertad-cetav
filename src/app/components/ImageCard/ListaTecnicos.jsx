@@ -9,17 +9,17 @@ import {
 } from '@chakra-ui/react';
 import Cursos from '@/app/conf/data';
 
-export const ListaTecnicos = () => {
+export const ListaTecnicos = ({ cursos }) => {
   return (
     <Wrap spacing="30px" justify="center">
-      {Cursos.map((cursos) => {
+      {Cursos.map(({ id }) => {
         return (
-          <WrapItem key>
+          <WrapItem key={cursos.id}>
             <Card maxW="sm">
               <CardBody p>
-                <Image src="" borderRadius="lg" />
+                <Image src="{cursos.imgSrc}" alt="" borderRadius="lg" />
                 <Heading position="absolute" left="3" bottom="150" size="md">
-                  Living room Sofa
+                  {cursos.title}
                 </Heading>
                 <Text
                   mt="5"
@@ -29,9 +29,7 @@ export const ListaTecnicos = () => {
                   textAlign="justify"
                   width="90%"
                 >
-                  This sofa is perfect for modern tropical spaces, baroque
-                  inspired spaces, earthy toned spaces and for people who love a
-                  chic design with a sprinkle of vintage design.
+                  {cursos.descripcion}
                 </Text>
               </CardBody>
             </Card>
@@ -42,4 +40,4 @@ export const ListaTecnicos = () => {
   );
 };
 
-export default ImageCard;
+export default ListaTecnicos;
