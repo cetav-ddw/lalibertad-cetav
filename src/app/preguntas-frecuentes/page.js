@@ -19,7 +19,7 @@ export default function Faq() {
       <Heading as="h1">Preguntas frecuentes</Heading>
       <SectionHeading title="Sobre el CETAV" />
       <Accordion allowMultiple>
-        <AccordionItem m={10} mb={20}>
+        <AccordionItem m={10} mb={20} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -39,7 +39,7 @@ export default function Faq() {
 
       <SectionHeading title="Financiamiento" />
       <Accordion allowMultiple>
-        <AccordionItem m={10}>
+        <AccordionItem m={10} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -55,7 +55,7 @@ export default function Faq() {
 
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem m={10} mb={20}>
+        <AccordionItem m={10} mb={20} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -75,7 +75,7 @@ export default function Faq() {
 
       <SectionHeading title="Sobre nuestro proceso de admisión" />
       <Accordion allowMultiple>
-        <AccordionItem m={10}>
+        <AccordionItem m={10} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -99,7 +99,7 @@ export default function Faq() {
             </OrderedList>
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem m={10}>
+        <AccordionItem m={10} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -121,7 +121,7 @@ export default function Faq() {
           </UnorderedList>
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem m={10}>
+        <AccordionItem m={10} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -134,7 +134,7 @@ export default function Faq() {
             Entre 17 y 27 años.
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem m={10} mb={20}>
+        <AccordionItem m={10} mb={20} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -151,7 +151,7 @@ export default function Faq() {
 
       <SectionHeading title="Inserción Laboral" />
       <Accordion mb={10} allowMultiple>
-        <AccordionItem m={10}>
+        <AccordionItem m={10} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
@@ -166,7 +166,7 @@ export default function Faq() {
 
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem m={10} mb={20}>
+        <AccordionItem m={10} mb={20} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
