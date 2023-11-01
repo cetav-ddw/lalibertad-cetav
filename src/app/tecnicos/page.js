@@ -1,7 +1,6 @@
 import { Heading } from '@chakra-ui/react';
 import FaqBanner from '../components/FaqsBanner';
 import cursos from '../content/cursosData';
-import ListaCursos from '../components/CourseList';
 
 import CourseList from '../components/CourseList';
 
