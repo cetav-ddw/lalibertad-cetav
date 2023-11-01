@@ -12,7 +12,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function MotionGraphicPage() {
   return (
     <>
-      <Heading as="h1">MOTION GRAPHICS</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Motion graphics
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />

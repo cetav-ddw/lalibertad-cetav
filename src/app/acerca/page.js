@@ -1,9 +1,9 @@
 import { Heading } from '@chakra-ui/react';
 
-export default function Egresados() {
+export default function AboutCetav() {
   return (
     <Heading as="h1" fontSize="xx-large">
-      Egresados
+      Sobre el CETAV
     </Heading>
   );
 }

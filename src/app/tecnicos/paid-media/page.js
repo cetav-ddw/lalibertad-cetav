@@ -12,7 +12,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function PaidMedia() {
   return (
     <>
-      <Heading as="h1">PAID MEDIA PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Paid media
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
