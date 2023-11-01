@@ -1,4 +1,3 @@
-'use client'
 import { 
   Heading, 
   ListItem, 
@@ -9,10 +8,10 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box, 
-  UnorderedList
+  UnorderedList,
+  Link
 } from '@chakra-ui/react';
 import SectionHeading from '../components/SectionHeading';
-
 
 export default function Faq() {
   return (
@@ -20,15 +19,15 @@ export default function Faq() {
       <Heading as="h1">Preguntas frecuentes</Heading>
       <SectionHeading title="Sobre el CETAV" />
       <Accordion allowMultiple>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10} mb={20}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
                 ¿Cada cuánto tiempo se abre el proceso de admisión?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
 
           Cada dos años el CETAV realiza un proceso de reclutamiento, 
@@ -40,15 +39,15 @@ export default function Faq() {
 
       <SectionHeading title="Financiamiento" />
       <Accordion allowMultiple>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
                 ¿Cuál es el costo mensual de las carreras técnicas del CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
 
           El costo mensual de la carrera técnica es de ₡100,000 en caso de obtener la beca Empleate, gestionada en conjunto con el CETAV, 
@@ -56,15 +55,15 @@ export default function Faq() {
 
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10} mb={20}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
               ¿Cuánto pagan los estudiantes que reciben beca de EMPLEATE?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
 
           El 50% de la beca asignada es para pagar sus estudios en el CETAV y
@@ -76,21 +75,21 @@ export default function Faq() {
 
       <SectionHeading title="Sobre nuestro proceso de admisión" />
       <Accordion allowMultiple>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
               ¿Cuál es el proceso para entrar al CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
             <OrderedList>
-                <ListItem>Comprobar si cumplís con todos los requisitos y llenar el formulario:
-                  <a title="link a los requisitos" href="#"> click aquí</a></ListItem>
-                <ListItem>Si necesitás la beca de EMPLEATE debés llenar el siguiente formulario para iniciar el proceso:
-                  <a title="link al formulario" href="#"> click aquí</a></ListItem>
+                <ListItem>Comprobar si cumplís con todos los requisitos y llenar el formulario: 
+                  <Link color="#313677" fontWeight={"bold"} title="link a los requisitos" href="#"> click aquí</Link></ListItem>
+                <ListItem>Si necesitás la beca de EMPLEATE debés llenar el siguiente formulario para iniciar el proceso: 
+                  <Link color="#313677" fontWeight={"bold"} title="link al formulario" href="#"> click aquí</Link></ListItem>
                   <UnorderedList>
                     <ListItem>Al llenar el formulario, en el punto IV. REFERENCIAS : ¿Ha sido referido por una institución o 
                       actividad específica? debe elegir SÍ</ListItem>
@@ -100,15 +99,15 @@ export default function Faq() {
             </OrderedList>
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
               ¿Cuáles son los requisitos para entrar al CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
           <UnorderedList>
             <ListItem>Tener entre 17 y 27 años.</ListItem>
@@ -122,28 +121,28 @@ export default function Faq() {
           </UnorderedList>
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
               ¿Cuál es la edad límite para poder entrar al CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
             Entre 17 y 27 años.
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10} mb={20}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
               ¿Puedo escoger qué materias matricular y en qué orden llevarlas?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
             No, es requisito llevar el bloque completo.
           </AccordionPanel>
@@ -152,30 +151,30 @@ export default function Faq() {
 
       <SectionHeading title="Inserción Laboral" />
       <Accordion mb={10} allowMultiple>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
               ¿Cuál es el promedio de inserción laboral de egresados y egresadas del CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
 
           El promedio oscila entre 80% y 90% de inserción laboral.
 
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
+        <AccordionItem m={10} mb={20}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
               ¿En qué empresas trabajan los egresados de cada carrera?
               </Box>
               <AccordionIcon />
             </AccordionButton>
-          </h2>
+          </h3>
           <AccordionPanel pb={4}>
 
           Dependiendo del área de especialidad. Entre las principales destacan canales de televisión como Repretel y Televisora de Costa Rica, 
