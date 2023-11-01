@@ -6,9 +6,9 @@ const OurTeachers = ({ teacherList }) => {
     <>
       {/* TODO mover colores al theme */}
       {teacherList?.length > 0 ? (
-        <Box mx="auto" maxW="980px">
+        <Box mx="auto" maxW="980px" mb="16">
           <SectionHeading title="¿Quiénes son nuestros profesores?" />
-          <Text fontSize="x-large" p="2" my="4">
+          <Text fontSize="lg" p="2" my="4">
             {
               'Nuestros profesores y profesoras, son profesionales activos y miembros de la industria, dedicados a enseñarte las habilidades más demandadas.'
             }

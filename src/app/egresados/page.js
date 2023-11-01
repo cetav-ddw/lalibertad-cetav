@@ -6,9 +6,13 @@ import FilterMenu from './components/FilterMenu'
 
 export default function Egresados() {
   return (
+
     <>
-      <Heading as="h1">EGRESADOS PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Egresados
+      </Heading>
       <FilterMenu/>
     </>
+
   );
 }
