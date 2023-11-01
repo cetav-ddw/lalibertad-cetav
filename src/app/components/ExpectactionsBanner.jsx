@@ -38,7 +38,7 @@ const ExpectactionsBanner = () => {
               <Heading as="h3" fontSize="lg" color="#444444" mb="2">
                 {title}
               </Heading>
-              <Text color="#444444" fontSize="sm" textAlign="center">
+              <Text color="#444444" textAlign="center">
                 {description}
               </Text>
             </Flex>
