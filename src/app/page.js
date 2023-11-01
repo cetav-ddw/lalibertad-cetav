@@ -6,7 +6,7 @@ import cursos from './content/cursosData';
 export default function Home() {
   return (
     <>
-      <CourseList cursos={cursos.cursosLibresDiseno} showDescription />
+      <CourseList cursos={cursos.tecnicos} />
       <InscriptionBanner />
       <LaboralFormation />
     </>
