@@ -16,7 +16,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
   const handlePageClick = (selectedPage) => {
     setCurrentPage(selectedPage.selected);
   };
-  console.log(uniqueRecords,currentData);
+  console.log(uniqueRecords);
   return (
     <>
     <div>

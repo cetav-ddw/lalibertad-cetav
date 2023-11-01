@@ -14,6 +14,7 @@ import { BsChevronDown } from 'react-icons/bs';
 import Airtable from 'airtable';
 import CardEgresadosContainer from './CardEgresadosContainer';
 let timer;
+let selectedData;
 
 
 const FilterMenu = () => {
@@ -68,12 +69,17 @@ const FilterMenu = () => {
       }
       return uniqueRecords;
     };
-    timer = setTimeout(() => {
+    timer = setTimeout(async () => {
       if (yearList.length > 0 && carreerList.length > 0) {
-        filteredData(carreerList, yearList);
+        try {
+          selectedData = await filteredData(carreerList, yearList);
+          <CardEgresadosContainer uniqueRecords={selectedData}/>
+
+        } catch (error) {
+          console.error('Error al obtener datos:', error);
+        }
       }
     }, 1000);
-    <CardEgresadosContainer uniqueRecords={filteredData(carreerList,yearList)}/>
   }, [carreerList, yearList]);
   return (
     <Flex justifyContent="center" gap={4} mb={5} mt={5}>
