@@ -11,6 +11,8 @@ export default function Home() {
       <InscriptionBanner />
       <LaboralFormation />
       <ImagePanel images={images} />
+      <InscriptionBanner />
+      <LaboralFormation />
     </>
   );
 }

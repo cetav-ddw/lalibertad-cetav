@@ -7,7 +7,9 @@ import images from '../content/imageData';
 export default function Tecnicos() {
   return (
     <>
-      <Heading as="h1">TECNICOS PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Técnicos
+      </Heading>
       <div>
         <Link href="/tecnicos/dis-y-des-web">Diseño y desarrollo web</Link>
       </div>
