@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Flex,
   Menu,
@@ -11,36 +11,19 @@ import {
   Icon,
 } from '@chakra-ui/react';
 import { BsChevronDown } from 'react-icons/bs';
+import Airtable from 'airtable';
+let timer;
 
-// let carreerList = [];
-// let yearList = [];
-
-// const handleOptionClick = (value, formId) => {
-//   if (formId === 'Career Menu') {
-//     if (carreerList.includes(value)) {
-//       Si está seleccionado, lo eliminamos de la lista
-//       carreerList = carreerList.filter((v) => v !== value);
-//     } else {
-//       Si no está seleccionado, lo agregamos a la lista
-//       carreerList.push(value);
-//     }
-//   } else {
-//     const intValue = parseInt(value);
-//     if (yearList.includes(intValue)) {
-//       Si está seleccionado, lo eliminamos de la lista
-//       yearList = yearList.filter((v) => v !== intValue);
-//     } else {
-//       Si no está seleccionado, lo agregamos a la lista
-//       yearList.push(intValue);
-//     }
-//   }
-// };
 
 const FilterMenu = () => {
   const [carreerList, setCarreerList] = useState([]);
   const [yearList, setYearList] = useState([]);
 
+
   const handleOptionClick = (value, formId) => {
+    if (timer) {
+      clearTimeout(timer);
+    }
     if (formId === 'Career Menu') {
       if (carreerList.includes(value)) {
         // Si está seleccionado, lo eliminamos de la lista
@@ -60,6 +43,36 @@ const FilterMenu = () => {
       }
     }
   };
+  useEffect(() => {
+    const base = new Airtable({
+      apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN,
+    }).base('apphEdTpWzyL0aZdp');
+  
+    const filteredData = async (carreerList, yearList) => {
+      const uniqueRecords = [];
+      try {
+        for (let i = 0; i < carreerList.length; i++) {
+          for (let j = 0; j < yearList.length; j++) {
+            const records = await base('Egresados').select({
+              view: 'Grid view',
+              filterByFormula: `AND(year = "${yearList[j]}", FIND("${carreerList[i]}", {career}))`,
+            }).firstPage();
+            records.forEach((record) => {
+              uniqueRecords.push(record);
+            });
+          }
+        }
+      } catch (error) {
+        console.error(error);
+      }
+      return uniqueRecords;
+    };
+    timer = setTimeout(() => {
+      if (yearList.length > 0 && carreerList.length > 0) {
+        filteredData(carreerList, yearList);
+      }
+    }, 1000);
+  }, [carreerList, yearList]);
   return (
     <Flex justifyContent="center" gap={4} mb={5} mt={5}>
       <form>
@@ -72,8 +85,8 @@ const FilterMenu = () => {
             minWidth="150px"
           >
             <Flex justifyContent="space-between">
-            Técnico
-            <Icon as={BsChevronDown}/>
+              Técnico
+              <Icon as={BsChevronDown} />
             </Flex>
           </MenuButton>
           <MenuList minWidth="240px" bg="white" color="black">
@@ -120,8 +133,8 @@ const FilterMenu = () => {
             minWidth="150px"
           >
             <Flex justifyContent="space-between">
-            Generación
-            <Icon as={BsChevronDown}/>
+              Generación
+              <Icon as={BsChevronDown} />
             </Flex>
           </MenuButton>
           <MenuList minWidth="240px" bg="white" color="black">
