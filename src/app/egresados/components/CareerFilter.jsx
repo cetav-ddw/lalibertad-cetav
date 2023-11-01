@@ -1,7 +1,7 @@
 import { Menu, MenuButton, MenuList, MenuOptionGroup, MenuItemOption, Icon, Flex } from '@chakra-ui/react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
-function CareerFilter({handleOptionClick}) {
+function CareerFilter({handleCareerMenuClick}) {
   return(
     <Menu closeOnSelect={false}>
     <MenuButton
@@ -19,14 +19,14 @@ function CareerFilter({handleOptionClick}) {
         <MenuItemOption
           value="Post-Producción"
           title="Técnicos"
-          onClick={() => handleOptionClick('Post-Producción', 'Técnicos')}
+          onClick={() => handleCareerMenuClick('Post-Producción')}
         >
           Post-Producción
         </MenuItemOption>
         <MenuItemOption
           value="Web"
           title="Técnicos"
-          onClick={() => handleOptionClick('Web', 'Técnicos')}
+          onClick={() => handleCareerMenuClick('Web')}
         >
           Desarrollo Web
         </MenuItemOption>
@@ -34,7 +34,7 @@ function CareerFilter({handleOptionClick}) {
           value="Imagen Comercial"
           title="Técnicos"
           onClick={() =>
-            handleOptionClick('Imagen Comercial', 'Técnicos')
+            handleCareerMenuClick('Imagen Comercial')
           }
         >
           Imagen Comercial
@@ -42,7 +42,7 @@ function CareerFilter({handleOptionClick}) {
         <MenuItemOption
           value="Animación 3D"
           title="Técnicos"
-          onClick={() => handleOptionClick('Animación', 'Técnicos')}
+          onClick={() => handleCareerMenuClick('Animación')}
         >
           Animación 3D
         </MenuItemOption>
