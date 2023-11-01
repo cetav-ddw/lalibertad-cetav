@@ -1,5 +1,5 @@
 import { Providers } from './providers';
-import Navigation from './components/navigation';
+import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         <Providers>
-          <Navigation />
+          <Header />
           <MainContent>{children}</MainContent>
           <Footer />
         </Providers>
