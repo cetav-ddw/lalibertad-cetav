@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { BsChevronDown } from 'react-icons/bs';
 import Airtable from 'airtable';
+import CardEgresadosContainer from './CardEgresadosContainer';
 let timer;
 
 
@@ -47,7 +48,7 @@ const FilterMenu = () => {
     const base = new Airtable({
       apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN,
     }).base('apphEdTpWzyL0aZdp');
-  
+
     const filteredData = async (carreerList, yearList) => {
       const uniqueRecords = [];
       try {
@@ -72,6 +73,7 @@ const FilterMenu = () => {
         filteredData(carreerList, yearList);
       }
     }, 1000);
+    <CardEgresadosContainer uniqueRecords={filteredData(carreerList,yearList)}/>
   }, [carreerList, yearList]);
   return (
     <Flex justifyContent="center" gap={4} mb={5} mt={5}>
