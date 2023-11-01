@@ -1,0 +1,25 @@
+const images = [
+  '/images/Logo-Amazon.png',
+  '/images/Logo-BancoNacional.png',
+  '/images/Logo-MunicipalidadDesamparados.png',
+  '/images/Logo-Amazon.png',
+  '/images/Logo-BancoNacional.png',
+  '/images/Logo-MunicipalidadDesamparados.png',
+  '/images/Logo-Amazon.png',
+  '/images/Logo-BancoNacional.png',
+  '/images/Logo-MunicipalidadDesamparados.png',
+  '/images/Logo-Amazon.png',
+  '/images/Logo-BancoNacional.png',
+  '/images/Logo-MunicipalidadDesamparados.png',
+  '/images/Logo-Amazon.png',
+  '/images/Logo-BancoNacional.png',
+  '/images/Logo-MunicipalidadDesamparados.png',
+  '/images/Logo-Amazon.png',
+  '/images/Logo-BancoNacional.png',
+  '/images/Logo-MunicipalidadDesamparados.png',
+  '/images/Logo-Amazon.png',
+  '/images/Logo-BancoNacional.png',
+  '/images/Logo-MunicipalidadDesamparados.png',
+];
+
+export default images;
