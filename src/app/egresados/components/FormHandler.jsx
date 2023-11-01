@@ -1,6 +1,4 @@
 'use client';
-
-import { filteredData } from "./FilteredFetch";
 import React from 'react';
 import {
   Flex,
@@ -12,10 +10,35 @@ import {
   Button,
 } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
+import Airtable from 'airtable';
 
 let carreerList = [];
 let yearList = [];
 let timer;
+
+const base = new Airtable({
+  apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN,
+}).base('apphEdTpWzyL0aZdp');
+
+const filteredData = async (carreerList, yearList) => {
+  const uniqueRecords = [];
+  try {
+    for (let i = 0; i < carreerList.length; i++) {
+      for (let j = 0; j < yearList.length; j++) {
+        const records = await base('Egresados').select({
+          view: 'Grid view',
+          filterByFormula: `AND(year = "${yearList[j]}", FIND("${carreerList[i]}", {career}))`,
+        }).firstPage();
+        records.forEach((record) => {
+          uniqueRecords.push(record);
+        });
+      }
+    }
+  } catch (error) {
+    console.error(error);
+  }
+  return uniqueRecords;
+};
 
 const handleOptionClick = (value, formId) => {
   if (timer) {
@@ -40,9 +63,10 @@ const handleOptionClick = (value, formId) => {
     }
   }
   timer = setTimeout(() => {
+    if (yearList.length != 0 && carreerList.length != 0) {
     filteredData(carreerList, yearList);
-  }, 1500); 
-
+    }
+  }, 1500);
 };
 
 const FilterMenu = () => {
