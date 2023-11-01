@@ -24,7 +24,7 @@ const Footer = () => {
           </Heading>
           <UnorderedList styleType="none" m="0">
             <ListItem>
-              <Link as={NextLink} fontSize="sm" href="/about-cetav">
+              <Link as={NextLink} fontSize="sm" href="/acerca">
                 Sobre el CETAV
               </Link>
             </ListItem>
