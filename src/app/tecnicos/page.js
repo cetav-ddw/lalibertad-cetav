@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Heading } from '@chakra-ui/react';
 import FaqBanner from '../components/FaqsBanner';
+import ImagePanel from '../components/ImagePanel';
+import images from '../content/imageData';
 
 export default function Tecnicos() {
   return (
@@ -36,6 +38,7 @@ export default function Tecnicos() {
       <div>
         <Link href="/tecnicos/motion-graphics">Motion Graphics</Link>
       </div>
+      <ImagePanel images={images} />
       <FaqBanner />
     </>
   );
