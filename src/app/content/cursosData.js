@@ -70,19 +70,46 @@ const cursos = {
       id: 'clDisenoPhotoShop',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'PhotoShop',
-      details: [],
+      details: [
+        {
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoIllustrador',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Illustrador',
-      details: [],
+      details: [
+        {
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoPremier',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Premier',
-      details: [],
+      details: [
+        {
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoAfterEffects',
@@ -105,10 +132,19 @@ const cursos = {
   ],
   cursosLibresComputo: [
     {
-      id: 'clDisenoPhotoShop',
+      id: 'clComputo',
       imgSrc: '/images/animacion-3d.jpg',
-      title: 'PhotoShop',
-      details: [],
+      title: 'Cursos de cómputo',
+      details: [
+        {
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoIllustrador',
