@@ -6,10 +6,14 @@ const SectionHeading = ({ title }) => {
       backgroundImage="/images/libertad-trazo.png"
       backgroundRepeat="no-repeat"
       backgroundPosition="center"
+      backgroundSize="contain"
       px="0"
-      py="90px"
+      py="60px"
+      mb="4"
     >
-      <Heading textAlign="center">{title}</Heading>
+      <Heading textAlign="center" fontSize="x-large">
+        {title}
+      </Heading>
     </Box>
   );
 };

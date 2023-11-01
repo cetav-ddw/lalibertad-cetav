@@ -1,4 +1,4 @@
-import { Box, Link, Image } from '@chakra-ui/react';
+import { Box, Link } from '@chakra-ui/react';
 import { Link as NextLink } from 'next/link';
 
 const Navigation = () => {
@@ -8,71 +8,66 @@ const Navigation = () => {
       display="flex"
       alignItems="center"
       p={4}
-      bg="blue.500"
       justifyContent="space-between"
     >
       <Box display="flex" flex="1" justifyContent="center">
-        <Image src="/logo.png" alt="" h={8} w={8} mr={4} />
-
         <Link
           as={NextLink}
           href="/"
-          color="white"
-          _hover={{ color: 'white' }}
-          mr={4}
+          _hover={{ textDecoration: 'underline' }}
+          px={4}
+          py="2"
+          mx="1"
         >
           Inicio
         </Link>
         <Link
           as={NextLink}
           href="/cursos-libres"
-          color="white"
-          _hover={{ color: 'white' }}
-          mr={4}
+          _hover={{ textDecoration: 'underline' }}
+          px={4}
+          py="2"
+          mx="1"
         >
           Cursos Libres
         </Link>
         <Link
           as={NextLink}
           href="/tecnicos"
-          color="white"
-          _hover={{ color: 'white' }}
-          mr={4}
+          _hover={{ textDecoration: 'underline' }}
+          px={4}
+          py="2"
+          mx="1"
         >
           Cursos Técnicos
         </Link>
         <Link
           as={NextLink}
-          href="/about-cetav"
-          color="white"
-          _hover={{ color: 'white' }}
-          mr={4}
+          href="/acerca"
+          _hover={{ textDecoration: 'underline' }}
+          px={4}
+          py="2"
+          mx="1"
         >
           Sobre Nosotros
         </Link>
         <Link
           as={NextLink}
           href="/egresados"
-          color="white"
-          _hover={{ color: 'white' }}
-          mr={4}
+          _hover={{ textDecoration: 'underline' }}
+          px={4}
+          py="2"
+          mx="1"
         >
           Egresados
         </Link>
         <Link
           as={NextLink}
-          href="/preguntas-frecuentes"
-          color="white"
-          _hover={{ color: 'white' }}
-          mr={4}
-        >
-          FAQ
-        </Link>
-        <Link
-          as={NextLink}
           href="/contacto"
-          color="white"
-          _hover={{ color: 'white' }}
+          _hover={{ textDecoration: 'underline' }}
+          px={4}
+          py="2"
+          mx="1"
         >
           Contacto
         </Link>

@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import { Heading } from '@chakra-ui/react';
+import FaqBanner from '../components/FaqsBanner';
 
 export default function Tecnicos() {
   return (
     <>
-      <Heading as="h1">TECNICOS PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Técnicos
+      </Heading>
       <div>
         <Link href="/tecnicos/dis-y-des-web">Diseño y desarrollo web</Link>
       </div>
@@ -35,6 +38,7 @@ export default function Tecnicos() {
       <div>
         <Link href="/tecnicos/motion-graphics">Motion Graphics</Link>
       </div>
+      <FaqBanner />
     </>
   );
 }

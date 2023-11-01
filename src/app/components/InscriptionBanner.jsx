@@ -15,26 +15,28 @@ export default function InscriptionBanner() {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      h="100vh"
+      mb="16"
     >
-      <Box display="flex" maxW="1000px">
+      <Box display="flex">
         <Flex flex="1" p="46px 40px" bg="#546cd4" color="#E1E7F8">
           <Box>
-            <Heading fontSize="34px" mb="10px">
+            <Heading fontSize="2xl" mb="10px">
               ¿Deseas iniciar tu carrera técnica con nosotros?
             </Heading>
-            <Text fontSize="22px" mb="20px">
+            <Text fontSize="large" mb="20px">
               ¡Comienza tu proceso de admisión hoy mismo!
             </Text>
-            <Link
-              display="inline-block"
-              textDecoration="underline"
-              _hover={{
-                textDecoration: 'none',
-              }}
-            >
-              ¡Inscribite ahora!
-            </Link>
+            <Text fontSize="large">
+              <Link
+                display="inline-block"
+                textDecoration="underline"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                ¡Inscribite ahora!
+              </Link>
+            </Text>
           </Box>
         </Flex>
         <Flex flex="1" justifyContent="center" alignItems="center">
