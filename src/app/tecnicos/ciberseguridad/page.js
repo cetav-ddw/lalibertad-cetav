@@ -13,7 +13,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function CiberseguridadPage() {
   return (
     <>
-      <Heading as="h1">CIBERSEGURIDAD PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Ciberseguridad
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />

@@ -43,7 +43,7 @@ const Navigation = () => {
         </Link>
         <Link
           as={NextLink}
-          href="/about-cetav"
+          href="/acerca"
           _hover={{ textDecoration: 'underline' }}
           px={4}
           py="2"

@@ -13,7 +13,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function AnalisisDatosPage() {
   return (
     <>
-      <Heading as="h1">ANALISIS Y VISUALIZACION DE DATOS PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Análisis y Visualización de Datos
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />

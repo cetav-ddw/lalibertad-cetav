@@ -13,7 +13,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function Animacion3D() {
   return (
     <>
-      <Heading as="h1">ANIMACION 3D PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Animación 3D
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />

@@ -13,7 +13,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function MercadeoPage() {
   return (
     <>
-      <Heading as="h1">MERCADEO DIGITAL Y DISEÑO PAGE</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Mercadeo digital y diseño
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
