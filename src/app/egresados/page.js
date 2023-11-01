@@ -8,46 +8,34 @@ export default function Egresados() {
 
       <Wrap my='110' spacing="10" justify='center'>
         <YearbookCard
-          imageUrl="https://res.cloudinary.com/adriandeveloper/image/upload/v1698815399/CETAV-PAGE/wskwstnvr9cagrfvafdo.png"
-          imageAlt="1er Generación imagen"
+          generationImage="generation_2013.png"
           title="1er Generación"
           reelLink="#"
-          Yearbook="#"
+          cardLink="#"
         />
         <YearbookCard
-          imageUrl="https://res.cloudinary.com/adriandeveloper/image/upload/v1698815399/CETAV-PAGE/wskwstnvr9cagrfvafdo.png"
-          imageAlt="2da Generación imagen"
+          generationImage="generation_2015.png"
           title="2da Generación"
           reelLink="#"
-          Yearbook="#"
+          cardLink="#"
         />
         <YearbookCard
-          imageUrl="https://res.cloudinary.com/adriandeveloper/image/upload/v1698815399/CETAV-PAGE/wskwstnvr9cagrfvafdo.png"
-          imageAlt="3er Generación imagen"
+          generationImage="generation_2017.jpg"
           title="3er Generación"
           reelLink="#"
-          Yearbook="#"
+          cardLink="#"
         /> 
         <YearbookCard
-          imageUrl="https://res.cloudinary.com/adriandeveloper/image/upload/v1698815399/CETAV-PAGE/wskwstnvr9cagrfvafdo.png"
-          imageAlt="4ta Generación imagen"
+          generationImage="generation_2019.jpg"
           title="4ta Generación"
           reelLink="#"
-          Yearbook="#"
+          cardLink="#"
         />
         <YearbookCard
-          imageUrl="https://res.cloudinary.com/adriandeveloper/image/upload/v1698815399/CETAV-PAGE/wskwstnvr9cagrfvafdo.png"
-          imageAlt="5ta Generación imagen"
+          generationImage="generation_2021.jpg"
           title="5ta Generación"
           reelLink="#"
-          Yearbook="#"
-        />
-        <YearbookCard
-          imageUrl="https://res.cloudinary.com/adriandeveloper/image/upload/v1698815399/CETAV-PAGE/wskwstnvr9cagrfvafdo.png"
-          imageAlt="6ta Generación imagen"
-          title="6ta Generación"
-          reelLink="#"
-          Yearbook="#"
+          cardLink="#"
         />
       </Wrap>
     </>
