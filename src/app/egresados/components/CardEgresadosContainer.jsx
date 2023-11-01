@@ -1,10 +1,12 @@
+'use client';
+
 import React, { useState } from 'react';
-import Card from './Card'; 
+import CardEgresados from './CardEgresados'; 
 import ReactPaginate from 'react-paginate';
 
 const ITEMS_PER_PAGE = 25; 
 
-const CardContainer = ({ uniqueRecords }) => {
+const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const pageCount = Math.ceil(uniqueRecords.length / ITEMS_PER_PAGE);
   const offset = currentPage * ITEMS_PER_PAGE;
@@ -14,13 +16,13 @@ const CardContainer = ({ uniqueRecords }) => {
   const handlePageClick = (selectedPage) => {
     setCurrentPage(selectedPage.selected);
   };
-
+  console.log(uniqueRecords,currentData);
   return (
+    <>
     <div>
-      {currentData.map((record) => (
-        <Card key={record.id} data={record} />
+      {currentData.map((record => 
+        <CardEgresados key={record.id} user={record} />
       ))}
-      
       <ReactPaginate
         previousLabel={'Anterior'}
         nextLabel={'Siguiente'}
@@ -34,7 +36,8 @@ const CardContainer = ({ uniqueRecords }) => {
         activeClassName={'active'}
       />
     </div>
+    </>
   );
 };
 
-export default CardContainer;
+export default CardEgresadosContainer;
