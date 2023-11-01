@@ -10,7 +10,7 @@ import { Link as NextLink } from 'next/link';
 
 const Footer = () => {
   return (
-    <Box as="footer">
+    <Box as="footer" py="7">
       <Box
         mx="auto"
         maxW="1180px"
@@ -19,10 +19,10 @@ const Footer = () => {
         gap={4}
       >
         <Box>
-          <Heading as="h3" size="lg">
+          <Heading as="h3" fontSize="lg" mb="2">
             Conozca más
           </Heading>
-          <UnorderedList styleType="none">
+          <UnorderedList styleType="none" m="0">
             <ListItem>
               <Link as={NextLink} fontSize="sm" href="/about-cetav">
                 Sobre el CETAV
@@ -41,10 +41,10 @@ const Footer = () => {
           </UnorderedList>
         </Box>
         <Box>
-          <Heading as="h3" size="lg">
+          <Heading as="h3" fontSize="lg" mb="2">
             Carreras
           </Heading>
-          <UnorderedList styleType="none">
+          <UnorderedList styleType="none" m="0">
             <ListItem>
               <Link as={NextLink} fontSize="sm" href="/tecnicos/dis-y-des-web">
                 Diseño y desarrollo web
@@ -104,19 +104,27 @@ const Footer = () => {
           </UnorderedList>
         </Box>
         <Box>
-          <Heading as="h3" size="lg">
+          <Heading as="h3" fontSize="lg" mb="2">
             ¿Cómo llegar?
           </Heading>
-          <Text fontSize="sm">
+          <Text fontSize="sm" mb="2">
             Parque La Libertad, 300 metros este y 100 metros norte del Palí de
             Fátima, Desamparados.
           </Text>
-          <Link as={NextLink} fontSize="sm" href="/contacto">
-            Ve cómo llegar
-          </Link>
+          <Text fontSize="sm">
+            <Link
+              as={NextLink}
+              fontSize="sm"
+              textDecoration="underline"
+              _hover={{ textDecoration: 'none' }}
+              href="/contacto"
+            >
+              Ve cómo llegar
+            </Link>
+          </Text>
         </Box>
         <Box>
-          <Heading as="h3" size="lg">
+          <Heading as="h3" fontSize="lg" mb="2">
             Contacto
           </Heading>
           <Text fontSize="sm">Teléfono: 2276-9400 ext.2031</Text>

@@ -12,7 +12,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function PostProducionPage() {
   return (
     <>
-      <Heading as="h1">POSTPRODUCCION AUDIOVISUAL</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Postproducción audiovisual
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />

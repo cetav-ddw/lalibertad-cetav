@@ -10,13 +10,13 @@ export default function FaqsBanner() {
       border="4px solid #313677"
       borderRadius="5px"
       mx="auto"
-      mb="40px"
+      mb="16"
     >
       {/* TODO agregar color al theme */}
-      <Heading as="h3" color="#313677" fontSize="24px" mb="2">
+      <Heading as="h3" color="#313677" fontSize="x-large" mb="2">
         ¿Tiene preguntas? ¿Querés saber más?
       </Heading>
-      <Text fontSize="md">
+      <Text fontSize="large">
         En nuestra{' '}
         <Link
           as={NextLink}

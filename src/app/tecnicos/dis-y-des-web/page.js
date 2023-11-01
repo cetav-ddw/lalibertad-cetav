@@ -12,7 +12,9 @@ import preInscription from '@/app/content/pre-inscription';
 export default function WebPage() {
   return (
     <>
-      <Heading as="h1">DISEÑO Y DESARROLLO WEB</Heading>
+      <Heading as="h1" fontSize="xx-large">
+        Diseño y desarrollo web
+      </Heading>
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />

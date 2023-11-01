@@ -6,7 +6,7 @@ export default function TestimonyList({ testimonies }) {
   return (
     <>
       {testimonies?.length > 0 ? (
-        <Box>
+        <Box mb="16">
           <SectionHeading title="Testimonios" />
           <Box display="flex" flexWrap="wrap" justifyContent="space-around">
             {testimonies.map(({ id, name, position, quote, avatarSrc }) => {
