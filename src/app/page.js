@@ -1,16 +1,17 @@
-import { Heading } from '@chakra-ui/react';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import LaboralFormation from '@/app/components/LaboralFormation';
-import ImagePanel from './components/ImagePanel';
 import images from './content/imageData';
+import CourseList from '@/app/components/CourseList';
+import cursos from './content/cursosData';
+import OurAllies from './components/OurAllies';
 
 export default function Home() {
   return (
     <>
-      <Heading as="h1">HOME page</Heading>
+      <CourseList cursos={cursos.tecnicos} />
       <InscriptionBanner />
       <LaboralFormation />
-      <ImagePanel images={images} />
+      <OurAllies images={images} />
     </>
   );
 }
