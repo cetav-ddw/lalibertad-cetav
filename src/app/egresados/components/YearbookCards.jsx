@@ -1,4 +1,3 @@
-'use client'
 import { Box, Image, Stack, WrapItem, Heading, Link } from '@chakra-ui/react';
 
 function YearbookCard({ generationImage, title, yearbookLink, reelLink }) {
