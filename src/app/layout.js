@@ -1,3 +1,4 @@
+import { SkipNavLink } from '@chakra-ui/react';
 import { Providers } from './providers';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         <Providers>
+          <SkipNavLink>Saltar al contenido</SkipNavLink>
           <Header />
           <MainContent>{children}</MainContent>
           <Footer />
