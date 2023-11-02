@@ -122,7 +122,6 @@ const Footer = () => {
         </Heading>
         <Text fontSize="sm">Teléfono: 2276-9400 ext.2031</Text>
         <Text fontSize="sm">E-mail: admision.cetav@parquelalibertad.org</Text>
-
       </Box>
     </Box>
   );

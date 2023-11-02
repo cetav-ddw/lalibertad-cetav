@@ -3,10 +3,11 @@ import InscriptionBanner from '@/app/components/InscriptionBanner';
 import LaboralFormation from '@/app/components/LaboralFormation';
 
 export default function Home() {
-  return <>
-  <Heading as="h1">HOME page</Heading>
-  <InscriptionBanner/>
-  <LaboralFormation/>
-  </>
+  return (
+    <>
+      <Heading as="h1">HOME page</Heading>
+      <InscriptionBanner />
+      <LaboralFormation />
+    </>
+  );
 }
-
