@@ -1,15 +1,14 @@
-import { 
-  Heading, 
-  ListItem, 
+import {
+  Heading,
+  ListItem,
   OrderedList,
   Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Box, 
-  UnorderedList,
-  Link
+  Box,
+  UnorderedList
 } from '@chakra-ui/react';
 import SectionHeading from '../components/SectionHeading';
 
@@ -29,10 +28,9 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-
-          Cada dos años el CETAV realiza un proceso de reclutamiento, 
-          el próximo dará inicio a partir de setiembre del 2023.
-
+            Nosotros trabajamos por generación. Significa que abrimos cuando una generación va a finalizar volvemos a abrir para la siguiente generación.
+            El periodo que ahora está abierto se cierra en enero del 2024 y el siguiente periodo debería ser por generación hasta septiembre del 2025,
+            sin embargo como son programas de formación para el empleo a veces se habilitan espacios de técnicos antes, les invitamos que nos sigan en redes sociales.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
@@ -49,26 +47,12 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-
-          El costo mensual de la carrera técnica es de ₡100,000 en caso de obtener la beca Empleate, gestionada en conjunto con el CETAV, 
-          el 50% del monto recibido es para pagar colegiatura y el 50% restante para transporte y alimentación.
-
-          </AccordionPanel>
-        </AccordionItem>
-        <AccordionItem m={10} mb={20} borderStyle={"none"}>
-          <h3>
-            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
-              <Box as="span" flex='1' textAlign='left'>
-              ¿Cuánto pagan los estudiantes que reciben beca de EMPLEATE?
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h3>
-          <AccordionPanel pb={4}>
-
-          El 50% de la beca asignada es para pagar sus estudios en el CETAV y
-          el 50% restante para cubrir alimentación y transporte.
-
+            Los técnicos tienen un costo de ₡100,000 al mes, sin embargo, todas las personas que aplican al proceso de admisión se les hace un estudio socioeconómico para identificar:
+            <OrderedList>
+              <ListItem>Si la persona está en condición de pagar.</ListItem>
+              <ListItem>Si la persona necesita una exoneración. </ListItem>
+              <ListItem>Si la persona necesita un subsidio. Esto quiere decir un apoyo económico para venir a estudiar. </ListItem>
+            </OrderedList>
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
@@ -79,23 +63,21 @@ export default function Faq() {
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
-              ¿Cuál es el proceso para entrar al CETAV?
+                ¿Cuál es el proceso para entrar al CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
+            Lo primero es ingresar la información básica en nuestra base de datos.
+            Esto lo puede hacer a través del correo solicitando el formulario a través del correo cetav@lalibertadcr.org
+            Además los requisitos son los siguientes:
             <OrderedList>
-                <ListItem>Comprobar si cumplís con todos los requisitos y llenar el formulario: 
-                  <Link color="#313677" fontWeight={"bold"} title="link a los requisitos" href="#"> click aquí</Link></ListItem>
-                <ListItem>Si necesitás la beca de EMPLEATE debés llenar el siguiente formulario para iniciar el proceso: 
-                  <Link color="#313677" fontWeight={"bold"} title="link al formulario" href="#"> click aquí</Link></ListItem>
-                  <UnorderedList>
-                    <ListItem>Al llenar el formulario, en el punto IV. REFERENCIAS : ¿Ha sido referido por una institución o 
-                      actividad específica? debe elegir SÍ</ListItem>
-                    <ListItem>En “Indique el nombre de la institución”, especificar: CETAV Parque La Libertad.</ListItem>
-                  </UnorderedList>
-                <ListItem>Nosotros nos estaremos comunicando con vos para convocarte a las pruebas de admisión.</ListItem>
+              <UnorderedList>
+                <ListItem>Deben tener un mínimo de edad de 17 años y un máximo de 35 años.</ListItem>
+                <ListItem>Deben haber aprobado bachillerato secundaria, si en este momento lo están cursando
+                  y el proceso está abierto si se puede iniciar con el proceso, pero, si desaprueba alguno de los exámenes de bachillerato no puede continuar.</ListItem>
+              </UnorderedList>
             </OrderedList>
           </AccordionPanel>
         </AccordionItem>
@@ -103,48 +85,48 @@ export default function Faq() {
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
-              ¿Cuáles son los requisitos para entrar al CETAV?
+                ¿Cuáles son los requisitos para entrar al CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-          <UnorderedList>
-            <ListItem>Tener entre 17 y 27 años.</ListItem>
-            <ListItem>Bachillerato aprobado.</ListItem>
-            <ListItem>Conocimiento comprobable en Adobe Photoshop y Adobe Ilustrador básico o programas de edición de imagen similares. 
-              Si no los tienen, pueden llamar al Centro de Cómputo del Parque La Libertad al 2276-9400 ext 2092, 
-              donde estos cursos se imparten de manera regular.</ListItem>
-            <ListItem>En caso de extranjeros, tener su estatus migratorio al día.</ListItem>
-            <ListItem>Interés en aprender inglés.</ListItem>
-            <ListItem>Disponibilidad de tiempo completo.</ListItem>
-          </UnorderedList>
+            <UnorderedList>
+              <ListItem>Tener entre 17 y 35 años.</ListItem>
+              <ListItem>Bachillerato aprobado.</ListItem>
+              <ListItem>No es requisito para el técnico de Mercadeo. El conocimiento comprobable en Adobe Photoshop y Adobe Ilustrator básico o programas de edición de imagen similares,
+                pero si son requisitos para el resto de los técnicos. </ListItem>
+              <ListItem>En caso de extranjeros, tener su estatus migratorio al día.</ListItem>
+              <ListItem>Disponibilidad de tiempo completo.</ListItem>
+            </UnorderedList>
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem m={10} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
-              ¿Cuál es la edad límite para poder entrar al CETAV?
+                ¿Cuál es la edad para poder entrar al CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            Entre 17 y 27 años.
+            Mínimo 17 años, máximo 35 años.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem m={10} mb={20} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
-              ¿Puedo escoger qué materias matricular y en qué orden llevarlas?
+                ¿Puedo escoger qué materias matricular y en qué orden llevarlas?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            No, es requisito llevar el bloque completo.
+            No, es un requisito llevar el bloque completo.
+            En el caso del técnico de CiberSeguridad si alguien recientemente ha aprobado alguno de los cursos de CISCO por su cuenta se le puede convalidar
+            e inglés es una materia que en todos los técnicos se pueden convalidar, fuera de ahí las demás no se convalidan.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
@@ -155,31 +137,49 @@ export default function Faq() {
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
-              ¿Cuál es el promedio de inserción laboral de egresados y egresadas del CETAV?
+                ¿Cuál es el promedio de inserción laboral de egresados y egresadas del CETAV?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-
-          El promedio oscila entre 80% y 90% de inserción laboral.
-
+            Nosotros ahora estamos en un 90% de inserción laboral, es un proceso bastante alto, hay todo un trabajo
+            que se hace con las industrias para validar el perfil.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem m={10} mb={20} borderStyle={"none"}>
           <h3>
             <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
               <Box as="span" flex='1' textAlign='left'>
-              ¿En qué empresas trabajan los egresados de cada carrera?
+                ¿En qué tipo de empresas trabajan las personas egresadas de cada carrera?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
 
-          Dependiendo del área de especialidad. Entre las principales destacan canales de televisión como Repretel y Televisora de Costa Rica, 
-          agencias digitales como Accenture, The Hangar, estudios de diseño y arquitectura, agencias de publicidad, estudios de animación, entre otras.
-
+            Dependiendo de su especialidad.
+            <UnorderedList>
+              <ListItem> En el caso de PostProducción cada vez buscan más hacia el lado de motion graphics, entonces trabajan en agencias digitales, canales de televisión o productoras audiovisuales.</ListItem>
+            </UnorderedList>
+            <UnorderedList>
+              <ListItem>Animación, en estudios de animación propiamente algunos trabajan en empresas de arquitectura, en visualización arquitectónica propiamente, pero la mayoría en estudios de animación.</ListItem>
+            </UnorderedList>
+            <UnorderedList>
+              <ListItem>Mercadeo, trabajan en agencias digitales como Accenture, Hangar, Critical Mass y Wunderman Thompson.</ListItem>
+            </UnorderedList>
+            <UnorderedList>
+              <ListItem>Web, trabajan en muchos tipos de empresas nacionales e internacionales, que buscan el perfil de desarrolladores.Por ejemplo, Accenture, Critical Mass, Avast Magma. Hay muchas empresas que buscan el perfil de nosotros ya que es bastante completo en las habilidades básicas que se necesitan para entrar en estas empresas.</ListItem>
+            </UnorderedList>
+            <UnorderedList>
+              <ListItem>
+            También hay empresas que están creciendo cada vez más en  la toma de decisiones a partir de los datos. Vamos desde Pozuelo hasta empresas internacionales como P&G, que buscan este perfil porque cada vez necesitan más analistas de datos.</ListItem>
+            </UnorderedList>
+            <UnorderedList>
+              <ListItem>
+              En caso de CiberSeguridad, hay muchas empresas en Costa Rica cada vez más en oferta de venta de servicios de ciberseguridad para las empresas, más o menos el promedio es de seis personas que se contratan al mes.
+              </ListItem>
+            </UnorderedList>
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
