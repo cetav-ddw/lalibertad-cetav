@@ -6,7 +6,10 @@ import cursos from './content/cursosData';
 export default function Home() {
   return (
     <>
-      <CourseList cursos={cursos.tecnicos} />
+      <CourseList
+        cursos={cursos.tecnicos}
+        title={'Nuestras Carreras Técnicas'}
+      />
       <InscriptionBanner />
       <LaboralFormation />
     </>
