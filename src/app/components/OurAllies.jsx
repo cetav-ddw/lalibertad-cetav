@@ -3,9 +3,9 @@ import SectionHeading from './SectionHeading';
 
 const OurAllies = ({ images }) => {
   return (
-    <>
+    <Box mb="16">
       <SectionHeading title="Unión con 60+ socios de trabajo" />
-      <Flex wrap="wrap" justifyContent="center" mb="16">
+      <Flex wrap="wrap" justifyContent="center">
         {images.map((imageObj, index) => (
           <Box
             key={index}
@@ -21,7 +21,7 @@ const OurAllies = ({ images }) => {
           </Box>
         ))}
       </Flex>
-    </>
+    </Box>
   );
 };
 
