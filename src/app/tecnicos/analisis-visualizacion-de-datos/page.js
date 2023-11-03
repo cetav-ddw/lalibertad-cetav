@@ -24,8 +24,8 @@ export default function AnalisisDatosPage() {
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
-      <FaqBanner />
       <ExploreOtherCareers currentCourseId={currentCourseId} />
+      <FaqBanner />
     </>
   );
 }

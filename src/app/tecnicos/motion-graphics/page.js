@@ -24,8 +24,8 @@ export default function MotionGraphicPage() {
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
-      <FaqBanner />
       <ExploreOtherCareers currentCourseId={currentCourseId} />
+      <FaqBanner />
     </>
   );
 }
