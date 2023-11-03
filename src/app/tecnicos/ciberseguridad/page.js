@@ -10,9 +10,11 @@ import SoftSkillsBanner from '@/app/components/SoftSkillsBanner';
 import testimonies from '@/app/content/testimonies';
 import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
+import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 
 
 export default function CiberseguridadPage() {
+  const currentCourseId = 'tecCiberseguridad';
   return (
     <>
       <PHeading
@@ -26,6 +28,7 @@ export default function CiberseguridadPage() {
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
+      <ExploreOtherCareers currentCourseId={currentCourseId} />
       <FaqBanner />
     </>
   );
