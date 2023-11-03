@@ -1,5 +1,4 @@
 'use client';
-import { Heading } from '@chakra-ui/react';
 import {
   Accordion,
   AccordionItem,
@@ -9,13 +8,18 @@ import {
   Box,
 } from '@chakra-ui/react';
 import SectionHeading from '../components/SectionHeading';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 
 export default function Faq() {
   return (
     <>
-      <Heading as="h1" fontSize="xx-large">
-        Preguntas frecuentes
-      </Heading>
+       <PHeading
+        title={headingInfo.preguntas.title}
+        titleColor={headingInfo.preguntas.titleColor}
+        text={headingInfo.web.text}
+        imgSrc={headingInfo.web.imgSrc}
+      />
       <SectionHeading title="Sobre el CETAV" />
       <Accordion defaultIndex={[0]} allowMultiple>
         <AccordionItem>

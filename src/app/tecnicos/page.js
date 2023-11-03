@@ -1,13 +1,17 @@
 import Link from 'next/link';
-import { Heading } from '@chakra-ui/react';
 import FaqBanner from '../components/FaqsBanner';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 
 export default function Tecnicos() {
   return (
     <>
-      <Heading as="h1" fontSize="xx-large">
-        Técnicos
-      </Heading>
+          <PHeading
+        title={headingInfo.carrerasT.title}
+        titleColor={headingInfo.carrerasT.titleColor}
+        text={headingInfo.web.text}
+        imgSrc={headingInfo.web.imgSrc}
+      />
       <div>
         <Link href="/tecnicos/dis-y-des-web">Diseño y desarrollo web</Link>
       </div>

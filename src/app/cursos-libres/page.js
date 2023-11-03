@@ -1,9 +1,13 @@
-import { Heading } from '@chakra-ui/react';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 
 export default function CursosLibres() {
   return (
-    <Heading as="h1" fontSize="xx-large">
-      Cursos libres
-    </Heading>
+    <PHeading
+    title={headingInfo.cursosL.title}
+    titleColor={headingInfo.cursosL.titleColor}
+    text={headingInfo.web.text}
+    imgSrc={headingInfo.web.imgSrc}
+  />
   );
 }

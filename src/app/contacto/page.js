@@ -1,5 +1,6 @@
 import ContactDetail from '../components/contactDetail';
-import { Heading, Box, Text } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
+
 
 export default function Contacto() {
   return (
