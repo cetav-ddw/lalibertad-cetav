@@ -5,7 +5,7 @@ export default function Contacto() {
   return (
     <>
       <Box textAlign="center" padding="50">
-        <Heading as="h1">
+        <Heading as="h1" fontSize="xx-large">
           Nuestra Información
           {/* TODO MOVER COLOR AL THEME */}
           <Text color="blue.500" as="span" display="block">

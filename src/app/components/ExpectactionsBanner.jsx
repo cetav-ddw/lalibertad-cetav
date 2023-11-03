@@ -22,7 +22,7 @@ const expectations = [
 // ToDo falta agregar los iconos
 const ExpectactionsBanner = () => {
   return (
-    <Box>
+    <Box mb="16">
       <SectionHeading title="Lo que buscamos en los futuros estudiantes." />
       <Flex flexWrap="wrap" justifyContent="center" maxW="980px" mx="auto">
         {expectations.map(({ title, description }) => {
@@ -38,7 +38,7 @@ const ExpectactionsBanner = () => {
               <Heading as="h3" fontSize="lg" color="#444444" mb="2">
                 {title}
               </Heading>
-              <Text color="#444444" fontSize="sm" textAlign="center">
+              <Text color="#444444" textAlign="center">
                 {description}
               </Text>
             </Flex>

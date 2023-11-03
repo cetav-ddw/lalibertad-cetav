@@ -1,13 +1,15 @@
 import { Heading, Wrap } from '@chakra-ui/react';
 import YearbookCard from './components/YearbookCards';
-
+import FilterMenu from './components/FilterMenu';
 
 export default function Egresados() {
   return (
     <>
-      <Heading as="h1">EGRESADOS PAGE</Heading>
-
-      <Wrap my='110' spacing="10" justify='center'>
+      <Heading as="h1" fontSize="xx-large">
+        Egresados
+      </Heading>
+      <FilterMenu />
+      <Wrap my="110" spacing="10" justify="center">
         <YearbookCard
           generationImage="generation_2013.png"
           title="1er Generación"
@@ -25,7 +27,7 @@ export default function Egresados() {
           title="3er Generación"
           reelLink="https://vimeo.com/247321835"
           yearbookLink="https://issuu.com/parquelalibertad/docs/anurario_2017_tercera_generacion"
-        /> 
+        />
         <YearbookCard
           generationImage="generation_2019.jpg"
           title="4ta Generación"
