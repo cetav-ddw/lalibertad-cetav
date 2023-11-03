@@ -50,7 +50,7 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            Los técnicos tienen un costo de ₡100,000 al mes; Sin embargo, todas las personas que aplican al proceso de admisión se les hace un estudio socioeconómico para identificar:
+            Los técnicos tienen un costo de ₡100,000 al mes; sin embargo, todas las personas que aplican al proceso de admisión se les hace un estudio socioeconómico para identificar:
             <OrderedList>
               <ListItem>Si la persona está en condición de pagar.</ListItem>
               <ListItem>Si la persona necesita una exoneración. </ListItem>
@@ -72,13 +72,12 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            Lo primero es ingresar la información básica en nuestra base de datos.
-            Esto lo puede hacer a través del correo solicitando el formulario a través del correo cetav@lalibertadcr.org
-            Además los requisitos son los siguientes:
+            El primer paso es solicitar el formulario de registro al correo cetav@lalibertadcr.org, completarlo y enviarlo, con esto quedará registrado en nuestra base de datos. 
+            Ademas de lo anterior, los requisitos generales son:
             <OrderedList>
               <UnorderedList>
-                <ListItem>Deben tener un mínimo de edad de 17 años y un máximo de 35 años.</ListItem>
-                <ListItem>Deben haber aprobado la educación secundaria (bachillerato). Si en este momento están cursándola y el proceso de admisión está abierto, pueden iniciar el proceso. Sin embargo, si desaprueban alguno de los exámenes de bachillerato, no podrán continuar.</ListItem>
+                <ListItem>Tener un mínimo de edad de 17 años y un máximo de 35 años.</ListItem>
+                <ListItem>Haber aprobado la educación secundaria (bachillerato). Si en este momento están cursándola y el proceso de admisión está abierto, pueden iniciar el proceso. Sin embargo, si desaprueban alguno de los exámenes de bachillerato, no podrán continuar.</ListItem>
               </UnorderedList>
             </OrderedList>
           </AccordionPanel>
@@ -96,11 +95,24 @@ export default function Faq() {
             <UnorderedList>
               <ListItem>Tener entre 17 y 35 años.</ListItem>
               <ListItem>Bachillerato aprobado.</ListItem>
-              <ListItem>No es un requisito para el técnico de Mercadeo, pero es necesario tener conocimiento comprobable en Adobe Photoshop y Adobe Illustrator,
-                o programas de edición de imagen similares. Estos requisitos sí son obligatorios para el resto de los técnicos. </ListItem>
+              <ListItem>Conocimiento comprobable en Adobe Photoshop y Adobe Illustrator, o programas de edición de imagen similares.; lo anterior no es requisito para el 
+              <Link color="#313677" fontWeight={"bold"} title="link a tecnico de mercadeo" href="http://localhost:3000/tecnicos/mercadeo-digital-diseno"> técnico de Mercadeo digital y diseño. </Link></ListItem>
               <ListItem>En caso de extranjeros, tener su estatus migratorio al día.</ListItem>
               <ListItem>Disponibilidad de tiempo completo.</ListItem>
             </UnorderedList>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem m={10} borderStyle={"none"}>
+          <h3>
+            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
+              <Box as="span" flex='1' textAlign='left'>
+              ¿Se pueden convalidar cursos?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h3>
+          <AccordionPanel pb={4}>
+          En el caso del técnico de CiberSeguridad, si alguien ha aprobado recientemente alguno de los cursos de CISCO por su cuenta, se le pueden convalidar. Además, el inglés es una materia que se puede convalidar en todos los técnicos. Sin embargo, las demás materias no son convalidables.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem m={10} mb={20} borderStyle={"none"}>
@@ -114,9 +126,10 @@ export default function Faq() {
           </h3>
           <AccordionPanel pb={4}>
             No, es un requisito completar todo el bloque.
-            En el caso del técnico de CiberSeguridad, si alguien ha aprobado recientemente alguno de los cursos de CISCO por su cuenta, se le pueden convalidar. Además, el inglés es una materia que se puede convalidar en todos los técnicos. Sin embargo, las demás materias no son convalidables.
+            
           </AccordionPanel>
         </AccordionItem>
+        
       </Accordion>
 
       <SectionHeading title="Inserción Laboral" />
@@ -131,7 +144,7 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            Actualmente, tenemos una tasa de inserción laboral del 90%, lo cual representa un nivel bastante alto de éxito.
+            Actualmente, tenemos una tasa de inserción laboral del 90%.
             Realizamos un trabajo conjunto con las industrias para validar el perfil de nuestros estudiantes.
           </AccordionPanel>
         </AccordionItem>
