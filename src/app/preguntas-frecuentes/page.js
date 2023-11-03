@@ -8,7 +8,8 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-  UnorderedList
+  UnorderedList,
+  Link
 } from '@chakra-ui/react';
 import SectionHeading from '../components/SectionHeading';
 
@@ -28,9 +29,11 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            Nosotros trabajamos por generación. Significa que abrimos cuando una generación va a finalizar volvemos a abrir para la siguiente generación.
-            El periodo que ahora está abierto se cierra en enero del 2024 y el siguiente periodo debería ser por generación hasta septiembre del 2025,
-            sin embargo como son programas de formación para el empleo a veces se habilitan espacios de técnicos antes, les invitamos que nos sigan en redes sociales.
+            Nuestra política de admisión se basa en generaciones, lo que significa que comenzamos a aceptar solicitudes cuando una generación está a punto de concluir y luego reabrimos el proceso para la siguiente generación.
+            El período de admisión vigente, que actualmente está en curso, finalizará en enero de 2024. El próximo período de admisión debería ser de generación en generación y se extenderá hasta septiembre de 2025.
+            No obstante, debido a las particularidades de nuestros programas de formación para el empleo, ocasionalmente abrimos oportunidades para técnicos antes de esa fecha. Les recomendamos seguirnos en las redes sociales para mantenerse al tanto de las actualizaciones.
+            <Link color="#313677" fontWeight={"bold"} title="link de facebook" href="https://www.facebook.com/cetavcr?mibextid=9R9pXO"> Facebook e </Link>
+            <Link color="#313677" fontWeight={"bold"} title="link de instagram" href="https://www.instagram.com/cetav_pll?igshid=OGQ5ZDc2ODk2ZA%3D%3D">Instagram</Link>
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
@@ -47,7 +50,7 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            Los técnicos tienen un costo de ₡100,000 al mes, sin embargo, todas las personas que aplican al proceso de admisión se les hace un estudio socioeconómico para identificar:
+            Los técnicos tienen un costo de ₡100,000 al mes; Sin embargo, todas las personas que aplican al proceso de admisión se les hace un estudio socioeconómico para identificar:
             <OrderedList>
               <ListItem>Si la persona está en condición de pagar.</ListItem>
               <ListItem>Si la persona necesita una exoneración. </ListItem>
@@ -75,8 +78,7 @@ export default function Faq() {
             <OrderedList>
               <UnorderedList>
                 <ListItem>Deben tener un mínimo de edad de 17 años y un máximo de 35 años.</ListItem>
-                <ListItem>Deben haber aprobado bachillerato secundaria, si en este momento lo están cursando
-                  y el proceso está abierto si se puede iniciar con el proceso, pero, si desaprueba alguno de los exámenes de bachillerato no puede continuar.</ListItem>
+                <ListItem>Deben haber aprobado la educación secundaria (bachillerato). Si en este momento están cursándola y el proceso de admisión está abierto, pueden iniciar el proceso. Sin embargo, si desaprueban alguno de los exámenes de bachillerato, no podrán continuar.</ListItem>
               </UnorderedList>
             </OrderedList>
           </AccordionPanel>
@@ -94,24 +96,11 @@ export default function Faq() {
             <UnorderedList>
               <ListItem>Tener entre 17 y 35 años.</ListItem>
               <ListItem>Bachillerato aprobado.</ListItem>
-              <ListItem>No es requisito para el técnico de Mercadeo. El conocimiento comprobable en Adobe Photoshop y Adobe Ilustrator básico o programas de edición de imagen similares,
-                pero si son requisitos para el resto de los técnicos. </ListItem>
+              <ListItem>No es un requisito para el técnico de Mercadeo, pero es necesario tener conocimiento comprobable en Adobe Photoshop y Adobe Illustrator,
+                o programas de edición de imagen similares. Estos requisitos sí son obligatorios para el resto de los técnicos. </ListItem>
               <ListItem>En caso de extranjeros, tener su estatus migratorio al día.</ListItem>
               <ListItem>Disponibilidad de tiempo completo.</ListItem>
             </UnorderedList>
-          </AccordionPanel>
-        </AccordionItem>
-        <AccordionItem m={10} borderStyle={"none"}>
-          <h3>
-            <AccordionButton bg="#E1E7F8" p={4} color="#313677" rounded="lg" fontWeight={"bold"}>
-              <Box as="span" flex='1' textAlign='left'>
-                ¿Cuál es la edad para poder entrar al CETAV?
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h3>
-          <AccordionPanel pb={4}>
-            Mínimo 17 años, máximo 35 años.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem m={10} mb={20} borderStyle={"none"}>
@@ -124,9 +113,8 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            No, es un requisito llevar el bloque completo.
-            En el caso del técnico de CiberSeguridad si alguien recientemente ha aprobado alguno de los cursos de CISCO por su cuenta se le puede convalidar
-            e inglés es una materia que en todos los técnicos se pueden convalidar, fuera de ahí las demás no se convalidan.
+            No, es un requisito completar todo el bloque.
+            En el caso del técnico de CiberSeguridad, si alguien ha aprobado recientemente alguno de los cursos de CISCO por su cuenta, se le pueden convalidar. Además, el inglés es una materia que se puede convalidar en todos los técnicos. Sin embargo, las demás materias no son convalidables.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
@@ -143,8 +131,8 @@ export default function Faq() {
             </AccordionButton>
           </h3>
           <AccordionPanel pb={4}>
-            Nosotros ahora estamos en un 90% de inserción laboral, es un proceso bastante alto, hay todo un trabajo
-            que se hace con las industrias para validar el perfil.
+            Actualmente, tenemos una tasa de inserción laboral del 90%, lo cual representa un nivel bastante alto de éxito.
+            Realizamos un trabajo conjunto con las industrias para validar el perfil de nuestros estudiantes.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem m={10} mb={20} borderStyle={"none"}>
@@ -160,25 +148,23 @@ export default function Faq() {
 
             Dependiendo de su especialidad.
             <UnorderedList>
-              <ListItem> En el caso de PostProducción cada vez buscan más hacia el lado de motion graphics, entonces trabajan en agencias digitales, canales de televisión o productoras audiovisuales.</ListItem>
+              <ListItem> En el caso de Post Producción, cada vez se busca más el enfoque en motion graphics, lo que lleva a nuestros graduados a trabajar en agencias digitales, canales de televisión o productoras audiovisuales.</ListItem>
             </UnorderedList>
             <UnorderedList>
-              <ListItem>Animación, en estudios de animación propiamente algunos trabajan en empresas de arquitectura, en visualización arquitectónica propiamente, pero la mayoría en estudios de animación.</ListItem>
+              <ListItem>En el campo de la Animación, algunos de nuestros graduados trabajan en estudios de animación, mientras que otros se emplean en empresas de arquitectura, específicamente en la visualización arquitectónica.</ListItem>
             </UnorderedList>
             <UnorderedList>
-              <ListItem>Mercadeo, trabajan en agencias digitales como Accenture, Hangar, Critical Mass y Wunderman Thompson.</ListItem>
+              <ListItem>Los graduados en Mercadeo encuentran empleo en agencias digitales como Accenture, Hangar, Critical Mass y Wunderman Thompson.</ListItem>
             </UnorderedList>
             <UnorderedList>
-              <ListItem>Web, trabajan en muchos tipos de empresas nacionales e internacionales, que buscan el perfil de desarrolladores.Por ejemplo, Accenture, Critical Mass, Avast Magma. Hay muchas empresas que buscan el perfil de nosotros ya que es bastante completo en las habilidades básicas que se necesitan para entrar en estas empresas.</ListItem>
+              <ListItem>En el ámbito de Desarrollo Web, nuestros graduados son empleados por diversas empresas, tanto nacionales como internacionales, que buscan profesionales con habilidades sólidas de desarrollo. Ejemplos de estas empresas incluyen Accenture, Critical Mass, Avast y Magma. Estas empresas valoran el perfil de nuestros graduados debido a su amplio conjunto de habilidades.</ListItem>
+            </UnorderedList>
+            <UnorderedList>
+              <ListItem>Existe una creciente demanda en la toma de decisiones basada en datos, lo que ha llevado a empresas que van desde Pozuelo hasta corporaciones internacionales como P&G a buscar perfiles de analistas de datos.</ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-            También hay empresas que están creciendo cada vez más en  la toma de decisiones a partir de los datos. Vamos desde Pozuelo hasta empresas internacionales como P&G, que buscan este perfil porque cada vez necesitan más analistas de datos.</ListItem>
-            </UnorderedList>
-            <UnorderedList>
-              <ListItem>
-              En caso de CiberSeguridad, hay muchas empresas en Costa Rica cada vez más en oferta de venta de servicios de ciberseguridad para las empresas, más o menos el promedio es de seis personas que se contratan al mes.
-              </ListItem>
+                En el campo de la Ciberseguridad, la demanda está en aumento en Costa Rica, con un promedio de contratación de alrededor de seis personas al mes para empresas que ofrecen servicios de ciberseguridad.</ListItem>
             </UnorderedList>
           </AccordionPanel>
         </AccordionItem>
