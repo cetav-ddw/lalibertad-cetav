@@ -1,6 +1,6 @@
 // TODO HAY QUE ACTUALIZAR ESTOS DATOS
 
-const professorsData = [
+const teamData = [
   {
     name: 'Gustavo Sanchez',
     photo: '/images/prof-GustavoSanchez.png',
@@ -23,4 +23,4 @@ const professorsData = [
   },
 ];
 
-export default professorsData;
+export default teamData;
