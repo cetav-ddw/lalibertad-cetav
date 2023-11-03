@@ -8,7 +8,10 @@ import OurAllies from '@/app/components/OurAllies';
 export default function Home() {
   return (
     <>
-      <CourseList cursos={cursos.tecnicos} />
+      <CourseList
+        cursos={cursos.tecnicos}
+        title={'Nuestras Carreras Técnicas'}
+      />
       <InscriptionBanner />
       <LaboralFormation />
       <OurAllies images={images} />
