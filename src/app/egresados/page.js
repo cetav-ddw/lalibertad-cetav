@@ -1,13 +1,18 @@
-import { Heading, Wrap } from '@chakra-ui/react';
+import { Wrap } from '@chakra-ui/react';
 import YearbookCard from './components/YearbookCards';
 import FilterMenu from './components/FilterMenu';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 
 export default function Egresados() {
   return (
     <>
-      <Heading as="h1" fontSize="xx-large">
-        Egresados
-      </Heading>
+    <PHeading
+    title={headingInfo.egresados.title}
+    titleColor={headingInfo.egresados.titleColor}
+    text={headingInfo.web.text}
+    imgSrc={headingInfo.web.imgSrc}
+    />
       <FilterMenu />
       <Wrap my="110" spacing="10" justify="center">
         <YearbookCard

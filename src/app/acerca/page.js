@@ -1,9 +1,12 @@
-import { Heading } from '@chakra-ui/react';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 
 export default function AboutCetav() {
   return (
-    <Heading as="h1" fontSize="xx-large">
-      Sobre el CETAV
-    </Heading>
+    <PHeading
+    title={headingInfo.acercaN.title}
+    titleColor={headingInfo.acercaN.titleColor}
+    imgSrc={headingInfo.web.imgSrc}
+  />
   );
 }
