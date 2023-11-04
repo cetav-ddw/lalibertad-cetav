@@ -10,6 +10,7 @@ export default function AboutCetav() {
       Sobre el CETAV
     </Heading>
     <OurHistory/>
+    <OurTeamCard />
     <AdvisoryBoard/>
     </>
   );
