@@ -4,6 +4,7 @@ import images from './content/imageData';
 import CourseList from '@/app/components/CourseList';
 import cursos from './content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
+import ExploreOtherCareers from './components/ExploreOtherCareers';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <InscriptionBanner />
       <LaboralFormation />
       <OurAllies images={images} />
+      <ExploreOtherCareers items={2} ishomePage={true} />
     </>
   );
 }

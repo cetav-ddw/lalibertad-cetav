@@ -11,22 +11,29 @@ function shuffleArray(array) {
   return shuffled;
 }
 
-const ExploreOtherCareers = ({ currentCourseId }) => {
-  const otherCourses = cursos.tecnicos.filter(
+const ExploreOtherCareers = ({ currentCourseId, ishomePage, items }) => {
+  const quantity = items === undefined ? 3 : items;
+  const heading = ishomePage
+    ? 'Hecha un vistazo a nuestros cursos'
+    : 'Explora nuestras otras carreras';
+  let otherCourses = cursos.tecnicos.filter(
     (course) => course.id !== currentCourseId,
   );
 
+  if (ishomePage) {
+    const cursosLibresMix = cursos.cursosLibresDiseno.concat(
+      cursos.cursosLibresComputo,
+    );
+    otherCourses = cursosLibresMix;
+  }
+
   const shuffledCourses = shuffleArray(otherCourses);
 
-  const limitedCourses = shuffledCourses.slice(0, 3);
+  const limitedCourses = shuffledCourses.slice(0, quantity);
 
   return (
     <Box>
-      <CourseList
-        cursos={limitedCourses}
-        showDescription
-        title="Explora nuestras otras carreras"
-      />
+      <CourseList cursos={limitedCourses} showDescription title={heading} />
     </Box>
   );
 };
