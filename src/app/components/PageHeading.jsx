@@ -1,32 +1,38 @@
-import { Box, Heading, Text, Flex } from '@chakra-ui/react';
+import { Flex, Box, Heading, Text } from '@chakra-ui/react';
 
 const PHeading = ({ title, titleColor, text, imgSrc }) => {
   return (
-    <Box my='150px'>
-      <Flex flex={1} alignItems="center" maxW="1180px" ml="auto" mr="auto">
-        <Box w='700px' mr='150px'>
-        <Heading as="h2" fontSize="4xl" fontWeight="bold" w='350px' mb='15px'>
-          <Text>
+    <Flex mb="24" justifyContent="space-between">
+      <Box maxWidth="48%">
+        <Heading as="h1" fontSize="4xl" mb="8">
+          <Text as="span" display="block">
             {title}
           </Text>
-          <Text color="#427fdf">
+          <Text color="#427fdf" as="span" display="block">
             {titleColor}
           </Text>
         </Heading>
 
-          <Text fontSize="lg" color="#444444" >
+        {text ? (
+          <Text fontSize="lg" color="#444444">
             {text}
           </Text>
-        </Box>
+        ) : null}
+      </Box>
+
+      {imgSrc ? (
         <Box
           backgroundImage={imgSrc}
           backgroundRepeat="no-repeat"
           backgroundPosition="center"
-          width="650px"
-          height="300px"
+          backgroundSize="cover"
+          width="100%"
+          maxWidth="48%"
+          height="auto"
+          paddingTop="300px"
         />
-      </Flex>
-    </Box>
+      ) : null}
+    </Flex>
   );
 };
 
