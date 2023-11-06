@@ -7,12 +7,12 @@ import headingInfo from '@/app/content/pageHeading';
 export default function Egresados() {
   return (
     <>
-    <PHeading
-    title={headingInfo.egresados.title}
-    titleColor={headingInfo.egresados.titleColor}
-    text={headingInfo.web.text}
-    imgSrc={headingInfo.web.imgSrc}
-    />
+      <PHeading
+        title={headingInfo.egresados.title}
+        titleColor={headingInfo.egresados.titleColor}
+        text={headingInfo.web.text}
+        imgSrc={headingInfo.web.imgSrc}
+      />
       <FilterMenu />
       <Wrap my="110" spacing="10" justify="center">
         <YearbookCard

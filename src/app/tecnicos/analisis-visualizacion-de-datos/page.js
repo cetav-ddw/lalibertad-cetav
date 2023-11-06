@@ -16,7 +16,7 @@ export default function AnalisisDatosPage() {
   const currentCourseId = 'tecAnalisisDatos';
   return (
     <>
-       <PHeading
+      <PHeading
         title={headingInfo.anaDatos.title}
         titleColor={headingInfo.anaDatos.titleColor}
         text={headingInfo.web.text}

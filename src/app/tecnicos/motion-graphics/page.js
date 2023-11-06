@@ -16,7 +16,7 @@ export default function MotionGraphicPage() {
   const currentCourseId = 'tecMotionGraphics';
   return (
     <>
-        <PHeading
+      <PHeading
         title={headingInfo.motion.title}
         titleColor={headingInfo.motion.titleColor}
         text={headingInfo.web.text}

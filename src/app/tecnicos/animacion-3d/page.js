@@ -16,7 +16,7 @@ export default function Animacion3D() {
   const currentCourseId = 'tecAnimacion3d';
   return (
     <>
-       <PHeading
+      <PHeading
         title={headingInfo.animacion.title}
         titleColor={headingInfo.animacion.titleColor}
         text={headingInfo.web.text}

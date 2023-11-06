@@ -12,7 +12,6 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 
-
 export default function CiberseguridadPage() {
   const currentCourseId = 'tecCiberseguridad';
   return (

@@ -8,14 +8,14 @@ import headingInfo from '@/app/content/pageHeading';
 export default function AboutCetav() {
   return (
     <>
-    <PHeading
-    title={headingInfo.acercaN.title}
-    titleColor={headingInfo.acercaN.titleColor}
-    imgSrc={headingInfo.web.imgSrc}
-  />
-    <OurHistory/>
-    <OurTeamCard />
-    <AdvisoryBoard/>
+      <PHeading
+        title={headingInfo.acercaN.title}
+        titleColor={headingInfo.acercaN.titleColor}
+        imgSrc={headingInfo.web.imgSrc}
+      />
+      <OurHistory />
+      <OurTeamCard />
+      <AdvisoryBoard />
     </>
   );
 }
