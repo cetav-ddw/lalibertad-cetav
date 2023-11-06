@@ -1,6 +1,14 @@
 'use client';
 
-import { Box, Flex, Text, ListItem, List, ListIcon, Icon } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Text,
+  ListItem,
+  List,
+  ListIcon,
+  Icon,
+} from '@chakra-ui/react';
 import { MdCheckCircle } from 'react-icons/md';
 import SectionHeading from '@/app/components/SectionHeading';
 
@@ -21,27 +29,33 @@ const AdvisoryBoard = () => {
             <List maxW="980px" mx="auto" spacing={2}>
               <ListItem>
                 <ListIcon as={MdCheckCircle} color="#313677" />
-                Ministerio de Cultura y Juventud | Sra. Loida Pretiz, Viceministra de Cultura
+                Ministerio de Cultura y Juventud | Sra. Loida Pretiz,
+                Viceministra de Cultura
               </ListItem>
               <ListItem>
                 <ListIcon as={MdCheckCircle} color="#313677" />
-                Ministerio de Trabajo y Seguridad Social | Sr. Marcos Solano, Director Nacional de Empleo
+                Ministerio de Trabajo y Seguridad Social | Sr. Marcos Solano,
+                Director Nacional de Empleo
               </ListItem>
               <ListItem>
                 <ListIcon as={MdCheckCircle} color="#313677" />
-                Instituto Nacional De Aprendizaje (INA) | Sr. Andrés Romero, Subgerente Técnico
+                Instituto Nacional De Aprendizaje (INA) | Sr. Andrés Romero,
+                Subgerente Técnico
               </ListItem>
               <ListItem>
                 <ListIcon as={MdCheckCircle} color="#313677" />
-                Coalición Costarricense de Iniciativas de Desarrollo (CINDE) | Sra. Vanessa Gibson, Head of Investment Climate
+                Coalición Costarricense de Iniciativas de Desarrollo (CINDE) |
+                Sra. Vanessa Gibson, Head of Investment Climate
               </ListItem>
               <ListItem>
                 <ListIcon as={MdCheckCircle} color="#313677" />
-                Promotora de Comercio Exterior (PROCOMER) | Kevin Villalta, Promotor Sectorial
+                Promotora de Comercio Exterior (PROCOMER) | Kevin Villalta,
+                Promotor Sectorial
               </ListItem>
               <ListItem>
                 <ListIcon as={MdCheckCircle} color="#313677" />
-                Cámara de Tecnologías de Información y Comunicación (CAMTIC) | Sr. Claudio Pinto - Fair Play Labs
+                Cámara de Tecnologías de Información y Comunicación (CAMTIC) |
+                Sr. Claudio Pinto - Fair Play Labs
               </ListItem>
               <ListItem>
                 <ListIcon as={MdCheckCircle} color="#313677" />
@@ -51,7 +65,7 @@ const AdvisoryBoard = () => {
           </Box>
         </Flex>
       </Flex>
-    </Box >
+    </Box>
   );
 };
 

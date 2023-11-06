@@ -1,4 +1,5 @@
-import { Heading } from '@chakra-ui/react';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import FaqBanner from '@/app/components/FaqsBanner';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
@@ -15,9 +16,12 @@ export default function PostProducionPage() {
   const currentCourseId = 'tecPostProduccion';
   return (
     <>
-      <Heading as="h1" fontSize="xx-large">
-        Postproducción audiovisual
-      </Heading>
+      <PHeading
+        title={headingInfo.post.title}
+        titleColor={headingInfo.post.titleColor}
+        text={headingInfo.web.text}
+        imgSrc={headingInfo.web.imgSrc}
+      />
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
