@@ -1,15 +1,12 @@
 'use client';
 import React, { useState } from 'react';
-import {
-  Flex,
-} from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import CareerFilter from './CareerFilter';
 import YearFilter from './YearFilter';
 
 const FilterMenu = () => {
   const [carreerList, setCarreerList] = useState([]);
   const [yearList, setYearList] = useState([]);
-
 
   const handleCareerMenuClick = (value) => {
     if (carreerList.includes(value)) {
@@ -32,8 +29,8 @@ const FilterMenu = () => {
   };
   return (
     <Flex justifyContent="center" gap={4} mb={5} mt={5}>
-      <CareerFilter handleCareerMenuClick={handleCareerMenuClick}/>
-      <YearFilter handleYearMenuClick={handleYearMenuClick}/>
+      <CareerFilter handleCareerMenuClick={handleCareerMenuClick} />
+      <YearFilter handleYearMenuClick={handleYearMenuClick} />
     </Flex>
   );
 };
