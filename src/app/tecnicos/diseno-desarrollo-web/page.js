@@ -1,4 +1,5 @@
-import { Heading } from '@chakra-ui/react';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import FaqBanner from '@/app/components/FaqsBanner';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
@@ -15,9 +16,12 @@ export default function WebPage() {
   const currentCourseId = 'tecWeb';
   return (
     <>
-      <Heading as="h1" fontSize="xx-large">
-        Diseño y desarrollo web
-      </Heading>
+      <PHeading
+        title={headingInfo.web.title}
+        titleColor={headingInfo.web.titleColor}
+        text={headingInfo.web.text}
+        imgSrc={headingInfo.web.imgSrc}
+      />
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
