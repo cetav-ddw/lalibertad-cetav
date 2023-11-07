@@ -3,6 +3,7 @@ import YearbookCard from './components/YearbookCards';
 import FilterMenu from './components/FilterMenu';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
+import SectionHeading from '../components/SectionHeading';
 
 export default function Egresados() {
   return (
@@ -13,6 +14,7 @@ export default function Egresados() {
         text={headingInfo.web.text}
         imgSrc={headingInfo.web.imgSrc}
       />
+      <SectionHeading title='Nuestros Egresados por Técnico'/>
       <FilterMenu />
       <Wrap my="110" spacing="10" justify="center">
         <YearbookCard

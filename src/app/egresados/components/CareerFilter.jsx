@@ -12,7 +12,7 @@ function CareerFilter({ handleCareerMenuClick }) {
   return (
     <Menu closeOnSelect={false}>
       <MenuButton bg="white" color="#313677" minWidth="50px">
-        <Flex justifyContent="space-between">
+        <Flex fontWeight='bold' justifyContent="space-between">
           Técnico
           <MdKeyboardArrowDown size='25'/>
         </Flex>

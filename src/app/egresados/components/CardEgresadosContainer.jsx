@@ -2,13 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import CardEgresados from './CardEgresados';
-import { Box, SimpleGrid, Button, HStack, useStyleConfig } from '@chakra-ui/react';
+import { Box, SimpleGrid, Button, HStack, useStyleConfig, useBreakpointValue, Icon } from '@chakra-ui/react';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
-const ITEMS_PER_PAGE = 25;
+const ITEMS_PER_PAGE_MOBILE = 26;
+const ITEMS_PER_PAGE_DESKTOP = 25;
 
 const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const isMobile = useBreakpointValue({ base: true, sm: false });
+  const ITEMS_PER_PAGE = isMobile ? ITEMS_PER_PAGE_MOBILE : ITEMS_PER_PAGE_DESKTOP;
 
   const pageCount = Math.ceil(uniqueRecords.length / ITEMS_PER_PAGE);
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -24,14 +27,16 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
     setCurrentPage(1);
   }, [uniqueRecords]);
 
+
+
   const buttonStyle = useStyleConfig("Button", {
-    size: "sm",
+    size: isMobile ? "sm" : "lg",
     colorScheme: "blue",
   });
 
   return (
     <>
-      <SimpleGrid columns={5} spacing={5}>
+      <SimpleGrid columns={isMobile ? 2 : 5} spacing={isMobile ? 2 : 5}>
         {currentData.map((record) => (
           <Box key={record.id}>
             <CardEgresados user={record} />
@@ -41,19 +46,19 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
 
       <HStack spacing={2} justifyContent="center" mb="10" mt="10">
         <Button
-          size="lg"
+          size={isMobile ? "xs" : "md"}
           onClick={() => goToPage(currentPage - 1)}
           bgColor="white"
           color="#313677"
           disabled={currentPage === 1}
         >
-          <MdKeyboardArrowLeft />
+          <Icon as={MdKeyboardArrowLeft} boxSize={10} />
         </Button>
 
         {Array.from({ length: pageCount }, (_, i) => (
           <Button
             key={i}
-            size="sm"
+            size={isMobile ? "xs" : "sm"}
             onClick={() => goToPage(i + 1)}
             {...buttonStyle}
             colorScheme={i + 1 === currentPage ? "blue" : "gray"}
@@ -67,13 +72,13 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
         ))}
 
         <Button
-          size="lg"
+          size={isMobile ? "xs" : "md"}
           onClick={() => goToPage(currentPage + 1)}
           bgColor="white"
           color="#313677"
           disabled={currentPage === pageCount}
         >
-          <MdKeyboardArrowRight />
+          <Icon as={MdKeyboardArrowRight} boxSize={10} />
         </Button>
       </HStack>
     </>
