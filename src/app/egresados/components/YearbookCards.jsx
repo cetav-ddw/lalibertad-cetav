@@ -1,10 +1,10 @@
-'use client'
+'use client';
 import { Box, Image, Stack, WrapItem, Heading, Link } from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 
-function YearbookCard({ generationImage, title, yearbookLink, reelLink  }) {
+function YearbookCard({ generationImage, title, yearbookLink, reelLink }) {
   return (
-    <WrapItem mb="16">
+    <WrapItem mb="4">
       <Box
         maxW="350px"
         borderRadius="14px"
@@ -22,7 +22,7 @@ function YearbookCard({ generationImage, title, yearbookLink, reelLink  }) {
         />
 
         <Box p="6" position="absolute" bottom="0" left="0">
-          <Heading as="h3" size="md" color="white" mb="2">
+          <Heading as="h3" size="md" color="white" mb="2" textShadow="lg">
             {title}
           </Heading>
           <Stack direction="row" spacing={4} align="center">
@@ -35,9 +35,10 @@ function YearbookCard({ generationImage, title, yearbookLink, reelLink  }) {
               color="#313677"
               borderRadius="19px"
               borderColor="#313677"
-              href={yearbookLink} isExternal
+              href={yearbookLink}
+              isExternal
             >
-              Anuario <ExternalLinkIcon mx='2px' />
+              Anuario <ExternalLinkIcon mx="2px" />
             </Link>
 
             <Link
@@ -49,9 +50,10 @@ function YearbookCard({ generationImage, title, yearbookLink, reelLink  }) {
               color="#313677"
               borderRadius="19px"
               borderColor="#313677"
-              href={reelLink} isExternal
+              href={reelLink}
+              isExternal
             >
-              Reel <ExternalLinkIcon mx='2px' />
+              Reel <ExternalLinkIcon mx="2px" />
             </Link>
           </Stack>
         </Box>
