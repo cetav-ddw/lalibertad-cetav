@@ -1,4 +1,3 @@
-import { Heading } from '@chakra-ui/react';
 import OurTeamCard from '@/app/components/OurTeam';
 import OurHistory from '@/app/components/OurHistory';
 import AdvisoryBoard from '@/app/components/AdvisoryBoard';
