@@ -1,7 +1,7 @@
 import { Box, Link } from '@chakra-ui/react';
 import { Link as NextLink } from 'next/link';
 
-const Navigation = () => {
+const MainNavigation = () => {
   return (
     <Box
       as="nav"
@@ -43,7 +43,7 @@ const Navigation = () => {
         </Link>
         <Link
           as={NextLink}
-          href="/about-cetav"
+          href="/acerca"
           _hover={{ textDecoration: 'underline' }}
           px={4}
           py="2"
@@ -76,4 +76,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default MainNavigation;
