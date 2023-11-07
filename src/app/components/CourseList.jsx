@@ -75,7 +75,11 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                   {showDescription && details?.length > 0 ? (
                     <List px="2" py="4" fontSize="sm">
                       {details.map((details) => {
-                        return <ListItem key={details}>{details} </ListItem>;
+                        return (
+                          <ListItem key={details} px="2" py="4" fontSize="sm">
+                            {details}{' '}
+                          </ListItem>
+                        );
                       })}
                     </List>
                   ) : null}
