@@ -1,5 +1,6 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Link } from '@chakra-ui/react';
 import MainNavigation from '@/app/components/MainNavigation';
+import { Link as NextLink } from 'next/link';
 
 const Header = () => {
   return (
@@ -11,16 +12,21 @@ const Header = () => {
         ml="auto"
         mr="auto"
       >
-        {/* ToDo puede ser un link al homepage
-          Se necesita una imagen para retina
-        */}
-        <Box
-          backgroundImage="/images/triada-logo.png"
-          backgroundRepeat="no-repeat"
-          backgroundPosition="center"
-          width="400px"
-          height="90px"
-        />
+        <Link
+          as={NextLink}
+          href="/"
+          _hover={{ opacity: 0.7 }}
+          px={4}
+          py="2"
+          mx="1"
+        >
+          <img
+            src="/images/triada-logo.png"
+            alt="Triada Logo"
+            width="400px"
+            height="90px"
+          />
+        </Link>
         <MainNavigation />
       </Flex>
     </Box>
