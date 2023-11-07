@@ -3,7 +3,7 @@ import { Box, Flex, Avatar, Heading, IconButton } from '@chakra-ui/react';
 import { MdOutlinePermContactCalendar, MdOutlineLink } from 'react-icons/md';
 
 function CardEgresados(props) {
-  const { user } = props; // Obtiene el objeto de usuario del prop.
+  const { user } = props; 
 
   return (
     <Box maxW="md" mb="3" mt="3">
