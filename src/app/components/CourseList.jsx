@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
+import { Fragment } from 'react';
 
 export const CourseList = ({ cursos, showDescription, title }) => {
   return (
@@ -73,8 +74,12 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                   falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
                     <List px="2" py="4" fontSize="sm">
-                      {details.map((detail) => {
-                        return <ListItem key={detail}>{detail}</ListItem>;
+                      {details.map(({ id, modalidad }) => {
+                        return (
+                          <Fragment key={id}>
+                            <ListItem>Modalidad:`${modalidad}`</ListItem>;
+                          </Fragment>
+                        );
                       })}
                     </List>
                   ) : null}
