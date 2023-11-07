@@ -1,4 +1,5 @@
-import { Heading } from '@chakra-ui/react';
+import PHeading from '@/app/components/PageHeading';
+import headingInfo from '@/app/content/pageHeading';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
 import OurTeachers from '@/app/components/OurTeachers';
@@ -9,19 +10,25 @@ import SoftSkillsBanner from '@/app/components/SoftSkillsBanner';
 import testimonies from '@/app/content/testimonies';
 import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
+import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 
 export default function Animacion3D() {
+  const currentCourseId = 'tecAnimacion3d';
   return (
     <>
-      <Heading as="h1" fontSize="xx-large">
-        Animación 3D
-      </Heading>
+      <PHeading
+        title={headingInfo.animacion.title}
+        titleColor={headingInfo.animacion.titleColor}
+        text={headingInfo.web.text}
+        imgSrc={headingInfo.web.imgSrc}
+      />
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
+      <ExploreOtherCareers currentCourseId={currentCourseId} />
       <FaqBanner />
     </>
   );

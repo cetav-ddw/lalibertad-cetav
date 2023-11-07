@@ -11,12 +11,12 @@ import {
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
 
-export const CourseList = ({ cursos, showDescription }) => {
+export const CourseList = ({ cursos, showDescription, title }) => {
   return (
     <>
       {cursos?.length > 0 ? (
         <Box mb="16">
-          <SectionHeading title="Nuetras Carreras Tecnicas" />
+          {title && <SectionHeading title={title} />}
           <Box
             display="flex"
             flexWrap="wrap"
@@ -73,12 +73,8 @@ export const CourseList = ({ cursos, showDescription }) => {
                   falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
                     <List px="2" py="4" fontSize="sm">
-                      {details.map(({ id, modalidad }) => {
-                        return (
-                          <ListItem
-                            key={id}
-                          >{`Modalidad: ${modalidad}`}</ListItem>
-                        );
+                      {details.map((detail) => {
+                        return <ListItem key={detail}>{detail}</ListItem>;
                       })}
                     </List>
                   ) : null}
