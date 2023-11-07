@@ -1,5 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react';
-import Navigation from './Navigation';
+import MainNavigation from '@/app/components/MainNavigation';
 
 const Header = () => {
   return (
@@ -21,7 +21,7 @@ const Header = () => {
           width="400px"
           height="90px"
         />
-        <Navigation />
+        <MainNavigation />
       </Flex>
     </Box>
   );
