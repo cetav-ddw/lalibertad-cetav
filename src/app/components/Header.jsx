@@ -15,7 +15,7 @@ const Header = () => {
         <Link
           as={NextLink}
           href="/"
-          _hover={{ textDecoration: 'underline' }}
+          _hover={{ opacity: 0.7 }}
           px={4}
           py="2"
           mx="1"
