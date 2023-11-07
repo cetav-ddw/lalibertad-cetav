@@ -5,6 +5,7 @@ import {
   Box,
   LinkBox,
   LinkOverlay,
+  Link,
   List,
   ListItem,
 } from '@chakra-ui/react';
@@ -26,66 +27,74 @@ export const CourseList = ({ cursos, showDescription, title }) => {
             justifyContent="center"
             pos="relative"
           >
-            {cursos.map(({ id, imgSrc, title, descripcion, url, details }) => {
-              const Component = url ? LinkOverlay : Box;
-              const extraProps = url ? { as: NextLink, href: url } : {};
+            {cursos.map(
+              ({ id, imgSrc, title, descripcion, url, details, masInfo }) => {
+                const Component = url ? LinkOverlay : Box;
+                const extraProps = url ? { as: NextLink, href: url } : {};
 
-              return (
-                <LinkBox
-                  bg="rgba(225, 231, 248, 1)"
-                  key={id}
-                  maxWidth="22%"
-                  borderRadius="lg"
-                  _hover={{ opacity: url ? 0.8 : 1 }}
-                >
-                  <Box position="relative">
-                    <Image
-                      w="100%"
-                      h="240"
-                      src={imgSrc}
-                      alt=""
-                      borderRadius="lg"
-                      objectFit="cover"
-                    />
+                return (
+                  <LinkBox
+                    bg="rgba(225, 231, 248, 1)"
+                    key={id}
+                    maxWidth="22%"
+                    borderRadius="lg"
+                    _hover={{ opacity: url ? 0.8 : 1 }}
+                  >
+                    <Box position="relative">
+                      <Image
+                        w="100%"
+                        h="240"
+                        src={imgSrc}
+                        alt=""
+                        borderRadius="lg"
+                        objectFit="cover"
+                      />
 
-                    <Component {...extraProps}>
-                      <Heading
-                        pos="absolute"
-                        bottom="0.5"
-                        left="3"
-                        color="white"
-                        fontSize="md"
-                        my="5"
-                        as="h3"
-                        dropShadow="lg"
-                      >
-                        {title}
-                      </Heading>
-                    </Component>
-                  </Box>
+                      <Component {...extraProps}>
+                        <Heading
+                          pos="absolute"
+                          bottom="0.5"
+                          left="3"
+                          color="white"
+                          fontSize="md"
+                          my="5"
+                          as="h3"
+                          dropShadow="lg"
+                        >
+                          {title}
+                        </Heading>
+                      </Component>
+                    </Box>
 
-                  {showDescription && descripcion ? (
-                    <Text color="#313677" px="2" py="4" fontSize="sm">
-                      {descripcion}
-                    </Text>
-                  ) : null}
+                    {showDescription && descripcion ? (
+                      <Text color="#313677" px="2" py="4" fontSize="sm">
+                        {descripcion}
+                      </Text>
+                    ) : null}
 
-                  {/* Esta seccion se puede mover a un componente aparte,
+                    {/* Esta seccion se puede mover a un componente aparte,
                   falta hacer render de cada detalle */}
-                  {showDescription && details?.length > 0 ? (
-                    <List px="2" py="4" fontSize="sm">
-                      {details.map((details) => {
-                        return (
-                          <ListItem key={details} px="2" py="4" fontSize="sm">
-                            {details}{' '}
-                          </ListItem>
-                        );
-                      })}
-                    </List>
-                  ) : null}
-                </LinkBox>
-              );
-            })}
+                    {showDescription && details?.length > 0 ? (
+                      <List px="2" py="3" fontSize="sm">
+                        {details.map((detail) => {
+                          return (
+                            <ListItem key={detail} px={2} pt={2} pb={4}>
+                              {detail}
+                            </ListItem>
+                          );
+                        })}
+                        <Link
+                          href="https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8"
+                          px={2}
+                        >
+                          {masInfo}
+                        </Link>
+                      </List>
+                    ) : null}
+                  </LinkBox>
+                );
+              },
+            )}
           </Box>
         </Box>
       ) : null}
