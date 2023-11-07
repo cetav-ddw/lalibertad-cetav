@@ -1,4 +1,4 @@
-import ContactDetail from '../components/contactDetail';
+import ContactDetail from '@/app/components/ContactDetail';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 

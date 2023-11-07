@@ -1,5 +1,8 @@
+'use client';
+
 import { Box, ListItem, List, ListIcon } from '@chakra-ui/react';
 import SectionHeading from '@/app/components/SectionHeading';
+import { MdCheckCircle } from 'react-icons/md';
 
 // ToDO Agregar icono al ListItem
 const GoodToKnowBanner = ({ topicList }) => {
@@ -12,7 +15,7 @@ const GoodToKnowBanner = ({ topicList }) => {
             {topicList.map((topic) => {
               return (
                 <ListItem key={topic.toLowerCase().replace(/\s+/g, '')} mb="2">
-                  <ListIcon color="green.500" />
+                  <ListIcon as={MdCheckCircle} color="#313677" />
                   {topic}
                 </ListItem>
               );
