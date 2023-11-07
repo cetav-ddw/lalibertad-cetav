@@ -1,6 +1,8 @@
+'use client'
 import { Box, Image, Stack, WrapItem, Heading, Link } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
-function YearbookCard({ generationImage, title, yearbookLink, reelLink }) {
+function YearbookCard({ generationImage, title, yearbookLink, reelLink  }) {
   return (
     <WrapItem mb="16">
       <Box
@@ -25,7 +27,6 @@ function YearbookCard({ generationImage, title, yearbookLink, reelLink }) {
           </Heading>
           <Stack direction="row" spacing={4} align="center">
             <Link
-              target="_blank"
               fontWeight="500"
               border="2px"
               px="4"
@@ -34,13 +35,12 @@ function YearbookCard({ generationImage, title, yearbookLink, reelLink }) {
               color="#313677"
               borderRadius="19px"
               borderColor="#313677"
-              href={yearbookLink}
+              href={yearbookLink} isExternal
             >
-              Anuario
+              Anuario <ExternalLinkIcon mx='2px' />
             </Link>
 
             <Link
-              target="_blank"
               fontWeight="500"
               border="2px"
               px="4"
@@ -49,9 +49,9 @@ function YearbookCard({ generationImage, title, yearbookLink, reelLink }) {
               color="#313677"
               borderRadius="19px"
               borderColor="#313677"
-              href={reelLink}
+              href={reelLink} isExternal
             >
-              Reel
+              Reel <ExternalLinkIcon mx='2px' />
             </Link>
           </Stack>
         </Box>

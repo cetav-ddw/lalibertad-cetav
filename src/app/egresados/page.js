@@ -3,6 +3,7 @@ import YearbookCard from './components/YearbookCards';
 import FilterMenu from './components/FilterMenu';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
+import SectionHeading from '@/app/components/SectionHeading';
 
 export default function Egresados() {
   return (
@@ -14,7 +15,8 @@ export default function Egresados() {
         imgSrc={headingInfo.web.imgSrc}
       />
       <FilterMenu />
-      <Wrap my="110" spacing="10" justify="center">
+      <SectionHeading title="Explora Nuestros Anuarios" />
+      <Wrap spacing="10" justify="center">
         <YearbookCard
           generationImage="generation_2013.png"
           title="1er Generación"
