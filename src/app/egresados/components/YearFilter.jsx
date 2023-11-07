@@ -12,9 +12,9 @@ function YearFilter({ handleYearMenuClick }) {
   return (
     <Menu closeOnSelect={false}>
       <MenuButton bg="white" color="#313677" minWidth="50px">
-        <Flex fontWeight='bold' justifyContent="space-between">
+        <Flex fontWeight="bold" justifyContent="space-between">
           Generación
-          <MdKeyboardArrowDown size='25'/>
+          <MdKeyboardArrowDown size="25" />
         </Flex>
       </MenuButton>
       <MenuList minWidth="240px" bg="white" color="black">
