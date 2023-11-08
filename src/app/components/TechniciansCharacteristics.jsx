@@ -7,27 +7,26 @@ import {
   CardBody,
 } from '@chakra-ui/react';
 
-const CharacteristicsOfTheTechnicians = () => {
+const TechniciansCharacteristics = () => {
   return (
     <Box
       bgColor="#F2F4FC"
       mx="auto"
-      justifyContent="center"
       textAlign="center"
-      display="grid"
-      gridTemplateColumns="repeat(4, 1fr)"
-      gap={4}
+      display="flex"
+      justifyContent="space-between"
       pt="9"
       pb="16"
-      height="221px"
-      mb="40px"
-      mt="-50px"
+      mb="16px"
+      marginRight="-84px"
+      marginLeft="-84px"
     >
       <Card
         bgColor="#CAD4F3B2"
         width="218px"
         height="124px"
         borderRadius="10px"
+        marginLeft="200px"
       >
         <CardHeader>
           <Heading fontSize="lg"> 2 años</Heading>
@@ -70,6 +69,7 @@ const CharacteristicsOfTheTechnicians = () => {
         width="218px"
         height="124px"
         border-radius="10px"
+        marginRight="200px"
       >
         <CardHeader>
           <Heading fontSize="lg"> 1/2</Heading>
@@ -82,4 +82,4 @@ const CharacteristicsOfTheTechnicians = () => {
   );
 };
 
-export default CharacteristicsOfTheTechnicians;
+export default TechniciansCharacteristics;

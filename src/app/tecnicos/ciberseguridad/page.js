@@ -11,7 +11,7 @@ import testimonies from '@/app/content/testimonies';
 import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
-import CharacteristicsOfTheTechnicians from '@/app/components/TechniciansCharacteristics';
+import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 
 export default function CiberseguridadPage() {
   const currentCourseId = 'tecCiberseguridad';
@@ -22,7 +22,7 @@ export default function CiberseguridadPage() {
         text={headingInfo.web.text}
         imgSrc={headingInfo.web.imgSrc}
       />
-      <CharacteristicsOfTheTechnicians />
+      <TechniciansCharacteristics />
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
