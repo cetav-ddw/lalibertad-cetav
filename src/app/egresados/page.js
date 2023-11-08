@@ -1,9 +1,11 @@
 import { Wrap, Box } from '@chakra-ui/react';
+import TestimonialCard from './components/testimonies_card';
 import YearbookCard from './components/YearbookCards';
 import FilterMenu from './components/FilterMenu';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
+import testimonies from '@/app/content/testimonies';
 
 export default function Egresados() {
   return (
@@ -14,6 +16,22 @@ export default function Egresados() {
         text={headingInfo.web.text}
         imgSrc={headingInfo.web.imgSrc}
       />
+
+      <Box mb="16">
+      <SectionHeading title="Testimonios" />
+      <Wrap spacing={{ base: 4, sm: 6, md: 4 }} justify="center">
+        {testimonies.web.map((testimony) => (
+         <TestimonialCard
+           key={testimony.id}
+           name={testimony.name}
+           position={testimony.position}
+           avatarSrc={testimony.avatarSrc}
+           quote={testimony.quote}
+         />
+        ))}
+      </Wrap>
+      </Box>
+
       <FilterMenu />
 
       <Box mb="16">
