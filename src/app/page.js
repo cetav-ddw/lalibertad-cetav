@@ -6,6 +6,7 @@ import CourseList from '@/app/components/CourseList';
 import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
+import OurInstitutions from '@/app/components/OurInstitutions';
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
           </Text>
         </Heading>
       </Box>
+      <OurInstitutions />
       <CourseList
         cursos={cursos.tecnicos}
         title={'Nuestras Carreras Técnicas'}
