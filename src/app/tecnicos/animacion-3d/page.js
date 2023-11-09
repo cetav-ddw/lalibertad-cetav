@@ -30,7 +30,6 @@ export default function Animacion3D() {
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers
         currentCourseId={currentCourseId}
-        items={3}
         title={'Explora nuestras carreras'}
       />
       <FaqBanner />

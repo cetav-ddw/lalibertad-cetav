@@ -70,67 +70,79 @@ const cursos = {
       id: 'clDisenoPhotoShop',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'PhotoShop',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoIllustrador',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Illustrador',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoPremier',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Premier',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoAfterEffects',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'After Effects',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoManejoDeRedes',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Manejo de Redes',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoDibujo',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Dibujo',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
   ],
   cursosLibresComputo: [
@@ -138,67 +150,79 @@ const cursos = {
       id: 'clComputo',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Alfabetización Digital',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoIllustrador',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Word',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoPremier',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Excel',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoAfterEffects',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Power BI',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoManejoDeRedes',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Multimedia',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
     {
       id: 'clDisenoDibujo',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Intro a la Ciberseguridad',
-      details: [
-        'Precio: ₡25,000',
-        'Cursos presenciales y virtuales',
-        'Lugar: CETAV, Parque Libertad',
-      ],
-      masInfo:'Más info',
+      details: {
+        modalidad: ' presenciales y virtuales',
+        Precio: ' ₡25,000',
+        Lugar: 'CETAV, Parque Libertad',
+        tell: '0000 0000',
+        masInfo:
+          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+      },
     },
   ],
 };

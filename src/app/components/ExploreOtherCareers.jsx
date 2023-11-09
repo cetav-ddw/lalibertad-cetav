@@ -1,9 +1,14 @@
-import CourseList from '@/app/components/CourseList';
 import cursos from '../content/cursosData';
+import CourseList from '@/app/components/CourseList';
 import shuffleArray from '@/app/utils/shuffled';
 import SectionHeading from './SectionHeading';
 
-const ExploreOtherCareers = ({ currentCourseId, isHomePage, items, title }) => {
+const ExploreOtherCareers = ({
+  currentCourseId,
+  isHomePage,
+  items = 3,
+  title,
+}) => {
   let otherCourses = cursos.tecnicos.filter(
     (course) => course.id !== currentCourseId,
   );
