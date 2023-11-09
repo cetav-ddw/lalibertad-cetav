@@ -43,6 +43,7 @@ const headingInfo = {
   acercaN: {
     title: 'Más acerca de',
     titleColor: 'nosotros',
+    text: 'En el CETAV nuestra población prioritaria son personas jóvenes. Nuestros programas de especialización técnica están alineados al Marco Nacional de Cualificaciones, se encuentran certificados por el Instituto Nacional de Aprendizaje (INA), tienen una duración de 20 meses y las personas interesadas cuentan con la posibilidad de estudiar por medio de un subsidio.',
   },
   egresados: {
     title: 'Conoce a nuestros',
