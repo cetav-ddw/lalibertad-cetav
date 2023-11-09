@@ -4,8 +4,8 @@ import FilterMenu from '../components/FilterMenu';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
-import TestimonyList from '../components/Testimonies/TestimonyList';
-import testimonies from '../content/testimonies';
+import TestimonyList from '@/app/components/Testimonies/TestimonyList';
+import testimonies from '@/app/content/testimonies';
 
 
 export default function Egresados() {
