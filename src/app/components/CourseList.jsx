@@ -73,13 +73,12 @@ export const CourseList = ({ cursos, showDescription, title }) => {
 
                   {/* Esta seccion se puede mover a un componente aparte, falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
-                    <List px="2" py="3" fontSize="sm">
-                      {details.map(({ id, modalidad, precio }) => {
+                    <List px="2" py="4" fontSize="sm">
+                      {details.map(({ id, modalidad }) => {
                         return (
-                          <Fragment key={id}>
-                            <ListItem>{modalidad}</ListItem>
-                            <ListItem>{precio}</ListItem>
-                          </Fragment>
+                          <ListItem
+                            key={id}
+                          >{`Modalidad: ${modalidad}`}</ListItem>
                         );
                       })}
                     </List>
