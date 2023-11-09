@@ -1,8 +1,8 @@
 'use client';
-
 import Link from 'next/link';
-import { Box, Text, Flex, Icon, Image } from '@chakra-ui/react';
+import { Box, Text, Flex, Icon } from '@chakra-ui/react';
 import { MdCall, MdMail, MdAddToHomeScreen, MdFmdGood } from 'react-icons/md';
+import LocationMap from './LocationMap';
 
 export default function ContactDetail() {
   return (
@@ -66,6 +66,10 @@ export default function ContactDetail() {
           display="flex"
           flexDirection="column"
           boxShadow="md"
+          // TODO mover este color al theme
+          _hover={{ bg: '#ccd6f6' }}
+          cursor="pointer"
+          transition="background-color 0.2s"
         >
           <Box display="flex" alignItems="center" mb="2">
             <Icon
@@ -99,6 +103,10 @@ export default function ContactDetail() {
           display="flex"
           flexDirection="column"
           boxShadow="md"
+          // TODO mover este color al theme
+          _hover={{ bg: '#ccd6f6' }}
+          cursor="pointer"
+          transition="background-color 0.2s"
         >
           <Box display="flex" alignItems="center" mb="2">
             <Icon
@@ -118,7 +126,7 @@ export default function ContactDetail() {
             color="#313677"
             href="https://instagram.com/cetav_pll?igshid=OGQ5ZDc2ODk2ZA=="
           >
-            Centro de Tecnología y Artes Visuales PLL
+            @cetav_pll
           </Link>
         </Box>
 
@@ -151,6 +159,43 @@ export default function ContactDetail() {
             Fátima, Desamparados
           </Text>
         </Box>
+
+        <Box
+          mb="20px"
+          px="6"
+          py="3"
+          borderRadius="5px"
+          // TODO MOVER COLOR AL THEME
+          bg="#E1E7F8"
+          display="flex"
+          flexDirection="column"
+          boxShadow="md"
+          // TODO mover este color al theme
+          _hover={{ bg: '#ccd6f6' }}
+          cursor="pointer"
+          transition="background-color 0.2s"
+        >
+          <Box display="flex" alignItems="center" mb="2">
+            <Icon
+              as={MdFmdGood}
+              size="24px"
+              color="#313677"
+              marginRight="5px"
+            />
+            {/* TODO MOVER COLOR AL THEME */}
+            <Text fontSize="18px" fontWeight="bold" color="#313677">
+              Waze
+            </Text>
+          </Box>
+          {/* TODO MOVER COLOR AL THEME */}
+          <Link
+            fontSize="16px"
+            color="#313677"
+            href="https://waze.com/ul/hd1u0r8qmk"
+          >
+            Encuéntranos en WAZE
+          </Link>
+        </Box>
       </Box>
 
       <Box
@@ -160,14 +205,7 @@ export default function ContactDetail() {
         mb="2"
         justifyContent="center"
       >
-        <Link href="https://waze.com/ul/hd1u0r8qmk">
-          <Image
-            src="/images/ubicacionCETAV.png"
-            alt="Ubicación CETAV"
-            maxW="100%"
-            maxH="100%"
-          />
-        </Link>
+        <LocationMap />
       </Box>
     </Flex>
   );
