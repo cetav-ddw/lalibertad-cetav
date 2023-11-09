@@ -70,159 +70,195 @@ const cursos = {
       id: 'clDisenoPhotoShop',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'PhotoShop',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'photoShop',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoIllustrador',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Illustrador',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'illustrador',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoPremier',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Premier',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'premier',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoAfterEffects',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'After Effects',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'afterEffects',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoManejoDeRedes',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Manejo de Redes',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'manejoRedes',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
       id: 'clDisenoDibujo',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Dibujo',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'dibujo',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: '',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
   ],
   cursosLibresComputo: [
     {
-      id: 'clComputo',
+      id: 'clComputoAlfaDigital',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Alfabetización Digital',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'alfaDigital',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
-      id: 'clDisenoIllustrador',
+      id: 'clComputoWord',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Word',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'word',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
-      id: 'clDisenoPremier',
+      id: 'clComputoExcel',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Excel',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'excel',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
-      id: 'clDisenoAfterEffects',
+      id: 'clComputoPowerBi',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Power BI',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'powerId',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
-      id: 'clDisenoManejoDeRedes',
+      id: 'clComputoMultimedia',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Multimedia',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'multimedia',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
     {
-      id: 'clDisenoDibujo',
+      id: 'clComputoCiberseguridad',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Intro a la Ciberseguridad',
-      details: {
-        modalidad: ' presenciales y virtuales',
-        Precio: ' ₡25,000',
-        Lugar: 'CETAV, Parque Libertad',
-        tell: '0000 0000',
-        masInfo:
-          'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
-      },
+      details: [
+        {
+          id: 'ciberseguridad',
+          modalidad: 'Cursos presenciales y virtuales',
+          edad: '15 años en adelante',
+          lugar: 'CETAV, Parque Libertad',
+          inversion: '₡25,000',
+          url: '',
+          info: '8751-2802 e inscripción en el enlace',
+        },
+      ],
     },
   ],
 };

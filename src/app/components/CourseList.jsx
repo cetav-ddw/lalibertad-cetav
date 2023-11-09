@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
 import {
+  Link,
   Heading,
   Image,
   Text,
   Box,
   LinkBox,
   LinkOverlay,
-  Link,
   List,
   ListItem,
 } from '@chakra-ui/react';
@@ -35,7 +35,7 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                 <LinkBox
                   bg="rgba(225, 231, 248, 1)"
                   key={id}
-                  maxWidth="22%"
+                  maxW="23%"
                   borderRadius="lg"
                   _hover={{ opacity: url ? 0.8 : 1 }}
                 >
@@ -73,14 +73,77 @@ export const CourseList = ({ cursos, showDescription, title }) => {
 
                   {/* Esta seccion se puede mover a un componente aparte, falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
-                    <List px="2" py="4" fontSize="sm">
-                      {details.map(({ id, modalidad }) => {
-                        return (
-                          <ListItem
-                            key={id}
-                          >{`Modalidad: ${modalidad}`}</ListItem>
-                        );
-                      })}
+                    <List textAlign="justify" px="2" py="4" fontSize="sm">
+                      {details.map(
+                        ({
+                          id,
+                          modalidad,
+                          edad,
+                          lugar,
+                          inversion,
+                          url,
+                          info,
+                        }) => {
+                          return (
+                            <Fragment key={id}>
+                              <ListItem>
+                                <Text mr="2" fontWeight="bold" display="inline">
+                                  Modalidad:
+                                </Text>
+                                {modalidad}
+                              </ListItem>
+                              <ListItem py="2">
+                                <Text mr="2" fontWeight="bold" display="inline">
+                                  Edad:
+                                </Text>
+                                {edad}
+                              </ListItem>
+                              <ListItem>
+                                <Text mr="2" fontWeight="bold" display="inline">
+                                  Lugar:
+                                </Text>
+                                {lugar}
+                              </ListItem>
+                              <ListItem py="2">
+                                <Text mr="2" fontWeight="bold" display="inline">
+                                  Inversion:
+                                </Text>
+                                {inversion}
+                              </ListItem>
+                              <ListItem>
+                                <Text mr="2" fontWeight="bold" display="inline">
+                                  Mas Info:
+                                </Text>
+                                {info}
+                              </ListItem>
+                              {url ? (
+                                <>
+                                  <ListItem py="2">
+                                    <Link
+                                      fontWeight="bold"
+                                      color="blue"
+                                      as={NextLink}
+                                      href={url}
+                                    >
+                                      Click para enlace de inscripcion
+                                    </Link>
+                                  </ListItem>
+                                </>
+                              ) : (
+                                <ListItem>
+                                  <Text
+                                    mr="2"
+                                    fontWeight="bold"
+                                    display="inline"
+                                  >
+                                    Enlace No está disponible
+                                  </Text>
+                                </ListItem>
+                              )}
+                            </Fragment>
+                          );
+                        },
+                      )}
                     </List>
                   ) : null}
                 </LinkBox>
