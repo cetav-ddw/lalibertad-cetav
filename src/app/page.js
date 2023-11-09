@@ -5,6 +5,7 @@ import images from './content/imageData';
 import CourseList from '@/app/components/CourseList';
 import cursos from './content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
+import OurInstitutions from '@/app/components/OurInstitutions';
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
           </Text>
         </Heading>
       </Box>
+      <OurInstitutions />
       <CourseList
         cursos={cursos.tecnicos}
         title={'Nuestras Carreras Técnicas'}
