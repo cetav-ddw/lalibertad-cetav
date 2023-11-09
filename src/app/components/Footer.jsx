@@ -10,7 +10,8 @@ import {
   UnorderedList,
 } from '@chakra-ui/react';
 import { Link as NextLink } from 'next/link';
-import { MdFacebook } from 'react-icons/md';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
 
 
 const Footer = () => {
@@ -211,8 +212,8 @@ const Footer = () => {
             <img
               src="/images/libertad-logo.png"
               alt="Logo La Libertad"
-              width="237px"
-              height="108px"
+              width="150px"
+              height="35px"
             />
           </Link>
         </Box>
@@ -226,7 +227,7 @@ const Footer = () => {
               py="2"
               mx="1"
             >
-              <Icon as={MdFacebook} color="#ffffff" w={10} h={10} />
+              <Icon as={FaFacebookSquare} color="#ffffff" w={8} h={8} />
             </Link>
           </Box>
           <Box style={{ position: 'absolute', right: '65px' }}>
@@ -238,8 +239,7 @@ const Footer = () => {
               py="2"
               mx="1"
             >
-              {/* TODO CAMBIAR ICON AL RESPECTIVO DE INSTAGRAM */}
-              <Icon as={MdFacebook} color="#ffffff" w={10} h={10} />
+              <Icon as={AiFillInstagram} color="#ffffff" w={9} h={9} />
             </Link>
           </Box>
         </Box>
