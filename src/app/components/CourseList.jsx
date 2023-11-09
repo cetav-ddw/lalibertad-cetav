@@ -7,6 +7,7 @@ import {
   LinkOverlay,
   List,
   ListItem,
+  Flex
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
@@ -17,8 +18,7 @@ export const CourseList = ({ cursos, showDescription, title }) => {
       {cursos?.length > 0 ? (
         <Box mb="16">
           {title && <SectionHeading title={title} />}
-          <Box
-            display="flex"
+          <Flex
             flexWrap="wrap"
             alignItems="center"
             gap="4"
@@ -33,7 +33,7 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                 <LinkBox
                   bg="rgba(225, 231, 248, 1)"
                   key={id}
-                  maxWidth="22%"
+                  flex={'1 1 200px'}
                   borderRadius="lg"
                   _hover={{ opacity: url ? 0.8 : 1 }}
                 >
@@ -81,7 +81,7 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                 </LinkBox>
               );
             })}
-          </Box>
+          </Flex>
         </Box>
       ) : null}
     </>
