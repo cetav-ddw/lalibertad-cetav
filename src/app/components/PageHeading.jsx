@@ -36,6 +36,8 @@ const PHeading = ({ title, titleColor, text, imgSrc }) => {
           width={{ base: "100%", md: "48%" }}
           height={{ base: "300px", md: "auto" }}
           paddingTop={{ base: "200px", md: "0" }}
+          maxWidth="48%"
+          borderRadius="lg"
         />
       ) : null}
     </Flex>
