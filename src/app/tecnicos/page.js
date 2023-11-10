@@ -15,7 +15,7 @@ export default function Tecnicos() {
         text={headingInfo.web.text}
         imgSrc={headingInfo.web.imgSrc}
       />
-      <CourseList cursos={cursos.tecnicos} showDescription />
+      <CourseList cursos={cursos.tecnicos} showDescription columns="4" />
       <OurAllies images={images} />
       <FaqBanner />
     </>

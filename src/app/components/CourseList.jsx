@@ -12,14 +12,14 @@ import {
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
 
-export const CourseList = ({ cursos, showDescription, title }) => {
+export const CourseList = ({ cursos, showDescription, title, columns = 3 }) => {
   return (
     <>
       {cursos?.length > 0 ? (
         <Box mb="16">
           {title && <SectionHeading title={title} />}
           <Grid
-            templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}
+            templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)", `repeat(${columns}, 1fr)`]}
             gap={4}
           >
             {cursos.map(({ id, imgSrc, title, descripcion, url, details }) => {
