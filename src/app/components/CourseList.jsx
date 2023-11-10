@@ -7,7 +7,7 @@ import {
   LinkOverlay,
   List,
   ListItem,
-  Flex
+  Grid,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
@@ -18,12 +18,9 @@ export const CourseList = ({ cursos, showDescription, title }) => {
       {cursos?.length > 0 ? (
         <Box mb="16">
           {title && <SectionHeading title={title} />}
-          <Flex
-            flexWrap="wrap"
-            alignItems="center"
+          <Grid
+            templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
             gap="4"
-            justifyContent="center"
-            pos="relative"
           >
             {cursos.map(({ id, imgSrc, title, descripcion, url, details }) => {
               const Component = url ? LinkOverlay : Box;
@@ -33,7 +30,6 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                 <LinkBox
                   bg="rgba(225, 231, 248, 1)"
                   key={id}
-                  flex={'1 1 200px'}
                   borderRadius="lg"
                   _hover={{ opacity: url ? 0.8 : 1 }}
                 >
@@ -69,8 +65,6 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                     </Text>
                   ) : null}
 
-                  {/* Esta seccion se puede mover a un componente aparte,
-                  falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
                     <List px="2" py="4" fontSize="sm">
                       {details.map((detail) => {
@@ -81,7 +75,7 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                 </LinkBox>
               );
             })}
-          </Flex>
+          </Grid>
         </Box>
       ) : null}
     </>
