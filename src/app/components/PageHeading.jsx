@@ -21,7 +21,7 @@ const PHeading = ({ title, titleColor, text, imgSrc }) => {
         </Heading>
 
         {text ? (
-          <Text fontSize="lg" color="#444444">
+          <Text fontSize={["md" ,"lg"]} color="#444444">
             {text}
           </Text>
         ) : null}
@@ -38,6 +38,7 @@ const PHeading = ({ title, titleColor, text, imgSrc }) => {
           paddingTop={{ base: "200px", md: "0" }}
           maxWidth="48%"
           borderRadius="lg"
+          marginBottom="24px"
         />
       ) : null}
     </Flex>

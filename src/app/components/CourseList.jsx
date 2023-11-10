@@ -8,6 +8,7 @@ import {
   List,
   ListItem,
   Flex
+  Grid,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
@@ -40,7 +41,7 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                   <Box position="relative">
                     <Image
                       w="100%"
-                      h="240"
+                      h={["215", "240"]}
                       src={imgSrc}
                       alt=""
                       borderRadius="lg"
@@ -69,10 +70,8 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                     </Text>
                   ) : null}
 
-                  {/* Esta seccion se puede mover a un componente aparte,
-                  falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
-                    <List px="2" py="4" fontSize="sm">
+                    <List px="2" py="4" fontSize={["xs", "sm"]}>
                       {details.map((detail) => {
                         return <ListItem key={detail}>{detail}</ListItem>;
                       })}
