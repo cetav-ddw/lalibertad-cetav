@@ -4,6 +4,8 @@ import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
 import YearbookCard from '@/app/components/YearbookCards';
 import FilterMenu from '@/app/components/FilterMenu';
+import TestimonyList from '@/app/components/Testimonies/TestimonyList';
+import testimonies from '@/app/content/testimonies';
 
 export default function Egresados() {
   return (
@@ -14,6 +16,7 @@ export default function Egresados() {
         text={headingInfo.web.text}
         imgSrc={headingInfo.web.imgSrc}
       />
+      <TestimonyList testimonies={testimonies.web} />
       <FilterMenu />
 
       <Box mb="16">

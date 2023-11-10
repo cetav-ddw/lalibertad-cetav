@@ -7,6 +7,9 @@ const OurInstitutions = () => {
       wrap="wrap"
       justifyContent="center"
       alignItems="center"
+      marginRight="-200%"
+      marginLeft="-200%"
+      // TODO mover este color al theme
       bg="#f2f4fC"
       p="10px"
       mb="16px"
