@@ -5,10 +5,9 @@ import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList'
-import testimonies from '../content/testimonies';
+import testimonies from '@/app/content/testimonies';
 
 export default function Egresados() {
-  const { web: webTestimonies } = testimonies;
   return (
     <>
       <PHeading
@@ -18,7 +17,7 @@ export default function Egresados() {
         imgSrc={headingInfo.web.imgSrc}
       />
 
-      <TestimonyList testimonies={webTestimonies} /> 
+      <TestimonyList testimonies={testimonies.web} /> 
 
       <FilterMenu />
 
