@@ -11,8 +11,10 @@ const TechniciansCharacteristics = () => {
       pt="14"
       pb="14"
       mb="16px"
-      marginRight="-7%"
-      marginLeft="-7%"
+      width="100vw"
+      position="relative"
+      left="50%"
+      transform="translateX(-50.6%)"
     >
       <Card
         bgColor="#CAD4F3B2"
