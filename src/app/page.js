@@ -15,7 +15,7 @@ export default function Home() {
           as="h1"
           fontSize="xx-large"
           textAlign="center"
-          flexBasis="800px"
+          maxWidth="800px"
           mx="auto"
         >
           ¡Bienvenid@s al Cetav!
