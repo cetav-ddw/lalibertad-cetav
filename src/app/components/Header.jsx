@@ -7,7 +7,6 @@ const Header = () => {
     <Box as="header" py="5">
       <Flex
         flexDirection="column"
-        alignItems="center"
         maxW="1180px"
         ml="auto"
         mr="auto"
@@ -25,6 +24,7 @@ const Header = () => {
             alt="Triada Logo"
             width="400px"
             height="90px"
+            style={{ margin: 'auto' }}
           />
         </Link>
         <MainNavigation />
