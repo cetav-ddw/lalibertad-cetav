@@ -1,9 +1,9 @@
 import { Wrap, Box } from '@chakra-ui/react';
-import YearbookCard from '@/app/components/YearbookCards';
-import FilterMenu from '@/app/components/FilterMenu';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
+import YearbookCard from '@/app/components/YearbookCards';
+import FilterMenu from '@/app/components/FilterMenu';
 
 export default function Egresados() {
   return (

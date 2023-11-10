@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import { Flex } from '@chakra-ui/react';
 import CareerFilter from './CareerFilter';
-import YearFilter from '../egresados/components/YearFilter';
+import YearFilter from './YearFilter';
+
 
 const FilterMenu = () => {
   const [carreerList, setCarreerList] = useState([]);
