@@ -22,11 +22,11 @@ const Footer = () => {
         as="footer"
         py="16"
         bgColor="#313677"
-        textAlign={{ base: "center", md: "flex-start" }}
+        gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+        textAlign={{ base: "center", md: "center", lg: "left" }}
         mx="auto"
         maxW="1180px"
         display="grid"
-        gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
         gap={4}
         pt="8"
         pb="16"
