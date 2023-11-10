@@ -8,7 +8,6 @@ import {
   List,
   ListItem,
   Flex
-  Grid,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
