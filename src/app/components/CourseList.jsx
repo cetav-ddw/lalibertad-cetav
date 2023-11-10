@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import {
-  Link,
   Heading,
   Image,
   Text,
@@ -9,6 +8,7 @@ import {
   LinkOverlay,
   List,
   ListItem,
+  Link,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
@@ -35,7 +35,7 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                 <LinkBox
                   bg="rgba(225, 231, 248, 1)"
                   key={id}
-                  maxW="23%"
+                  maxWidth="22%"
                   borderRadius="lg"
                   _hover={{ opacity: url ? 0.8 : 1 }}
                 >
@@ -71,7 +71,8 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                     </Text>
                   ) : null}
 
-                  {/* Esta seccion se puede mover a un componente aparte, falta hacer render de cada detalle */}
+                  {/* Esta seccion se puede mover a un componente aparte,
+                  falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
                     <List textAlign="justify" px="2" py="4" fontSize="sm">
                       {details.map(
