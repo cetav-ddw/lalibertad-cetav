@@ -1,9 +1,14 @@
 'use client'
-import { Box, Link, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
+import { Box, Link, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, IconButton} from '@chakra-ui/react';
 import { Link as NextLink } from 'next/link';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
 
 const MainNavigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onClose = () => setIsOpen(false);
+
   return (
     <Box
       as="nav"
@@ -12,6 +17,52 @@ const MainNavigation = () => {
       p={4}
       justifyContent={{ base: 'space-between', md: 'center' }}
     >
+      <Box display={{ base: 'block', md: 'none' }}>
+        <IconButton
+          icon={<HamburgerIcon />}
+          variant="outline"
+          onClick={() => setIsOpen(true)}
+        />
+        <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerCloseButton />
+            <DrawerHeader>Menú</DrawerHeader>
+            <DrawerBody>
+              <Box mb={4}>
+                <Link as={NextLink} href="/" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
+                  Inicio
+                </Link>
+              </Box>
+              <Box mb={4}>
+                <Link as={NextLink} href="/cursos-libres" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
+                  Cursos Libres
+                </Link>
+              </Box>
+              <Box mb={4}>
+                <Link as={NextLink} href="/tecnicos" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
+                  Cursos Técnicos
+                </Link>
+              </Box>
+              <Box mb={4}>
+                <Link as={NextLink} href="/acerca" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
+                  Sobre Nosotros
+                </Link>
+              </Box>
+              <Box mb={4}>
+                <Link as={NextLink} href="/egresados" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
+                  Egresados
+                </Link>
+              </Box>
+              <Box mb={4}>
+                <Link as={NextLink} href="/contacto" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
+                  Contacto
+                </Link>
+              </Box>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+      </Box>
       <Box display={{ base: 'none', md: 'flex' }} flex="1" justifyContent="center">
         <Link
           as={NextLink}
@@ -74,48 +125,6 @@ const MainNavigation = () => {
           Contacto
         </Link>
       </Box>
-
-      <Menu ml={{ base: 2, md: 0 }} autoSelect={false} justifyContent="flex-start">
-        <MenuButton
-          as={Box}
-          p={2}
-          display={{ base: 'block', md: 'none' }}
-        >
-          <HamburgerIcon boxSize={9} />
-        </MenuButton>
-        <MenuList>
-          <MenuItem>
-            <Link as={NextLink} href="/" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-              Inicio
-            </Link>
-          </MenuItem>
-          <MenuItem>
-            <Link as={NextLink} href="/cursos-libres" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-              Cursos Libres
-            </Link>
-          </MenuItem>
-          <MenuItem>
-            <Link as={NextLink} href="/tecnicos" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-              Cursos Técnicos
-            </Link>
-          </MenuItem>
-          <MenuItem>
-            <Link as={NextLink} href="/acerca" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-              Sobre Nosotros
-            </Link>
-          </MenuItem>
-          <MenuItem>
-            <Link as={NextLink} href="/egresados" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-              Egresados
-            </Link>
-          </MenuItem>
-          <MenuItem>
-            <Link as={NextLink} href="/contacto" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-              Contacto
-            </Link>
-          </MenuItem>
-        </MenuList>
-      </Menu>
     </Box>
   );
 };
