@@ -37,7 +37,6 @@ export default function Home() {
       <CourseList
         cursos={cursos.tecnicos}
         title={'Nuestras Carreras Técnicas'}
-        columns="4"
       />
       <InscriptionBanner />
       <LaboralFormation />
