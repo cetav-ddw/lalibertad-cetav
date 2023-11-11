@@ -6,11 +6,15 @@ import CourseList from '@/app/components/CourseList';
 import cursos from './content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import OurInstitutions from '@/app/components/OurInstitutions';
+import VideoModal from '@/app/components/ModalVideo';
 
 export default function Home() {
+  const videoUrl = 'https://player.vimeo.com/video/808341150?h=0d39844605';
+
   return (
     <>
       <Box padding="50" mb="16">
+        <VideoModal videoUrl={videoUrl} />
         <Heading
           as="h1"
           fontSize="xx-large"
