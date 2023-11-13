@@ -30,7 +30,7 @@ const PHeading = ({ title, titleColor, text, imgSrc }) => {
           backgroundSize="cover"
           width={{ base: "100%", md: "48%" }}
           height={{ base: "300px", md: "auto" }}
-          paddingTop={{ base: "200px", md: "0" }}
+          paddingTop={["50%", "350px"]}
           borderRadius="lg"
           marginBottom="24px"
         />
