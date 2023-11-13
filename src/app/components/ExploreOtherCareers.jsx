@@ -1,33 +1,34 @@
-import { Box } from '@chakra-ui/react';
-import CourseList from '@/app/components/CourseList';
 import cursos from '../content/cursosData';
+import CourseList from '@/app/components/CourseList';
+import shuffleArray from '@/app/utils/shuffled';
+import SectionHeading from './SectionHeading';
 
-function shuffleArray(array) {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-}
-
-const ExploreOtherCareers = ({ currentCourseId }) => {
-  const otherCourses = cursos.tecnicos.filter(
+const ExploreOtherCareers = ({
+  currentCourseId,
+  isHomePage,
+  items = 3,
+  title,
+}) => {
+  let otherCourses = cursos.tecnicos.filter(
     (course) => course.id !== currentCourseId,
   );
 
+  if (isHomePage) {
+    const cursosLibresMix = cursos.cursosLibresDiseno.concat(
+      cursos.cursosLibresComputo,
+    );
+    otherCourses = cursosLibresMix;
+  }
+
   const shuffledCourses = shuffleArray(otherCourses);
 
-  const limitedCourses = shuffledCourses.slice(0, 3);
+  const limitedCourses = shuffledCourses.slice(0, items);
 
   return (
-    <Box>
-      <CourseList
-        cursos={limitedCourses}
-        showDescription
-        title="Explora nuestras otras carreras"
-      />
-    </Box>
+    <>
+      <SectionHeading title={title} />
+      <CourseList cursos={limitedCourses} showDescription />;
+    </>
   );
 };
 

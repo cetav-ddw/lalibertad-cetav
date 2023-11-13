@@ -1,5 +1,5 @@
 import CourseList from '@/app/components/CourseList';
-import cursos from '../content/cursosData';
+import cursos from '@/app/content/cursosData';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 
