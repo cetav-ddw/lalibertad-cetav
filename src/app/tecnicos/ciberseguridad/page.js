@@ -29,7 +29,11 @@ export default function CiberseguridadPage() {
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
-      <ExploreOtherCareers currentCourseId={currentCourseId} />
+      <ExploreOtherCareers
+        currentCourseId={currentCourseId}
+        items={3}
+        title={'Explora nuestras carreras'}
+      />
       <FaqBanner />
     </>
   );

@@ -30,7 +30,10 @@ export default function AnalisisDatosPage() {
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
-      <ExploreOtherCareers currentCourseId={currentCourseId} />
+      <ExploreOtherCareers
+        currentCourseId={currentCourseId}
+        title={'Explora nuestras carreras'}
+      />
       <FaqBanner />
     </>
   );
