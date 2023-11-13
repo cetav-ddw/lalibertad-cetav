@@ -17,7 +17,7 @@ const OurInstitutions = () => {
       mb="16px"
     >
       {images.map((image) => (
-        <Box key={image.src} mx="5px">
+        <Box key={image.src} mx="10px" my="10px">
           <Image src={image.src} alt={image.alt} w="100px" />
         </Box>
       ))}
