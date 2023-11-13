@@ -10,7 +10,7 @@ const TechniciansCharacteristics = () => {
       justifyContent="space-between"
       pt="14"
       pb="14"
-      mb="16px"
+      mb="16"
       width="100vw"
       position="relative"
       left="50%"
