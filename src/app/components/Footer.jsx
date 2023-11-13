@@ -19,10 +19,14 @@ const Footer = () => {
   return (
     <Box as="footer" py="16" bgColor="#313677" borderTop="10px solid #E1E7F8">
       <Box
+        as="footer"
+        py="16"
+        bgColor="#313677"
+        gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+        textAlign={{ base: "center", lg: "left" }}
         mx="auto"
         maxW="1180px"
         display="grid"
-        gridTemplateColumns="repeat(4, 1fr)"
         gap={4}
         pt="8"
         pb="16"
