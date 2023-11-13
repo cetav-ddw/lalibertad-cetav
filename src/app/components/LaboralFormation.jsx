@@ -1,9 +1,10 @@
-import { Box, Text, Image, Center } from '@chakra-ui/react';
+'use client'
+import { Box, Text, Image, Center} from '@chakra-ui/react';
 import SectionHeading from './SectionHeading';
 
 const LaboralFormation = () => {
   return (
-    <Box mb="16" p={{ base: 4, md: 6 }} textAlign="center">
+    <Box mb="16" p={{ base: 4, md: 6 }} textAlign="justify">
       <SectionHeading title="Formación que abre puertas laborales" />
       <Text maxWidth="1000px"margin="0 auto"fontSize={{ base: 'md', md: 'lg' }}>
         El modelo de formación para el empleo ofrece una formación integral,
