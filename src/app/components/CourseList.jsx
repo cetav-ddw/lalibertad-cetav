@@ -18,7 +18,8 @@ export const CourseList = ({ cursos, showDescription, title }) => {
   return (
     <>
       {cursos?.length > 0 ? (
-        <Box mb="16">
+        <Box mb="16"
+        >
           {title && <SectionHeading title={title} />}
           <Grid
             templateColumns={[
@@ -28,6 +29,8 @@ export const CourseList = ({ cursos, showDescription, title }) => {
               'repeat(4, 1fr)',
             ]}
             gap={4}
+            mx={{ base: '10%', md: "0%" }}
+            maxW={{ base: '80%', md: "100%" }}
           >
             {cursos.map(({ id, imgSrc, title, descripcion, url, details }) => {
               const Component = url ? LinkOverlay : Box;
