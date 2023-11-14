@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import {
   Heading,
   Image,
@@ -7,6 +8,8 @@ import {
   LinkOverlay,
   List,
   ListItem,
+  Link,
+  Grid,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
@@ -17,13 +20,14 @@ export const CourseList = ({ cursos, showDescription, title }) => {
       {cursos?.length > 0 ? (
         <Box mb="16">
           {title && <SectionHeading title={title} />}
-          <Box
-            display="flex"
-            flexWrap="wrap"
-            alignItems="center"
-            gap="4"
-            justifyContent="center"
-            pos="relative"
+          <Grid
+            templateColumns={[
+              'repeat(1, 1fr)',
+              'repeat(2, 1fr)',
+              'repeat(3, 1fr)',
+              'repeat(4, 1fr)',
+            ]}
+            gap={4}
           >
             {cursos.map(({ id, imgSrc, title, descripcion, url, details }) => {
               const Component = url ? LinkOverlay : Box;
@@ -33,14 +37,13 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                 <LinkBox
                   bg="rgba(225, 231, 248, 1)"
                   key={id}
-                  maxWidth="22%"
                   borderRadius="lg"
                   _hover={{ opacity: url ? 0.8 : 1 }}
                 >
                   <Box position="relative">
                     <Image
                       w="100%"
-                      h="240"
+                      h={['215', '240']}
                       src={imgSrc}
                       alt=""
                       borderRadius="lg"
@@ -69,19 +72,45 @@ export const CourseList = ({ cursos, showDescription, title }) => {
                     </Text>
                   ) : null}
 
-                  {/* Esta seccion se puede mover a un componente aparte,
-                  falta hacer render de cada detalle */}
                   {showDescription && details?.length > 0 ? (
-                    <List px="2" py="4" fontSize="sm">
-                      {details.map((detail) => {
-                        return <ListItem key={detail}>{detail}</ListItem>;
+                    <List
+                      width="90%"
+                      m="auto"
+                      textAlign="justify"
+                      px="2"
+                      py="4"
+                      fontSize="sm"
+                    >
+                      {details.map(({ label, value, url }) => {
+                        return (
+                          <Fragment key={id}>
+                            {url ? (
+                              <ListItem py="2">
+                                <Link fontWeight="semibold" href={url}>
+                                  {label}
+                                </Link>
+                              </ListItem>
+                            ) : (
+                              <ListItem py="2">
+                                <Text
+                                  fontWeight="semibold"
+                                  display="inline"
+                                  mr=".5rem"
+                                >
+                                  {label}
+                                </Text>
+                                {value}
+                              </ListItem>
+                            )}
+                          </Fragment>
+                        );
                       })}
                     </List>
                   ) : null}
                 </LinkBox>
               );
             })}
-          </Box>
+          </Grid>
         </Box>
       ) : null}
     </>

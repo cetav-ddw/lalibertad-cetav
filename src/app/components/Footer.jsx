@@ -1,21 +1,32 @@
+'use client';
+
 import {
   Box,
-  Text,
-  Link,
   Heading,
+  Icon,
+  Link,
   ListItem,
+  Text,
   UnorderedList,
+  VisuallyHidden
 } from '@chakra-ui/react';
 import { Link as NextLink } from 'next/link';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
+
 
 const Footer = () => {
   return (
     <Box as="footer" py="16" bgColor="#313677" borderTop="10px solid #E1E7F8">
       <Box
+        as="footer"
+        py="16"
+        bgColor="#313677"
+        gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+        textAlign={{ base: "center", lg: "left" }}
         mx="auto"
         maxW="1180px"
         display="grid"
-        gridTemplateColumns="repeat(4, 1fr)"
         gap={4}
         pt="8"
         pb="16"
@@ -188,8 +199,50 @@ const Footer = () => {
           </Text>
         </Box>
       </Box>
-      <Box mx="auto" maxW="1180px" py="8">
-        <Text color="#fff">Aqui va logo de La Libertad</Text>
+
+      <Box
+        mx="auto"
+        maxW="1180px"
+        display="grid"
+        gridTemplateColumns="auto auto"
+        gap={14}
+        pt="4"
+      >
+        <Box>
+          <Link
+            href="https://lalibertadcr.org/"
+            _hover={{ opacity: 0.7 }}
+          >
+            <img
+              src="/images/libertad-logo.png"
+              alt="Logo La Libertad"
+              width="150px"
+              height="35px"
+            />
+          </Link>
+        </Box>
+        <Box display="grid" gridTemplateColumns="auto auto" gap={2} justifyContent="end">
+          <Link
+            href="https://www.facebook.com/cetavcr?mibextid=9R9pXO"
+            _hover={{ opacity: 0.7 }}
+            px={2}
+            py="2"
+            mx="1"
+          >
+            <Icon as={FaFacebookSquare} color="#ffffff" w={8} h={8} />
+            <VisuallyHidden>Enlace al perfil de Facebook del CETAV</VisuallyHidden>
+          </Link>
+          <Link
+            href="https://instagram.com/cetav_pll?igshid=OGQ5ZDc2ODk2ZA=="
+            _hover={{ opacity: 0.7 }}
+            px={2}
+            py="2"
+            mx="1"
+          >
+            <Icon as={AiFillInstagram} color="#ffffff" w={9} h={9} />
+            <VisuallyHidden>Enlace al perfil de Instagram del CETAV</VisuallyHidden>
+          </Link>
+        </Box>
       </Box>
     </Box>
   );

@@ -1,8 +1,8 @@
 import { SkipNavLink } from '@chakra-ui/react';
-import { Providers } from './providers';
-import Header from './components/Header';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
+import { Providers } from '@/app/providers';
+import Header from '@/app/components/Header';
+import MainContent from '@/app/components/MainContent';
+import Footer from '@/app/components/Footer';
 
 export const metadata = {
   title: 'CETAV',

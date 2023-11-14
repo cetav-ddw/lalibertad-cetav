@@ -71,24 +71,61 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'PhotoShop',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: '',
+          url: '',
+        },
       ],
     },
     {
       id: 'clDisenoIllustrador',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Illustrador',
-      url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
@@ -96,11 +133,30 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Premier',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
@@ -108,11 +164,30 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'After Effects',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
@@ -120,11 +195,30 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Manejo de Redes',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
@@ -132,85 +226,218 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Dibujo',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
   ],
   cursosLibresComputo: [
     {
-      id: 'clComputo',
+      id: 'clComputoAlfaDigital',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Alfabetización Digital',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
-      id: 'clDisenoIllustrador',
+      id: 'clComputoWord',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Word',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
-      id: 'clDisenoPremier',
+      id: 'clComputoExcel',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Excel',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
-      id: 'clDisenoAfterEffects',
+      id: 'clComputoPowerBi',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Power BI',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
-      id: 'clDisenoManejoDeRedes',
+      id: 'clComputoMultimedia',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Multimedia',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
     {
-      id: 'clDisenoDibujo',
+      id: 'clComputoCiberseguridad',
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Intro a la Ciberseguridad',
       details: [
-        'modalidad: Cursos presenciales y virtuales',
-        'edad: 15 años en adelante',
-        'lugar: CETAV, Parque Libertad',
-        'inversion: ₡25,000',
-        'info: 8751-2802 e inscripción en el enlace',
+        {
+          label: 'Modalidad:',
+          value: 'Cursos presenciales y virtuales',
+        },
+        {
+          label: 'Edad:',
+          value: '15 años en adelante',
+        },
+        {
+          label: 'Lugar:',
+          value: 'Cetav, Parque la Libertad',
+        },
+        {
+          label: 'Inversión:',
+          value: '₡25,000',
+        },
+        {
+          label: 'Info:',
+          value: '8751-2802',
+        },
+        {
+          label: 'Inscripción',
+          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+        },
       ],
     },
   ],
