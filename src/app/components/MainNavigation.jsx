@@ -45,11 +45,10 @@ const NavLink = ({ href, currentPath, children }) => {
     <Link
       as={NextLink}
       href={href}
-      _hover={{ textDecoration: 'underline' }}
       px={4}
       py="2"
       mx="1"
-      borderBottom={isActive ? '1px solid black' : 'none'}
+      borderBottom={isActive ? '2px solid black' : 'none'}
     >
       {children}
     </Link>
