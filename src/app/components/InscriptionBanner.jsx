@@ -18,15 +18,15 @@ export default function InscriptionBanner() {
       mb="16"
     >
       <Box display="flex" flexWrap={'wrap'}>
-        <Flex flex="1 1 300px" p="46px 40px" bg="#546cd4" color="#E1E7F8">
+        <Flex flex={{base:'0 1 50%', md:'1 1 300px'}} p={{base:'10px', md:'46px 40px'}} bg="#546cd4" color="#E1E7F8">
           <Box>
-            <Heading fontSize="2xl" mb="10px">
+            <Heading fontSize={{base: '2xmd', md:"2xl" }} mb="10px">
               ¿Deseas iniciar tu carrera técnica con nosotros?
             </Heading>
-            <Text fontSize="large" mb="20px">
+            <Text fontSize={{base:'sm',md:'lg'}} mb="20px">
               ¡Comienza tu proceso de admisión hoy mismo!
             </Text>
-            <Text fontSize="large">
+            <Text fontSize={{base:'sm',md:'lg'}}>
               <Link
                 display="inline-block"
                 textDecoration="underline"
@@ -39,11 +39,11 @@ export default function InscriptionBanner() {
             </Text>
           </Box>
         </Flex>
-        <Flex flex="1 1 300px" justifyContent="center" alignItems="center">
+        <Flex flex={{base:'0 1 50%', md:'1 1 300px'}} justifyContent="center" alignItems="center">
           <Image
             src="/images/inscription-banner-image.png"
             maxW="100%"
-            h="auto"
+            h={{base:'100%', md:'auto'}}
             w="100%"
             alt=""
           />
