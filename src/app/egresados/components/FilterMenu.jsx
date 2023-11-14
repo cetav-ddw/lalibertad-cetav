@@ -5,10 +5,6 @@ import Airtable from 'airtable';
 import CardEgresadosContainer from './CardEgresadosContainer';
 import CareerFilter from './CareerFilter';
 import YearFilter from './YearFilter';
-import dotenv from 'dotenv';
-
-dotenv.config();
-let airtableToken = process.env.NEXT_AIRTABLE_TOKEN;
 
 let timer;
 
@@ -41,7 +37,7 @@ const FilterMenu = () => {
 
   useEffect(() => {
     const base = new Airtable({
-      apiKey: airtableToken,
+      apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN,
     }).base('apphEdTpWzyL0aZdp');
 
     const fetchData = async (carreerList, yearList) => {
