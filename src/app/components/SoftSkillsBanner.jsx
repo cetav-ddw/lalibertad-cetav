@@ -13,13 +13,13 @@ const SoftSkillsBanner = () => {
   return (
     <Box mb="16">
       <SectionHeading title="Las competencias del futuro." />
-      <Text mb="4" fontSize="lg" maxWidth="980px" mx="auto">
+      <Text mb="4" fontSize="lg" maxWidth="980px" mx="15%" textAlign='center'>
         {
           'Desarrollamos capacidades de forma integral, abarcando el fortalecimiento de las habilidades de comunicación empática, el desarrollo del pensamiento creativo y la formación en gestión de negocios como parte de nuestro compromiso por formar personas jóvenes responsables, emprendederas y participativas.'
         }
       </Text>
       <Flex flexWrap="wrap" justifyContent="space-around">
-        <Flex flexDirection="column" maxW="48%" mx="2" my="6">
+        <Flex flexDirection="column" maxW={{base: '60%', md: "48%"}} mx="2" my="6">
           <Heading as="h3" fontSize="lg" color="#444444" mb="2">
             <Icon as={MdChat} w={6} h={6} />
             <Text as="span" display="block">
@@ -32,7 +32,7 @@ const SoftSkillsBanner = () => {
             }
           </Text>
         </Flex>
-        <Flex flexDirection="column" maxW="48%" mx="2" my="6">
+        <Flex flexDirection="column" maxW={{base: '60%', md: "48%"}} mx="2" my="6">
           <Heading as="h3" fontSize="lg" color="#444444" mb="2">
             <Icon as={MdPalette} w={6} h={6} />
             <Text as="span" display="block">
@@ -45,7 +45,7 @@ const SoftSkillsBanner = () => {
             }
           </Text>
         </Flex>
-        <Flex flexDirection="column" maxW="48%" mx="2" my="6">
+        <Flex flexDirection="column" maxW={{base: '60%', md: "48%"}} mx="2" my="6">
           <Heading as="h3" fontSize="lg" color="#444444" mb="2">
             <Icon as={MdTipsAndUpdates} w={6} h={6} />
             <Text as="span" display="block">
@@ -58,7 +58,7 @@ const SoftSkillsBanner = () => {
             }
           </Text>
         </Flex>
-        <Flex flexDirection="column" maxW="48%" mx="2" my="6">
+        <Flex flexDirection="column" maxW={{base: '60%', md: "48%"}} mx="2" my="6">
           <Heading as="h3" fontSize="lg" color="#444444" mb="2">
             <Icon as={MdOutlineImportContacts} w={6} h={6} />
             <Text as="span" display="block">
