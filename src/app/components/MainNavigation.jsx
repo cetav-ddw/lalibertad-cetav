@@ -39,20 +39,22 @@ const MainNavigation = () => {
 };
 
 const NavLink = ({ href, currentPath, children }) => {
-  const isActive = currentPath === href;
-
   return (
     <Link
       as={NextLink}
       href={href}
+      _hover={{
+        color: '#427FDF',
+      }}
+      borderBottom={currentPath === href ? '2px solid #427FDF' : 'none'}
       px={4}
       py="2"
       mx="1"
-      borderBottom={isActive ? '2px solid black' : 'none'}
     >
       {children}
     </Link>
   );
 };
+
 
 export default MainNavigation;
