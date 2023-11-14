@@ -31,6 +31,7 @@ const ExpectactionsBanner = () => {
               key={title}
               flexDirection="column"
               alignItems="center"
+              textAlign='center'
               maxW="48%"
               mx="2"
               my="6"
