@@ -22,6 +22,7 @@ export default function WebPage() {
         titleColor={headingInfo.web.titleColor}
         text={headingInfo.web.text}
         imgSrc={headingInfo.web.imgSrc}
+        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
