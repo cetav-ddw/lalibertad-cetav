@@ -17,8 +17,8 @@ export default function InscriptionBanner() {
       alignItems="center"
       mb="16"
     >
-      <Box display="flex">
-        <Flex flex="1" p="46px 40px" bg="#546cd4" color="#E1E7F8">
+      <Box display="flex" flexWrap={'wrap'}>
+        <Flex flex="1 1 300px" p="46px 40px" bg="#546cd4" color="#E1E7F8">
           <Box>
             <Heading fontSize="2xl" mb="10px">
               ¿Deseas iniciar tu carrera técnica con nosotros?
@@ -39,7 +39,7 @@ export default function InscriptionBanner() {
             </Text>
           </Box>
         </Flex>
-        <Flex flex="1" justifyContent="center" alignItems="center">
+        <Flex flex="1 1 300px" justifyContent="center" alignItems="center">
           <Image
             src="/images/inscription-banner-image.png"
             maxW="100%"

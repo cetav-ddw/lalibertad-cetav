@@ -7,7 +7,6 @@ import SectionHeading from '@/app/components/SectionHeading';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
 import testimonies from '@/app/content/testimonies';
 
-
 export default function Egresados() {
   return (
     <>
