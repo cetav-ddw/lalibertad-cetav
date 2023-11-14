@@ -1,8 +1,8 @@
 import FaqBanner from '@/app/components/FaqsBanner';
-import images from '../content/imageData';
+import images from '@/app/content/imageData';
 import OurAllies from '@/app/components/OurAllies';
 import CourseList from '@/app/components/CourseList';
-import cursos from '../content/cursosData';
+import cursos from '@/app/content/cursosData';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 

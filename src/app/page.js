@@ -1,10 +1,11 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import LaboralFormation from '@/app/components/LaboralFormation';
-import images from './content/imageData';
+import images from '@/app/content/imageData';
 import CourseList from '@/app/components/CourseList';
-import cursos from './content/cursosData';
+import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
+import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import OurInstitutions from '@/app/components/OurInstitutions';
 
 export default function Home() {
@@ -41,6 +42,11 @@ export default function Home() {
       <InscriptionBanner />
       <LaboralFormation />
       <OurAllies images={images} />
+      <ExploreOtherCareers
+        isHomePage={true}
+        items={2}
+        title={'Hecha un vistazo a nuestros cursos'}
+      />
     </>
   );
 }
