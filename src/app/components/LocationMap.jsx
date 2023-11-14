@@ -1,5 +1,5 @@
-import { Box } from '@chakra-ui/react';
 import React from 'react';
+import { Box } from '@chakra-ui/react';
 
 const LocationMap = () => {
   const googleMapsUrl = `https://www.google.com/maps?q=Edificio+Cetav,+Parque+La+Libertad&output=embed`;
