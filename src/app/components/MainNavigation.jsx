@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Box, Link } from '@chakra-ui/react';
 import { Link as NextLink, usePathname } from 'next/navigation';
@@ -55,6 +55,5 @@ const NavLink = ({ href, currentPath, children }) => {
     </Link>
   );
 };
-
 
 export default MainNavigation;
