@@ -20,8 +20,9 @@ export default function PaidMedia() {
       <PHeading
         title={headingInfo.paid.title}
         titleColor={headingInfo.paid.titleColor}
-        text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        text={headingInfo.paid.text}
+        imgSrc={headingInfo.paid.imgSrc}
+        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

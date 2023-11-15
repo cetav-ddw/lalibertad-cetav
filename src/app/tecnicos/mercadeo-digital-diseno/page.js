@@ -20,8 +20,9 @@ export default function MercadeoPage() {
       <PHeading
         title={headingInfo.mercadeo.title}
         titleColor={headingInfo.mercadeo.titleColor}
-        text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        text={headingInfo.mercadeo.text}
+        imgSrc={headingInfo.mercadeo.imgSrc}
+        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
