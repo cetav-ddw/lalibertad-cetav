@@ -5,12 +5,15 @@ const LocationMap = () => {
   const googleMapsUrl = `https://www.google.com/maps?q=Edificio+Cetav,+Parque+La+Libertad&output=embed`;
 
   return (
-    <Box>
+    <Box
+      width="100%"
+      height={["350px", "500px"]}
+    >
       <iframe
         title="Ubicación CETAV"
         src={googleMapsUrl}
-        width="600"
-        height="500"
+        width="100%"
+        height="100%"
         style={{ border: 0 }}
         loading="lazy"
       />
