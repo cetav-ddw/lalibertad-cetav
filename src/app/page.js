@@ -10,12 +10,10 @@ import OurInstitutions from '@/app/components/OurInstitutions';
 import VideoModal from '@/app/components/ModalVideo';
 
 export default function Home() {
-  const videoUrl = 'https://player.vimeo.com/video/808341150?h=0d39844605';
-
   return (
     <>
       <Box padding="50" mb="16">
-        <VideoModal videoUrl={videoUrl} />
+        <VideoModal />
         <Heading
           as="h1"
           fontSize="xx-large"
