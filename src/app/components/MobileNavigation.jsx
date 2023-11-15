@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import {
   Box,
@@ -22,7 +23,7 @@ const MobileNavigation = () => {
   const onClose = () => setIsOpen(false);
 
   return (
-    <Box display={{ base: 'block', md: 'none' }}>
+    <Box display={{ base: 'block', md: 'none' }} m="3">
       <IconButton
         icon={<HamburgerIcon />}
         variant="outline"
@@ -45,66 +46,66 @@ const MobileNavigation = () => {
             )}
           </DrawerHeader>
           <DrawerBody>
-            <Box mb={4}>
-              <Link
-                as={NextLink}
-                href="/"
-                textDecoration="none"
-                _hover={{ textDecoration: 'underline' }}
-              >
-                Inicio
-              </Link>
-            </Box>
-            <Box mb={4}>
-              <Link
-                as={NextLink}
-                href="/cursos-libres"
-                textDecoration="none"
-                _hover={{ textDecoration: 'underline' }}
-              >
-                Cursos Libres
-              </Link>
-            </Box>
-            <Box mb={4}>
-              <Link
-                as={NextLink}
-                href="/tecnicos"
-                textDecoration="none"
-                _hover={{ textDecoration: 'underline' }}
-              >
-                Cursos Técnicos
-              </Link>
-            </Box>
-            <Box mb={4}>
-              <Link
-                as={NextLink}
-                href="/acerca"
-                textDecoration="none"
-                _hover={{ textDecoration: 'underline' }}
-              >
-                Sobre Nosotros
-              </Link>
-            </Box>
-            <Box mb={4}>
-              <Link
-                as={NextLink}
-                href="/egresados"
-                textDecoration="none"
-                _hover={{ textDecoration: 'underline' }}
-              >
-                Egresados
-              </Link>
-            </Box>
-            <Box mb={4}>
-              <Link
-                as={NextLink}
-                href="/contacto"
-                textDecoration="none"
-                _hover={{ textDecoration: 'underline' }}
-              >
-                Contacto
-              </Link>
-            </Box>
+            <Link
+              as={NextLink}
+              href="/"
+              textDecoration="none"
+              _hover={{ textDecoration: 'underline' }}
+              mb={4}
+              display="block"
+            >
+              Inicio
+            </Link>
+            <Link
+              as={NextLink}
+              href="/cursos-libres"
+              textDecoration="none"
+              _hover={{ textDecoration: 'underline' }}
+              mb={4}
+              display="block"
+            >
+              Cursos Libres
+            </Link>
+            <Link
+              as={NextLink}
+              href="/tecnicos"
+              textDecoration="none"
+              _hover={{ textDecoration: 'underline' }}
+              mb={4}
+              display="block"
+            >
+              Cursos Técnicos
+            </Link>
+            <Link
+              as={NextLink}
+              href="/acerca"
+              textDecoration="none"
+              _hover={{ textDecoration: 'underline' }}
+              mb={4}
+              display="block"
+            >
+              Sobre Nosotros
+            </Link>
+            <Link
+              as={NextLink}
+              href="/egresados"
+              textDecoration="none"
+              _hover={{ textDecoration: 'underline' }}
+              mb={4}
+              display="block"
+            >
+              Egresados
+            </Link>
+            <Link
+              as={NextLink}
+              href="/contacto"
+              textDecoration="none"
+              _hover={{ textDecoration: 'underline' }}
+              mb={4}
+              display="block"
+            >
+              Contacto
+            </Link>
           </DrawerBody>
         </DrawerContent>
       </Drawer>

@@ -1,6 +1,5 @@
 'use client';
 import { Box, Link } from '@chakra-ui/react';
-import MobileNavigation from './MobileNavigation';
 import { Link as NextLink } from 'next/link';
 
 const MainNavigation = () => {
@@ -12,8 +11,6 @@ const MainNavigation = () => {
       p={4}
       justifyContent={{ base: 'space-between', md: 'center' }}
     >
-      <MobileNavigation />
-
       <Box
         display={{ base: 'none', md: 'flex' }}
         flex="1"
@@ -26,7 +23,9 @@ const MainNavigation = () => {
           px={4}
           py="2"
           mx="1"
-        ></Link>
+        >
+          Inicio
+        </Link>
         <Link
           as={NextLink}
           href="/cursos-libres"

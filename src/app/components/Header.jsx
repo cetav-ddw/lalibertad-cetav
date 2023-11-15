@@ -1,5 +1,6 @@
 import { Box, Flex, Link, Image } from '@chakra-ui/react';
 import MainNavigation from '@/app/components/MainNavigation';
+import MobileNavigation from './MobileNavigation';
 import { Link as NextLink } from 'next/link';
 
 const Header = () => {
@@ -19,11 +20,12 @@ const Header = () => {
             alt="Triada Logo"
             width="400px"
             height="90px"
-            style={{ margin: 'auto' }}
+            m="auto"
           />
         </Link>
         <MainNavigation />
       </Flex>
+        <MobileNavigation />
     </Box>
   );
 };
