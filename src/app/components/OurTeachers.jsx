@@ -8,7 +8,7 @@ const OurTeachers = ({ teacherList }) => {
       {teacherList?.length > 0 ? (
         <Box mx="auto" maxW="980px" mb="16">
           <SectionHeading title="¿Quiénes son nuestros profesores?" />
-          <Text fontSize="lg" p="2" my="4" textAlign='center'>
+          <Text fontSize="lg" p="2" my="4">
             {
               'Nuestros profesores y profesoras, son profesionales activos y miembros de la industria, dedicados a enseñarte las habilidades más demandadas.'
             }
@@ -22,7 +22,7 @@ const OurTeachers = ({ teacherList }) => {
             {teacherList.map(({ id, name, position, avatarSrc }) => {
               return (
                 <Flex
-                maxW={{base: '80%', md: "31%"}}
+                  maxW={{ base: '80%', md: '31%' }}
                   flex="1 1 300px"
                   alignItems="center"
                   key={id}

@@ -25,7 +25,7 @@ const Header = () => {
         </Link>
         <MainNavigation />
       </Flex>
-        <MobileNavigation />
+      <MobileNavigation />
     </Box>
   );
 };
