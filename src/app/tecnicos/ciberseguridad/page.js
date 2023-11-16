@@ -19,8 +19,9 @@ export default function CiberseguridadPage() {
     <>
       <PHeading
         title={headingInfo.ciber.title}
-        text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        text={headingInfo.ciber.text}
+        imgSrc={headingInfo.ciber.imgSrc}
+        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

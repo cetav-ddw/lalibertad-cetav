@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Box, Link } from '@chakra-ui/react';
 import { Link as NextLink, usePathname } from 'next/navigation';
@@ -9,13 +9,16 @@ const MainNavigation = () => {
   return (
     <Box
       as="nav"
-      display="flex"
+      display={{ base: 'none', md: 'flex' }}
+  flex="1"
       alignItems="center"
       p={4}
-      justifyContent="space-between"
+      justifyContent={{ base: 'space-between', md: 'center' }}
     >
-      <Box display="flex" flex="1" justifyContent="center">
-        <NavLink href="/" currentPath={pathname}>
+        <NavLink
+          href="/"
+          currentPath={pathname}
+        >
           Inicio
         </NavLink>
         <NavLink href="/cursos-libres" currentPath={pathname}>
@@ -33,7 +36,6 @@ const MainNavigation = () => {
         <NavLink href="/contacto" currentPath={pathname}>
           Contacto
         </NavLink>
-      </Box>
     </Box>
   );
 };
@@ -55,6 +57,5 @@ const NavLink = ({ href, currentPath, children }) => {
     </Link>
   );
 };
-
 
 export default MainNavigation;
