@@ -20,7 +20,7 @@ export default function CiberseguridadPage() {
       <PHeading
         title={headingInfo.ciber.title}
         text={headingInfo.ciber.text}
-        imgSrc={headingInfo.web.imgSrc}
+        imgSrc={headingInfo.ciber.imgSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />

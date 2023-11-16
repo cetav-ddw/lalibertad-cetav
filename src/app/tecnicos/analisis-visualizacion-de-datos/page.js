@@ -21,7 +21,7 @@ export default function AnalisisDatosPage() {
         title={headingInfo.anaDatos.title}
         titleColor={headingInfo.anaDatos.titleColor}
         text={headingInfo.anaDatos.text}
-        imgSrc={headingInfo.web.imgSrc}
+        imgSrc={headingInfo.anaDatos.imgSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />

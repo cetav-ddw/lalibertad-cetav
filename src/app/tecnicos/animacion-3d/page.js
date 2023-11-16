@@ -21,7 +21,7 @@ export default function Animacion3D() {
         title={headingInfo.animacion.title}
         titleColor={headingInfo.animacion.titleColor}
         text={headingInfo.animacion.text}
-        imgSrc={headingInfo.web.imgSrc}
+        imgSrc={headingInfo.animacion.imgSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />
