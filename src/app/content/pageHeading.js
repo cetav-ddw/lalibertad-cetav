@@ -24,11 +24,6 @@ const headingInfo = {
   },
   ciber: {
     title: 'Ciberseguridad',
-    text:'Se forma al estudiante bajo la premisa de proteger al ser humano y su información. Promoviendo la conciencia, las mejores prácticas, la ética, las leyes y normas vigentes. Este técnico aborda desde un enfoque teórico-práctico la ruta para la ciberseguridad, esto implica conocimientos técnicos, el pensamiento lógico-matemático, los sistemas operativos, las bases de datos y otros elementos relevantes.',
-    imgSrc: '/videos/3D-medio-comprimido.mp4',
-  },
-  ciber: {
-    title: 'Ciberseguridad',
     text: 'El área de la cyberseguridad se dedica al diseño y construcción de aplicaciones y sitios web, abarcando aspectos como la interacción, funcionalidad, accesibilidad y usabilidad, todos basados en estándares web reconocidos.',
     imgSrc: '/videos/cyberseguridad-medio-comprimido.mp4',
   },
@@ -54,7 +49,7 @@ const headingInfo = {
   cursosL: {
     title: 'Nuestros',
     titleColor: 'cursos libres',
-    text:'Los Cursos Libres de Diseño elevan tus habilidades en herramientas clave para la industria, mejorando tu perfil profesional y conectando mejor con tu audiencia. Centros de Cómputo ofrece certificaciones en habilidades digitales y ofimáticas, adaptándose a tus horarios, para destacar en el mercado laboral.',,
+    text:'Los Cursos Libres de Diseño elevan tus habilidades en herramientas clave para la industria, mejorando tu perfil profesional y conectando mejor con tu audiencia. Centros de Cómputo ofrece certificaciones en habilidades digitales y ofimáticas, adaptándose a tus horarios, para destacar en el mercado laboral.',
     imgSrc: '/images/animacion-3d.jpg',
   },
   carrerasT: {
