@@ -6,8 +6,8 @@ import LocationMap from './LocationMap';
 
 export default function ContactDetail() {
   return (
-    <Flex>
-      <Box maxWidth="40%">
+    <Flex flexDirection={{ base: 'column', md: 'row' }}>
+      <Box maxWidth={{ base: '100%', md: '40%' }}>
         <Box
           mb="20px"
           px="6"
@@ -203,7 +203,11 @@ export default function ContactDetail() {
         display="flex"
         alignItems="center"
         mb="2"
+        ml={{ base: '0', md: '5' }}
+        mt={{ base: '5', md: '14' }}
         justifyContent="center"
+        width="100%"
+        height="100%"
       >
         <LocationMap />
       </Box>
