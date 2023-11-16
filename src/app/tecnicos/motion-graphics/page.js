@@ -22,6 +22,7 @@ export default function MotionGraphicPage() {
         titleColor={headingInfo.motion.titleColor}
         text={headingInfo.motion.text}
         imgSrc={headingInfo.web.imgSrc}
+        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

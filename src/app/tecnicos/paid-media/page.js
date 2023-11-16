@@ -22,6 +22,7 @@ export default function PaidMedia() {
         titleColor={headingInfo.paid.titleColor}
         text={headingInfo.paid.text}
         imgSrc={headingInfo.web.imgSrc}
+        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

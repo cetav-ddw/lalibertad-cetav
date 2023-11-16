@@ -3,7 +3,7 @@ const headingInfo = {
     title: 'Diseño &',
     titleColor: 'desarrollo web',
     text: 'El área de Desarrollo web está dirigido al diseño de aplicaciones y sitios digitales que abarcan la interacción, funcionalidad, accesibilidad y usabilidad basadas en los estándares Web.',
-    imgSrc: '/images/web.jpg',
+    imgSrc: '/videos/web-medio-comprimido.mp4',
   },
   mercadeo: {
     title: 'Mercadeo',
@@ -20,7 +20,8 @@ const headingInfo = {
   animacion: {
     title: 'Animación',
     titleColor: '3D',
-    text:'La Animación 3D es un proceso que se compone de varias etapas, comenzando por el desarrollo de la idea y su solución visual, hasta las etapas más técnicas que comprenden el desarrollo de los componentes visuales como personajes y ambientes, su iluminación y composición final.'
+    text:'La Animación 3D es un proceso que se compone de varias etapas, comenzando por el desarrollo de la idea y su solución visual, hasta las etapas más técnicas que comprenden el desarrollo de los componentes visuales como personajes y ambientes, su iluminación y composición final.',
+    imgSrc: '/videos/3D-medio-comprimido.mp4',
   },
   ciber: {
     title: 'Ciberseguridad',
@@ -30,7 +31,6 @@ const headingInfo = {
   anaDatos: {
     title: 'Análisis y vizualización',
     titleColor: 'de datos',
-    
     text:'Las personas participantes de este programa desarrollan las competencias necesarias para el manejo y administración de bases de datos, así como la creación de visualizaciones interactivas, aplicadas en las estrategias de la empresa para extraer el conocimiento y comunicarlo de forma que permita mejorar el proceso de toma de decisiones.',
     imgSrc: '/videos/avdata-medio-comprimido.mp4',
   },

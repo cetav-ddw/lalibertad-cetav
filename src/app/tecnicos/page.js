@@ -13,7 +13,7 @@ export default function Tecnicos() {
         title={headingInfo.carrerasT.title}
         titleColor={headingInfo.carrerasT.titleColor}
         text={headingInfo.carrerasT.text}
-        imgSrc={headingInfo.web.imgSrc}
+        imgSrc={headingInfo.carrerasT.imgSrc}
       />
       <CourseList cursos={cursos.tecnicos} showDescription />
       <OurAllies images={images} />

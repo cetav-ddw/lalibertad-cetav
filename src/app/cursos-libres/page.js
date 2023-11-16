@@ -12,7 +12,7 @@ export default function CursosLibres() {
         title={headingInfo.cursosL.title}
         titleColor={headingInfo.cursosL.titleColor}
         text={headingInfo.cursosL.text}
-        imgSrc={headingInfo.web.imgSrc}
+        imgSrc={headingInfo.cursosL.imgSrc}
       />
       <Box>
       <SectionHeading title="Cursos Libres de Diseño" />
