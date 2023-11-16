@@ -14,7 +14,7 @@ import {
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 const ITEMS_PER_PAGE_MOBILE = 26;
-const ITEMS_PER_PAGE_DESKTOP = 25;
+const ITEMS_PER_PAGE_DESKTOP = 16;
 
 const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -44,7 +44,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
 
   return (
     <>
-      <SimpleGrid columns={isMobile ? 2 : 5} spacing={isMobile ? 2 : 5}>
+      <SimpleGrid columns={isMobile ? 2 : 4} spacing={isMobile ? 2 : 5}>
         {currentData.map((record) => (
           <Box key={record.id}>
             <CardEgresados user={record} />

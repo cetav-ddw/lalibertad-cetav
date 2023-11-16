@@ -6,6 +6,7 @@ import {
   Heading,
   IconButton,
   useBreakpointValue,
+  Link as ChakraLink 
 } from '@chakra-ui/react';
 import { MdOutlinePermContactCalendar, MdOutlineLink } from 'react-icons/md';
 
@@ -30,40 +31,32 @@ function CardEgresados(props) {
           alignItems="center"
           flexWrap="wrap"
         >
-          <Avatar name={user.fields.name} src={user.fields.avatar} />
+          <Avatar size='xl' name={user.fields.name} src={user.fields.avatar} />
           <Box maxWidth={isMobile ? '50%' : '60%'}>
             <Heading size={isMobile ? 'xs' : 'sm'}>{user.fields.name}</Heading>
             {user.fields.linkedin && (
-              <a
-                href={user.fields.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconButton
-                  style={{ fontSize: isMobile ? '20px' : '26px' }}
-                  size={isMobile ? 'xs' : 'sm'}
-                  variant="ghost"
-                  colorScheme="blue"
-                  aria-label="See LinkedIn"
-                  icon={<MdOutlinePermContactCalendar />}
-                />
-              </a>
+              <ChakraLink href={user.fields.linkedin} isExternal>
+              <IconButton
+                fontSize={isMobile ? '20px' : '26px'}
+                size={isMobile ? 'xs' : 'md'}
+                variant="ghost"
+                colorScheme="blue"
+                aria-label="Enlace-portafolio-profesional"
+                icon={<MdOutlinePermContactCalendar />}
+              />
+            </ChakraLink>
             )}
             {user.fields.url && (
-              <a
-                href={user.fields.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconButton
-                  style={{ fontSize: isMobile ? '20px' : '26px' }}
-                  size={isMobile ? 'xs' : 'sm'}
-                  variant="ghost"
-                  colorScheme="blue"
-                  aria-label="See URL"
-                  icon={<MdOutlineLink />}
-                />
-              </a>
+              <ChakraLink href={user.fields.url} isExternal>
+              <IconButton
+                fontSize={isMobile ? '20px' : '26px'}
+                size={isMobile ? 'xs' : 'md'}
+                variant="ghost"
+                colorScheme="blue"
+                aria-label="Enlace-contacto-profesional"
+                icon={<MdOutlineLink />}
+              />
+            </ChakraLink>
             )}
           </Box>
         </Flex>
