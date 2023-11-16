@@ -31,7 +31,7 @@ function CardEgresados(props) {
           alignItems="center"
           flexWrap="wrap"
         >
-          <Avatar size='xl' name={user.fields.name} src={user.fields.avatar} />
+          <Avatar size={{base: 'sm', md: 'xl'}} name={user.fields.name} src={user.fields.avatar} />
           <Box maxWidth={isMobile ? '50%' : '60%'}>
             <Heading size={isMobile ? 'xs' : 'sm'}>{user.fields.name}</Heading>
             {user.fields.linkedin && (
