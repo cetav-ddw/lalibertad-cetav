@@ -10,7 +10,7 @@ const MainNavigation = () => {
     <Box
       as="nav"
       display={{ base: 'none', md: 'flex' }}
-  flex="1"
+      flex="1"
       alignItems="center"
       p={4}
       justifyContent={{ base: 'space-between', md: 'center' }}
