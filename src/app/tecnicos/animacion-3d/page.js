@@ -11,6 +11,7 @@ import testimonies from '@/app/content/testimonies';
 import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
+import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 
 export default function Animacion3D() {
   const currentCourseId = 'tecAnimacion3d';
@@ -19,16 +20,21 @@ export default function Animacion3D() {
       <PHeading
         title={headingInfo.animacion.title}
         titleColor={headingInfo.animacion.titleColor}
-        text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        text={headingInfo.animacion.text}
+        imgSrc={headingInfo.animacion.imgSrc}
+        isTecnico="true"
       />
+      <TechniciansCharacteristics />
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
-      <ExploreOtherCareers currentCourseId={currentCourseId} />
+      <ExploreOtherCareers
+        currentCourseId={currentCourseId}
+        title={'Explora nuestras carreras'}
+      />
       <FaqBanner />
     </>
   );

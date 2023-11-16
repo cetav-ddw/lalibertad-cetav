@@ -1,83 +1,60 @@
 'use client';
+
 import { Box, Link } from '@chakra-ui/react';
-import { Link as NextLink } from 'next/link';
+import { Link as NextLink, usePathname } from 'next/navigation';
 
 const MainNavigation = () => {
+  const pathname = usePathname();
+
   return (
     <Box
       as="nav"
-      display="flex"
+      display={{ base: 'none', md: 'flex' }}
+  flex="1"
       alignItems="center"
       p={4}
       justifyContent={{ base: 'space-between', md: 'center' }}
     >
-      <Box
-        display={{ base: 'none', md: 'flex' }}
-        flex="1"
-        justifyContent="center"
-      >
-        <Link
-          as={NextLink}
+        <NavLink
           href="/"
-          _hover={{ textDecoration: 'underline' }}
-          px={4}
-          py="2"
-          mx="1"
+          currentPath={pathname}
         >
           Inicio
-        </Link>
-        <Link
-          as={NextLink}
-          href="/cursos-libres"
-          _hover={{ textDecoration: 'underline' }}
-          px={4}
-          py="2"
-          mx="1"
-        >
+        </NavLink>
+        <NavLink href="/cursos-libres" currentPath={pathname}>
           Cursos Libres
-        </Link>
-        <Link
-          as={NextLink}
-          href="/tecnicos"
-          _hover={{ textDecoration: 'underline' }}
-          px={4}
-          py="2"
-          mx="1"
-        >
+        </NavLink>
+        <NavLink href="/tecnicos" currentPath={pathname}>
           Cursos Técnicos
-        </Link>
-        <Link
-          as={NextLink}
-          href="/acerca"
-          _hover={{ textDecoration: 'underline' }}
-          px={4}
-          py="2"
-          mx="1"
-        >
+        </NavLink>
+        <NavLink href="/acerca" currentPath={pathname}>
           Sobre Nosotros
-        </Link>
-        <Link
-          as={NextLink}
-          href="/egresados"
-          _hover={{ textDecoration: 'underline' }}
-          px={4}
-          py="2"
-          mx="1"
-        >
+        </NavLink>
+        <NavLink href="/egresados" currentPath={pathname}>
           Egresados
-        </Link>
-        <Link
-          as={NextLink}
-          href="/contacto"
-          _hover={{ textDecoration: 'underline' }}
-          px={4}
-          py="2"
-          mx="1"
-        >
+        </NavLink>
+        <NavLink href="/contacto" currentPath={pathname}>
           Contacto
-        </Link>
-      </Box>
+        </NavLink>
     </Box>
+  );
+};
+
+const NavLink = ({ href, currentPath, children }) => {
+  return (
+    <Link
+      as={NextLink}
+      href={href}
+      _hover={{
+        color: '#427FDF',
+      }}
+      borderBottom={currentPath === href ? '2px solid #427FDF' : 'none'}
+      px={4}
+      py="2"
+      mx="1"
+    >
+      {children}
+    </Link>
   );
 };
 

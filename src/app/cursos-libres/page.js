@@ -1,5 +1,5 @@
 import CourseList from '@/app/components/CourseList';
-import cursos from '../content/cursosData';
+import cursos from '@/app/content/cursosData';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 
@@ -9,8 +9,8 @@ export default function CursosLibres() {
       <PHeading
         title={headingInfo.cursosL.title}
         titleColor={headingInfo.cursosL.titleColor}
-        text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        text={headingInfo.cursosL.text}
+        imgSrc={headingInfo.cursosL.imgSrc}
       />
       <CourseList
         cursos={cursos.cursosLibresDiseno}

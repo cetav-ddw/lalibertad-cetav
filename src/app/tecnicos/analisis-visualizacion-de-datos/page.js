@@ -11,6 +11,7 @@ import testimonies from '@/app/content/testimonies';
 import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
+import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 
 export default function AnalisisDatosPage() {
   const currentCourseId = 'tecAnalisisDatos';
@@ -19,16 +20,21 @@ export default function AnalisisDatosPage() {
       <PHeading
         title={headingInfo.anaDatos.title}
         titleColor={headingInfo.anaDatos.titleColor}
-        text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        text={headingInfo.anaDatos.text}
+        imgSrc={headingInfo.anaDatos.imgSrc}
+        isTecnico="true"
       />
+      <TechniciansCharacteristics />
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
-      <ExploreOtherCareers currentCourseId={currentCourseId} />
+      <ExploreOtherCareers
+        currentCourseId={currentCourseId}
+        title={'Explora nuestras carreras'}
+      />
       <FaqBanner />
     </>
   );

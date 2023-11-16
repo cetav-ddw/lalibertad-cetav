@@ -11,6 +11,7 @@ import testimonies from '@/app/content/testimonies';
 import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
+import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 
 export default function WebPage() {
   const currentCourseId = 'tecWeb';
@@ -21,14 +22,20 @@ export default function WebPage() {
         titleColor={headingInfo.web.titleColor}
         text={headingInfo.web.text}
         imgSrc={headingInfo.web.imgSrc}
+        isTecnico="true"
       />
+      <TechniciansCharacteristics />
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.web} />
       <ExpectactionsBanner />
       <TestimonyList testimonies={testimonies.web} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
-      <ExploreOtherCareers currentCourseId={currentCourseId} />
+      <ExploreOtherCareers
+        currentCourseId={currentCourseId}
+        items={3}
+        title={'Explora nuestras carreras'}
+      />
       <FaqBanner />
     </>
   );
