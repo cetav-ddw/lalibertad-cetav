@@ -5,6 +5,7 @@ import {
   MenuOptionGroup,
   MenuItemOption,
   Flex,
+  Icon
 } from '@chakra-ui/react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
@@ -12,9 +13,9 @@ function CareerFilter({ handleCareerMenuClick }) {
   return (
     <Menu closeOnSelect={false}>
       <MenuButton bg="white" color="#313677" minWidth="50px">
-        <Flex fontWeight="bold" justifyContent="space-between">
+        <Flex fontWeight="bold" alignItems='center' justifyContent="space-between">
           Técnico
-          <MdKeyboardArrowDown size="25" />
+          <Icon as={MdKeyboardArrowDown} />
         </Flex>
       </MenuButton>
       <MenuList minWidth="240px" bg="white" color="black">

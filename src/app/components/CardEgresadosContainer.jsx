@@ -73,7 +73,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
             bg={i + 1 === currentPage ? '#313677' : '#546CD4'}
             _hover={{ bg: 'blue.300' }}
             _active={{ bg: 'blue.700' }}
-            borderRadius="50%"
+            borderRadius="100%"
           >
             {i + 1}
           </Button>

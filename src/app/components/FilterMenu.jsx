@@ -12,6 +12,7 @@ const FilterMenu = () => {
   const [carreerList, setCarreerList] = useState([]);
   const [yearList, setYearList] = useState([]);
   const [uniqueRecords, setUniqueRecords] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleCareerMenuClick = (value) => {
     if (timer) {
@@ -42,6 +43,7 @@ const FilterMenu = () => {
 
     const fetchData = async (carreerList, yearList) => {
       try {
+        setLoading(true);
         let records;
 
         if (carreerList.length === 0 && yearList.length === 0) {
@@ -75,12 +77,17 @@ const FilterMenu = () => {
         setUniqueRecords(records);
       } catch (error) {
         console.error('Error al obtener datos:', error);
+      } finally{
+        setLoading(false);
       }
     };
 
     timer = setTimeout(fetchData, 1000, carreerList, yearList);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      setLoading(false);
+    }
   }, [carreerList, yearList]);
   return (
     <>
@@ -88,7 +95,11 @@ const FilterMenu = () => {
         <CareerFilter handleCareerMenuClick={handleCareerMenuClick} />
         <YearFilter handleYearMenuClick={handleYearMenuClick} />
       </Flex>
-      {uniqueRecords.length > 0 && (
+      <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      {loading && <p>Cargando...</p>}
+      {!loading && uniqueRecords.length === 0 && <p style={{ fontWeight: 'bold', fontSize: '1.5em' }}>No hay resultados.</p>}
+      </div>
+      {!loading && uniqueRecords.length > 0 && (
         <CardEgresadosContainer uniqueRecords={uniqueRecords} />
       )}
     </>
