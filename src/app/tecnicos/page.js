@@ -12,8 +12,8 @@ export default function Tecnicos() {
       <PHeading
         title={headingInfo.carrerasT.title}
         titleColor={headingInfo.carrerasT.titleColor}
-        text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        text={headingInfo.carrerasT.text}
+        imgSrc={headingInfo.carrerasT.imgSrc}
       />
       <CourseList cursos={cursos.tecnicos} showDescription />
       <OurAllies images={images} />

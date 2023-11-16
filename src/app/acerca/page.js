@@ -12,7 +12,7 @@ export default function AboutCetav() {
         title={headingInfo.acercaN.title}
         titleColor={headingInfo.acercaN.titleColor}
         text={headingInfo.acercaN.text}
-        imgSrc={headingInfo.web.imgSrc}
+        imgSrc={headingInfo.acercaN.imgSrc}
       />
       <OurHistory />
       <OurTeamCard />
