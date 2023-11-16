@@ -22,7 +22,7 @@ const MainNavigation = () => {
           Cursos Libres
         </NavLink>
         <NavLink href="/tecnicos" currentPath={pathname}>
-          Cursos Técnicos
+          Programas Técnicos
         </NavLink>
         <NavLink href="/acerca" currentPath={pathname}>
           Sobre Nosotros

@@ -20,7 +20,7 @@ export default function Animacion3D() {
       <PHeading
         title={headingInfo.animacion.title}
         titleColor={headingInfo.animacion.titleColor}
-        text={headingInfo.web.text}
+        text={headingInfo.animacion.text}
         imgSrc={headingInfo.web.imgSrc}
       />
       <TechniciansCharacteristics />

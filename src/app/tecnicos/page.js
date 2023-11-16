@@ -12,7 +12,7 @@ export default function Tecnicos() {
       <PHeading
         title={headingInfo.carrerasT.title}
         titleColor={headingInfo.carrerasT.titleColor}
-        text={headingInfo.web.text}
+        text={headingInfo.carrerasT.text}
         imgSrc={headingInfo.web.imgSrc}
       />
       <CourseList cursos={cursos.tecnicos} showDescription />

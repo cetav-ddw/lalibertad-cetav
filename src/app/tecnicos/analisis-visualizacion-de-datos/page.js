@@ -20,7 +20,7 @@ export default function AnalisisDatosPage() {
       <PHeading
         title={headingInfo.anaDatos.title}
         titleColor={headingInfo.anaDatos.titleColor}
-        text={headingInfo.web.text}
+        text={headingInfo.anaDatos.text}
         imgSrc={headingInfo.web.imgSrc}
       />
       <TechniciansCharacteristics />

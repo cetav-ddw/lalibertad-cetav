@@ -20,7 +20,7 @@ export default function PostProducionPage() {
       <PHeading
         title={headingInfo.post.title}
         titleColor={headingInfo.post.titleColor}
-        text={headingInfo.web.text}
+        text={headingInfo.post.text}
         imgSrc={headingInfo.web.imgSrc}
       />
       <TechniciansCharacteristics />

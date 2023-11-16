@@ -20,7 +20,7 @@ export default function MotionGraphicPage() {
       <PHeading
         title={headingInfo.motion.title}
         titleColor={headingInfo.motion.titleColor}
-        text={headingInfo.web.text}
+        text={headingInfo.motion.text}
         imgSrc={headingInfo.web.imgSrc}
       />
       <TechniciansCharacteristics />

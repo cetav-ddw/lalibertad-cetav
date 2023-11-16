@@ -20,7 +20,7 @@ export default function PaidMedia() {
       <PHeading
         title={headingInfo.paid.title}
         titleColor={headingInfo.paid.titleColor}
-        text={headingInfo.web.text}
+        text={headingInfo.paid.text}
         imgSrc={headingInfo.web.imgSrc}
       />
       <TechniciansCharacteristics />

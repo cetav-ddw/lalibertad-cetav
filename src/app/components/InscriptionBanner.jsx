@@ -20,13 +20,11 @@ export default function InscriptionBanner() {
       <Box display="flex" flexWrap={'wrap'}>
         <Flex flex="1 1 300px" p="46px 40px" bg="#546cd4" color="#E1E7F8">
           <Box>
-            <Heading fontSize="2xl" mb="10px">
-              ¿Deseas iniciar tu carrera técnica con nosotros?
+            <Heading fontSize="3xl" mb="45px">
+              ¿Deseas ser parte de la comunidad CETAV e inscribirte con nosotros?
             </Heading>
-            <Text fontSize="large" mb="20px">
-              ¡Comienza tu proceso de admisión hoy mismo!
-            </Text>
-            <Text fontSize="large">
+            <Text fontSize="2xl">
+              {/* TODO PONER LINK AL CORREO  */}
               <Link
                 display="inline-block"
                 textDecoration="underline"
@@ -34,7 +32,7 @@ export default function InscriptionBanner() {
                   textDecoration: 'none',
                 }}
               >
-                ¡Inscribite ahora!
+                ¡Escribínos ahora!
               </Link>
             </Text>
           </Box>

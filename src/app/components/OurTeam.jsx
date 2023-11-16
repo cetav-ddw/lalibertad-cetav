@@ -27,6 +27,7 @@ const OurTeamCard = () => {
             <Box position="absolute" bottom="10px" left="10px" color="white">
               {/* TODO AGREGAR COLOR AL THEME */}
               <Text textShadow="2px 2px 2px #333333">{team.name}</Text>
+              <Text textShadow="2px 2px 2px #333333">{team.position}</Text>
             </Box>
           </Box>
         ))}

@@ -3,8 +3,8 @@ import { Flex, Box, Heading, Text } from '@chakra-ui/react';
 const PHeading = ({ title, titleColor, text, imgSrc }) => {
   return (
     <Flex flexDirection={{ base: "column", md: "row" }}
-     mb={{ base: "12", md: "24" }}
-     justifyContent="space-between">
+      mb={{ base: "12", md: "24" }}
+      justifyContent="space-between">
       <Box width={{ base: "100%", md: "48%" }} mb={{ base: "8", md: 0 }}>
         <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }} mb="4">
           <Text as="span" display="block">
@@ -16,7 +16,7 @@ const PHeading = ({ title, titleColor, text, imgSrc }) => {
         </Heading>
 
         {text ? (
-          <Text fontSize={["md" ,"lg"]} color="#444444">
+          <Text fontSize={["md", "lg"]} color="#444444">
             {text}
           </Text>
         ) : null}
