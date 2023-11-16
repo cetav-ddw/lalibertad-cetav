@@ -28,6 +28,8 @@ export const CourseList = ({ cursos, showDescription, title }) => {
               'repeat(4, 1fr)',
             ]}
             gap={4}
+            mx={{ base: 'auto', md: '0' }}
+            maxW={{ base: '80%', md: '100%' }}
           >
             {cursos.map(({ id, imgSrc, title, descripcion, url, details }) => {
               const Component = url ? LinkOverlay : Box;

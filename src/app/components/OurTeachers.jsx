@@ -22,7 +22,7 @@ const OurTeachers = ({ teacherList }) => {
             {teacherList.map(({ id, name, position, avatarSrc }) => {
               return (
                 <Flex
-                  maxW="31%"
+                  maxW={{ base: '80%', md: '31%' }}
                   flex="1 1 300px"
                   alignItems="center"
                   key={id}
