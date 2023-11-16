@@ -4,6 +4,7 @@ import { Box, Heading, Link, Text } from '@chakra-ui/react';
 export default function FaqsBanner() {
   return (
     <Box
+      maxW={{ base: '80%', md: '100%' }}
       textAlign="center"
       padding="20px"
       // TODO agregar color al theme
