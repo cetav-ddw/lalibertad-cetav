@@ -30,7 +30,7 @@ const headingInfo = {
   anaDatos: {
     title: 'Análisis y vizualización',
     titleColor: 'de datos',
-
+    
     text:'Las personas participantes de este programa desarrollan las competencias necesarias para el manejo y administración de bases de datos, así como la creación de visualizaciones interactivas, aplicadas en las estrategias de la empresa para extraer el conocimiento y comunicarlo de forma que permita mejorar el proceso de toma de decisiones.',
     imgSrc: '/videos/avdata-medio-comprimido.mp4',
   },
