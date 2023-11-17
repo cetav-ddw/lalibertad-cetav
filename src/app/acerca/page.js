@@ -1,5 +1,5 @@
 import OurTeamCard from '@/app/components/OurTeam';
-import CetavIntro from '@/app/components/AboutCetav';
+import CetavIntro from '@/app/components/CetavIntro';
 import AdvisoryBoard from '@/app/components/AdvisoryBoard';
 import FaqBanner from '@/app/components/FaqsBanner';
 import PHeading from '@/app/components/PageHeading';

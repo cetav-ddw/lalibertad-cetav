@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Flex, Text, ListItem, List, ListIcon } from '@chakra-ui/react';
+import { Box, Text, ListItem, List, ListIcon } from '@chakra-ui/react';
 import { MdCheckCircle } from 'react-icons/md';
 import SectionHeading from '@/app/components/SectionHeading';
 
