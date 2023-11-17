@@ -16,29 +16,32 @@ import { FaPlay } from 'react-icons/fa';
 
 const VideoModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const videoUrl = 'https://player.vimeo.com/video/808341150?h=0d39844605';
+  const posterImageUrl = '/images/poster-CETAV-2023.png';
+  const localVideoUrl = '/videos/Reel-CETAV-2023.mp4';
+  const vimeoVideoUrl = 'https://player.vimeo.com/video/808341150?h=0d39844605';
 
   return (
     <>
       <Flex
-        mt="60px"
-        mb="180px"
+        mt="-70px"
+        mb="50px"
         justifyContent="center"
         alignItems="center"
         position="relative"
       >
-        <iframe
-          src={`${videoUrl}&background=1`}
-          width="100%"
-          height="300"
+        <video
+          width="65%"
+          loop
+          autoPlay
+          muted
           style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            zIndex: 1,
+            boxShadow: '0 10px 10px rgba(0, 0, 0, 0.2)',
+            borderRadius: '10px',
           }}
-        />
+          poster={posterImageUrl}
+        >
+          <source src={localVideoUrl} type="video/mp4" />
+        </video>
         <IconButton
           aria-label="Play Video"
           icon={<FaPlay />}
@@ -47,9 +50,6 @@ const VideoModal = () => {
           colorScheme="purple"
           variant="outline"
           position="absolute"
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -50%)"
           zIndex="2"
           onClick={onOpen}
         />
@@ -63,8 +63,9 @@ const VideoModal = () => {
             <AspectRatio ratio={16 / 9}>
               <iframe
                 title="video del CETAV"
-                src={videoUrl}
+                src={vimeoVideoUrl}
                 style={{
+                  borderRadius: '10px',
                   width: '100%',
                   height: '100%',
                 }}
