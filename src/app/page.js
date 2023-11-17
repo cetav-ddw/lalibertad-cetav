@@ -7,11 +7,13 @@ import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import OurInstitutions from '@/app/components/OurInstitutions';
+import VideoModal from '@/app/components/ModalVideo';
 
 export default function Home() {
   return (
     <>
       <Box padding="50" mb="16">
+        <VideoModal />
         <Heading
           as="h1"
           fontSize="xx-large"
