@@ -6,7 +6,6 @@ import CardEgresadosContainer from './CardEgresadosContainer';
 import CareerFilter from './CareerFilter';
 import YearFilter from './YearFilter';
 
-
 const FilterMenu = () => {
   const [carreerList, setCarreerList] = useState([]);
   const [yearList, setYearList] = useState([]);

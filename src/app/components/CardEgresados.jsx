@@ -53,7 +53,7 @@ function CardEgresados(props) {
                   size={{ base: 'xs', md: 'md' }}
                   variant="ghost"
                   colorScheme="blue"
-                  aria-label={`Ver perfil en Linkedin de: ${user.fields.name}`}
+                  aria-label={`Ver portafolio de: ${user.fields.name}`}
                   icon={<MdOutlineLink />}
                 />
               </ChakraLink>
