@@ -1,62 +1,55 @@
 'use client';
 
-import { Box, Flex, Text, ListItem, List, ListIcon } from '@chakra-ui/react';
+import { Box, Text, ListItem, List, ListIcon } from '@chakra-ui/react';
 import { MdCheckCircle } from 'react-icons/md';
 import SectionHeading from '@/app/components/SectionHeading';
 
 const AdvisoryBoard = () => {
   return (
-    <Box mb="16">
+    <Box mb="16" p={{ base: 4, md: 6 }} textAlign="center">
       <SectionHeading title="Consejo Asesor" />
-      <Flex flexWrap="wrap" justifyContent="space-around">
-        <Flex flexDirection="column" maxW="48%" mx="2" my="6">
-          <Text fontSize="26px" color="#444444">
-            {
-              'El CETAV del Parque La Libertad, cuenta con la asesoría y acompañamiento de personas expertas y profesionales de la industria audiovisual; así como del sector de la educación técnica, que contribuyen a determinar las tendencias, necesidades y opciones que marcan el mercado y las futuras fuentes de empleo de nuestro estudiantado.'
-            }
-          </Text>
-        </Flex>
-        <Flex flexDirection="column" maxW="48%" mx="2" my="6">
-          <Box mb="16">
-            <List maxW="980px" mx="auto" spacing={2}>
-              <ListItem>
-                <ListIcon as={MdCheckCircle} color="#313677" />
-                Ministerio de Cultura y Juventud | Sra. Loida Pretiz,
-                Viceministra de Cultura
-              </ListItem>
-              <ListItem>
-                <ListIcon as={MdCheckCircle} color="#313677" />
-                Ministerio de Trabajo y Seguridad Social | Sr. Marcos Solano,
-                Director Nacional de Empleo
-              </ListItem>
-              <ListItem>
-                <ListIcon as={MdCheckCircle} color="#313677" />
-                Instituto Nacional De Aprendizaje (INA) | Sr. Andrés Romero,
-                Subgerente Técnico
-              </ListItem>
-              <ListItem>
-                <ListIcon as={MdCheckCircle} color="#313677" />
-                Coalición Costarricense de Iniciativas de Desarrollo (CINDE) |
-                Sra. Vanessa Gibson, Head of Investment Climate
-              </ListItem>
-              <ListItem>
-                <ListIcon as={MdCheckCircle} color="#313677" />
-                Promotora de Comercio Exterior (PROCOMER) | Kevin Villalta,
-                Promotor Sectorial
-              </ListItem>
-              <ListItem>
-                <ListIcon as={MdCheckCircle} color="#313677" />
-                Cámara de Tecnologías de Información y Comunicación (CAMTIC) |
-                Sr. Claudio Pinto - Fair Play Labs
-              </ListItem>
-              <ListItem>
-                <ListIcon as={MdCheckCircle} color="#313677" />
-                Costa Rica Animation Holdings | Oliver Zúñiga - MarteStudio
-              </ListItem>
-            </List>
-          </Box>
-        </Flex>
-      </Flex>
+      <Text maxWidth="1000px" margin="0 auto" pb="30px" fontSize={{ base: 'md', md: 'lg' }}>
+        Se cuenta con equipo de personas en puestos importantes del estado y empresa
+        privada, que guían la ruta de trabajo del CETAV y sus alcances. Es un Consejo Asesor compuesto por:
+      </Text>
+      <List maxW="500px" mx="auto" spacing={2} textAlign="left">
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representante del Ministerio de Trabajo y Seguridad Social
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representante del Ministerio de Cultura y Juventud
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representante del Instituto Nacional de Aprendizaje
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representante de CINDE
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representante de PROCOMER
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representante de CAMTIC
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representantes del sector empresarial
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="#313677" />
+          Representantes de la comunidad SOY CETAV
+        </ListItem>
+      </List>
+      <Text maxWidth="1000px" margin="0 auto" pt="30px" fontSize={{ base: 'md', md: 'lg' }}>
+        Aunado a lo anterior, contamos con un equipo de expertos en cada área, quienes supervisan
+        la ejecución y contenidos del programa, para que cumpla con los requerimientos de las respectivas industrias.
+      </Text>
     </Box>
   );
 };

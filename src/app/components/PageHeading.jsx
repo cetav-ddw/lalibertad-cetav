@@ -10,6 +10,7 @@ const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
     >
       <Box width={{ base: '90%', md: '48%' }} mb={{ base: '8', md: 0 }}>
         <Heading as="h1" fontSize={{ base: '3xl', md: '4xl' }} mb="4">
+
           <Text as="span" display="block">
             {title}
           </Text>
@@ -19,7 +20,7 @@ const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
         </Heading>
 
         {text ? (
-          <Text fontSize={['md', 'lg']} color="#444444">
+          <Text fontSize={["md", "lg"]} color="#444444">
             {text}
           </Text>
         ) : null}
