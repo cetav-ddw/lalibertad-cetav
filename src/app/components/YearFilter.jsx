@@ -5,7 +5,7 @@ import {
   MenuOptionGroup,
   MenuItemOption,
   Flex,
-  Icon
+  Icon,
 } from '@chakra-ui/react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
@@ -13,7 +13,11 @@ function YearFilter({ handleYearMenuClick }) {
   return (
     <Menu closeOnSelect={false}>
       <MenuButton bg="white" color="#313677" minWidth="50px">
-        <Flex fontWeight="bold" alignItems='center' justifyContent="space-between">
+        <Flex
+          fontWeight="bold"
+          alignItems="center"
+          justifyContent="space-between"
+        >
           Generación
           <Icon as={MdKeyboardArrowDown} />
         </Flex>

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex, Spinner, Text } from '@chakra-ui/react';
 import Airtable from 'airtable';
 import CardEgresadosContainer from './CardEgresadosContainer';
 import CareerFilter from './CareerFilter';
@@ -77,7 +77,7 @@ const FilterMenu = () => {
         setUniqueRecords(records);
       } catch (error) {
         console.error('Error al obtener datos:', error);
-      } finally{
+      } finally {
         setLoading(false);
       }
     };
@@ -87,7 +87,7 @@ const FilterMenu = () => {
     return () => {
       clearTimeout(timer);
       setLoading(false);
-    }
+    };
   }, [carreerList, yearList]);
   return (
     <>
@@ -95,10 +95,22 @@ const FilterMenu = () => {
         <CareerFilter handleCareerMenuClick={handleCareerMenuClick} />
         <YearFilter handleYearMenuClick={handleYearMenuClick} />
       </Flex>
-      <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      {loading && <p>Cargando...</p>}
-      {!loading && uniqueRecords.length === 0 && <p style={{ fontWeight: 'bold', fontSize: '1.5em' }}>No hay resultados.</p>}
-      </div>
+      <Box style={{ textAlign: 'center', marginTop: '50px' }}>
+        {loading && (
+          <Spinner
+            thickness="4px"
+            speed="0.65s"
+            emptyColor="gray.200"
+            color="blue.500"
+            size="xl"
+          />
+        )}
+        {!loading && uniqueRecords.length === 0 && (
+          <Text style={{ fontWeight: 'bold', fontSize: '1.5em' }}>
+            No hay resultados.
+          </Text>
+        )}
+      </Box>
       {!loading && uniqueRecords.length > 0 && (
         <CardEgresadosContainer uniqueRecords={uniqueRecords} />
       )}
