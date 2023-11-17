@@ -27,7 +27,7 @@ const ExploreOtherCareers = ({
   return (
     <>
       <SectionHeading title={title} />
-      <CourseList cursos={limitedCourses} showDescription />;
+      <CourseList cursos={limitedCourses} showDescription />
     </>
   );
 };
