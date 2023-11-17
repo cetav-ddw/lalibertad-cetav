@@ -6,10 +6,16 @@ import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
 import testimonies from '@/app/content/testimonies';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Egresados() {
+  const paths = [
+    { title: "Inicio", path: "/" },
+    { title: "Egresados", path: "/egresados" }
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.egresados.title}
         titleColor={headingInfo.egresados.titleColor}
