@@ -6,7 +6,6 @@ import CardEgresadosContainer from './CardEgresadosContainer';
 import CareerFilter from './CareerFilter';
 import YearFilter from './YearFilter';
 
-let timer;
 
 const FilterMenu = () => {
   const [carreerList, setCarreerList] = useState([]);
@@ -15,9 +14,6 @@ const FilterMenu = () => {
   const [loading, setLoading] = useState(false);
 
   const handleCareerMenuClick = (value) => {
-    if (timer) {
-      clearTimeout(timer);
-    }
     if (carreerList.includes(value)) {
       setCarreerList(carreerList.filter((v) => v !== value));
     } else {
@@ -25,9 +21,6 @@ const FilterMenu = () => {
     }
   };
   const handleYearMenuClick = (value) => {
-    if (timer) {
-      clearTimeout(timer);
-    }
     const intValue = parseInt(value);
     if (yearList.includes(intValue)) {
       setYearList(yearList.filter((v) => v !== intValue));
@@ -82,10 +75,9 @@ const FilterMenu = () => {
       }
     };
 
-    timer = setTimeout(fetchData, 1000, carreerList, yearList);
+    fetchData(carreerList, yearList);
 
     return () => {
-      clearTimeout(timer);
       setLoading(false);
     };
   }, [carreerList, yearList]);
@@ -101,7 +93,7 @@ const FilterMenu = () => {
             thickness="4px"
             speed="0.65s"
             emptyColor="gray.200"
-            color="blue.500"
+            color="#313677"
             size="xl"
           />
         )}
