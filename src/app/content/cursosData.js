@@ -5,7 +5,7 @@ const cursos = {
       imgSrc: '/images/web.jpg',
       title: 'Diseño y Desarrollo Web',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'El Desarrollo web se enfoca en diseñar aplicaciones y sitios digitales con énfasis en interacción, funcionalidad, accesibilidad y usabilidad según estándares web.',
       url: '/tecnicos/diseno-desarrollo-web',
     },
     {
@@ -13,7 +13,7 @@ const cursos = {
       imgSrc: '/images/marketing.jpg',
       title: 'Mercadeo Digital y Diseño',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'Experto en contenido visual y redes sociales, fusiona mercadeo digital, diseño gráfico e imagen para comunicar mensajes de manera efectiva y interactuar en plataformas digitales.',
       url: '/tecnicos/mercadeo-digital-diseno',
     },
     {
@@ -21,7 +21,7 @@ const cursos = {
       imgSrc: '/images/marketing.jpg',
       title: 'PostProdución Audiovisual',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'La postproducción abarca la edición de imagen y sonido, efectos especiales (como eliminación de fondo verde), colorización, subtitulado y animaciones 2D, desde la recepción del material hasta la entrega del producto final.',
       url: '/tecnicos/post-produccion-audiovisual',
     },
     {
@@ -29,7 +29,7 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Animación 3D',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'La Animación 3D sigue un proceso que va desde el desarrollo de la idea y su solución visual hasta etapas técnicas que incluyen la creación de componentes visuales como personajes y entornos, junto con la iluminación y composición final.',
       url: '/tecnicos/animacion-3d',
     },
     {
@@ -37,7 +37,7 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Ciberseguridad',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'La ciberseguridad se orienta a salvaguardar la información y el individuo, fomentando conciencia y ética. Aborda la seguridad con conocimientos técnicos, pensamiento lógico-matemático, y destrezas en sistemas operativos y bases de datos.',
       url: '/tecnicos/ciberseguridad',
     },
     {
@@ -45,7 +45,7 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Analisis y Visualización de Datos',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'Se centra en gestión de bases de datos y la creación de visualizaciones interactivas. Estas competencias se utilizan en estrategias empresariales para extraer y comunicar conocimientos, contribuyendo a optimizar el proceso de toma de decisiones.',
       url: '/tecnicos/analisis-visualizacion-de-datos',
     },
     {
@@ -53,7 +53,7 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Paid Media',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'Se adquieren competencias para trabajar en la planificación de medios digitales, campañas, creación de contenidos y estrategias de comunicación en redes sociales, orientadas a la venta de productos.',
       url: '/tecnicos/paid-media',
     },
     {
@@ -61,7 +61,7 @@ const cursos = {
       imgSrc: '/images/animacion-3d.jpg',
       title: 'Motion Graphics',
       descripcion:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta labore corporis neque vero necessitatibus delectus quidem, eveniet molestiae inventore dolorem quam harum nemo hic culpa odit quos accusamus itaque!',
+        'Se centra en la creación de animaciones y composiciones a partir de ilustraciones para generar contenidos animados en segunda dimensión. Estas animaciones pueden ser de índole publicitaria, educativa o de entretenimiento.',
       url: '/tecnicos/motion-graphics',
     },
   ],
@@ -72,28 +72,12 @@ const cursos = {
       title: 'PhotoShop',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
-          value: '8751-2802',
-        },
-        {
-          label: '',
-          url: '',
+          label: 'WhatsApp:',
+          value: '8625-6611',
         },
       ],
     },
@@ -103,28 +87,12 @@ const cursos = {
       title: 'Illustrador',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
-          value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          label: 'WhatsApp:',
+          value: '8625-6611',
         },
       ],
     },
@@ -134,28 +102,12 @@ const cursos = {
       title: 'Premier',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
-          value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          label: 'WhatsApp:',
+          value: '8625-6611',
         },
       ],
     },
@@ -165,28 +117,12 @@ const cursos = {
       title: 'After Effects',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
-          value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          label: 'WhatsApp:',
+          value: '8625-6611',
         },
       ],
     },
@@ -196,28 +132,12 @@ const cursos = {
       title: 'Manejo de Redes',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
-          value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          label: 'WhatsApp:',
+          value: '8625-6611',
         },
       ],
     },
@@ -227,28 +147,12 @@ const cursos = {
       title: 'Dibujo',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
-          value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
+          label: 'WhatsApp:',
+          value: '8625-6611',
         },
       ],
     },
@@ -260,28 +164,12 @@ const cursos = {
       title: 'Alfabetización Digital',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
+          label: 'WhatsApp:',
           value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
         },
       ],
     },
@@ -291,28 +179,12 @@ const cursos = {
       title: 'Word',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
+          label: 'WhatsApp:',
           value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
         },
       ],
     },
@@ -322,28 +194,12 @@ const cursos = {
       title: 'Excel',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
+          label: 'WhatsApp:',
           value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
         },
       ],
     },
@@ -353,28 +209,12 @@ const cursos = {
       title: 'Power BI',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
+          label: 'WhatsApp:',
           value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
         },
       ],
     },
@@ -384,28 +224,12 @@ const cursos = {
       title: 'Multimedia',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
+          label: 'WhatsApp:',
           value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
         },
       ],
     },
@@ -415,28 +239,12 @@ const cursos = {
       title: 'Intro a la Ciberseguridad',
       details: [
         {
-          label: 'Modalidad:',
-          value: 'Cursos presenciales y virtuales',
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
         },
         {
-          label: 'Edad:',
-          value: '15 años en adelante',
-        },
-        {
-          label: 'Lugar:',
-          value: 'Cetav, Parque la Libertad',
-        },
-        {
-          label: 'Inversión:',
-          value: '₡25,000',
-        },
-        {
-          label: 'Info:',
+          label: 'WhatsApp:',
           value: '8751-2802',
-        },
-        {
-          label: 'Inscripción',
-          url: 'https://bit.ly/Matr%C3%ADcula_Cursos_C%C3%B3mputo?fbclid=IwAR03fHSIYBcH01YfK9aX2TXrMJ-Pzfe5l6CAE3zpSXADAkDXDGb2lqgMaD8',
         },
       ],
     },
