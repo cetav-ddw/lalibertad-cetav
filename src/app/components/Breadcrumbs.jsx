@@ -3,9 +3,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Link,
 } from '@chakra-ui/react';
-import { Link as NextLink } from 'next/link';
 
 const Breadcrumbs = ({ paths }) => {
   return (
@@ -16,15 +14,14 @@ const Breadcrumbs = ({ paths }) => {
             key={index}
             isCurrentPage={index === paths.length - 1}
           >
-            <Link
-              as={NextLink}
+            <BreadcrumbLink
               href={path.path}
               color={index === paths.length - 1 ? 'blue.500' : 'gray.500'}
               textDecoration={index === paths.length - 1 ? 'underline' : 'none'}
               fontSize="sm"
             >
-              <BreadcrumbLink>{path.title}</BreadcrumbLink>
-            </Link>
+              {path.title}
+            </BreadcrumbLink>
           </BreadcrumbItem>
         ))}
       </Breadcrumb>
