@@ -1,6 +1,6 @@
 import { Flex, Box, Heading, Text } from '@chakra-ui/react';
 
-const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
+const PHeading = ({ title, titleColor, text, imgSrc, isTecnico, videoSrc }) => {
   return (
     <Flex
       flexDirection={{ base: 'column', md: 'row' }}
@@ -10,7 +10,6 @@ const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
     >
       <Box width={{ base: '90%', md: '48%' }} mb={{ base: '8', md: 0 }}>
         <Heading as="h1" fontSize={{ base: '3xl', md: '4xl' }} mb="4">
-
           <Text as="span" display="block">
             {title}
           </Text>
@@ -20,7 +19,7 @@ const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
         </Heading>
 
         {text ? (
-          <Text fontSize={["md", "lg"]} color="#444444">
+          <Text fontSize={['md', 'lg']} color="#444444">
             {text}
           </Text>
         ) : null}
@@ -29,7 +28,7 @@ const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
       {isTecnico ? (
         <Box>
           <video autoPlay loop muted width="420" height="320">
-            <source src={imgSrc} type="video/mp4" />
+            <source src={videoSrc} type="video/mp4" />
           </video>
         </Box>
       ) : (

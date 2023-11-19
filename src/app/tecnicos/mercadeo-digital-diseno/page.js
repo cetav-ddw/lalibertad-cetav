@@ -21,7 +21,7 @@ export default function MercadeoPage() {
         title={headingInfo.mercadeo.title}
         titleColor={headingInfo.mercadeo.titleColor}
         text={headingInfo.mercadeo.text}
-        imgSrc={headingInfo.mercadeo.imgSrc}
+        videoSrc={headingInfo.mercadeo.videoSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />

@@ -21,7 +21,7 @@ export default function WebPage() {
         title={headingInfo.web.title}
         titleColor={headingInfo.web.titleColor}
         text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
+        videoSrc={headingInfo.web.videoSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />

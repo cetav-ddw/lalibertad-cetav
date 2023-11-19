@@ -21,7 +21,7 @@ export default function PaidMedia() {
         title={headingInfo.paid.title}
         titleColor={headingInfo.paid.titleColor}
         text={headingInfo.paid.text}
-        imgSrc={headingInfo.paid.imgSrc}
+        videoSrc={headingInfo.paid.videoSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />

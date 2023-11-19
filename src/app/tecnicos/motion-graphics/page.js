@@ -21,7 +21,7 @@ export default function MotionGraphicPage() {
         title={headingInfo.motion.title}
         titleColor={headingInfo.motion.titleColor}
         text={headingInfo.motion.text}
-        imgSrc={headingInfo.motion.imgSrc}
+        videoSrc={headingInfo.motion.videoSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />

@@ -21,7 +21,7 @@ export default function PostProducionPage() {
         title={headingInfo.post.title}
         titleColor={headingInfo.post.titleColor}
         text={headingInfo.post.text}
-        imgSrc={headingInfo.post.imgSrc}
+        videoSrc={headingInfo.post.videoSrc}
         isTecnico="true"
       />
       <TechniciansCharacteristics />
