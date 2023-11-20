@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import {
   Modal,
@@ -8,17 +7,13 @@ import {
   ModalBody,
   ModalCloseButton,
   AspectRatio,
-  useDisclosure,
 } from '@chakra-ui/react';
-import Hero from './Hero';
 
-const VideoModal = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+const VideoModal = ({ isOpen, onClose }) => {
   const vimeoVideoUrl = 'https://player.vimeo.com/video/808341150?h=0d39844605';
 
   return (
     <>
-      <Hero onOpen={onOpen} />
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent maxW="60vw">
