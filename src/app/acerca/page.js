@@ -1,5 +1,5 @@
 import OurTeamCard from '@/app/components/OurTeam';
-import OurHistory from '@/app/components/OurHistory';
+import CetavIntro from '@/app/components/CetavIntro';
 import AdvisoryBoard from '@/app/components/AdvisoryBoard';
 import FaqBanner from '@/app/components/FaqsBanner';
 import PHeading from '@/app/components/PageHeading';
@@ -20,7 +20,7 @@ export default function AboutCetav() {
         text={headingInfo.acercaN.text}
         imgSrc={headingInfo.acercaN.imgSrc}
       />
-      <OurHistory />
+      <CetavIntro />
       <OurTeamCard />
       <AdvisoryBoard />
       <FaqBanner />

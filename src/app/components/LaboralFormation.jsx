@@ -3,18 +3,19 @@ import SectionHeading from './SectionHeading';
 
 const LaboralFormation = () => {
   return (
-    <Box mb="16" p={{ base: 4, md: 6 }} textAlign="center">
+    <Box mb="16" p={{ base: 4, md: 6 }}>
       <SectionHeading title="Formación que abre puertas laborales" />
-      <Text
-        maxWidth="1000px"
-        margin="0 auto"
-        fontSize={{ base: 'md', md: 'lg' }}
-      >
-        El modelo de formación para el empleo ofrece una formación integral,
-        incluyendo habilidades técnicas, socio-afectivas e inglés. Los programas
-        se ajustan a las necesidades de instituciones y empresas para lograr
-        perfiles de egreso ideales. Además, se realizan eventos para mostrar las
-        competencias de los estudiantes a posibles empleadores.
+      <Text maxWidth="1000px" margin="0 auto" fontSize={{ base: 'md', md: 'lg' }}>
+        El modelo de formación por competencias facilita a las personas participantes
+        del CETAV, las habilidades técnicas y socio afectivas requeridas por las empresas,
+        para que su perfil sea competitivo y responda a las demandas del mercado laboral.
+      </Text>
+      <Text maxWidth="1000px" margin="0 auto" fontSize={{ base: 'md', md: 'lg' }}>
+        Constantemente estamos en revisión de los planes de estudio y las mallas curriculares
+        para que la oferta esté actualizada y alineada a los estándares de las instancias
+        reguladoras y a su vez, cumpla con los requisitos del sector empresarial.
+        La experiencia del CETAV está diseñada para las personas que quieren desarrollar competencias en arte y
+        tecnología para el trabajo.
       </Text>
       <Center>
         <Image src="/images/grafico.png" alt="" w="80%" maxW="1000px" />

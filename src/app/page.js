@@ -7,11 +7,14 @@ import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import OurInstitutions from '@/app/components/OurInstitutions';
+import VideoModal from '@/app/components/ModalVideo';
+
 
 export default function Home() {
   return (
     <>
       <Box padding="50" mb="16">
+        <VideoModal />
         <Heading
           as="h1"
           fontSize="xx-large"
@@ -19,7 +22,7 @@ export default function Home() {
           maxWidth="800px"
           mx="auto"
         >
-          ¡Bienvenid@s al Cetav!
+          ¡CETAV les da la más cordial bienvenida!
           {/* TODO MOVER COLOR AL THEME */}
           <Text
             as="span"
@@ -28,16 +31,17 @@ export default function Home() {
             mt="4"
             fontWeight="medium"
           >
-            Brindamos a personas jóvenes, la oportunidad de desarrollar
-            competencias técnicas en áreas relacionadas a la tecnología y las
-            artes visuales.
+            Somos un centro de formación para el empleo, con nosotros podés acceder a
+            programas técnicos y cursos libres para desarrollar tu perfil profesional.  
+            Creamos alianzas público-privadas para que nuestros cursos sean accesibles y 
+            nuestra oferta esté alineada a las demandas del mercado.
           </Text>
         </Heading>
       </Box>
       <OurInstitutions />
       <CourseList
         cursos={cursos.tecnicos}
-        title={'Nuestras Carreras Técnicas'}
+        title={'Nuestros programas'}
       />
       <InscriptionBanner />
       <LaboralFormation />

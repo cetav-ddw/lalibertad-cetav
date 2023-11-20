@@ -52,7 +52,7 @@ export default function ContactDetail() {
           </Box>
           {/* TODO MOVER EL COLOR AL THEME */}
           <Text fontSize="16px" color="#313677">
-            admision.cetav@parquelalibertad.org
+            admision.cetav@lalibertadcr.org
           </Text>
         </Box>
 

@@ -19,7 +19,7 @@ export default function Egresados() {
       <PHeading
         title={headingInfo.egresados.title}
         titleColor={headingInfo.egresados.titleColor}
-        text={headingInfo.web.text}
+        text={headingInfo.egresados.text}
         imgSrc={headingInfo.web.imgSrc}
       />
       <TestimonyList testimonies={testimonies.web} />
