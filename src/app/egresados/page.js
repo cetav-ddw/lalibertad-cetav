@@ -10,8 +10,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Egresados() {
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Egresados", path: "/egresados" }
+    { title: 'Inicio', path: '/' },
+    { title: 'Egresados', path: '/egresados' },
   ];
   return (
     <>

@@ -17,9 +17,12 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function AnalisisDatosPage() {
   const currentCourseId = 'tecAnalisisDatos';
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Cursos Técnicos", path: "/tecnicos" },
-    { title: "Análisis y vizualización de datos", path: "/tecnicos/analisis-visualizacion-de-datos" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Análisis y vizualización de datos',
+      path: '/tecnicos/analisis-visualizacion-de-datos',
+    },
   ];
   return (
     <>

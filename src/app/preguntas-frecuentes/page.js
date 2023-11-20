@@ -18,8 +18,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Faq() {
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Preguntas frecuentes", path: "/preguntas-frecuentes" }
+    { title: 'Inicio', path: '/' },
+    { title: 'Preguntas frecuentes', path: '/preguntas-frecuentes' },
   ];
   return (
     <>
