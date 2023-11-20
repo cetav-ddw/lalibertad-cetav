@@ -21,7 +21,6 @@ export default function CiberseguridadPage() {
         title={headingInfo.ciber.title}
         text={headingInfo.ciber.text}
         videoSrc={headingInfo.ciber.videoSrc}
-        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

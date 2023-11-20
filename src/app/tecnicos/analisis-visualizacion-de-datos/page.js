@@ -22,7 +22,6 @@ export default function AnalisisDatosPage() {
         titleColor={headingInfo.anaDatos.titleColor}
         text={headingInfo.anaDatos.text}
         videoSrc={headingInfo.anaDatos.videoSrc}
-        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

@@ -22,7 +22,6 @@ export default function Animacion3D() {
         titleColor={headingInfo.animacion.titleColor}
         text={headingInfo.animacion.text}
         videoSrc={headingInfo.animacion.videoSrc}
-        isTecnico="true"
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
