@@ -27,6 +27,8 @@ export default function Faq() {
       <PHeading
         title={headingInfo.preguntas.title}
         titleColor={headingInfo.preguntas.titleColor}
+        text={headingInfo.preguntas.text}
+        imgSrc={headingInfo.preguntas.imgSrc}
       />
       <SectionHeading title="Sobre el CETAV" />
       <Accordion allowMultiple>
