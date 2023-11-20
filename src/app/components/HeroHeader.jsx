@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import { useDisclosure } from '@chakra-ui/react';
-import Hero from './Hero';
-import VideoModal from './ModalVideo';
+import Hero from './HeroPreview';
+import VideoModal from './VideoModal';
 
-const ModalController = () => {
+const HeroHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -15,4 +15,4 @@ const ModalController = () => {
   );
 };
 
-export default ModalController;
+export default HeroHeader;

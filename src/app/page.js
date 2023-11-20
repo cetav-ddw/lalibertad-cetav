@@ -7,13 +7,13 @@ import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import OurInstitutions from '@/app/components/OurInstitutions';
-import ModalController from '@/app/components/ModalController';
+import HeroHeader from '@/app/components/HeroHeader';
 
 export default function Home() {
   return (
     <>
       <Box padding="50" mb="16">
-        <ModalController />
+        <HeroHeader />
         <Heading
           as="h1"
           fontSize="xx-large"

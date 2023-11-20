@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, IconButton } from '@chakra-ui/react';
 import { FaPlay } from 'react-icons/fa';
 
-const Hero = ({ onOpen }) => {
+const HeroPreview = ({ onOpen }) => {
   const posterImageUrl = '/images/poster-CETAV-2023.png';
   const localVideoUrl = '/videos/Reel-CETAV-2023.mp4';
 
@@ -42,4 +42,4 @@ const Hero = ({ onOpen }) => {
   );
 };
 
-export default Hero;
+export default HeroPreview;
