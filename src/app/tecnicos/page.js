@@ -5,10 +5,16 @@ import CourseList from '@/app/components/CourseList';
 import cursos from '@/app/content/cursosData';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Tecnicos() {
+    const paths = [
+      { title: "Inicio", path: "/" },
+      { title: "Cursos Técnicos", path: "/tecnicos" }
+    ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.carrerasT.title}
         titleColor={headingInfo.carrerasT.titleColor}
