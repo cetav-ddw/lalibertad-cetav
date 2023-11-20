@@ -17,9 +17,12 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function CiberseguridadPage() {
   const currentCourseId = 'tecCiberseguridad';
   const paths = [
-    { title: "Inicio", path: "/inicio" },
-    { title: "Cursos Técnicos", path: "/" },
-    { title: "Ciberseguridad", path: "/tecnicos/ciberseguridad" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Análisis y vizualización de datos',
+      path: '/tecnicos/analisis-visualizacion-de-datos',
+    },
   ];
   return (
     <>
