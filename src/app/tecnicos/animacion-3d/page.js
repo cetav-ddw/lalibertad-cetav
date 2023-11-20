@@ -12,11 +12,18 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Animacion3D() {
   const currentCourseId = 'tecAnimacion3d';
+  const paths = [
+    { title: "Inicio", path: "/" },
+    { title: "Cursos Técnicos", path: "/tecnicos" },
+    { title: "Animación 3D", path: "/tecnicos/animacion-3d" },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.animacion.title}
         titleColor={headingInfo.animacion.titleColor}

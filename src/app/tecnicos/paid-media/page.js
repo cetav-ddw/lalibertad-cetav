@@ -12,11 +12,18 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function PaidMedia() {
   const currentCourseId = 'tecPaidMedia';
+  const paths = [
+    { title: "Inicio", path: "/" },
+    { title: "Cursos Técnicos", path: "/tecnicos" },
+    { title: "Paid Media", path: "/tecnicos/paid-media" },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.paid.title}
         titleColor={headingInfo.paid.titleColor}
