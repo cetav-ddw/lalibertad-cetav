@@ -12,11 +12,18 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function CiberseguridadPage() {
   const currentCourseId = 'tecCiberseguridad';
+  const paths = [
+    { title: "Inicio", path: "/inicio" },
+    { title: "Cursos Técnicos", path: "/" },
+    { title: "Ciberseguridad", path: "/tecnicos/ciberseguridad" },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.ciber.title}
         text={headingInfo.ciber.text}

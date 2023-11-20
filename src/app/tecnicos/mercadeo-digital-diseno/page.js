@@ -12,11 +12,18 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function MercadeoPage() {
   const currentCourseId = 'tecMarketing';
+  const paths = [
+    { title: "Inicio", path: "/" },
+    { title: "Cursos Técnicos", path: "/tecnicos" },
+    { title: "Mercadeo Digital", path: "/tecnicos/mercadeo-digital-diseno" },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.mercadeo.title}
         titleColor={headingInfo.mercadeo.titleColor}
