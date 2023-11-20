@@ -3,18 +3,25 @@ import CourseList from '@/app/components/CourseList';
 import cursos from '@/app/content/cursosData';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 import SectionHeading from '@/app/components/SectionHeading';
 
 export default function CursosLibres() {
+  const paths = [
+    { title: "Inicio", path: "/" },
+    { title: "Cursos Libres", path: "/cursos-libres" }
+  ];
+  
   return (
     <>
+    <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.cursosL.title}
         titleColor={headingInfo.cursosL.titleColor}
         text={headingInfo.cursosL.text}
         imgSrc={headingInfo.cursosL.imgSrc}
       />
-      <Box>
+      <Box mb="16">
       <SectionHeading title="Cursos Libres de Diseño" />
       <Text maxWidth="920px" margin="0 auto" mb="60px" fontSize={{ base: 'md', md: 'lg' }}>
       Los Cursos Libres de Diseño son la mejor opción para que 
@@ -43,8 +50,6 @@ export default function CursosLibres() {
         showDescription
       />
       </Box>
-
-      
     </>
   );
 }
