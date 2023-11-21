@@ -17,9 +17,12 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function WebPage() {
   const currentCourseId = 'tecWeb';
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Cursos Técnicos", path: "/tecnicos" },
-    { title: "Diseño y desarrollo web", path: "/tecnicos/diseno-desarrollo-web" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Diseño y desarrollo web',
+      path: '/tecnicos/diseno-desarrollo-web',
+    },
   ];
   return (
     <>
@@ -29,6 +32,7 @@ export default function WebPage() {
         titleColor={headingInfo.web.titleColor}
         text={headingInfo.web.text}
         videoSrc={headingInfo.web.videoSrc}
+        poster={headingInfo.web.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

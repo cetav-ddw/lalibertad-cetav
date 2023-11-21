@@ -17,9 +17,9 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function MercadeoPage() {
   const currentCourseId = 'tecMarketing';
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Cursos Técnicos", path: "/tecnicos" },
-    { title: "Mercadeo Digital", path: "/tecnicos/mercadeo-digital-diseno" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    { title: 'Mercadeo Digital', path: '/tecnicos/mercadeo-digital-diseno' },
   ];
   return (
     <>
@@ -29,6 +29,7 @@ export default function MercadeoPage() {
         titleColor={headingInfo.mercadeo.titleColor}
         text={headingInfo.mercadeo.text}
         videoSrc={headingInfo.mercadeo.videoSrc}
+        poster={headingInfo.mercadeo.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

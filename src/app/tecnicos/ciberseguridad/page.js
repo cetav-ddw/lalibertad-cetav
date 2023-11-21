@@ -31,6 +31,7 @@ export default function CiberseguridadPage() {
         title={headingInfo.ciber.title}
         text={headingInfo.ciber.text}
         videoSrc={headingInfo.ciber.videoSrc}
+        poster={headingInfo.ciber.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
