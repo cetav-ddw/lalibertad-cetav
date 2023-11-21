@@ -1,6 +1,6 @@
 import { Wrap, Box } from '@chakra-ui/react';
-import YearbookCard from '../components/YearbookCards';
-import FilterMenu from '../components/FilterMenu';
+import YearbookCard from '@/app/components/YearbookCards';
+import FilterMenu from '@/app/components/FilterMenu';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
@@ -23,6 +23,7 @@ export default function Egresados() {
         imgSrc={headingInfo.web.imgSrc}
       />
       <TestimonyList testimonies={testimonies.web} />
+      <SectionHeading title="Nuestros Egresados por Técnico" />
       <FilterMenu />
 
       <Box mb="16">
