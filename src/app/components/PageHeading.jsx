@@ -25,8 +25,12 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
       </Box>
 
       {videoSrc ? (
-        <Box borderRadius="12" overflow="hidden">
-          <video autoPlay loop muted poster={poster} controls width="420">
+        <Box
+          width={{ base: '48%', md: '38%' }}
+          borderRadius="12"
+          overflow="hidden"
+        >
+          <video autoPlay loop muted poster={poster} controls>
             <source src={videoSrc} type="video/mp4" />
           </video>
         </Box>
