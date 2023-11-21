@@ -14,13 +14,21 @@ import {
 import SectionHeading from '@/app/components/SectionHeading';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Faq() {
+  const paths = [
+    { title: "Inicio", path: "/" },
+    { title: "Preguntas frecuentes", path: "/preguntas-frecuentes" }
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.preguntas.title}
         titleColor={headingInfo.preguntas.titleColor}
+        text={headingInfo.preguntas.text}
+        imgSrc={headingInfo.preguntas.imgSrc}
       />
       <SectionHeading title="Sobre el CETAV" />
       <Accordion allowMultiple>

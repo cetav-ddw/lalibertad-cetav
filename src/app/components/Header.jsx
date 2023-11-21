@@ -18,8 +18,8 @@ const Header = () => {
           <Image
             src="/images/triada-logo.png"
             alt="Triada Logo"
-            width="400px"
-            height="90px"
+            width="406px"
+            height="52px"
             m="auto"
           />
         </Link>
