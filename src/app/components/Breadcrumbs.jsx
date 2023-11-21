@@ -7,7 +7,7 @@ import {
 
 const Breadcrumbs = ({ paths }) => {
   return (
-    <Box>
+    <Box mb="3rem">
       <Breadcrumb>
         {paths.map((path, index) => (
           <BreadcrumbItem

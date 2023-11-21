@@ -5,7 +5,7 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
     <Flex
       flexDirection={{ base: 'column', md: 'row' }}
       mb={{ base: '12', md: '24' }}
-      justifyContent="space-around"
+      justifyContent="space-between"
     >
       <Box width={{ base: '90%', md: '48%' }} mb={{ base: '8', md: 0 }}>
         <Heading as="h1" fontSize={{ base: '3xl', md: '4xl' }} mb="4">
@@ -25,16 +25,8 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
       </Box>
 
       {videoSrc ? (
-        <Box>
-          <video
-            autoPlay
-            loop
-            muted
-            poster={poster}
-            controls
-            width="420"
-            height="400"
-          >
+        <Box borderRadius="12" overflow="hidden">
+          <video autoPlay loop muted poster={poster} controls width="420">
             <source src={videoSrc} type="video/mp4" />
           </video>
         </Box>
@@ -44,10 +36,10 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
           backgroundRepeat="no-repeat"
           backgroundPosition="center"
           backgroundSize="cover"
-          width={{ base: '80%', md: '48%' }}
-          height={{ base: '300px', md: 'auto' }}
-          paddingTop={{ base: '50%', md: '350px' }}
-          borderRadius="lg"
+          width={{ base: '80%', md: '38%' }}
+          height={{ base: '150px', md: 'auto' }}
+          paddingTop={['50%', '350px']}
+          borderRadius="14"
           marginBottom="24px"
         />
       )}
