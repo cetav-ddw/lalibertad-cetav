@@ -7,14 +7,13 @@ import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import OurInstitutions from '@/app/components/OurInstitutions';
-import VideoModal from '@/app/components/ModalVideo';
-
+import HeroHeader from '@/app/components/HeroHeader';
 
 export default function Home() {
   return (
     <>
       <Box padding="50" mb="16">
-        <VideoModal />
+        <HeroHeader />
         <Heading
           as="h1"
           fontSize="xx-large"
@@ -31,18 +30,16 @@ export default function Home() {
             mt="4"
             fontWeight="medium"
           >
-            Somos un centro de formación para el empleo, con nosotros podés acceder a
-            programas técnicos y cursos libres para desarrollar tu perfil profesional.  
-            Creamos alianzas público-privadas para que nuestros cursos sean accesibles y 
-            nuestra oferta esté alineada a las demandas del mercado.
+            Somos un centro de formación para el empleo, con nosotros podés
+            acceder a programas técnicos y cursos libres para desarrollar tu
+            perfil profesional. Creamos alianzas público-privadas para que
+            nuestros cursos sean accesibles y nuestra oferta esté alineada a las
+            demandas del mercado.
           </Text>
         </Heading>
       </Box>
       <OurInstitutions />
-      <CourseList
-        cursos={cursos.tecnicos}
-        title={'Nuestros programas'}
-      />
+      <CourseList cursos={cursos.tecnicos} title={'Nuestros programas'} />
       <InscriptionBanner />
       <LaboralFormation />
       <OurAllies images={images} />
