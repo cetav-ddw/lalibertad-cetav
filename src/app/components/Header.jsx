@@ -5,7 +5,16 @@ import { Link as NextLink } from 'next/link';
 
 const Header = () => {
   return (
-    <Box as="header" py="5">
+    <Box
+      as="header"
+      pt="5"
+      pb="2"
+      boxShadow="base"
+      position="sticky"
+      top="0"
+      zIndex="banner"
+      backgroundColor="#fff"
+    >
       <Flex flexDirection="column" maxW="1180px" ml="auto" mr="auto">
         <Link
           as={NextLink}
