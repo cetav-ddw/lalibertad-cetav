@@ -12,30 +12,28 @@ const MainNavigation = () => {
       display={{ base: 'none', md: 'flex' }}
       flex="1"
       alignItems="center"
-      p={4}
+      p="4"
+      pb="2"
       justifyContent={{ base: 'space-between', md: 'center' }}
     >
-        <NavLink
-          href="/"
-          currentPath={pathname}
-        >
-          Inicio
-        </NavLink>
-        <NavLink href="/cursos-libres" currentPath={pathname}>
-          Cursos Libres
-        </NavLink>
-        <NavLink href="/tecnicos" currentPath={pathname}>
-          Programas Técnicos
-        </NavLink>
-        <NavLink href="/acerca" currentPath={pathname}>
-          Sobre Nosotros
-        </NavLink>
-        <NavLink href="/egresados" currentPath={pathname}>
-          Egresados
-        </NavLink>
-        <NavLink href="/contacto" currentPath={pathname}>
-          Contacto
-        </NavLink>
+      <NavLink href="/" currentPath={pathname}>
+        Inicio
+      </NavLink>
+      <NavLink href="/cursos-libres" currentPath={pathname}>
+        Cursos Libres
+      </NavLink>
+      <NavLink href="/tecnicos" currentPath={pathname}>
+        Programas Técnicos
+      </NavLink>
+      <NavLink href="/acerca" currentPath={pathname}>
+        Sobre Nosotros
+      </NavLink>
+      <NavLink href="/egresados" currentPath={pathname}>
+        Egresados
+      </NavLink>
+      <NavLink href="/contacto" currentPath={pathname}>
+        Contacto
+      </NavLink>
     </Box>
   );
 };

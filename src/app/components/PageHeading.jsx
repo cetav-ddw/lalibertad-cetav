@@ -34,7 +34,9 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
             <source src={videoSrc} type="video/mp4" />
           </video>
         </Box>
-      ) : (
+      ) : null}
+
+      {imgSrc ? (
         <Box
           backgroundImage={imgSrc}
           backgroundRepeat="no-repeat"
@@ -46,7 +48,7 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
           borderRadius="14"
           marginBottom="24px"
         />
-      )}
+      ) : null}
     </Flex>
   );
 };
