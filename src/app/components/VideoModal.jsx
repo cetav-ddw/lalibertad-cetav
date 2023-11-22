@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 
 const VideoModal = ({ isOpen, onClose }) => {
-  const vimeoVideoUrl = 'https://player.vimeo.com/video/808341150?h=0d39844605';
+  const vimeoVideoUrl = 'https://player.vimeo.com/video/887088579?h=e36c16d8ed';
 
   return (
     <>

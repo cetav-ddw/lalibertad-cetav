@@ -17,9 +17,9 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function Animacion3D() {
   const currentCourseId = 'tecAnimacion3d';
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Cursos Técnicos", path: "/tecnicos" },
-    { title: "Animación 3D", path: "/tecnicos/animacion-3d" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    { title: 'Animación 3D', path: '/tecnicos/animacion-3d' },
   ];
   return (
     <>
@@ -28,8 +28,8 @@ export default function Animacion3D() {
         title={headingInfo.animacion.title}
         titleColor={headingInfo.animacion.titleColor}
         text={headingInfo.animacion.text}
-        imgSrc={headingInfo.animacion.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.animacion.videoSrc}
+        poster={headingInfo.animacion.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
