@@ -26,7 +26,7 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
 
       {videoSrc ? (
         <Box
-          width={{ base: '48%', md: '38%' }}
+          width={{ base: '90%', md: '38%' }}
           borderRadius="12"
           overflow="hidden"
         >
