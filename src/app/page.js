@@ -5,7 +5,6 @@ import images from '@/app/content/imageData';
 import CourseList from '@/app/components/CourseList';
 import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
-import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import OurInstitutions from '@/app/components/OurInstitutions';
 import VideoModal from '@/app/components/ModalVideo';
 
@@ -46,11 +45,6 @@ export default function Home() {
       <InscriptionBanner />
       <LaboralFormation />
       <OurAllies images={images} />
-      <ExploreOtherCareers
-        isHomePage={true}
-        items={2}
-        title={'Hecha un vistazo a nuestros cursos'}
-      />
     </>
   );
 }

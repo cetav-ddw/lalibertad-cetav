@@ -16,10 +16,10 @@ const Header = () => {
           mx="1"
         >
           <Image
-            src="/images/triada-logo.png"
+            src="/images/libertad-logo.png"
             alt="Triada Logo"
-            width="406px"
-            height="52px"
+            width="154px"
+            height="100px"
             m="auto"
           />
         </Link>
