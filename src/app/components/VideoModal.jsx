@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Modal,
   ModalOverlay,
@@ -6,6 +5,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalCloseButton,
+  VisuallyHidden,
   AspectRatio,
 } from '@chakra-ui/react';
 
@@ -17,12 +17,14 @@ const VideoModal = ({ isOpen, onClose }) => {
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent maxW="60vw">
-          <ModalHeader>Video del CETAV</ModalHeader>
+          <ModalHeader>
+            <VisuallyHidden>Somos CETAV</VisuallyHidden>
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <AspectRatio ratio={16 / 9}>
               <iframe
-                title="video del CETAV"
+                title="Somos CETAV"
                 src={vimeoVideoUrl}
                 style={{
                   borderRadius: '10px',

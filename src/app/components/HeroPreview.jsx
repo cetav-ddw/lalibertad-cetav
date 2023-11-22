@@ -1,4 +1,3 @@
-import React from 'react';
 import { Flex, IconButton } from '@chakra-ui/react';
 import { FaPlay } from 'react-icons/fa';
 

@@ -1,15 +1,15 @@
 'use client';
-import React from 'react';
+
 import { useDisclosure } from '@chakra-ui/react';
-import Hero from './HeroPreview';
-import VideoModal from './VideoModal';
+import HeroPreview from '@/app/components/HeroPreview';
+import VideoModal from '@/app/components/VideoModal';
 
 const HeroHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Hero onOpen={onOpen} />
+      <HeroPreview onOpen={onOpen} />
       <VideoModal isOpen={isOpen} onClose={onClose} />
     </>
   );
