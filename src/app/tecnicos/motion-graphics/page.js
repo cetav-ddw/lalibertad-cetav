@@ -17,9 +17,9 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function MotionGraphicPage() {
   const currentCourseId = 'tecMotionGraphics';
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Cursos Técnicos", path: "/tecnicos" },
-    { title: "Motion Graphics", path: "/tecnicos/motion-graphics" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    { title: 'Motion Graphics', path: '/tecnicos/motion-graphics' },
   ];
   return (
     <>
@@ -28,8 +28,8 @@ export default function MotionGraphicPage() {
         title={headingInfo.motion.title}
         titleColor={headingInfo.motion.titleColor}
         text={headingInfo.motion.text}
-        imgSrc={headingInfo.motion.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.motion.videoSrc}
+        poster={headingInfo.motion.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

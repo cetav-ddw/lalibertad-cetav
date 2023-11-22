@@ -17,9 +17,9 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function PaidMedia() {
   const currentCourseId = 'tecPaidMedia';
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Cursos Técnicos", path: "/tecnicos" },
-    { title: "Paid Media", path: "/tecnicos/paid-media" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    { title: 'Paid Media', path: '/tecnicos/paid-media' },
   ];
   return (
     <>
@@ -28,8 +28,8 @@ export default function PaidMedia() {
         title={headingInfo.paid.title}
         titleColor={headingInfo.paid.titleColor}
         text={headingInfo.paid.text}
-        imgSrc={headingInfo.paid.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.paid.videoSrc}
+        poster={headingInfo.paid.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
