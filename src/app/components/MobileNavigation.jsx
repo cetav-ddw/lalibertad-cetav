@@ -37,8 +37,8 @@ const MobileNavigation = () => {
             {isMobile && (
               <Link as={NextLink} href="/">
                 <Image
-                  src="/images/triada-logo.png"
-                  alt="Triada Logo"
+                  src="/images/libertad-cetav-logo.png"
+                  alt="Logo La Libertad y CETAV"
                   width="auto"
                   height="auto"
                 />
