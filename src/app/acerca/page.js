@@ -8,8 +8,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function AboutCetav() {
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Sobre Nosotros", path: "/acerca" }
+    { title: 'Inicio', path: '/' },
+    { title: 'Sobre Nosotros', path: '/acerca' },
   ];
   return (
     <>

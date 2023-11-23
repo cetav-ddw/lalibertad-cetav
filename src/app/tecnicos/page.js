@@ -8,10 +8,10 @@ import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Tecnicos() {
-    const paths = [
-      { title: "Inicio", path: "/" },
-      { title: "Cursos Técnicos", path: "/tecnicos" }
-    ];
+  const paths = [
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+  ];
   return (
     <>
       <Breadcrumbs paths={paths} />
