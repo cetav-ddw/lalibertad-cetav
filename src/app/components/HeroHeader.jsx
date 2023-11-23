@@ -15,7 +15,12 @@ const HeroHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex maxW="1180px" ml="auto" mr="auto">
+    <Flex
+      maxW="1180px"
+      ml="auto"
+      mr="auto"
+      flexDirection={{ base: 'column', md: 'row' }}
+    >
       <Flex flexDirection="column" flex="1 0 55%" pr="12">
         <Heading as="h1" fontSize="x-large" mb="4">
           Centro de Tecnología y Artes Visuales (CETAV)
