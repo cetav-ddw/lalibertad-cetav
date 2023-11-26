@@ -4,6 +4,7 @@ import {
   Box,
   Heading,
   Icon,
+  Image,
   Link,
   ListItem,
   Text,
@@ -213,8 +214,8 @@ const Footer = () => {
       >
         <Box>
           <Link href="https://lalibertadcr.org/" _hover={{ opacity: 0.7 }}>
-            <img
-              src="/images/libertad-logo.png"
+            <Image
+              src="/images/libertad-logo-footer.png"
               alt="Logo La Libertad"
               width="150px"
               height="35px"
