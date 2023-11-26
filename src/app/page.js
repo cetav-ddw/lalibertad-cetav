@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import LaboralFormation from '@/app/components/LaboralFormation';
 import images from '@/app/content/imageData';
@@ -7,10 +7,16 @@ import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import OurInstitutions from '@/app/components/OurInstitutions';
 import GenderStats from '@/app/components/GenderStats';
-import DonutChart from '@/app/components/DonutChart';
+import DonutChart from '@/app/components/donut-chart/DonutChart';
 import HeroHeader from '@/app/components/HeroHeader';
+import { StatsData } from './content/statsData';
 
 export default function Home() {
+  const donutData = StatsData.donutChartStats.map((item) => ({
+    name: item.name,
+    value: item.value,
+  }));
+
   return (
     <>
       <Box padding="50" mb="16">
@@ -43,10 +49,15 @@ export default function Home() {
       <CourseList cursos={cursos.tecnicos} title={'Nuestros programas'} />
       <InscriptionBanner />
       <LaboralFormation />
-      <Flex marginTop="-150px" align="center">
-        <DonutChart />
-        <GenderStats />
-      </Flex>
+      <Box
+        width="100%"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <DonutChart width={900} height={400} data={donutData} />
+      </Box>
+      <GenderStats />
       <OurAllies images={images} />
     </>
   );

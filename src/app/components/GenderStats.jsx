@@ -1,40 +1,49 @@
 'use client';
+
 import React from 'react';
 import {
   Box,
-  SimpleGrid,
+  Wrap,
+  WrapItem,
   Stat,
   StatLabel,
   StatNumber,
   StatHelpText,
   Flex,
+  useBreakpointValue,
 } from '@chakra-ui/react';
-import { genderStatsData } from '../content/statsData';
+import { StatsData } from '../content/statsData';
 
 const GenderStats = () => {
+  const cardWidth = useBreakpointValue({ base: '100%', sm: '48%', md: '31%' });
+
   return (
-    <SimpleGrid columns={[2]} spacing={10}>
-      {genderStatsData.map((stat, index) => (
-        <Stat key={index} textAlign="center">
-          <Flex direction="row" align="center" justify="center">
-            {stat.icon && <Box as={stat.icon} fontSize="80px" />}
-            <Box>
-              <StatNumber fontSize="60px" fontWeight="bold">
+    <Wrap spacing="20px" justify="center">
+      {StatsData.genderStats.map((stat, index) => (
+        <WrapItem key={index} width={cardWidth} minW="250px" flex="1">
+          <Stat
+            textAlign="center"
+            boxShadow="base"
+            borderRadius="md"
+            p={5}
+            bg="white"
+          >
+            <Flex direction="column" align="center" justify="center">
+              {stat.icon && <Box as={stat.icon} fontSize="80px" mb={3} />}
+              <StatNumber fontSize="2xl" fontWeight="bold">
                 {stat.number}
               </StatNumber>
-              <Flex direction="column" align="baseline">
-                <StatLabel fontSize="md" fontWeight="bold">
-                  {stat.label}
-                </StatLabel>
-                {stat.percentage && (
-                  <StatHelpText fontSize="20px">{stat.percentage}</StatHelpText>
-                )}
-              </Flex>
-            </Box>
-          </Flex>
-        </Stat>
+              <StatLabel fontSize="lg" fontWeight="bold">
+                {stat.label}
+              </StatLabel>
+              {stat.percentage && (
+                <StatHelpText fontSize="md">{stat.percentage}</StatHelpText>
+              )}
+            </Flex>
+          </Stat>
+        </WrapItem>
       ))}
-    </SimpleGrid>
+    </Wrap>
   );
 };
 
