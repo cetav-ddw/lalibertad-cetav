@@ -44,7 +44,12 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
 
   return (
     <>
-      <SimpleGrid columns={isMobile ? 2 : 4} spacing={isMobile ? 2 : 5}>
+      <SimpleGrid
+        width={isMobile ? '90%' : '100%'}
+        margin={isMobile ? 'auto' : 0}
+        columns={isMobile ? 2 : 4}
+        spacing={isMobile ? 2 : 5}
+      >
         {currentData.map((record) => (
           <Box key={record.id}>
             <CardEgresados user={record} />
@@ -53,20 +58,21 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
       </SimpleGrid>
 
       <HStack spacing={2} justifyContent="center" mb="10" mt="10">
-        <Button
-          size={isMobile ? 'xs' : 'md'}
-          onClick={() => goToPage(currentPage - 1)}
-          bgColor="white"
-          color="#313677"
-          disabled={currentPage === 1}
-        >
-          <Icon as={MdKeyboardArrowLeft} boxSize={10} />
-        </Button>
+        {currentPage > 1 && (
+          <Button
+            size={isMobile ? 'xs' : 'md'}
+            onClick={() => goToPage(currentPage - 1)}
+            bgColor="white"
+            color="#313677"
+          >
+            <Icon as={MdKeyboardArrowLeft} boxSize={10} />
+          </Button>
+        )}
 
         {Array.from({ length: pageCount }, (_, i) => (
           <Button
             key={i}
-            size={isMobile ? 'xs' : 'sm'}
+            size={isMobile ? 'xs' : 'md'}
             onClick={() => goToPage(i + 1)}
             {...buttonStyle}
             colorScheme={i + 1 === currentPage ? 'blue' : 'gray'}
@@ -74,20 +80,22 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
             _hover={{ bg: 'blue.300' }}
             _active={{ bg: 'blue.700' }}
             borderRadius="100%"
+            fontSize="sm"
           >
             {i + 1}
           </Button>
         ))}
 
-        <Button
-          size={isMobile ? 'xs' : 'md'}
-          onClick={() => goToPage(currentPage + 1)}
-          bgColor="white"
-          color="#313677"
-          disabled={currentPage === pageCount}
-        >
-          <Icon as={MdKeyboardArrowRight} boxSize={10} />
-        </Button>
+        {currentPage < pageCount && (
+          <Button
+            size={isMobile ? 'xs' : 'md'}
+            onClick={() => goToPage(currentPage + 1)}
+            bgColor="white"
+            color="#313677"
+          >
+            <Icon as={MdKeyboardArrowRight} boxSize={10} />
+          </Button>
+        )}
       </HStack>
     </>
   );
