@@ -1,16 +1,14 @@
 import { Flex, Box, Heading, Text } from '@chakra-ui/react';
 
-const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
+const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
   return (
     <Flex
       flexDirection={{ base: 'column', md: 'row' }}
       mb={{ base: '12', md: '24' }}
       justifyContent="space-between"
-      alignItems="center"
     >
       <Box width={{ base: '90%', md: '48%' }} mb={{ base: '8', md: 0 }}>
         <Heading as="h1" fontSize={{ base: '3xl', md: '4xl' }} mb="4">
-
           <Text as="span" display="block">
             {title}
           </Text>
@@ -20,31 +18,37 @@ const PHeading = ({ title, titleColor, text, imgSrc, isTecnico }) => {
         </Heading>
 
         {text ? (
-          <Text fontSize={["md", "lg"]} color="#444444">
+          <Text fontSize={{ base: 'md', md: 'lg' }} color="#444444">
             {text}
           </Text>
         ) : null}
       </Box>
 
-      {isTecnico ? (
-        <Box>
-          <video autoPlay loop muted width="420" height="320">
-            <source src={imgSrc} type="video/mp4" />
+      {videoSrc ? (
+        <Box
+          width={{ base: '90%', md: '38%' }}
+          borderRadius="12"
+          overflow="hidden"
+        >
+          <video autoPlay loop muted poster={poster} controls>
+            <source src={videoSrc} type="video/mp4" />
           </video>
         </Box>
-      ) : (
+      ) : null}
+
+      {imgSrc ? (
         <Box
           backgroundImage={imgSrc}
           backgroundRepeat="no-repeat"
           backgroundPosition="center"
           backgroundSize="cover"
-          width={{ base: '80%', md: '48%' }}
-          height={{ base: '300px', md: 'auto' }}
+          width={{ base: '80%', md: '38%' }}
+          height={{ base: '150px', md: 'auto' }}
           paddingTop={['50%', '350px']}
-          borderRadius="lg"
+          borderRadius="14"
           marginBottom="24px"
         />
-      )}
+      ) : null}
     </Flex>
   );
 };

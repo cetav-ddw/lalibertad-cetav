@@ -17,9 +17,12 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 export default function PostProducionPage() {
   const currentCourseId = 'tecPostProduccion';
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Cursos Técnicos", path: "/tecnicos" },
-    { title: "Postproducción audiovisual", path: "/tecnicos/post-produccion-audiovisual" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Postproducción audiovisual',
+      path: '/tecnicos/post-produccion-audiovisual',
+    },
   ];
   return (
     <>
@@ -28,8 +31,8 @@ export default function PostProducionPage() {
         title={headingInfo.post.title}
         titleColor={headingInfo.post.titleColor}
         text={headingInfo.post.text}
-        imgSrc={headingInfo.post.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.post.videoSrc}
+        poster={headingInfo.post.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
