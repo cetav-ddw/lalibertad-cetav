@@ -51,6 +51,11 @@ const teamData = [
     position: 'Profesor Centros de Cómputo',
     photo: '/images/prof-LingieGranados.png',
   },
+  {
+    name: 'Keylor Berrocal',
+    position:'Soporte Técnico',
+    photo: '/images/prof-IreneSanchez.png',
+  },
 ];
 
 export default teamData;

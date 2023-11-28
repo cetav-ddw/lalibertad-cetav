@@ -31,8 +31,8 @@ export default function AnalisisDatosPage() {
         title={headingInfo.anaDatos.title}
         titleColor={headingInfo.anaDatos.titleColor}
         text={headingInfo.anaDatos.text}
-        imgSrc={headingInfo.anaDatos.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.anaDatos.videoSrc}
+        poster={headingInfo.anaDatos.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

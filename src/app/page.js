@@ -3,16 +3,17 @@ import InscriptionBanner from '@/app/components/InscriptionBanner';
 import LaboralFormation from '@/app/components/LaboralFormation';
 import images from '@/app/content/imageData';
 import OurAllies from '@/app/components/OurAllies';
-import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import OurInstitutions from '@/app/components/OurInstitutions';
-import VideoModal from '@/app/components/ModalVideo';
+import CourseList from './components/CourseList';
+import cursos from './content/cursosData';
 import CardContent from './components/CardContent';
+import HeroHeader from '@/app/components/HeroHeader';
 
 export default function Home() {
   return (
     <>
       <Box padding="50" mb="16">
-        <VideoModal />
+        <HeroHeader />
         <Heading
           as="h1"
           fontSize="xx-large"
@@ -39,14 +40,10 @@ export default function Home() {
       </Box>
       <OurInstitutions />
       <CardContent />
+      <CourseList cursos={cursos.tecnicos} title={'Nuestros programas'} />
       <InscriptionBanner />
       <LaboralFormation />
       <OurAllies images={images} />
-      <ExploreOtherCareers
-        isHomePage={true}
-        items={2}
-        title={'Hecha un vistazo a nuestros cursos'}
-      />
     </>
   );
 }

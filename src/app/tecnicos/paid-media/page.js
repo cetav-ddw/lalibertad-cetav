@@ -28,8 +28,8 @@ export default function PaidMedia() {
         title={headingInfo.paid.title}
         titleColor={headingInfo.paid.titleColor}
         text={headingInfo.paid.text}
-        imgSrc={headingInfo.paid.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.paid.videoSrc}
+        poster={headingInfo.paid.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

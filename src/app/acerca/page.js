@@ -21,8 +21,8 @@ export default function AboutCetav() {
         imgSrc={headingInfo.acercaN.imgSrc}
       />
       <CetavIntro />
-      <OurTeamCard />
       <AdvisoryBoard />
+      <OurTeamCard />
       <FaqBanner />
     </>
   );

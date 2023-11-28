@@ -28,8 +28,8 @@ export default function MercadeoPage() {
         title={headingInfo.mercadeo.title}
         titleColor={headingInfo.mercadeo.titleColor}
         text={headingInfo.mercadeo.text}
-        imgSrc={headingInfo.mercadeo.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.mercadeo.videoSrc}
+        poster={headingInfo.mercadeo.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

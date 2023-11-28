@@ -12,7 +12,8 @@ const MainNavigation = () => {
       display={{ base: 'none', md: 'flex' }}
       flex="1"
       alignItems="center"
-      p={4}
+      p="4"
+      pb="2"
       justifyContent={{ base: 'space-between', md: 'center' }}
     >
       <NavLink href="/" currentPath={pathname}>
