@@ -12,17 +12,27 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function PostProducionPage() {
   const currentCourseId = 'tecPostProduccion';
+  const paths = [
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Postproducción audiovisual',
+      path: '/tecnicos/post-produccion-audiovisual',
+    },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.post.title}
         titleColor={headingInfo.post.titleColor}
         text={headingInfo.post.text}
-        imgSrc={headingInfo.post.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.post.videoSrc}
+        poster={headingInfo.post.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

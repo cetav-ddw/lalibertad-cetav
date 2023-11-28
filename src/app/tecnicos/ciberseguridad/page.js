@@ -12,16 +12,26 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function CiberseguridadPage() {
   const currentCourseId = 'tecCiberseguridad';
+  const paths = [
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Análisis y vizualización de datos',
+      path: '/tecnicos/analisis-visualizacion-de-datos',
+    },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.ciber.title}
         text={headingInfo.ciber.text}
-        imgSrc={headingInfo.ciber.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.ciber.videoSrc}
+        poster={headingInfo.ciber.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

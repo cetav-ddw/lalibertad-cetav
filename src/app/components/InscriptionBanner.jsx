@@ -26,11 +26,13 @@ export default function InscriptionBanner() {
         >
           <Box>
             <Heading fontSize="3xl" mb="45px">
-              ¿Deseas ser parte de la comunidad CETAV e inscribirte con nosotros?
+              ¿Deseas ser parte de la comunidad CETAV e inscribirte con
+              nosotros?
             </Heading>
             <Text fontSize="2xl">
               {/* TODO PONER LINK AL CORREO  */}
               <Link
+                href="mailto:admision.cetav@lalibertadcr.org"
                 display="inline-block"
                 textDecoration="underline"
                 _hover={{

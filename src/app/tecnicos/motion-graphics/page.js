@@ -12,17 +12,24 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function MotionGraphicPage() {
   const currentCourseId = 'tecMotionGraphics';
+  const paths = [
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    { title: 'Motion Graphics', path: '/tecnicos/motion-graphics' },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.motion.title}
         titleColor={headingInfo.motion.titleColor}
         text={headingInfo.motion.text}
-        imgSrc={headingInfo.motion.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.motion.videoSrc}
+        poster={headingInfo.motion.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

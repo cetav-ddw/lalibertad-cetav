@@ -12,17 +12,27 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function WebPage() {
   const currentCourseId = 'tecWeb';
+  const paths = [
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Diseño y desarrollo web',
+      path: '/tecnicos/diseno-desarrollo-web',
+    },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.web.title}
         titleColor={headingInfo.web.titleColor}
         text={headingInfo.web.text}
-        imgSrc={headingInfo.web.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.web.videoSrc}
+        poster={headingInfo.web.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

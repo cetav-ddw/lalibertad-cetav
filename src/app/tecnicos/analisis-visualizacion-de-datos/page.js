@@ -12,17 +12,27 @@ import teachers from '@/app/content/teachers';
 import preInscription from '@/app/content/pre-inscription';
 import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function AnalisisDatosPage() {
   const currentCourseId = 'tecAnalisisDatos';
+  const paths = [
+    { title: 'Inicio', path: '/' },
+    { title: 'Cursos Técnicos', path: '/tecnicos' },
+    {
+      title: 'Análisis y vizualización de datos',
+      path: '/tecnicos/analisis-visualizacion-de-datos',
+    },
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.anaDatos.title}
         titleColor={headingInfo.anaDatos.titleColor}
         text={headingInfo.anaDatos.text}
-        imgSrc={headingInfo.anaDatos.imgSrc}
-        isTecnico="true"
+        videoSrc={headingInfo.anaDatos.videoSrc}
+        poster={headingInfo.anaDatos.poster}
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />

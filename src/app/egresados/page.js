@@ -1,15 +1,21 @@
 import { Wrap, Box } from '@chakra-ui/react';
-import YearbookCard from '../components/YearbookCards';
-import FilterMenu from '../components/FilterMenu';
+import YearbookCard from '@/app/components/YearbookCards';
+import FilterMenu from '@/app/components/FilterMenu';
 import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import SectionHeading from '@/app/components/SectionHeading';
 import TestimonyList from '@/app/components/Testimonies/TestimonyList';
 import testimonies from '@/app/content/testimonies';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Egresados() {
+  const paths = [
+    { title: "Inicio", path: "/" },
+    { title: "Egresados", path: "/egresados" }
+  ];
   return (
     <>
+      <Breadcrumbs paths={paths} />
       <PHeading
         title={headingInfo.egresados.title}
         titleColor={headingInfo.egresados.titleColor}
@@ -17,6 +23,7 @@ export default function Egresados() {
         imgSrc={headingInfo.web.imgSrc}
       />
       <TestimonyList testimonies={testimonies.web} />
+      <SectionHeading title="Nuestros Egresados por Técnico" />
       <FilterMenu />
 
       <Box mb="16">
