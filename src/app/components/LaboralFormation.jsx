@@ -1,4 +1,4 @@
-import { Box, Text, Image, Center } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import SectionHeading from './SectionHeading';
 
 const LaboralFormation = () => {
@@ -27,9 +27,6 @@ const LaboralFormation = () => {
         diseñada para las personas que quieren desarrollar competencias en arte
         y tecnología para el trabajo.
       </Text>
-      <Center>
-        <Image src="/images/grafico.png" alt="" w="80%" maxW="1000px" />
-      </Center>
     </Box>
   );
 };
