@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import LaboralFormation from '@/app/components/LaboralFormation';
 import images from '@/app/content/imageData';
@@ -19,31 +19,20 @@ export default function Home() {
 
   return (
     <>
-      <Box padding="50" mb="16">
+      <Box
+        width="100vw"
+        position="relative"
+        left="50%"
+        transform="translateX(-50.6%)"
+        backgroundImage="/images/medio-trazo.png"
+        backgroundRepeat="no-repeat"
+        backgroundPosition="right"
+        backgroundSize="cover"
+        mt="-16"
+        pt="32"
+        pb="32"
+      >
         <HeroHeader />
-        <Heading
-          as="h1"
-          fontSize="xx-large"
-          textAlign="center"
-          maxWidth="800px"
-          mx="auto"
-        >
-          ¡CETAV les da la más cordial bienvenida!
-          {/* TODO MOVER COLOR AL THEME */}
-          <Text
-            as="span"
-            display="block"
-            fontSize="lg"
-            mt="4"
-            fontWeight="medium"
-          >
-            Somos un centro de formación para el empleo, con nosotros podés
-            acceder a programas técnicos y cursos libres para desarrollar tu
-            perfil profesional. Creamos alianzas público-privadas para que
-            nuestros cursos sean accesibles y nuestra oferta esté alineada a las
-            demandas del mercado.
-          </Text>
-        </Heading>
       </Box>
       <OurInstitutions />
       <CourseList cursos={cursos.tecnicos} title={'Nuestros programas'} />
