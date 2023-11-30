@@ -24,7 +24,7 @@ export default function CursosLibres() {
       <Box mb="16">
         <SectionHeading title="Cursos Libres de Diseño" />
         <Text
-          maxWidth="920px"
+          maxWidth={{ base: '80%', md: '920px' }}
           margin="0 auto"
           mb="60px"
           fontSize={{ base: 'md', md: 'lg' }}
@@ -43,7 +43,7 @@ export default function CursosLibres() {
       <Box>
         <SectionHeading title="Cursos de Computo" />
         <Text
-          maxWidth="920px"
+          maxWidth={{ base: '80%', md: '920px' }}
           margin="0 auto"
           mb="60px"
           fontSize={{ base: 'md', md: 'lg' }}

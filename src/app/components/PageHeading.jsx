@@ -6,9 +6,14 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
       flexDirection={{ base: 'column', md: 'row' }}
       mb={{ base: '12', md: '24' }}
       justifyContent="space-between"
+      alignItems="center"
     >
       <Box width={{ base: '90%', md: '48%' }} mb={{ base: '8', md: 0 }}>
-        <Heading as="h1" fontSize={{ base: '3xl', md: '4xl' }} mb="4">
+        <Heading
+          as="h1"
+          fontSize={{ base: '3xl', md: '4xl' }}
+          mb={{ base: '8', md: '0' }}
+        >
           <Text as="span" display="block">
             {title}
           </Text>
@@ -42,10 +47,10 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
           backgroundRepeat="no-repeat"
           backgroundPosition="center"
           backgroundSize="cover"
-          width={{ base: '80%', md: '38%' }}
+          width={{ base: '80%', md: '48%' }}
           height={{ base: '150px', md: 'auto' }}
           paddingTop={['50%', '350px']}
-          borderRadius="14"
+          borderRadius="lg"
           marginBottom="24px"
         />
       ) : null}
