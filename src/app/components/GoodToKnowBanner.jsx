@@ -4,7 +4,6 @@ import { Box, ListItem, List, ListIcon } from '@chakra-ui/react';
 import SectionHeading from '@/app/components/SectionHeading';
 import { MdCheckCircle } from 'react-icons/md';
 
-// ToDO Agregar icono al ListItem
 const GoodToKnowBanner = ({ topicList }) => {
   return (
     <>

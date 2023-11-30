@@ -1,16 +1,52 @@
 const preInscription = {
   web: [
-    'You’re committed to learning advanced material at an accelerated, rigorous bootcamp pace.',
-    'You’re considerate, dedicated, creative, and team-oriented.',
-    'No matter where your interests take you, you’re always continuing to learn and grow along the way.',
-    'You’re considerate, dedicated, creative, and team-oriented.',
-    'No matter where your interests take you, you’re always continuing to learn and grow along the way.',
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
   ],
-  animacion: [],
-  post: [],
-  cyber: [],
-  analisis: [],
-  mercadeo: [],
+  animacion: [
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
+  ],
+  post: [
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
+  ],
+  ciber: [
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
+  ],
+  anaDatos: [
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
+  ],
+  mercadeo: [
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
+  ],
+  motion: [
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
+  ],
+  paid: [
+    'Tener entre 17 y 35 años.',
+    'Bachillerato aprobado.',
+    'En caso de extranjeros, tener su estatus migratorio al día.',
+    'Disponibilidad de tiempo completo.',
+  ]
 };
 
 export default preInscription;
