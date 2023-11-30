@@ -25,11 +25,11 @@ export default function InscriptionBanner() {
           color="#E1E7F8"
         >
           <Box>
-            <Heading fontSize="3xl" mb="45px">
+            <Heading fontSize={{ base: '2xmd', md: '2xl' }} mb="10px">
               ¿Deseas ser parte de la comunidad CETAV e inscribirte con
               nosotros?
             </Heading>
-            <Text fontSize="2xl">
+            <Text fontSize={{ base: 'sm', md: 'lg' }} mb="20px">
               {/* TODO PONER LINK AL CORREO  */}
               <Link
                 href="mailto:admision.cetav@lalibertadcr.org"
