@@ -15,6 +15,8 @@ const OurInstitutions = () => {
       bg="#f2f4fC"
       p="10px"
       mb="16px"
+      gridGap="60px"
+      gridTemplateColumns="repeat(2, 1fr)"
     >
       {images.map((image) => (
         <Box key={image.src} mx="10px" my="10px">
