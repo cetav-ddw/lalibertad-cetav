@@ -14,6 +14,7 @@ export default function Contacto() {
       <PHeading
         title={headingInfo.contacto.title}
         titleColor={headingInfo.contacto.titleColor}
+        imgSrc={headingInfo.contacto.imgSrc}
       />
       <ContactDetail />
     </>
