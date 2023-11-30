@@ -80,12 +80,13 @@ const headingInfo = {
   preguntas: {
     title: 'Preguntas',
     titleColor: 'frecuentes',
-    text:'¡Estamos aquí para ayudar! Esta sección proporciona ayuda con las preguntas más comunes sobre el CETAV.',
-    imgSrc: '/images/banner-preguntas.jpg'
+    text: '¡Estamos aquí para ayudar! Esta sección proporciona ayuda con las preguntas más comunes sobre el CETAV.',
+    imgSrc: '/images/banner-preguntas.jpg',
   },
   contacto: {
     title: 'Nuestra información',
     titleColor: 'de contacto',
+    imgSrc: '/images/contact-img.jpg'
   },
 };
 

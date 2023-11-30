@@ -53,7 +53,7 @@ const teamData = [
   },
   {
     name: 'Keylor Berrocal',
-    position:'Soporte Técnico',
+    position: 'Soporte Técnico',
     photo: '/images/prof-IreneSanchez.png',
   },
 ];

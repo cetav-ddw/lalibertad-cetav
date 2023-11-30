@@ -91,7 +91,7 @@ const CourseListItem = ({
 export const CourseList = ({ cursos, showDescription, title }) =>
   cursos?.length ? (
     <Box mb="16">
-      {title && <SectionHeading title={title} id="#cursosComputo" />}
+      {title && <SectionHeading title={title} />}
       <Grid
         templateColumns={[
           'repeat(1, 1fr)',
@@ -100,6 +100,8 @@ export const CourseList = ({ cursos, showDescription, title }) =>
           'repeat(4, 1fr)',
         ]}
         gap={4}
+        mx={{ base: 'auto', md: '0' }}
+        maxW={{ base: '80%', md: '100%' }}
       >
         {cursos.map((course) => (
           <CourseListItem
