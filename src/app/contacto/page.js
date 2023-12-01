@@ -5,8 +5,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export default function Contacto() {
   const paths = [
-    { title: "Inicio", path: "/" },
-    { title: "Contacto", path: "/contacto" }
+    { title: 'Inicio', path: '/' },
+    { title: 'Contacto', path: '/contacto' },
   ];
   return (
     <>
@@ -14,6 +14,7 @@ export default function Contacto() {
       <PHeading
         title={headingInfo.contacto.title}
         titleColor={headingInfo.contacto.titleColor}
+        imgSrc={headingInfo.contacto.imgSrc}
       />
       <ContactDetail />
     </>
