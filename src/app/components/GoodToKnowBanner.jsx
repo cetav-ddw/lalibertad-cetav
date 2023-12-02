@@ -11,7 +11,7 @@ const GoodToKnowBanner = ({ topicList }) => {
       {topicList?.length > 0 ? (
         <Box mb="16">
           <SectionHeading title="¿Qué debes saber antes de aplicar?" />
-          <List maxW={{ base: '80%', md: '980px' }} mx="auto">
+          <List maxW={{ base: '80%', lg: '980px' }} mx="auto">
             {topicList.map((topic) => {
               return (
                 <ListItem key={topic.toLowerCase().replace(/\s+/g, '')} mb="2">
