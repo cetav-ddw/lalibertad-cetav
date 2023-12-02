@@ -43,12 +43,17 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
   });
 
   return (
-    <>
+    <Box
+      maxW={{ base: 'xs', md: 'lg' }}
+      m='auto'
+      mb={{ base: 1, md: 3 }}
+      mt={{ base: 1, md: 3 }}
+    >
       <SimpleGrid
-        width={isMobile ? '90%' : '100%'}
-        margin={isMobile ? 'auto' : 0}
-        columns={isMobile ? 2 : 4}
-        spacing={isMobile ? 2 : 5}
+        width={{ base: '90%', md: '100%' }}
+        margin={{ base: 'auto', md: 0 }}
+        columns={{ base: 2, md: 4 }}
+        spacing={{ base: 2, md: 5 }}
       >
         {currentData.map((record) => (
           <Box key={record.id}>
@@ -56,11 +61,11 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
           </Box>
         ))}
       </SimpleGrid>
-
+  
       <HStack spacing={2} justifyContent="center" mb="10" mt="10">
         {currentPage > 1 && (
           <Button
-            size={isMobile ? 'xs' : 'md'}
+            size={{ base: 'xs', md: 'md' }}
             onClick={() => goToPage(currentPage - 1)}
             bgColor="white"
             color="#313677"
@@ -68,11 +73,11 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
             <Icon as={MdKeyboardArrowLeft} boxSize={10} />
           </Button>
         )}
-
+  
         {Array.from({ length: pageCount }, (_, i) => (
           <Button
             key={i}
-            size={isMobile ? 'xs' : 'md'}
+            size={{ base: 'xs', md: 'md' }}
             onClick={() => goToPage(i + 1)}
             {...buttonStyle}
             colorScheme={i + 1 === currentPage ? 'blue' : 'gray'}
@@ -85,10 +90,10 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
             {i + 1}
           </Button>
         ))}
-
+  
         {currentPage < pageCount && (
           <Button
-            size={isMobile ? 'xs' : 'md'}
+            size={{ base: 'xs', md: 'md' }}
             onClick={() => goToPage(currentPage + 1)}
             bgColor="white"
             color="#313677"
@@ -97,7 +102,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
           </Button>
         )}
       </HStack>
-    </>
+    </Box>
   );
 };
 
