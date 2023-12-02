@@ -44,13 +44,13 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
 
   return (
     <Box
-      maxW={{ base: 'xs',md: 'xl', lg: '100%' }}
-      m='auto'
+      maxW={{ base: 'xs', md: 'xl', lg: '100%' }}
+      m="auto"
       mb={{ base: 1, md: 3 }}
       mt={{ base: 1, md: 3 }}
     >
       <SimpleGrid
-        width= '98%'
+        width="98%"
         margin={{ base: 'auto', md: 0 }}
         columns={{ base: 2, lg: 4 }}
         spacing={{ base: 2, lg: 5 }}
@@ -61,7 +61,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
           </Box>
         ))}
       </SimpleGrid>
-  
+
       <HStack spacing={2} justifyContent="center" mb="10" mt="10">
         {currentPage > 1 && (
           <Button
@@ -73,7 +73,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
             <Icon as={MdKeyboardArrowLeft} boxSize={10} />
           </Button>
         )}
-  
+
         {Array.from({ length: pageCount }, (_, i) => (
           <Button
             key={i}
@@ -90,7 +90,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
             {i + 1}
           </Button>
         ))}
-  
+
         {currentPage < pageCount && (
           <Button
             size={{ base: 'xs', md: 'md' }}
