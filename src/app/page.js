@@ -4,13 +4,13 @@ import LaboralFormation from '@/app/components/LaboralFormation';
 import images from '@/app/content/imageData';
 import OurAllies from '@/app/components/OurAllies';
 import OurInstitutions from '@/app/components/OurInstitutions';
-import CourseList from './components/CourseList';
-import cursos from './content/cursosData';
-import CardContent from './components/CardContent';
+import CourseList from '@/app/components/CourseList';
+import cursos from '@/app/content/cursosData';
+import ProgramCards from '@/app/components/CardContent';
 import GenderStats from '@/app/components/GenderStats';
 import DonutChart from '@/app/components/donut-chart/DonutChart';
 import HeroHeader from '@/app/components/HeroHeader';
-import { StatsData } from './content/statsData';
+import { StatsData } from '@/app/content/statsData';
 
 export default function Home() {
   const donutData = StatsData.donutChartStats.map((item) => ({
@@ -36,7 +36,7 @@ export default function Home() {
         <HeroHeader />
       </Box>
       <OurInstitutions />
-      <CardContent />
+      <ProgramCards />
       <CourseList cursos={cursos.tecnicos} title={'Nuestros programas'} />
       <InscriptionBanner />
       <LaboralFormation />

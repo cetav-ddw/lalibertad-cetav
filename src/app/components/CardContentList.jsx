@@ -1,19 +1,19 @@
 import { Box } from '@chakra-ui/react';
-import CardContent from './CardContent';
+import ProgramCards from './CardContent';
 
-export default function listCardC({ programs }) {
+export default function ProgramsCardsList({ programs }) {
   return (
     <>
       {programs?.length > 0 ? (
         <Box
-          mb="16px"
+          mb="16"
           display="flex"
           flexWrap="wrap"
           justifyContent="center"
           alignItems="center"
         >
           {programs.map(({ id, title, imgSrc }) => {
-            return <CardContent key={id} title={title} imgSrc={imgSrc} />;
+            return <ProgramCards key={id} title={title} imgSrc={imgSrc} />;
           })}
         </Box>
       ) : null}

@@ -2,7 +2,6 @@
 import {
   Box,
   Text,
-  Link,
   Card,
   CardBody,
   CardFooter,
@@ -13,15 +12,15 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
-import SectionHeading from './SectionHeading';
+import SectionHeading from '@/app/components/SectionHeading';
 
-const CardContent = () => {
+const ProgramCards = () => {
   return (
     <>
       <SectionHeading title="Nuestros programas" />
       <Box
         color="#000000"
-        mb="50px"
+        mb={6}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -35,8 +34,8 @@ const CardContent = () => {
             h="10rem"
           />
           <CardBody>
-            <Stack mt="2" spacing="3">
-              <Heading size="md">Programas técnicos</Heading>
+            <Stack my="2" spacing="2">
+              <Heading as="h3" size="md">Programas técnicos</Heading>
               <Text>
                 Formación en áreas del Arte y Tecnología para el empleo.
                 Programas enfocados en el desarrollo de competencias técnicas,
@@ -46,7 +45,6 @@ const CardContent = () => {
           </CardBody>
           <CardFooter>
             <NextLink href="/tecnicos">
-              <Link>
                 <Button
                   variant="solid"
                   w="200px"
@@ -54,14 +52,14 @@ const CardContent = () => {
                   justifyContent="space-evenly"
                   _hover={{
                     bg: 'btnHover',
+                    color:'#ffffff'
                   }}
                   pos="relative"
-                  bottom="15px"
+                  bottom="18px"
                 >
                   <Text>Aprende más</Text>
                   <FaArrowRight />
                 </Button>
-              </Link>
             </NextLink>
           </CardFooter>
         </Card>
@@ -74,8 +72,8 @@ const CardContent = () => {
             h="10rem"
           />
           <CardBody>
-            <Stack mt="2" spacing="3">
-              <Heading size="md"> Cursos Libres de Diseño</Heading>
+            <Stack my="2" spacing="2">
+              <Heading as="h3" size="md"> Cursos Libres de Diseño</Heading>
               <Text>
                 Actualización profesional en áreas de diseño y redes sociales,
                 ofrecemos los cursos en modalidad presencial y virtual para tu
@@ -85,7 +83,6 @@ const CardContent = () => {
           </CardBody>
           <CardFooter>
             <NextLink href="/cursos-libres">
-              <Link>
                 <Button
                   variant="solid"
                   w="200px"
@@ -93,6 +90,7 @@ const CardContent = () => {
                   justifyContent="space-evenly"
                   _hover={{
                     bg: 'btnHover',
+                    color:'#ffffff'
                   }}
                   pos="relative"
                   top="3px"
@@ -100,7 +98,6 @@ const CardContent = () => {
                   <Text>Aprende más</Text>
                   <FaArrowRight />
                 </Button>
-              </Link>
             </NextLink>
           </CardFooter>
         </Card>
@@ -113,8 +110,8 @@ const CardContent = () => {
             h="10rem"
           />
           <CardBody>
-            <Stack mt="1" spacing="3">
-              <Heading size="md">Centros de Cómputo</Heading>
+            <Stack my="1" spacing="2">
+              <Heading as="h3" size="md">Centros de Cómputo</Heading>
               <Text>
                 Desarrollo de habilidades en cómputo que abarcan desde la
                 navegación hasta el uso de herramientas exigidas por las
@@ -125,22 +122,22 @@ const CardContent = () => {
           </CardBody>
           <CardFooter>
             <NextLink href="/cursos-libres/#cursosComputo">
-              <Link>
                 <Button
                   variant="solid"
                   w="200px"
                   display="flex"
                   justifyContent="space-evenly"
+                  textDecoration="none"
                   _hover={{
                     bg: 'btnHover',
+                    color:'#ffffff'
                   }}
                   pos="relative"
                   bottom="35px"
                 >
-                  <Text>Aprende más</Text>
+                  <Text >Aprende más</Text>
                   <FaArrowRight />
                 </Button>
-              </Link>
             </NextLink>
           </CardFooter>
         </Card>
@@ -149,4 +146,4 @@ const CardContent = () => {
   );
 };
 
-export default CardContent;
+export default ProgramCards;
