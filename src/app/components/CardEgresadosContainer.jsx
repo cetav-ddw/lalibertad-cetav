@@ -44,16 +44,16 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
 
   return (
     <Box
-      maxW={{ base: 'xs', md: 'lg' }}
+      maxW={{ base: 'xs',md: 'xl', lg: '100%' }}
       m='auto'
       mb={{ base: 1, md: 3 }}
       mt={{ base: 1, md: 3 }}
     >
       <SimpleGrid
-        width={{ base: '90%', md: '100%' }}
+        width= '98%'
         margin={{ base: 'auto', md: 0 }}
-        columns={{ base: 2, md: 4 }}
-        spacing={{ base: 2, md: 5 }}
+        columns={{ base: 2, lg: 4 }}
+        spacing={{ base: 2, lg: 5 }}
       >
         {currentData.map((record) => (
           <Box key={record.id}>
@@ -65,7 +65,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
       <HStack spacing={2} justifyContent="center" mb="10" mt="10">
         {currentPage > 1 && (
           <Button
-            size={{ base: 'xs', md: 'md' }}
+            size={{ base: 'xs', lg: 'md' }}
             onClick={() => goToPage(currentPage - 1)}
             bgColor="white"
             color="#313677"
@@ -77,7 +77,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
         {Array.from({ length: pageCount }, (_, i) => (
           <Button
             key={i}
-            size={{ base: 'xs', md: 'md' }}
+            size={{ base: 'xs', lg: 'md' }}
             onClick={() => goToPage(i + 1)}
             {...buttonStyle}
             colorScheme={i + 1 === currentPage ? 'blue' : 'gray'}
