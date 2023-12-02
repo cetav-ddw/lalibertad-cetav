@@ -16,7 +16,13 @@ import NextLink from 'next/link';
 import SectionHeading from '@/app/components/SectionHeading';
 
 const CourseItemDetails = ({ details, courseId }) => (
-  <List m={{base: '0', lg:"auto"}} textAlign="justify" px="2" py="4" fontSize="sm">
+  <List
+    m={{ base: '0', lg: 'auto' }}
+    textAlign="justify"
+    px="2"
+    py="4"
+    fontSize="sm"
+  >
     {details.map((detail, index) => {
       const key = `${courseId}-${index}`;
       return (
@@ -52,7 +58,7 @@ const CourseListItem = ({
       bg="rgba(225, 2 31, 248, 1)"
       borderRadius="lg"
       _hover={{ opacity: url ? 0.8 : 1 }}
-      width={{base: '80vw', md: '40vw', lg: '27vw'}}
+      width={{ base: '80vw', md: '40vw', lg: '27vw' }}
     >
       <Box position="relative">
         <Image
@@ -101,7 +107,7 @@ export const CourseList = ({ cursos, showDescription, title }) =>
           'repeat(3 , 1fr)',
         ]}
         gap={4}
-        mx='auto'
+        mx="auto"
         maxW={{ base: '80vw', lg: '90%' }}
       >
         {cursos.map((course) => (

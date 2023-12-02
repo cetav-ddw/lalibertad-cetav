@@ -86,7 +86,7 @@ const headingInfo = {
   contacto: {
     title: 'Nuestra información',
     titleColor: 'de contacto',
-    imgSrc: '/images/contact-img.jpg'
+    imgSrc: '/images/contact-img.jpg',
   },
 };
 
