@@ -7,7 +7,6 @@ import {
   SimpleGrid,
   Button,
   HStack,
-  useStyleConfig,
   useBreakpointValue,
   Icon,
 } from '@chakra-ui/react';
@@ -37,10 +36,7 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
     setCurrentPage(1);
   }, [uniqueRecords]);
 
-  const buttonStyle = useStyleConfig('Button', {
-    size: isMobile ? 'sm' : 'lg',
-    colorScheme: 'blue',
-  });
+
 
   return (
     <>
@@ -62,22 +58,6 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
         >
           <Icon as={MdKeyboardArrowLeft} boxSize={10} />
         </Button>
-
-        {Array.from({ length: pageCount }, (_, i) => (
-          <Button
-            key={i}
-            size={isMobile ? 'xs' : 'sm'}
-            onClick={() => goToPage(i + 1)}
-            {...buttonStyle}
-            colorScheme={i + 1 === currentPage ? 'blue' : 'gray'}
-            bg={i + 1 === currentPage ? '#313677' : '#546CD4'}
-            _hover={{ bg: 'blue.300' }}
-            _active={{ bg: 'blue.700' }}
-            borderRadius="100%"
-          >
-            {i + 1}
-          </Button>
-        ))}
 
         <Button
           size={isMobile ? 'xs' : 'md'}
