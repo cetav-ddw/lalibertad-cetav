@@ -40,8 +40,8 @@ export default function CursosLibres() {
         </Text>
         <CourseList cursos={cursos.cursosLibresDiseno} showDescription />
       </Box>
-      <Box>
-        <SectionHeading title="Cursos de Computo" />
+      <Box id="cursosComputo">
+        <SectionHeading title="Cursos de Computo"  />
         <Text
           maxWidth={{ base: '80%', md: '920px' }}
           margin="0 auto"

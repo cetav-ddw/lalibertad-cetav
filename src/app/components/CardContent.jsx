@@ -35,7 +35,9 @@ const ProgramCards = () => {
           />
           <CardBody>
             <Stack my="2" spacing="2">
-              <Heading as="h3" size="md">Programas técnicos</Heading>
+              <Heading as="h3" size="md">
+                Programas técnicos
+              </Heading>
               <Text>
                 Formación en áreas del Arte y Tecnología para el empleo.
                 Programas enfocados en el desarrollo de competencias técnicas,
@@ -45,21 +47,21 @@ const ProgramCards = () => {
           </CardBody>
           <CardFooter>
             <NextLink href="/tecnicos">
-                <Button
-                  variant="solid"
-                  w="200px"
-                  display="flex"
-                  justifyContent="space-evenly"
-                  _hover={{
-                    bg: 'btnHover',
-                    color:'#ffffff'
-                  }}
-                  pos="relative"
-                  bottom="18px"
-                >
-                  <Text>Aprende más</Text>
-                  <FaArrowRight />
-                </Button>
+              <Button
+                variant="solid"
+                w="200px"
+                display="flex"
+                justifyContent="space-evenly"
+                _hover={{
+                  bg: 'btnHover',
+                  color: '#ffffff',
+                }}
+                pos="relative"
+                bottom="18px"
+              >
+                <Text>Aprende más</Text>
+                <FaArrowRight />
+              </Button>
             </NextLink>
           </CardFooter>
         </Card>
@@ -73,7 +75,10 @@ const ProgramCards = () => {
           />
           <CardBody>
             <Stack my="2" spacing="2">
-              <Heading as="h3" size="md"> Cursos Libres de Diseño</Heading>
+              <Heading as="h3" size="md">
+                {' '}
+                Cursos Libres de Diseño
+              </Heading>
               <Text>
                 Actualización profesional en áreas de diseño y redes sociales,
                 ofrecemos los cursos en modalidad presencial y virtual para tu
@@ -83,21 +88,21 @@ const ProgramCards = () => {
           </CardBody>
           <CardFooter>
             <NextLink href="/cursos-libres">
-                <Button
-                  variant="solid"
-                  w="200px"
-                  display="flex"
-                  justifyContent="space-evenly"
-                  _hover={{
-                    bg: 'btnHover',
-                    color:'#ffffff'
-                  }}
-                  pos="relative"
-                  top="3px"
-                >
-                  <Text>Aprende más</Text>
-                  <FaArrowRight />
-                </Button>
+              <Button
+                variant="solid"
+                w="200px"
+                display="flex"
+                justifyContent="space-evenly"
+                _hover={{
+                  bg: 'btnHover',
+                  color: '#ffffff',
+                }}
+                pos="relative"
+                top="3px"
+              >
+                <Text>Aprende más</Text>
+                <FaArrowRight />
+              </Button>
             </NextLink>
           </CardFooter>
         </Card>
@@ -111,7 +116,9 @@ const ProgramCards = () => {
           />
           <CardBody>
             <Stack my="1" spacing="2">
-              <Heading as="h3" size="md">Centros de Cómputo</Heading>
+              <Heading as="h3" size="md">
+                Centros de Cómputo
+              </Heading>
               <Text>
                 Desarrollo de habilidades en cómputo que abarcan desde la
                 navegación hasta el uso de herramientas exigidas por las
@@ -121,23 +128,23 @@ const ProgramCards = () => {
             </Stack>
           </CardBody>
           <CardFooter>
-            <NextLink href="/cursos-libres/#cursosComputo">
-                <Button
-                  variant="solid"
-                  w="200px"
-                  display="flex"
-                  justifyContent="space-evenly"
-                  textDecoration="none"
-                  _hover={{
-                    bg: 'btnHover',
-                    color:'#ffffff'
-                  }}
-                  pos="relative"
-                  bottom="35px"
-                >
-                  <Text >Aprende más</Text>
-                  <FaArrowRight />
-                </Button>
+            <NextLink href="./cursos-libres/#cursosComputo">
+              <Button
+                variant="solid"
+                w="200px"
+                display="flex"
+                justifyContent="space-evenly"
+                textDecoration="none"
+                _hover={{
+                  bg: 'btnHover',
+                  color: '#ffffff',
+                }}
+                pos="relative"
+                bottom="35px"
+              >
+                <Text>Aprende más</Text>
+                <FaArrowRight />
+              </Button>
             </NextLink>
           </CardFooter>
         </Card>
