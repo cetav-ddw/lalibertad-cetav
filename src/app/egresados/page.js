@@ -8,6 +8,14 @@ import TestimonyList from '@/app/components/Testimonies/TestimonyList';
 import testimonies from '@/app/content/testimonies';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  openGraph: {
+    title: 'Nuestros egresados',
+    description:
+      'Descubre y conecta con nuestros exitosos egresados a través de nuestra página web. Explora sus portafolios organizados por carrera para encontrar el talento perfecto que se ajuste a tus necesidades laborales o proyectos.',
+  },
+};
+
 export default function Egresados() {
   const paths = [
     { title: 'Inicio', path: '/' },

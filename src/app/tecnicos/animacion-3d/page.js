@@ -14,6 +14,14 @@ import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  openGraph: {
+    title: 'Animacion 3D',
+    description:
+      'Explora el proceso creativo y técnico de la Animación 3D en nuestro programa, desde el desarrollo de ideas hasta la composición final, incluyendo la creación de personajes y ambientes, y técnicas de iluminación, para formarte como un experto en animación visual tridimensional.',
+  },
+};
+
 export default function Animacion3D() {
   const currentCourseId = 'tecAnimacion3d';
   const paths = [

@@ -3,6 +3,14 @@ import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  openGraph: {
+    title: 'Nuestra informacion de contacto',
+    description:
+      '¿Necesitas más información o tienes alguna consulta? Visita nuestra sección de Contacto para conocer todas las formas en que puedes comunicarte con nosotros. ',
+  },
+};
+
 export default function Contacto() {
   const paths = [
     { title: 'Inicio', path: '/' },

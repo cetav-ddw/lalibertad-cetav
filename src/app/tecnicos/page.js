@@ -7,11 +7,20 @@ import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  openGraph: {
+    title: 'Nuestras carreras técnicas',
+    description:
+      'En CETAV, ofrecemos programas técnicos que responden a las necesidades actuales del mercado laboral, supervisados por el INA y el sector empresarial. Nuestro enfoque educativo integral combina programación avanzada, currículo innovador y formación práctica, asegurando un entorno de enseñanza-aprendizaje dinámico y centrado en el estudiante.',
+  },
+};
+
 export default function Tecnicos() {
   const paths = [
     { title: 'Inicio', path: '/' },
     { title: 'Cursos Técnicos', path: '/tecnicos' },
   ];
+
   return (
     <>
       <Breadcrumbs paths={paths} />

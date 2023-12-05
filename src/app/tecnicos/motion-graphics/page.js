@@ -14,6 +14,14 @@ import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  openGraph: {
+    title: 'Motion graphics',
+    description:
+      'Participa en nuestro programa intensivo de Motion Graphics, donde aprenderás a crear animaciones y composiciones cautivadoras a partir de ilustraciones. Este curso se centra en generar contenidos animados en 2D para aplicaciones publicitarias, educativas y de entretenimiento.',
+  },
+};
+
 export default function MotionGraphicPage() {
   const currentCourseId = 'tecMotionGraphics';
   const paths = [

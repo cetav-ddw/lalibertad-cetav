@@ -6,6 +6,14 @@ import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 import SectionHeading from '@/app/components/SectionHeading';
 
+export const metadata = {
+  openGraph: {
+    title: 'Cursos libres',
+    description:
+      'Los Cursos Libres de Diseño y Certificaciones de Centros de Cómputo están diseñados para mejorar tus habilidades en herramientas clave de la industria y ofimáticas. Personaliza tu aprendizaje según tu horario y eleva tu perfil profesional para destacar en el mercado laboral y conectar efectivamente con tu audiencia.',
+  },
+};
+
 export default function CursosLibres() {
   const paths = [
     { title: 'Inicio', path: '/' },

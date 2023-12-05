@@ -14,6 +14,14 @@ import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  openGraph: {
+    title: 'Análisis y visualización de datos',
+    description:
+      'En nuestro programa de Análisis y Visualización de Datos, formamos expertos en el manejo y administración de bases de datos, y en la creación de visualizaciones interactivas, para potenciar la toma de decisiones empresariales basada en datos.',
+  },
+};
+
 export default function AnalisisDatosPage() {
   const currentCourseId = 'tecAnalisisDatos';
   const paths = [

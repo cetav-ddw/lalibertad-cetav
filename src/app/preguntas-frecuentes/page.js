@@ -16,6 +16,14 @@ import PHeading from '@/app/components/PageHeading';
 import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  openGraph: {
+    title: 'Preguntas frecuentes',
+    description:
+      '¿Tienes preguntas sobre el CETAV? Consulta nuestra sección de Preguntas Frecuentes para obtener respuestas claras y útiles a las consultas más comunes, y descubre cómo podemos ayudarte en tu camino educativo y profesional.',
+  },
+};
+
 export default function Faq() {
   const paths = [
     { title: 'Inicio', path: '/' },
