@@ -38,7 +38,7 @@ export default function AnalisisDatosPage() {
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.anaDatos} />
       <ExpectactionsBanner />
-      <TestimonyList testimonies={testimonies.web} />
+      <TestimonyList testimonies={testimonies.anaDatos} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers

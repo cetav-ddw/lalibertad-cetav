@@ -35,7 +35,7 @@ export default function MercadeoPage() {
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.mercadeo} />
       <ExpectactionsBanner />
-      <TestimonyList testimonies={testimonies.web} />
+      <TestimonyList testimonies={testimonies.mercadeo} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers

@@ -35,7 +35,7 @@ export default function Animacion3D() {
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.animacion} />
       <ExpectactionsBanner />
-      <TestimonyList testimonies={testimonies.web} />
+      <TestimonyList testimonies={testimonies.animacion} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers

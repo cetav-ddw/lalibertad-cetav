@@ -35,7 +35,7 @@ export default function MotionGraphicPage() {
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.motion} />
       <ExpectactionsBanner />
-      <TestimonyList testimonies={testimonies.web} />
+      <TestimonyList testimonies={testimonies.motion} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers

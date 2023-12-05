@@ -37,7 +37,7 @@ export default function CiberseguridadPage() {
       <InscriptionBanner />
       <GoodToKnowBanner topicList={preInscription.ciber} />
       <ExpectactionsBanner />
-      <TestimonyList testimonies={testimonies.web} />
+      <TestimonyList testimonies={testimonies.ciber} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers
