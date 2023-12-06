@@ -41,9 +41,9 @@ export default function PaidMedia() {
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
-      <GoodToKnowBanner topicList={preInscription.web} />
+      <GoodToKnowBanner topicList={preInscription.paid} />
       <ExpectactionsBanner />
-      <TestimonyList testimonies={testimonies.web} />
+      <TestimonyList testimonies={testimonies.paid} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers
