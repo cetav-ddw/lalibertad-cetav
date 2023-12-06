@@ -4,8 +4,6 @@ import LaboralFormation from '@/app/components/LaboralFormation';
 import images from '@/app/content/imageData';
 import OurAllies from '@/app/components/OurAllies';
 import OurInstitutions from '@/app/components/OurInstitutions';
-import CourseList from '@/app/components/CourseList';
-import cursos from '@/app/content/cursosData';
 import ProgramCards from '@/app/components/CardContent';
 import GenderStats from '@/app/components/GenderStats';
 import DonutChart from '@/app/components/donut-chart/DonutChart';
@@ -37,7 +35,6 @@ export default function Home() {
       </Box>
       <OurInstitutions />
       <ProgramCards />
-      <CourseList cursos={cursos.tecnicos} title={'Nuestros programas'} />
       <InscriptionBanner />
       <LaboralFormation />
       <Box

@@ -25,7 +25,7 @@ const ProgramCards = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <Card maxW="xs" h="450px" bg="boxBgColor" mx="4px">
+        <Card maxW="xs" h="475px" bg="boxBgColor" mx="4px">
           <Image
             src="/images/tecnicos.jpg"
             alt="Card Tecnicos"
@@ -33,7 +33,9 @@ const ProgramCards = () => {
             objectFit="cover"
             h="10rem"
           />
-          <CardBody>
+          <CardBody
+          m={0}
+          >
             <Stack my="2" spacing="2">
               <Heading as="h3" size="md">
                 Programas técnicos
@@ -45,7 +47,12 @@ const ProgramCards = () => {
               </Text>
             </Stack>
           </CardBody>
-          <CardFooter>
+          <CardFooter
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            h={7}
+          >
             <NextLink href="/tecnicos">
               <Button
                 variant="solid"
@@ -57,7 +64,7 @@ const ProgramCards = () => {
                   color: '#ffffff',
                 }}
                 pos="relative"
-                bottom="18px"
+                bottom={5}
               >
                 <Text>Aprende más</Text>
                 <FaArrowRight />
@@ -65,7 +72,7 @@ const ProgramCards = () => {
             </NextLink>
           </CardFooter>
         </Card>
-        <Card maxW="xs" h="450px" bg="boxBgColor" mx="4px">
+        <Card maxW="xs" h="475px" bg="boxBgColor" mx="4px">
           <Image
             src="/images/cursos-libres.jpg"
             alt="Card Cursos Libres"
@@ -86,7 +93,11 @@ const ProgramCards = () => {
               </Text>
             </Stack>
           </CardBody>
-          <CardFooter>
+          <CardFooter
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
             <NextLink href="/cursos-libres">
               <Button
                 variant="solid"
@@ -97,8 +108,6 @@ const ProgramCards = () => {
                   bg: 'btnHover',
                   color: '#ffffff',
                 }}
-                pos="relative"
-                top="3px"
               >
                 <Text>Aprende más</Text>
                 <FaArrowRight />
@@ -106,7 +115,7 @@ const ProgramCards = () => {
             </NextLink>
           </CardFooter>
         </Card>
-        <Card maxW="xs" h="450px" bg="boxBgColor" mx="4px">
+        <Card maxW="xs" h="475px" bg="boxBgColor" mx="4px">
           <Image
             src="/images/centrosComputo.jpg"
             alt="Card Centros de Computo"
@@ -114,8 +123,10 @@ const ProgramCards = () => {
             objectFit="cover"
             h="10rem"
           />
-          <CardBody>
-            <Stack my="1" spacing="2">
+          <CardBody
+          m={0}
+          >
+            <Stack spacing="2">
               <Heading as="h3" size="md">
                 Centros de Cómputo
               </Heading>
@@ -127,7 +138,12 @@ const ProgramCards = () => {
               </Text>
             </Stack>
           </CardBody>
-          <CardFooter>
+          <CardFooter
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            mb={10}
+          >
             <NextLink href="./cursos-libres/#cursosComputo">
               <Button
                 variant="solid"
@@ -139,8 +155,7 @@ const ProgramCards = () => {
                   bg: 'btnHover',
                   color: '#ffffff',
                 }}
-                pos="relative"
-                bottom="35px"
+                mt={-1.5}
               >
                 <Text>Aprende más</Text>
                 <FaArrowRight />
