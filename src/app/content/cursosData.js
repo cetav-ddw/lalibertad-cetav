@@ -2,7 +2,7 @@ const cursos = {
   tecnicos: [
     {
       id: 'tecWeb',
-      imgSrc: '/images/web.jpg',
+      imgSrc: '/images/portada-web.png',
       title: 'Diseño y Desarrollo Web',
       descripcion:
         'El Desarrollo web se enfoca en diseñar aplicaciones y sitios digitales con énfasis en interacción, funcionalidad, accesibilidad y usabilidad según estándares web.',
@@ -10,7 +10,7 @@ const cursos = {
     },
     {
       id: 'tecMarketing',
-      imgSrc: '/images/marketing.jpg',
+      imgSrc: '/images/portada-marketing.png',
       title: 'Mercadeo Digital y Diseño',
       descripcion:
         'Experto en contenido visual y redes sociales, fusiona mercadeo digital, diseño gráfico e imagen para comunicar mensajes de manera efectiva y interactuar en plataformas digitales.',
@@ -18,7 +18,7 @@ const cursos = {
     },
     {
       id: 'tecPostProduccion',
-      imgSrc: '/images/marketing.jpg',
+      imgSrc: '/images/portada-post.png',
       title: 'PostProdución Audiovisual',
       descripcion:
         'La postproducción abarca la edición de imagen y sonido, efectos especiales (como eliminación de fondo verde), colorización, subtitulado y animaciones 2D, desde la recepción del material hasta la entrega del producto final.',
@@ -26,7 +26,7 @@ const cursos = {
     },
     {
       id: 'tecAnimacion3d',
-      imgSrc: '/images/animacion-3d.jpg',
+      imgSrc: '/images/portada-animacion.png',
       title: 'Animación 3D',
       descripcion:
         'La Animación 3D sigue un proceso que va desde el desarrollo de la idea y su solución visual hasta etapas técnicas que incluyen la creación de componentes visuales como personajes y entornos, junto con la iluminación y composición final.',
@@ -34,7 +34,7 @@ const cursos = {
     },
     {
       id: 'tecCiberseguridad',
-      imgSrc: '/images/animacion-3d.jpg',
+      imgSrc: '/images/portada-ciber.png',
       title: 'Ciberseguridad',
       descripcion:
         'La ciberseguridad se orienta a salvaguardar la información y el individuo, fomentando conciencia y ética. Aborda la seguridad con conocimientos técnicos, pensamiento lógico-matemático, y destrezas en sistemas operativos y bases de datos.',
@@ -42,7 +42,7 @@ const cursos = {
     },
     {
       id: 'tecAnalisisDatos',
-      imgSrc: '/images/animacion-3d.jpg',
+      imgSrc: '/images/portada-avdata.png',
       title: 'Analisis y Visualización de Datos',
       descripcion:
         'Se centra en gestión de bases de datos y la creación de visualizaciones interactivas. Estas competencias se utilizan en estrategias empresariales para extraer y comunicar conocimientos, contribuyendo a optimizar el proceso de toma de decisiones.',
@@ -50,7 +50,7 @@ const cursos = {
     },
     {
       id: 'tecPaidMedia',
-      imgSrc: '/images/animacion-3d.jpg',
+      imgSrc: '/images/portada-paid.png',
       title: 'Paid Media',
       descripcion:
         'Se adquieren competencias para trabajar en la planificación de medios digitales, campañas, creación de contenidos y estrategias de comunicación en redes sociales, orientadas a la venta de productos.',
@@ -58,7 +58,7 @@ const cursos = {
     },
     {
       id: 'tecMotionGraphics',
-      imgSrc: '/images/animacion-3d.jpg',
+      imgSrc: '/images/portada-motion.png',
       title: 'Motion Graphics',
       descripcion:
         'Se centra en la creación de animaciones y composiciones a partir de ilustraciones para generar contenidos animados en segunda dimensión. Estas animaciones pueden ser de índole publicitaria, educativa o de entretenimiento.',
@@ -68,8 +68,7 @@ const cursos = {
   cursosLibresDiseno: [
     {
       id: 'clDisenoPhotoShop',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'PhotoShop',
+      imgSrc: '/images/Photoshop-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -83,8 +82,7 @@ const cursos = {
     },
     {
       id: 'clDisenoIllustrador',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Illustrador',
+      imgSrc: '/images/Illustrator-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -98,8 +96,7 @@ const cursos = {
     },
     {
       id: 'clDisenoPremier',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Premier',
+      imgSrc: '/images/Premiere-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -113,8 +110,7 @@ const cursos = {
     },
     {
       id: 'clDisenoAfterEffects',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'After Effects',
+      imgSrc: '/images/After-Effects-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -127,9 +123,8 @@ const cursos = {
       ],
     },
     {
-      id: 'clDisenoManejoDeRedes',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Manejo de Redes',
+      id: 'clDisenoFoto',
+      imgSrc: '/images/Fotografía-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -142,9 +137,92 @@ const cursos = {
       ],
     },
     {
-      id: 'clDisenoDibujo',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Dibujo',
+      id: 'clDisenoManejoRedes',
+      imgSrc: '/images/Manejo-Redes-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8625-6611',
+        },
+      ],
+    },
+    {
+      id: 'clDisenoClubDibujo',
+      imgSrc: '/images/Club-Dibujo-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8625-6611',
+        },
+      ],
+    },
+    {
+      id: 'clDisenoSoftwareLibre',
+      imgSrc: '/images/Software-Libre-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8625-6611',
+        },
+      ],
+    },
+    {
+      id: 'clDisenoInglesEmpleabilidad',
+      imgSrc: '/images/Ingles-para-la-Empleabilidad-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8625-6611',
+        },
+      ],
+    },
+    {
+      id: 'clDisenoStorytelling',
+      imgSrc: '/images/Storytelling-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8625-6611',
+        },
+      ],
+    },
+    {
+      id: 'clDisenoFundamentosDiseno',
+      imgSrc: '/images/Fundamentos-Diseño-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'matriculasdgrafico@lalibertadcr.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8625-6611',
+        },
+      ],
+    },
+    {
+      id: 'clDisenoProduccionDocumental',
+      imgSrc: '/images/Producción-Documental-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -159,9 +237,22 @@ const cursos = {
   ],
   cursosLibresComputo: [
     {
-      id: 'clComputoAlfaDigital',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Alfabetización Digital',
+      id: 'clComputoIntroOfimatica',
+      imgSrc: '/images/Intro-Ofimática-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8751-2802',
+        },
+      ],
+    },
+    {
+      id: 'clComputoAlfabeDigital',
+      imgSrc: '/images/Alfabetización-Digital-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -175,8 +266,7 @@ const cursos = {
     },
     {
       id: 'clComputoWord',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Word',
+      imgSrc: '/images/Word-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -190,8 +280,7 @@ const cursos = {
     },
     {
       id: 'clComputoExcel',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Excel',
+      imgSrc: '/images/Excel-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -205,8 +294,35 @@ const cursos = {
     },
     {
       id: 'clComputoPowerBi',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Power BI',
+      imgSrc: '/images/Power-BI-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8751-2802',
+        },
+      ],
+    },
+    {
+      id: 'clComputoPowerPoint',
+      imgSrc: '/images/Power-Point-cover.png',
+      details: [
+        {
+          label: 'Información al Correo:',
+          value: 'admisionyregistro@parquelalibertad.org',
+        },
+        {
+          label: 'WhatsApp:',
+          value: '8751-2802',
+        },
+      ],
+    },
+    {
+      id: 'clComputoIntroCiber',
+      imgSrc: '/images/Intro-Ciberseguridad-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -220,8 +336,7 @@ const cursos = {
     },
     {
       id: 'clComputoMultimedia',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Multimedia',
+      imgSrc: '/images/Multimedia-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -234,9 +349,8 @@ const cursos = {
       ],
     },
     {
-      id: 'clComputoCiberseguridad',
-      imgSrc: '/images/animacion-3d.jpg',
-      title: 'Intro a la Ciberseguridad',
+      id: 'clComputoPython',
+      imgSrc: '/images/Python-cover.png',
       details: [
         {
           label: 'Información al Correo:',
