@@ -10,7 +10,7 @@ const GoodToKnowBanner = ({ topicList }) => {
       {topicList?.length > 0 ? (
         <Box mb="16" p={{ base: 4, md: 6 }}>
           <SectionHeading title="¿Qué debes saber antes de aplicar?" />
-          <Text maxWidth="1000px" margin="0 auto" mb={'25px'} fontSize={{ base: 'md', md: 'lg' }}>
+          <Text maxWidth="1000px" margin="0 auto" mb={'4'} fontSize={{ base: 'md', md: 'lg' }}>
             {
               'Los aspirantes a nuestros programas técnicos deben desarrollar habilidades socioafectivas complementarias a las competencias técnicas del CETAV, incluyendo responsabilidad, autorregulación, aceptación de críticas, visión del error como oportunidad de crecimiento, autodidactismo, adaptabilidad y logro de metas. Estas habilidades se cultivan para preparar a los estudiantes en entornos laborales digitales y fomentar la formación de ciudadanos conscientes en una sociedad global.'
             }

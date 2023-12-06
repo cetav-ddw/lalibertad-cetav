@@ -8,7 +8,7 @@ const OurTeachers = ({ teacherList }) => {
       {teacherList?.length > 0 ? (
         <Box mb="16" p={{ base: 4, md: 6 }}>
           <SectionHeading title="¿Quiénes son nuestros profesores?" />
-          <Text maxWidth="1000px" margin="0 auto" mb={'25px'} fontSize={{ base: 'md', md: 'lg' }} >
+          <Text maxWidth="1000px" margin="0 auto" mb={'4'} fontSize={{ base: 'md', md: 'lg' }} >
             {
               'Nuestros profesores y profesoras, son profesionales activos y miembros de la industria, dedicados a enseñarte las habilidades más demandadas.'
             }
