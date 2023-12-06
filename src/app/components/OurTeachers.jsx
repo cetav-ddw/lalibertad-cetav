@@ -9,7 +9,7 @@ const OurTeachers = ({ teacherList }) => {
         <Box mx="auto" maxW="980px" mb="16">
           <SectionHeading title="¿Quiénes son nuestros profesores?" />
           <Text
-            fontSize={{ base: 'sm', md: 'lg' }}
+            fontSize={{ base: 'sm', md: 'md', lg: 'lg' }}
             p="2"
             w="80%"
             m="auto"
@@ -20,15 +20,17 @@ const OurTeachers = ({ teacherList }) => {
             }
           </Text>
           <Box
+            maxW=" 90%"
             display="flex"
             flexWrap="wrap"
             justifyContent="space-around"
             alignItems="center"
+            m="auto"
           >
             {teacherList.map(({ id, name, position, avatarSrc }) => {
               return (
                 <Flex
-                  maxW={{ base: '80%', md: '31%' }}
+                  maxW={{ base: '80%', lg: '31%' }}
                   flex="1 1 300px"
                   alignItems="center"
                   key={id}
