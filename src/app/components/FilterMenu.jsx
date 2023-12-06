@@ -82,22 +82,11 @@ const FilterMenu = () => {
   }, [carreerList, yearList]);
   return (
     <>
-      <Text
-        width="80%"
-        margin="auto"
-        textAlign="center"
-        fontSize={{ base: 'sm', md: 'lg' }}
-        mb="4"
-      >
+      <Text maxWidth="1000px" margin="0 auto" mb={'4'} fontSize={{ base: 'md', md: 'lg' }}>
         Nuestra página web te permite explorar y conectarte con nuestra red de
         egresados.
       </Text>
-      <Text
-        width="80%"
-        margin="auto"
-        textAlign="center"
-        fontSize={{ base: 'sm', md: 'lg' }}
-      >
+      <Text maxWidth="1000px" margin="0 auto" mb={'4'} fontSize={{ base: 'md', md: 'lg' }}>
         Filtrá por carrera y fecha de graduación, para que podás encontrar
         rápidamente el talento adecuado para el trabajo.
       </Text>
