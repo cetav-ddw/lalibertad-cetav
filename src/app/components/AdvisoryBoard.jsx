@@ -8,7 +8,7 @@ const AdvisoryBoard = () => {
   return (
     <Box mb="16" p={{ base: 4, md: 6 }}>
       <SectionHeading title="Consejo Asesor" />
-      <Text mb="8" fontSize={{ base: 'md', md: 'lg' }}>
+      <Text maxWidth="1000px" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
         Se cuenta con equipo de personas en puestos importantes del estado y
         empresa privada, que guían la ruta de trabajo del CETAV y sus alcances.
         El Consejo Asesor está compuesto por:
@@ -55,7 +55,7 @@ const AdvisoryBoard = () => {
           Representantes de la comunidad SOY CETAV
         </ListItem>
       </List>
-      <Text fontSize={{ base: 'md', md: 'lg' }}>
+      <Text maxWidth="1000px" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
         Aunado a lo anterior, contamos con un equipo de expertos en cada área,
         quienes supervisan la ejecución y contenidos del programa, para que
         cumpla con los requerimientos de las respectivas industrias.
