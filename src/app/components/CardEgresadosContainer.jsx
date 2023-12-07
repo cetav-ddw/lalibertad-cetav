@@ -36,8 +36,6 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
     setCurrentPage(1);
   }, [uniqueRecords]);
 
-
-
   return (
     <>
       <SimpleGrid columns={isMobile ? 2 : 4} spacing={isMobile ? 2 : 5}>
@@ -49,25 +47,27 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
       </SimpleGrid>
 
       <HStack spacing={2} justifyContent="center" mb="10" mt="10">
-        <Button
-          size={isMobile ? 'xs' : 'md'}
-          onClick={() => goToPage(currentPage - 1)}
-          bgColor="white"
-          color="#313677"
-          disabled={currentPage === 1}
-        >
-          <Icon as={MdKeyboardArrowLeft} boxSize={10} />
-        </Button>
+        {currentPage > 1 && (
+          <Button
+            size={{ base: 'xs', lg: 'md' }}
+            onClick={() => goToPage(currentPage - 1)}
+            bgColor="white"
+            color="#313677"
+          >
+            <Icon as={MdKeyboardArrowLeft} boxSize={10} />
+          </Button>
+        )}
 
-        <Button
-          size={isMobile ? 'xs' : 'md'}
-          onClick={() => goToPage(currentPage + 1)}
-          bgColor="white"
-          color="#313677"
-          disabled={currentPage === pageCount}
-        >
-          <Icon as={MdKeyboardArrowRight} boxSize={10} />
-        </Button>
+        {currentPage < pageCount && (
+          <Button
+            size={{ base: 'xs', md: 'md' }}
+            onClick={() => goToPage(currentPage + 1)}
+            bgColor="white"
+            color="#313677"
+          >
+            <Icon as={MdKeyboardArrowRight} boxSize={10} />
+          </Button>
+        )}
       </HStack>
     </>
   );
