@@ -38,7 +38,7 @@ const teamData = [
   },
   {
     name: 'Carmen Vargas',
-    position: 'Admisión y Registro',
+    position: 'Coordinadora de Postproducción Audiovisual y Proyectos',
     photo: '/images/carmen-vargas.png',
   },
   {
@@ -54,7 +54,7 @@ const teamData = [
   {
     name: 'Ricardo Gutiérrez',
     position: 'Profesor Centros de Cómputo',
-    photo: '/images/ricardo-gutiérrez.png',
+    photo: '/images/ricardo-gutierrez.png',
   },
   {
     name: 'Keylor Berrocal',

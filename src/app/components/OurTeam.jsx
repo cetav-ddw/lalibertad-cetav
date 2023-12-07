@@ -14,7 +14,7 @@ const OurTeamCard = () => {
             borderRadius="lg"
             position="relative"
             width="300px"
-            height="320px"
+            height="360px"
             bg="gray"
           >
             <Image
