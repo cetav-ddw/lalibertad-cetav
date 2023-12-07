@@ -58,7 +58,7 @@ const CourseListItem = ({
       bg="rgba(225, 2 31, 248, 1)"
       borderRadius="lg"
       _hover={{ opacity: url ? 0.8 : 1 }}
-      width={{ base: '80vw', md: '40vw', lg: '27vw' }}
+      width={{ base: '80vw', md: '40vw', lg: '100%' }}
     >
       <Box position="relative">
         <Image
@@ -108,7 +108,7 @@ export const CourseList = ({ cursos, showDescription, title }) =>
         ]}
         gap={4}
         mx="auto"
-        maxW={{ base: '80vw', lg: '90%' }}
+        maxW={{ base: '80vw', lg: '100%' }}
       >
         {cursos.map((course) => (
           <CourseListItem
