@@ -4,57 +4,62 @@ const teamData = [
   {
     name: 'Patricio Morera',
     position: 'Director Ejecutivo FPLL',
-    photo: '/images/Patricio-Morera.png',
+    photo: '/images/patricio-morera.png',
   },
   {
     name: 'Gustavo Sánchez',
     position: 'Director CETAV',
-    photo: '/images/Gustavo-Sanchez.png',
+    photo: '/images/gustavo-sanchez.png',
   },
   {
     name: 'Lingie Granados',
     position: 'Coordinadora Académica CETAV',
-    photo: '/images/Lingie-Granados.png',
+    photo: '/images/lingie-granados.png',
   },
   {
     name: 'Rebeca Arias',
     position: 'Coordinadora Cursos Libres de Diseño',
-    photo: '/images/Rebeca-Arias.png',
+    photo: '/images/rebeca-arias.png',
   },
   {
     name: 'Diego Romero',
     position: 'Psicólogo Educativo',
-    photo: '/images/Diego-Romero.png',
+    photo: '/images/diego-romero.png',
   },
   {
     name: 'Daniela Monge',
     position: 'Asistente Administrativa',
-    photo: '/images/Daniela-Monge.png',
+    photo: '/images/daniela-monge.png',
   },
   {
     name: 'Evelyn Abarca',
     position: 'Admisión y Registro',
-    photo: '/images/Evelyn-Abarca.png',
+    photo: '/images/evelyn-abarca.png',
+  },
+  {
+    name: 'Carmen Vargas',
+    position: 'Admisión y Registro',
+    photo: '/images/carmen-vargas.png',
   },
   {
     name: 'Francisco Carrera',
     position: 'Profesor Centros de Cómputo',
-    photo: '/images/Francisco-Carrera.png',
+    photo: '/images/francisco-carrera.png',
   },
   {
     name: 'Geinner Barrantes',
     position: 'Profesor Centros de Cómputo',
-    photo: '/images/Geinner-Barrantes.png',
+    photo: '/images/geinner-barrantes.png',
   },
   {
     name: 'Ricardo Gutiérrez',
     position: 'Profesor Centros de Cómputo',
-    photo: '/images/Ricardo-Gutiérrez.png',
+    photo: '/images/ricardo-gutiérrez.png',
   },
   {
     name: 'Keylor Berrocal',
     position: 'Soporte Técnico',
-    photo: '/images/Keylor-Berrocal.png',
+    photo: '/images/keylor-berrocal.png',
   },
 ];
 

@@ -2,7 +2,7 @@ const cursos = {
   tecnicos: [
     {
       id: 'tecWeb',
-      imgSrc: '/images/portada-web.png',
+      imgSrc: '/images/web.png',
       title: 'Diseño y Desarrollo Web',
       descripcion:
         'El Desarrollo web se enfoca en diseñar aplicaciones y sitios digitales con énfasis en interacción, funcionalidad, accesibilidad y usabilidad según estándares web.',
@@ -10,7 +10,7 @@ const cursos = {
     },
     {
       id: 'tecMarketing',
-      imgSrc: '/images/portada-marketing.png',
+      imgSrc: '/images/marketing.png',
       title: 'Mercadeo Digital y Diseño',
       descripcion:
         'Experto en contenido visual y redes sociales, fusiona mercadeo digital, diseño gráfico e imagen para comunicar mensajes de manera efectiva y interactuar en plataformas digitales.',
@@ -18,7 +18,7 @@ const cursos = {
     },
     {
       id: 'tecPostProduccion',
-      imgSrc: '/images/portada-post.png',
+      imgSrc: '/images/post.png',
       title: 'PostProdución Audiovisual',
       descripcion:
         'La postproducción abarca la edición de imagen y sonido, efectos especiales (como eliminación de fondo verde), colorización, subtitulado y animaciones 2D, desde la recepción del material hasta la entrega del producto final.',
@@ -26,7 +26,7 @@ const cursos = {
     },
     {
       id: 'tecAnimacion3d',
-      imgSrc: '/images/portada-animacion.png',
+      imgSrc: '/images/3d.png',
       title: 'Animación 3D',
       descripcion:
         'La Animación 3D sigue un proceso que va desde el desarrollo de la idea y su solución visual hasta etapas técnicas que incluyen la creación de componentes visuales como personajes y entornos, junto con la iluminación y composición final.',
@@ -34,7 +34,7 @@ const cursos = {
     },
     {
       id: 'tecCiberseguridad',
-      imgSrc: '/images/portada-ciber.png',
+      imgSrc: '/images/ciberSecurity.png',
       title: 'Ciberseguridad',
       descripcion:
         'La ciberseguridad se orienta a salvaguardar la información y el individuo, fomentando conciencia y ética. Aborda la seguridad con conocimientos técnicos, pensamiento lógico-matemático, y destrezas en sistemas operativos y bases de datos.',
@@ -42,7 +42,7 @@ const cursos = {
     },
     {
       id: 'tecAnalisisDatos',
-      imgSrc: '/images/portada-avdata.png',
+      imgSrc: '/images/avdata.png',
       title: 'Analisis y Visualización de Datos',
       descripcion:
         'Se centra en gestión de bases de datos y la creación de visualizaciones interactivas. Estas competencias se utilizan en estrategias empresariales para extraer y comunicar conocimientos, contribuyendo a optimizar el proceso de toma de decisiones.',
@@ -50,7 +50,7 @@ const cursos = {
     },
     {
       id: 'tecPaidMedia',
-      imgSrc: '/images/portada-paid.png',
+      imgSrc: '/images/paidmedia.png',
       title: 'Paid Media',
       descripcion:
         'Se adquieren competencias para trabajar en la planificación de medios digitales, campañas, creación de contenidos y estrategias de comunicación en redes sociales, orientadas a la venta de productos.',
@@ -58,7 +58,7 @@ const cursos = {
     },
     {
       id: 'tecMotionGraphics',
-      imgSrc: '/images/portada-motion.png',
+      imgSrc: '/images/motionGraphics.png',
       title: 'Motion Graphics',
       descripcion:
         'Se centra en la creación de animaciones y composiciones a partir de ilustraciones para generar contenidos animados en segunda dimensión. Estas animaciones pueden ser de índole publicitaria, educativa o de entretenimiento.',
@@ -68,7 +68,7 @@ const cursos = {
   cursosLibresDiseno: [
     {
       id: 'clDisenoPhotoShop',
-      imgSrc: '/images/Photoshop-cover.png',
+      imgSrc: '/images/photoshop-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -82,7 +82,7 @@ const cursos = {
     },
     {
       id: 'clDisenoIllustrador',
-      imgSrc: '/images/Illustrator-cover.png',
+      imgSrc: '/images/illustrator-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -96,7 +96,7 @@ const cursos = {
     },
     {
       id: 'clDisenoPremier',
-      imgSrc: '/images/Premiere-cover.png',
+      imgSrc: '/images/premiere-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -110,7 +110,7 @@ const cursos = {
     },
     {
       id: 'clDisenoAfterEffects',
-      imgSrc: '/images/After-Effects-cover.png',
+      imgSrc: '/images/afterEffects-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -124,7 +124,7 @@ const cursos = {
     },
     {
       id: 'clDisenoFoto',
-      imgSrc: '/images/Fotografía-cover.png',
+      imgSrc: '/images/fotografía-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -138,7 +138,7 @@ const cursos = {
     },
     {
       id: 'clDisenoManejoRedes',
-      imgSrc: '/images/Manejo-Redes-cover.png',
+      imgSrc: '/images/manejo-redes-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -152,7 +152,7 @@ const cursos = {
     },
     {
       id: 'clDisenoClubDibujo',
-      imgSrc: '/images/Club-Dibujo-cover.png',
+      imgSrc: '/images/club-dibujo-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -166,7 +166,7 @@ const cursos = {
     },
     {
       id: 'clDisenoSoftwareLibre',
-      imgSrc: '/images/Software-Libre-cover.png',
+      imgSrc: '/images/software-libre-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -180,7 +180,7 @@ const cursos = {
     },
     {
       id: 'clDisenoInglesEmpleabilidad',
-      imgSrc: '/images/Ingles-para-la-Empleabilidad-cover.png',
+      imgSrc: '/images/ingles-empleabilidad-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -194,7 +194,7 @@ const cursos = {
     },
     {
       id: 'clDisenoStorytelling',
-      imgSrc: '/images/Storytelling-cover.png',
+      imgSrc: '/images/storytelling-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -208,7 +208,7 @@ const cursos = {
     },
     {
       id: 'clDisenoFundamentosDiseno',
-      imgSrc: '/images/Fundamentos-Diseño-cover.png',
+      imgSrc: '/images/fundamentos-diseno-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -222,7 +222,7 @@ const cursos = {
     },
     {
       id: 'clDisenoProduccionDocumental',
-      imgSrc: '/images/Producción-Documental-cover.png',
+      imgSrc: '/images/produccion-documental-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -238,7 +238,7 @@ const cursos = {
   cursosLibresComputo: [
     {
       id: 'clComputoIntroOfimatica',
-      imgSrc: '/images/Intro-Ofimática-cover.png',
+      imgSrc: '/images/intro-ofimatica-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -252,7 +252,7 @@ const cursos = {
     },
     {
       id: 'clComputoAlfabeDigital',
-      imgSrc: '/images/Alfabetización-Digital-cover.png',
+      imgSrc: '/images/alfabetizacion-digital-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -266,7 +266,7 @@ const cursos = {
     },
     {
       id: 'clComputoWord',
-      imgSrc: '/images/Word-cover.png',
+      imgSrc: '/images/word-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -280,7 +280,7 @@ const cursos = {
     },
     {
       id: 'clComputoExcel',
-      imgSrc: '/images/Excel-cover.png',
+      imgSrc: '/images/excel-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -294,7 +294,7 @@ const cursos = {
     },
     {
       id: 'clComputoPowerBi',
-      imgSrc: '/images/Power-BI-cover.png',
+      imgSrc: '/images/power-bI-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -308,7 +308,7 @@ const cursos = {
     },
     {
       id: 'clComputoPowerPoint',
-      imgSrc: '/images/Power-Point-cover.png',
+      imgSrc: '/images/power-point-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -322,7 +322,7 @@ const cursos = {
     },
     {
       id: 'clComputoIntroCiber',
-      imgSrc: '/images/Intro-Ciberseguridad-cover.png',
+      imgSrc: '/images/intro-ciberseguridad-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -336,7 +336,7 @@ const cursos = {
     },
     {
       id: 'clComputoMultimedia',
-      imgSrc: '/images/Multimedia-cover.png',
+      imgSrc: '/images/multimedia-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -350,7 +350,7 @@ const cursos = {
     },
     {
       id: 'clComputoPython',
-      imgSrc: '/images/Python-cover.png',
+      imgSrc: '/images/python-cover.png',
       details: [
         {
           label: 'Información al Correo:',
