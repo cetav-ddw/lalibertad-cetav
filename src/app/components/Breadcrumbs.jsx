@@ -7,7 +7,7 @@ import {
 
 const Breadcrumbs = ({ paths }) => {
   return (
-    <Box mb="8">
+    <Box width={{base:'90%', xl:'100%'}} mx='auto' mb="8">
       <Breadcrumb>
         {paths.map((path, index) => (
           <BreadcrumbItem

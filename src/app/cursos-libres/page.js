@@ -35,7 +35,7 @@ export default function CursosLibres() {
         </Text>
         <CourseList cursos={cursos.cursosLibresDiseno} showDescription />
       </Box>
-      <Box mb="16" p={{ base: 4, md: 6 }}>
+      <Box mb="10" p={{ base: 4, md: 6 }}>
         <SectionHeading title="Cursos de Computo" />
         <Text width='90%' mx='auto' mb="8" fontSize={{ base: 'md', md: 'lg' }}>
           Centros de Cómputo te ofrece cursos certificados de Alfabetización
