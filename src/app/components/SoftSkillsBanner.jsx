@@ -11,9 +11,9 @@ import SectionHeading from '@/app/components/SectionHeading';
 
 const SoftSkillsBanner = () => {
   return (
-    <Box mb="16">
+    <Box mb="16" p={{ base: 4, md: 6 }}>
       <SectionHeading title="Las competencias del futuro." />
-      <Text mb="4" fontSize="lg" maxWidth="980px" mx="5">
+      <Text maxWidth="1000px" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
         {
           'Desarrollamos capacidades de forma integral, abarcando el fortalecimiento de las habilidades de comunicación empática, el desarrollo del pensamiento creativo y la formación en gestión de negocios como parte de nuestro compromiso por formar personas jóvenes responsables, emprendederas y participativas.'
         }

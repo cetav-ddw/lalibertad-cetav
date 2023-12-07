@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         <Providers>
+          <link rel="icon" href="/images/medio-trazo.png" />
           <SkipNavLink>Saltar al contenido</SkipNavLink>
           <Header />
           <MainContent>{children}</MainContent>
