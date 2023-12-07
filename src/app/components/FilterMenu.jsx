@@ -82,6 +82,14 @@ const FilterMenu = () => {
   }, [carreerList, yearList]);
   return (
     <>
+      <Text maxWidth="1000px" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
+        Nuestra página web te permite explorar y conectarte con nuestra red de
+        egresados.
+      </Text>
+      <Text maxWidth="1000px" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
+        Filtrá por carrera y fecha de graduación, para que podás encontrar
+        rápidamente el talento adecuado para el trabajo.
+      </Text>
       <Flex justifyContent="center" gap={4} mb={5} mt={5}>
         <CareerFilter handleCareerMenuClick={handleCareerMenuClick} />
         <YearFilter handleYearMenuClick={handleYearMenuClick} />

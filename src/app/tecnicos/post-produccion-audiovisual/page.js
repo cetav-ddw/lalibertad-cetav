@@ -36,9 +36,9 @@ export default function PostProducionPage() {
       />
       <TechniciansCharacteristics />
       <InscriptionBanner />
-      <GoodToKnowBanner topicList={preInscription.web} />
+      <GoodToKnowBanner topicList={preInscription.post} />
       <ExpectactionsBanner />
-      <TestimonyList testimonies={testimonies.web} />
+      <TestimonyList testimonies={testimonies.post} />
       <SoftSkillsBanner />
       <OurTeachers teacherList={teachers.web} />
       <ExploreOtherCareers
