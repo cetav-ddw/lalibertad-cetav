@@ -23,7 +23,7 @@ export default function CursosLibres() {
       />
       <Box mb="10" p={{ base: 4, md: 6 }}>
         <SectionHeading title="Cursos Libres de Diseño" />
-        <Text width='90%' mx='auto' mb="8" fontSize={{ base: 'md', md: 'lg' }}>
+        <Text width="90%" mx="auto" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
           Los Cursos Libres de Diseño son la mejor opción para que tus proyectos
           suban de nivel. Con nosotros aprenderás el manejo de las principales
           herramientas que se usan en la industria gráfica, audiovisual y en
@@ -37,7 +37,7 @@ export default function CursosLibres() {
       </Box>
       <Box mb="10" p={{ base: 4, md: 6 }}>
         <SectionHeading title="Cursos de Computo" />
-        <Text width='90%' mx='auto' mb="8" fontSize={{ base: 'md', md: 'lg' }}>
+        <Text width="90%" mx="auto" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
           Centros de Cómputo te ofrece cursos certificados de Alfabetización
           Digital, word, excel principiante, intermedio y avanzado, así como
           power BI, multimedia e introducción a la ciberseguridad para que tus
