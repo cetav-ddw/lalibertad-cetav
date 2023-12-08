@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react';
-import ProgramCards from './CardContent';
+import ProgramCards from '@/app/ProgramCards';
 
 export default function ProgramsCardsList({ programs }) {
   return (

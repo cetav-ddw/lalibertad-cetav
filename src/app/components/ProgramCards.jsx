@@ -7,10 +7,9 @@ import {
   CardFooter,
   Image,
   Stack,
-  Button,
   Heading,
+  Link,
 } from '@chakra-ui/react';
-import NextLink from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import SectionHeading from '@/app/components/SectionHeading';
 
@@ -20,27 +19,26 @@ const ProgramCards = () => {
       <SectionHeading title="Nuestros programas" />
       <Box
         color="#000000"
-        mb={6}
+        mb="85px"
+        h="30rem"
         display="flex"
         alignItems="center"
         justifyContent="center"
       >
-        <Card maxW="xs" h="475px" bg="boxBgColor" mx="4px">
+        <Card maxW="xs" bg="boxBgColor" mx="4px">
           <Image
             src="/images/tecnicos.jpg"
-            alt="Card Tecnicos"
+            alt=""
             borderRadius="lg"
             objectFit="cover"
-            h="10rem"
+            h="14rem"
           />
-          <CardBody
-          m={0}
-          >
+          <CardBody m={0}>
             <Stack my="2" spacing="2">
               <Heading as="h3" size="md">
                 Programas técnicos
               </Heading>
-              <Text>
+              <Text h={180}>
                 Formación en áreas del Arte y Tecnología para el empleo.
                 Programas enfocados en el desarrollo de competencias técnicas,
                 inglés y habilidades socio emocionales.
@@ -53,40 +51,44 @@ const ProgramCards = () => {
             alignItems="center"
             h={7}
           >
-            <NextLink href="/tecnicos">
-              <Button
-                variant="solid"
-                w="200px"
-                display="flex"
-                justifyContent="space-evenly"
-                _hover={{
-                  bg: 'btnHover',
-                  color: '#FFFFFF',
-                }}
-                pos="relative"
-                bottom={5}
-              >
-                <Text>Aprende más</Text>
-                <FaArrowRight />
-              </Button>
-            </NextLink>
+            <Link
+              href="/tecnicos"
+              w="200px"
+              background="btnBg"
+              dis="flex"
+              justifyContent="center"
+              alignContent="center"
+              borderRadius="5%"
+              pos="relative"
+              bottom="20px"
+              _hover={{
+                bg: 'btnHover',
+                color: '#FFFFFF',
+              }}
+            >
+              <Text pos="relative" top="8px" left="28px" fontWeight="medium">
+                Aprende Más
+              </Text>
+              <FaArrowRight
+                style={{ position: 'relative', left: '155px', bottom: '12px' }}
+              />
+            </Link>
           </CardFooter>
         </Card>
-        <Card maxW="xs" h="475px" bg="boxBgColor" mx="4px">
+        <Card maxW="xs" bg="boxBgColor" mx="4px">
           <Image
             src="/images/cursos-libres.jpg"
-            alt="Card Cursos Libres"
+            alt=""
             borderRadius="lg"
             objectFit="cover"
-            h="10rem"
+            h="14rem"
           />
           <CardBody>
             <Stack my="2" spacing="2">
               <Heading as="h3" size="md">
-                {' '}
                 Cursos Libres de Diseño
               </Heading>
-              <Text>
+              <Text h={140}>
                 Actualización profesional en áreas de diseño y redes sociales,
                 ofrecemos los cursos en modalidad presencial y virtual para tu
                 beneficio.
@@ -98,39 +100,42 @@ const ProgramCards = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <NextLink href="/cursos-libres">
-              <Button
-                variant="solid"
-                w="200px"
-                display="flex"
-                justifyContent="space-evenly"
-                _hover={{
-                  bg: 'btnHover',
-                  color: '#FFFFFF',
-                }}
-              >
-                <Text>Aprende más</Text>
-                <FaArrowRight />
-              </Button>
-            </NextLink>
+            <Link
+              href="/cursos-libres"
+              w="200px"
+              background="btnBg"
+              dis="flex"
+              justifyContent="center"
+              alignContent="center"
+              borderRadius="5%"
+              _hover={{
+                bg: 'btnHover',
+                color: '#FFFFFF',
+              }}
+            >
+              <Text pos="relative" top="8px" left="28px" fontWeight="medium">
+                Aprende Más
+              </Text>
+              <FaArrowRight
+                style={{ position: 'relative', left: '155px', bottom: '12px' }}
+              />
+            </Link>
           </CardFooter>
         </Card>
-        <Card maxW="xs" h="475px" bg="boxBgColor" mx="4px">
+        <Card maxW="xs" bg="boxBgColor" mx="4px">
           <Image
             src="/images/centrosComputo.jpg"
-            alt="Card Centros de Computo"
+            alt=""
             borderRadius="lg"
             objectFit="cover"
-            h="10rem"
+            h="14rem"
           />
-          <CardBody
-          m={0}
-          >
+          <CardBody m={0} pos="relative" top="9px">
             <Stack spacing="2">
               <Heading as="h3" size="md">
                 Centros de Cómputo
               </Heading>
-              <Text>
+              <Text h={118}>
                 Desarrollo de habilidades en cómputo que abarcan desde la
                 navegación hasta el uso de herramientas exigidas por las
                 empresas como lo son excel y Power BI, ofrecemos modalidad
@@ -144,23 +149,28 @@ const ProgramCards = () => {
             alignItems="center"
             mb={10}
           >
-            <NextLink href="./cursos-libres/#cursosComputo">
-              <Button
-                variant="solid"
-                w="200px"
-                display="flex"
-                justifyContent="space-evenly"
-                textDecoration="none"
-                _hover={{
-                  bg: 'btnHover',
-                  color: '#FFFFFF',
-                }}
-                mt={-1.5}
-              >
-                <Text>Aprende más</Text>
-                <FaArrowRight />
-              </Button>
-            </NextLink>
+            <Link
+              href="./cursos-libres/#cursosComputo"
+              w="200px"
+              background="btnBg"
+              dis="flex"
+              justifyContent="center"
+              alignContent="center"
+              pos="relative"
+              top="40px"
+              borderRadius="5%"
+              _hover={{
+                bg: 'btnHover',
+                color: '#FFFFFF',
+              }}
+            >
+              <Text pos="relative" top="8px" left="28px" fontWeight="medium">
+                Aprende Más
+              </Text>
+              <FaArrowRight
+                style={{ position: 'relative', left: '155px', bottom: '12px' }}
+              />
+            </Link>
           </CardFooter>
         </Card>
       </Box>

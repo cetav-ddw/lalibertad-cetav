@@ -3,6 +3,7 @@ const colors = {
   textColor: '#313677',
   blueHighlightColor: '#427FDF',
   btnHover:"#3D45B8",
+  btnBg:"#EDF2F7"
 };
 
 export default colors;

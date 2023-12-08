@@ -8,7 +8,7 @@ import GenderStats from '@/app/components/GenderStats';
 import DonutChart from '@/app/components/donut-chart/DonutChart';
 import HeroHeader from '@/app/components/HeroHeader';
 import { StatsData } from './content/statsData';
-import ProgramCards from './components/CardContent';
+import ProgramCards from './components/ProgramCards';
 
 export default function Home() {
   const donutData = StatsData.donutChartStats.map((item) => ({
