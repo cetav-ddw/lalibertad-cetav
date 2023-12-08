@@ -150,7 +150,7 @@ const testimonies = {
         'Al tener profesores y profesoras que han trabajado por años en el medio, no solo me enseñaron la parte técnica de la carrera, me enseñaron buenos hábitos y formas de lidiar y buscar soluciones en el trabajo de una manera mucho más efectiva, ahorrando tiempo y dinero.',
     },
   ],
-  motion : [
+  motion: [
     {
       id: 'dchavarria',
       name: 'Diana Chavarría',
@@ -199,7 +199,7 @@ const testimonies = {
       quote:
         'Al tener profesores y profesoras que han trabajado por años en el medio, no solo me enseñaron la parte técnica de la carrera, me enseñaron buenos hábitos y formas de lidiar y buscar soluciones en el trabajo de una manera mucho más efectiva, ahorrando tiempo y dinero.',
     },
-  ]
+  ],
 };
 
 export default testimonies;
