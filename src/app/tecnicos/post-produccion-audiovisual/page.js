@@ -15,6 +15,9 @@ import TechniciansCharacteristics from '@/app/components/TechniciansCharacterist
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Postproducción audiovisual | CETAV',
+  description:
+    'En la postproducción se incluyen todos los procesos que van desde la recepción del material, la edición de imagen y sonido, los efectos especiales como eliminación de fondo verde, la colorización, el subtitulado, animaciones 2d y hasta la entrega de un producto final.',
   openGraph: {
     title: 'Postproducción audiovisual',
     description:

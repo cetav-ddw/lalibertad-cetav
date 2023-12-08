@@ -15,6 +15,9 @@ import TechniciansCharacteristics from '@/app/components/TechniciansCharacterist
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Ciberseguridad | CETAV',
+  description:
+    'El área de la cyberseguridad se dedica al diseño y construcción de aplicaciones y sitios web, abarcando aspectos como la interacción, funcionalidad, accesibilidad y usabilidad, todos basados en estándares web reconocidos.',
   openGraph: {
     title: 'Ciberseguridad',
     description:

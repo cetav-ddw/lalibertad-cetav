@@ -15,6 +15,9 @@ import TechniciansCharacteristics from '@/app/components/TechniciansCharacterist
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Diseño y desarrollo web | CETAV',
+  description:
+    'El área de Desarrollo web está dirigido al diseño de aplicaciones y sitios digitales que abarcan la interacción, funcionalidad, accesibilidad y usabilidad basadas en los estándares Web.',
   openGraph: {
     title: 'Diseño y desarrollo web',
     description:

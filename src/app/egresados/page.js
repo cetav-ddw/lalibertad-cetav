@@ -9,6 +9,9 @@ import testimonies from '@/app/content/testimonies';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Conoce a nuestros egresad@s | CETAV',
+  description:
+    'Nuestra página web te permite explorar y conectarte con nuestra red de personas egresadas. Podés acceder a sus portafolios por carrera, y así encontrar rápidamente el talento adecuado para el trabajo.',
   openGraph: {
     title: 'Nuestros egresados',
     description:

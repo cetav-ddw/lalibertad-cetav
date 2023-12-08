@@ -7,6 +7,9 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import SectionHeading from '@/app/components/SectionHeading';
 
 export const metadata = {
+  title: 'Nuestros cursos libres | CETAV',
+  description:
+    'Los Cursos Libres de Diseño elevan tus habilidades en herramientas clave para la industria, mejorando tu perfil profesional y conectando mejor con tu audiencia. Centros de Cómputo ofrece certificaciones en habilidades digitales y ofimáticas, adaptándose a tus horarios, para destacar en el mercado laboral.',
   openGraph: {
     title: 'Cursos libres',
     description:

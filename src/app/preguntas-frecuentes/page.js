@@ -17,6 +17,9 @@ import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Preguntas frecuentes | CETAV',
+  description:
+    '¡Estamos aquí para ayudar! Esta sección proporciona ayuda con las preguntas más comunes sobre el CETAV.',
   openGraph: {
     title: 'Preguntas frecuentes',
     description:

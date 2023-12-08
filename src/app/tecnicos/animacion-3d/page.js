@@ -15,6 +15,9 @@ import TechniciansCharacteristics from '@/app/components/TechniciansCharacterist
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: ' Animación 3D | CETAV',
+  description:
+    'La Animación 3D es un proceso que se compone de varias etapas, comenzando por el desarrollo de la idea y su solución visual, hasta las etapas más técnicas que comprenden el desarrollo de los componentes visuales como personajes y ambientes, su iluminación y composición final.',
   openGraph: {
     title: 'Animacion 3D',
     description:

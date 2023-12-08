@@ -8,10 +8,12 @@ import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Nuestras carreras técnicas | CETAV',
+  description: '',
   openGraph: {
     title: 'Nuestras carreras técnicas',
     description:
-      'En CETAV, ofrecemos programas técnicos que responden a las necesidades actuales del mercado laboral, supervisados por el INA y el sector empresarial. Nuestro enfoque educativo integral combina programación avanzada, currículo innovador y formación práctica, asegurando un entorno de enseñanza-aprendizaje dinámico y centrado en el estudiante.',
+      'Los programas técnicos de formación laboral se actualizan en cada generación, siguiendo el Marco Nacional de Cualificaciones y supervisados por el INA y el sector empresarial para satisfacer las necesidades del mercado. Además, el CETAV promueve un modelo educativo integral que integra programación, currículo y formación, fomentando un entorno dinámico de enseñanza-aprendizaje centrado en el estudiante como protagonista de su desarrollo.',
   },
 };
 

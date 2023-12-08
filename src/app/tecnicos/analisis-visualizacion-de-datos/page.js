@@ -15,6 +15,9 @@ import TechniciansCharacteristics from '@/app/components/TechniciansCharacterist
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Análisis y vizualización de datos | CETAV ',
+  description:
+    'Las personas participantes de este programa desarrollan las competencias necesarias para el manejo y administración de bases de datos, así como la creación de visualizaciones interactivas, aplicadas en las estrategias de la empresa para extraer el conocimiento y comunicarlo de forma que permita mejorar el proceso de toma de decisiones.',
   openGraph: {
     title: 'Análisis y visualización de datos',
     description:

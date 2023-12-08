@@ -15,6 +15,9 @@ import TechniciansCharacteristics from '@/app/components/TechniciansCharacterist
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Paid media | CETAV',
+  description:
+    'Las personas participantes de este programa adquieren las competencias para trabajar en la pauta de medios digitales, campañas, creación de contenidos y estrategias de comunicación que se utilizan en redes sociales para la venta de productos.',
   openGraph: {
     title: 'Paid media',
     description:

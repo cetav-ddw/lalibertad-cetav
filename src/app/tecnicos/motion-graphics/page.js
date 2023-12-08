@@ -15,6 +15,9 @@ import TechniciansCharacteristics from '@/app/components/TechniciansCharacterist
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata = {
+  title: 'Motion graphics | CETAV',
+  description:
+    'Es un programa intensivo de animaciones y composiciones a partir de ilustraciones para generar contenidos animados en segunda dimensión, pueden ser animaciones publicitarias, educativas y de entretenimiento.',
   openGraph: {
     title: 'Motion graphics',
     description:

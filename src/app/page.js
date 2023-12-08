@@ -12,6 +12,9 @@ import HeroHeader from '@/app/components/HeroHeader';
 import { StatsData } from './content/statsData';
 
 export const metadata = {
+  title: 'CETAV',
+  description:
+    'Somos un centro de formación para el empleo, con nosotros podés acceder a programas técnicos y cursos libres para desarrollar tu perfil profesional. Creamos alianzas público-privadas para que nuestros cursos sean accesibles y nuestra oferta esté alineada a las demandas del mercado',
   openGraph: {
     title: 'CETAV',
     description:
