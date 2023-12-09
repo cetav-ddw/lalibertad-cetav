@@ -1,6 +1,6 @@
 'use client';
 
-import { Flex, Box, VisuallyHidden, Image } from '@chakra-ui/react';
+import { Flex, Box, Image } from '@chakra-ui/react';
 import SectionHeading from './SectionHeading';
 
 const OurAllies = ({ images }) => {
@@ -11,19 +11,19 @@ const OurAllies = ({ images }) => {
         {images.map((imageObj, index) => (
           <Box
             key={index}
-            height={{ base: '60px', md: '100px' }}
-            width={{ base: '60px', md: '100px' }}
-            mr={{ base: '20px', md: index % 7 === 6 ? '0' : '74px' }}
+            height={{ md: '100px', lg: '150px' }}
+            width={{ md: '100px', lg: '150px' }}
+            mr={{ base: '20px', md: index % 7 === 6 ? '0' : '40px' }}
             position="relative"
+            overflow="hidden"
           >
             <Image
               src={imageObj.url}
               alt={imageObj.description}
-              height="100%"
-              width="100%"
               objectFit="contain"
+              width="100%"
+              height="100%"
             />
-            <VisuallyHidden>{imageObj.description}</VisuallyHidden>
           </Box>
         ))}
       </Flex>

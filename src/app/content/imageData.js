@@ -54,14 +54,6 @@ const images = [
     description: 'Marco Nacional de Cualificaciones',
   },
   {
-    url: '/images/logo-mcj.svg',
-    description: 'Ministerio de Cultura y Juventud',
-  },
-  {
-    url: '/images/logo-maucc2023.png',
-    description: 'Mercado Audiovisual Centroamérica & Caribe',
-  },
-  {
     url: '/images/logo-marviva.png',
     description: 'Mar Viva',
   },
