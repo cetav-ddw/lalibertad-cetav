@@ -2,14 +2,13 @@ import { Box } from '@chakra-ui/react';
 import InscriptionBanner from '@/app/components/InscriptionBanner';
 import LaboralFormation from '@/app/components/LaboralFormation';
 import images from '@/app/content/imageData';
-import CourseList from '@/app/components/CourseList';
-import cursos from '@/app/content/cursosData';
 import OurAllies from '@/app/components/OurAllies';
 import OurInstitutions from '@/app/components/OurInstitutions';
 import GenderStats from '@/app/components/GenderStats';
 import DonutChart from '@/app/components/donut-chart/DonutChart';
 import HeroHeader from '@/app/components/HeroHeader';
 import { StatsData } from './content/statsData';
+import ProgramCards from './components/ProgramCards';
 
 export const metadata = {
   title: 'CETAV',
@@ -46,7 +45,7 @@ export default function Home() {
         <HeroHeader />
       </Box>
       <OurInstitutions />
-      <CourseList cursos={cursos.tecnicos} title={'Nuestros programas'} />
+      <ProgramCards/>
       <InscriptionBanner />
       <LaboralFormation />
       <Box
