@@ -14,6 +14,17 @@ import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  title: 'Paid media | CETAV',
+  description:
+    'Las personas participantes de este programa adquieren las competencias para trabajar en la pauta de medios digitales, campañas, creación de contenidos y estrategias de comunicación que se utilizan en redes sociales para la venta de productos.',
+  openGraph: {
+    title: 'Paid media',
+    description:
+      'Este programa de Paid Media está diseñado para equipar a los participantes con habilidades esenciales en publicidad digital, desde la planificación de campañas hasta la creación de contenidos y estrategias de comunicación efectivas en redes sociales, enfocándose en impulsar la venta de productos en el ámbito digital.',
+  },
+};
+
 export default function PaidMedia() {
   const currentCourseId = 'tecPaidMedia';
   const paths = [
