@@ -57,14 +57,14 @@ const HeroHeader = () => {
         />
         <HeroPreview
           localVideo={reelsCetav.home.locaVideo}
-          poster={reelsCetav.home.poster}
+          posterImageUrl={reelsCetav.home.posterImageUrl}
           onOpen={onOpen}
         />
       </Flex>
       <VideoModal
         isOpen={isOpen}
         onClose={onClose}
-        VideoModal={reelsCetav.home.videoModal}
+        videoUrl={reelsCetav.home.videoUrl}
       />
     </Flex>
   );

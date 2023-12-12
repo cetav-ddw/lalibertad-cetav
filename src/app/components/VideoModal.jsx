@@ -9,7 +9,7 @@ import {
   AspectRatio,
 } from '@chakra-ui/react';
 
-const VideoModal = ({ isOpen, onClose, VideoModal }) => {
+const VideoModal = ({ isOpen, onClose, videoUrl }) => {
   return (
     <>
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
@@ -23,7 +23,7 @@ const VideoModal = ({ isOpen, onClose, VideoModal }) => {
             <AspectRatio ratio={16 / 9}>
               <iframe
                 title="Somos CETAV"
-                src={VideoModal}
+                src={videoUrl}
                 style={{
                   borderRadius: '10px',
                   width: '100%',
