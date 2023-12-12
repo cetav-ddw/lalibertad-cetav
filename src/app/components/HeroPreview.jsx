@@ -1,7 +1,4 @@
-const HeroPreview = () => {
-  const posterImageUrl = '/images/poster-CETAV-2023.png';
-  const localVideoUrl = '/videos/Reel-CETAV-2023.mp4';
-
+const HeroPreview = ({ poster, localVideo }) => {
   return (
     <video
       loop
@@ -11,9 +8,9 @@ const HeroPreview = () => {
         boxShadow: '0 10px 10px rgba(0, 0, 0, 0.2)',
         borderRadius: '10px',
       }}
-      poster={posterImageUrl}
+      poster={poster}
     >
-      <source src={localVideoUrl} type="video/mp4" />
+      <source src={localVideo} type="video/mp4" />
     </video>
   );
 };

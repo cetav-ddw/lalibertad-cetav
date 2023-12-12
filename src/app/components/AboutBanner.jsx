@@ -12,28 +12,26 @@ import VideoModal from '@/app/components/VideoModal';
 import { FaPlay } from 'react-icons/fa';
 import reelsCetav from '../content/reels';
 
-const HeroHeader = () => {
+const AboutBaner = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Flex
-      maxW="1180px"
+      maxW={{ base: '90%', lg: '1180px' }}
       ml="auto"
       mr="auto"
       flexDirection={{ base: 'column', lg: 'row' }}
     >
       <Flex flexDirection="column" flex="1 0 55%" pr="12">
-        <Heading as="h1" fontSize="x-large" mb="4" width="90%" m="auto" p="3">
-          Centro de Tecnología y Artes Visuales (CETAV)
+        <Heading as="h1" fontSize={{ base: '3xl', md: '4xl' }} mb="2">
+          <Text>Más acerca de</Text>
+          <Text color="#427fdf">Nosotros</Text>
         </Heading>
-        <Text fontSize="lg" mb="4" textShadow="md" width="90%" m="auto" p="3">
-          Somos un centro de formación para el empleo, con nosotros podés
-          acceder a programas técnicos y cursos libres para desarrollar tu
-          perfil profesional.
-        </Text>
-        <Text fontSize="lg" textShadow="md" width="90%" m="auto" p="3">
-          Creamos alianzas público-privadas para que nuestros cursos sean
-          accesibles y nuestra oferta esté alineada a las demandas del mercado.
+        <Text fontSize={{ base: 'md', md: 'lg' }} color="#444444" mt="2">
+          La educación es la llave que abre las puertas del futuro. Cada día que
+          aprendemos y crecemos, construimos los cimientos de un mañana lleno de
+          posibilidades ilimitadas. ¡Atrévete a aprender, porque en la educación
+          encuentras el poder para dar forma a tu propio destino!
         </Text>
       </Flex>
       <Flex
@@ -41,7 +39,9 @@ const HeroHeader = () => {
         justifyContent="center"
         alignItems="center"
         width="90%"
-        m="auto"
+        ml="auto"
+        mr="auto"
+        mt="4"
         p="2"
       >
         <IconButton
@@ -56,18 +56,18 @@ const HeroHeader = () => {
           color="#7846BF"
         />
         <HeroPreview
-          localVideo={reelsCetav.home.locaVideo}
-          poster={reelsCetav.home.poster}
+          localVideo={reelsCetav.aboutCetav.locaVideo}
+          poster={reelsCetav.aboutCetav.poster}
           onOpen={onOpen}
         />
       </Flex>
       <VideoModal
         isOpen={isOpen}
         onClose={onClose}
-        VideoModal={reelsCetav.home.videoModal}
+        VideoModal={reelsCetav.aboutCetav.videoModal}
       />
     </Flex>
   );
 };
 
-export default HeroHeader;
+export default AboutBaner;
