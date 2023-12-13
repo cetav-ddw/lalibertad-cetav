@@ -14,6 +14,17 @@ import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  title: 'Mercadeo digital | CETAV',
+  description:
+    'Consiste en desarrollar contenidos visuales y manejo de redes que responden a las características técnicas y patrones socioculturales para la comunicación de un mensaje específico y la interacción con los usuarios de diversas plataformas digitales, desde los tres ejes principales que abarca el técnico: principios del mercadeo digital, diseño gráfico e imagen/ fotografía y que, en conjunto, crean un profesional integral e interdisciplinario.',
+  openGraph: {
+    title: 'Mercadeo digital',
+    description:
+      'Descubre el arte del Mercadeo Digital en nuestro programa integral, donde aprenderás a desarrollar contenidos visuales y a manejar redes sociales, enfocándote en técnicas y patrones socioculturales para comunicar mensajes específicos y interactuar eficazmente en diversas plataformas digitales.',
+  },
+};
+
 export default function MercadeoPage() {
   const currentCourseId = 'tecMarketing';
   const paths = [
