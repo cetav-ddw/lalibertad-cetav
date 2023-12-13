@@ -27,12 +27,12 @@ function CardEgresados(props) {
         >
           <Avatar
             size={{ base: 'sm', md: 'xl' }}
-            name={user.fields.name}
-            src={user.fields.avatar}
+            name={user.fields.fld8YtMGvAKeFveE0}
+            src={user.fields.Avatar}
           />
           <Box maxWidth={{ base: '50%', md: '60%' }}>
             <Heading size={{ base: 'xs', md: 'sm' }}>
-              {user.fields.name}
+              {user.fields.Nombrecompleto}
             </Heading>
             {user.fields.linkedin && (
               <ChakraLink href={user.fields.linkedin} isExternal>
@@ -46,8 +46,8 @@ function CardEgresados(props) {
                 />
               </ChakraLink>
             )}
-            {user.fields.url && (
-              <ChakraLink href={user.fields.url} isExternal>
+            {user.fields.URLPortafolio && (
+              <ChakraLink href={user.fields.URLPortafolio} isExternal>
                 <IconButton
                   fontSize={{ base: '20px', md: '26px' }}
                   size={{ base: 'xs', md: 'md' }}
