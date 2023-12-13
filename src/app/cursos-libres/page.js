@@ -6,6 +6,17 @@ import headingInfo from '@/app/content/pageHeading';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 import SectionHeading from '@/app/components/SectionHeading';
 
+export const metadata = {
+  title: 'Nuestros cursos libres | CETAV',
+  description:
+    'Los Cursos Libres de Diseño elevan tus habilidades en herramientas clave para la industria, mejorando tu perfil profesional y conectando mejor con tu audiencia. Centros de Cómputo ofrece certificaciones en habilidades digitales y ofimáticas, adaptándose a tus horarios, para destacar en el mercado laboral.',
+  openGraph: {
+    title: 'Cursos libres',
+    description:
+      'Los Cursos Libres de Diseño y Certificaciones de Centros de Cómputo están diseñados para mejorar tus habilidades en herramientas clave de la industria y ofimáticas. Personaliza tu aprendizaje según tu horario y eleva tu perfil profesional para destacar en el mercado laboral y conectar efectivamente con tu audiencia.',
+  },
+};
+
 export default function CursosLibres() {
   const paths = [
     { title: 'Inicio', path: '/' },
@@ -35,7 +46,7 @@ export default function CursosLibres() {
         </Text>
         <CourseList cursos={cursos.cursosLibresDiseno} showDescription />
       </Box>
-      <Box mb="10" p={{ base: 4, md: 6 }}>
+      <Box mb="16" p={{ base: 4, md: 6 }} id="cursosComputo">
         <SectionHeading title="Cursos de Computo" />
         <Text width="90%" mx="auto" mb="8" fontSize={{ base: 'md', md: 'lg' }}>
           Centros de Cómputo te ofrece cursos certificados de Alfabetización
