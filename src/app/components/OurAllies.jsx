@@ -11,18 +11,19 @@ const OurAllies = ({ images }) => {
         {images.map((imageObj, index) => (
           <Box
             key={index}
-            height={{ md: '100px', lg: '150px' }}
-            width={{ md: '100px', lg: '150px' }}
-            mr={{ base: '20px', md: index % 7 === 6 ? '0' : '40px' }}
+            /* height={{ md: '100px', lg: '150px' }}
+            width={{ md: '100px', lg: '150px' }} */
+            height={{ base: '60px', md: '120px' }}
+            width={{ base: '60px', md: '175px' }}
+            mr={{ base: '20px', md: index % 7 === 6 ? '0' : '25px' }}
             position="relative"
-            overflow="hidden"
           >
             <Image
               src={imageObj.url}
               alt={imageObj.description}
               objectFit="contain"
+              height="100px"
               width="100%"
-              height="100%"
             />
           </Box>
         ))}
