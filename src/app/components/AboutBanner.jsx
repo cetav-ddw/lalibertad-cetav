@@ -6,6 +6,7 @@ import {
   Text,
   Flex,
   IconButton,
+  Box,
 } from '@chakra-ui/react';
 import HeroPreview from '@/app/components/HeroPreview';
 import VideoModal from '@/app/components/VideoModal';
@@ -17,26 +18,23 @@ const AboutBaner = () => {
 
   return (
     <Flex
-      flexDirection={{ base: 'column', lg: 'row' }}
+      flexDirection={{ base: 'column', md: 'row' }}
       mb={{ base: '12', md: '24' }}
       justifyContent="space-between"
       alignItems="center"
     >
-      <Flex
-        flexDirection="column"
-        flex="1 0 55%"
-        pr="12"
-        w={{ base: '90%', xl: '0' }}
-        mr={{ base: 'auto', xl: '0' }}
-        ml={{ base: 'auto', xl: '0' }}
-      >
+      <Box width={{ base: '90%', md: '48%' }} mb={{ base: '8', md: 0 }}>
         <Heading
           as="h1"
           fontSize={{ base: '3xl', md: '4xl' }}
           mb={{ base: '8', md: '0' }}
         >
-          <Text>Más acerca de</Text>
-          <Text color="#427fdf">Nosotros</Text>
+          <Text as="span" display="block">
+            Más acerca de
+          </Text>
+          <Text color="#427fdf" as="span" display="block">
+            nosotros
+          </Text>
         </Heading>
         <Text fontSize={{ base: 'md', md: 'lg' }} color="#444444">
           La educación es la llave que abre las puertas del futuro. Cada día que
@@ -44,16 +42,12 @@ const AboutBaner = () => {
           posibilidades ilimitadas. ¡Atrévete a aprender, porque en la educación
           encuentras el poder para dar forma a tu propio destino!
         </Text>
-      </Flex>
+      </Box>
       <Flex
         position="relative"
         justifyContent="center"
         alignItems="center"
-        width="90%"
-        ml="auto"
-        mr="auto"
-        mt="4"
-        p="2"
+        width={{ base: '80%', md: '48%' }}
       >
         <IconButton
           aria-label="Play Video"
@@ -69,7 +63,6 @@ const AboutBaner = () => {
         <HeroPreview
           localVideo={reelsCetav.aboutCetav.locaVideo}
           posterImageUrl={reelsCetav.aboutCetav.posterImageUrl}
-          onOpen={onOpen}
         />
       </Flex>
       <VideoModal

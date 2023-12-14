@@ -3,7 +3,7 @@ import CetavIntro from '@/app/components/CetavIntro';
 import AdvisoryBoard from '@/app/components/AdvisoryBoard';
 import FaqBanner from '@/app/components/FaqsBanner';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
-import AboutBaner from '../components/AboutBanner';
+import AboutBaner from '@/app/components/AboutBanner';
 
 export const metadata = {
   title: 'Más acerca de nosotros | CETAV',

@@ -58,7 +58,6 @@ const HeroHeader = () => {
         <HeroPreview
           localVideo={reelsCetav.home.locaVideo}
           posterImageUrl={reelsCetav.home.posterImageUrl}
-          onOpen={onOpen}
         />
       </Flex>
       <VideoModal
