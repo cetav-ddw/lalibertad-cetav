@@ -294,7 +294,7 @@ const cursos = {
     },
     {
       id: 'clComputoPowerBi',
-      imgSrc: '/images/power-bI-cover.png',
+      imgSrc: '/images/power-bi-cover.png',
       details: [
         {
           label: 'Información al Correo:',

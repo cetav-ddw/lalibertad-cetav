@@ -64,7 +64,7 @@ const headingInfo = {
     title: 'Nuestras',
     titleColor: 'carreras técnicas',
     text: 'Los programas técnicos de formación laboral se actualizan en cada generación, siguiendo el Marco Nacional de Cualificaciones y supervisados por el INA y el sector empresarial para satisfacer las necesidades del mercado. Además, el CETAV promueve un modelo educativo integral que integra programación, currículo y formación, fomentando un entorno dinámico de enseñanza-aprendizaje centrado en el estudiante como protagonista de su desarrollo.',
-    imgSrc: '/images/carreras-técnicas.png',
+    imgSrc: '/images/carreras-tecnicas.png',
   },
   acercaN: {
     title: 'Más acerca de',
