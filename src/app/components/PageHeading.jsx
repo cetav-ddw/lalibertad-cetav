@@ -4,6 +4,8 @@ const PHeading = ({ title, titleColor, text, imgSrc, videoSrc, poster }) => {
   return (
     <Flex
       flexDirection={{ base: 'column', md: 'row' }}
+      width={{ base: '100%', md: '90%', xl: '100%' }}
+      mx="auto"
       mb={{ base: '12', md: '24' }}
       justifyContent="space-between"
       alignItems="center"
