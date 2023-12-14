@@ -58,7 +58,7 @@ const CourseListItem = ({
       bg="rgba(225, 2 31, 248, 1)"
       borderRadius="lg"
       _hover={{ opacity: url ? 0.8 : 1 }}
-      width={{ base: '90%', md: '100%', lg: '100%', xl: '100%' }}
+      width={{ base: '90%', md: '100%'}}
     >
       <Box position="relative">
         <Image
