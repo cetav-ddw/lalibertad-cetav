@@ -14,6 +14,17 @@ import ExploreOtherCareers from '@/app/components/ExploreOtherCareers';
 import TechniciansCharacteristics from '@/app/components/TechniciansCharacteristics';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 
+export const metadata = {
+  title: 'Ciberseguridad | CETAV',
+  description:
+    'El área de la cyberseguridad se dedica al diseño y construcción de aplicaciones y sitios web, abarcando aspectos como la interacción, funcionalidad, accesibilidad y usabilidad, todos basados en estándares web reconocidos.',
+  openGraph: {
+    title: 'Ciberseguridad',
+    description:
+      'Nuestro programa de Ciberseguridad te prepara para crear aplicaciones y sitios web seguros, enfocándote en funcionalidad y cumplimiento de estándares web, para una carrera en la protección y seguridad digital.',
+  },
+};
+
 export default function CiberseguridadPage() {
   const currentCourseId = 'tecCiberseguridad';
   const paths = [
