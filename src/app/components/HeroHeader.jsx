@@ -10,6 +10,7 @@ import {
 import HeroPreview from '@/app/components/HeroPreview';
 import VideoModal from '@/app/components/VideoModal';
 import { FaPlay } from 'react-icons/fa';
+import reelsCetav from '../content/reels';
 
 const HeroHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -54,9 +55,13 @@ const HeroHeader = () => {
           onClick={onOpen}
           color="#7846BF"
         />
-        <HeroPreview onOpen={onOpen} />
+        <HeroPreview posterImageUrl={reelsCetav.home.posterImageUrl} />
       </Flex>
-      <VideoModal isOpen={isOpen} onClose={onClose} />
+      <VideoModal
+        isOpen={isOpen}
+        onClose={onClose}
+        videoUrl={reelsCetav.home.videoUrl}
+      />
     </Flex>
   );
 };
