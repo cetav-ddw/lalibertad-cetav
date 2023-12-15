@@ -60,10 +60,7 @@ const AboutBaner = () => {
           onClick={onOpen}
           color="#7846BF"
         />
-        <HeroPreview
-          localVideo={reelsCetav.aboutCetav.locaVideo}
-          posterImageUrl={reelsCetav.aboutCetav.posterImageUrl}
-        />
+        <HeroPreview posterImageUrl={reelsCetav.aboutCetav.posterImageUrl} />
       </Flex>
       <VideoModal
         isOpen={isOpen}

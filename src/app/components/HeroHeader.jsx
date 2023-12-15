@@ -55,10 +55,7 @@ const HeroHeader = () => {
           onClick={onOpen}
           color="#7846BF"
         />
-        <HeroPreview
-          localVideo={reelsCetav.home.locaVideo}
-          posterImageUrl={reelsCetav.home.posterImageUrl}
-        />
+        <HeroPreview posterImageUrl={reelsCetav.home.posterImageUrl} />
       </Flex>
       <VideoModal
         isOpen={isOpen}
