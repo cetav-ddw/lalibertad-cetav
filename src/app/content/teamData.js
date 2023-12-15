@@ -4,62 +4,62 @@ const teamData = [
   {
     name: 'Patricio Morera',
     position: 'Director Ejecutivo FPLL',
-    photo: '/images/patricio-morera.png',
+    photo: '/images/patricioMorera.png',
   },
   {
     name: 'Gustavo Sánchez',
     position: 'Director CETAV',
-    photo: '/images/gustavo-sanchez.png',
+    photo: '/images/gustavoSanchez.png',
   },
   {
     name: 'Lingie Granados',
     position: 'Coordinadora Académica CETAV',
-    photo: '/images/lingie-granados.png',
+    photo: '/images/lingieGranados.png',
   },
   {
     name: 'Rebeca Arias',
     position: 'Coordinadora Cursos Libres de Diseño',
-    photo: '/images/rebeca-arias.png',
+    photo: '/images/rebecaArias.png',
   },
   {
     name: 'Diego Romero',
     position: 'Psicólogo Educativo',
-    photo: '/images/diego-romero.png',
+    photo: '/images/diegoRomero.png',
   },
   {
     name: 'Daniela Monge',
     position: 'Asistente Administrativa',
-    photo: '/images/daniela-monge.png',
+    photo: '/images/danielaMonge.png',
   },
   {
     name: 'Evelyn Abarca',
     position: 'Admisión y Registro',
-    photo: '/images/evelyn-abarca.png',
+    photo: '/images/evelynAbarca.png',
   },
   {
     name: 'Carmen Vargas',
     position: 'Coordinadora de Postproducción Audiovisual y Proyectos',
-    photo: '/images/carmen-vargas.png',
+    photo: '/images/carmenVargas.png',
   },
   {
     name: 'Francisco Carrera',
     position: 'Profesor Centros de Cómputo',
-    photo: '/images/francisco-carrera.png',
+    photo: '/images/franciscoCarrera.png',
   },
   {
     name: 'Geinner Barrantes',
     position: 'Profesor Centros de Cómputo',
-    photo: '/images/geinner-barrantes.png',
+    photo: '/images/geinnerBarrantes.png',
   },
   {
     name: 'Ricardo Gutiérrez',
     position: 'Profesor Centros de Cómputo',
-    photo: '/images/ricardo-gutierrez.png',
+    photo: '/images/ricardoGutierrez.png',
   },
   {
     name: 'Keylor Berrocal',
     position: 'Soporte Técnico',
-    photo: '/images/keylor-berrocal.png',
+    photo: '/images/keylorBerrocal.png',
   },
 ];
 
