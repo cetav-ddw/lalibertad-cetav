@@ -68,7 +68,7 @@ const cursos = {
   cursosLibresDiseno: [
     {
       id: 'clDisenoPhotoShop',
-      imgSrc: '/images/photoshop-cover.png',
+      imgSrc: '/images/photoshop.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -82,7 +82,7 @@ const cursos = {
     },
     {
       id: 'clDisenoIllustrador',
-      imgSrc: '/images/illustrator-cover.png',
+      imgSrc: '/images/illustrator.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -96,7 +96,7 @@ const cursos = {
     },
     {
       id: 'clDisenoPremier',
-      imgSrc: '/images/premiere-cover.png',
+      imgSrc: '/images/premiere.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -110,7 +110,7 @@ const cursos = {
     },
     {
       id: 'clDisenoAfterEffects',
-      imgSrc: '/images/afterEffects-cover.png',
+      imgSrc: '/images/adobe-afterEffects-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -124,7 +124,7 @@ const cursos = {
     },
     {
       id: 'clDisenoFoto',
-      imgSrc: '/images/fotografía-cover.png',
+      imgSrc: '/images/fotografia-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -138,7 +138,7 @@ const cursos = {
     },
     {
       id: 'clDisenoManejoRedes',
-      imgSrc: '/images/manejo-redes-cover.png',
+      imgSrc: '/images/manejo-de-redes-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -152,7 +152,7 @@ const cursos = {
     },
     {
       id: 'clDisenoClubDibujo',
-      imgSrc: '/images/club-dibujo-cover.png',
+      imgSrc: '/images/club-de-dibujo-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -166,7 +166,7 @@ const cursos = {
     },
     {
       id: 'clDisenoSoftwareLibre',
-      imgSrc: '/images/software-libre-cover.png',
+      imgSrc: '/images/softwareLibre-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -180,7 +180,7 @@ const cursos = {
     },
     {
       id: 'clDisenoInglesEmpleabilidad',
-      imgSrc: '/images/ingles-empleabilidad-cover.png',
+      imgSrc: '/images/ingles-para-la-empleabilidad-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -194,7 +194,7 @@ const cursos = {
     },
     {
       id: 'clDisenoStorytelling',
-      imgSrc: '/images/storytelling-cover.png',
+      imgSrc: '/images/storyTelling-cover.png',
       details: [
         {
           label: 'Información al Correo:',
@@ -208,7 +208,7 @@ const cursos = {
     },
     {
       id: 'clDisenoFundamentosDiseno',
-      imgSrc: '/images/fundamentos-diseno-cover.png',
+      imgSrc: '/images/fundamentos-de-diseno-cover.png',
       details: [
         {
           label: 'Información al Correo:',
