@@ -58,7 +58,7 @@ const CourseListItem = ({
       bg="rgba(225, 2 31, 248, 1)"
       borderRadius="lg"
       _hover={{ opacity: url ? 0.8 : 1 }}
-      width={{ base: '80vw', md: '40vw', lg: '27vw' }}
+      width={{ base: '90%', md: '100%'}}
     >
       <Box position="relative">
         <Image
@@ -102,13 +102,14 @@ export const CourseList = ({ cursos, showDescription, title }) =>
       <Grid
         templateColumns={[
           'repeat(1, 1fr)',
+          'repeat(1, 1fr)',
           'repeat(2, 1fr)',
           'repeat(2, 1fr)',
-          'repeat(3 , 1fr)',
+          'repeat(3, 1fr)',
         ]}
         gap={4}
         mx="auto"
-        maxW={{ base: '80vw', lg: '90%' }}
+        maxW={{ base: '90%', xl: '100%' }}
       >
         {cursos.map((course) => (
           <CourseListItem
