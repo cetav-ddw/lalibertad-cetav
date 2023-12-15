@@ -7,7 +7,6 @@ import {
   SimpleGrid,
   Button,
   HStack,
-  useStyleConfig,
   useBreakpointValue,
   Icon,
 } from '@chakra-ui/react';
@@ -37,11 +36,6 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
     setCurrentPage(1);
   }, [uniqueRecords]);
 
-  const buttonStyle = useStyleConfig('Button', {
-    size: isMobile ? 'sm' : 'lg',
-    colorScheme: 'blue',
-  });
-
   return (
     <Box
       maxW={{ base: 'xs', md: 'xl', lg: '100%' }}
@@ -63,44 +57,26 @@ const CardEgresadosContainer = ({ uniqueRecords = [] }) => {
       </SimpleGrid>
 
       <HStack spacing={2} justifyContent="center" mb="10" mt="10">
-        {currentPage > 1 && (
           <Button
             size={{ base: 'xs', lg: 'md' }}
+            isDisabled={currentPage == 1 ? true : false}
             onClick={() => goToPage(currentPage - 1)}
             bgColor="white"
             color="#313677"
           >
             <Icon as={MdKeyboardArrowLeft} boxSize={10} />
           </Button>
-        )}
 
-        {Array.from({ length: pageCount }, (_, i) => (
-          <Button
-            key={i}
-            size={{ base: 'xs', lg: 'md' }}
-            onClick={() => goToPage(i + 1)}
-            {...buttonStyle}
-            colorScheme={i + 1 === currentPage ? 'blue' : 'gray'}
-            bg={i + 1 === currentPage ? '#313677' : '#546CD4'}
-            _hover={{ bg: 'blue.300' }}
-            _active={{ bg: 'blue.700' }}
-            borderRadius="100%"
-            fontSize="sm"
-          >
-            {i + 1}
-          </Button>
-        ))}
-
-        {currentPage < pageCount && (
           <Button
             size={{ base: 'xs', md: 'md' }}
+            isDisabled={currentPage == pageCount ? true : false}
             onClick={() => goToPage(currentPage + 1)}
             bgColor="white"
             color="#313677"
           >
             <Icon as={MdKeyboardArrowRight} boxSize={10} />
           </Button>
-        )}
+
       </HStack>
     </Box>
   );

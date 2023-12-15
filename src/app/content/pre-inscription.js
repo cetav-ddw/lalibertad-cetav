@@ -62,7 +62,7 @@ const preInscription = {
     'Las personas migrantes deben tener el estatus migratorio al día.',
     'En caso de requerir subsidio, la persona debe encontrarse en condición de pobreza básica, condición de pobreza extrema o vulnerabilidad social.',
     'Redes sociales (Instagram / Facebook como mínimo)',
-  ]
+  ],
 };
 
 export default preInscription;
