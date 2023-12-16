@@ -27,28 +27,28 @@ function CareerFilter({ handleCareerMenuClick }) {
           <MenuItemOption
             value="Post-Producción"
             title="Técnicos"
-            onClick={() => handleCareerMenuClick('Post-Producción')}
+            onClick={() => handleCareerMenuClick('Postproducción Audiovisual')}
           >
             Post-Producción
           </MenuItemOption>
           <MenuItemOption
             value="Web"
             title="Técnicos"
-            onClick={() => handleCareerMenuClick('Web')}
+            onClick={() => handleCareerMenuClick('Diseño y Desarrollo WEB')}
           >
             Desarrollo Web
           </MenuItemOption>
           <MenuItemOption
             value="Imagen Comercial"
             title="Técnicos"
-            onClick={() => handleCareerMenuClick('Imagen Comercial')}
+            onClick={() => handleCareerMenuClick('Mercadeo Digital y Diseño')}
           >
             Imagen Comercial
           </MenuItemOption>
           <MenuItemOption
             value="Animación 3D"
             title="Técnicos"
-            onClick={() => handleCareerMenuClick('Animación')}
+            onClick={() => handleCareerMenuClick('Animación 3D')}
           >
             Animación 3D
           </MenuItemOption>

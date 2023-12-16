@@ -31,7 +31,7 @@ const FilterMenu = () => {
   useEffect(() => {
     const base = new Airtable({
       apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN,
-    }).base('apphEdTpWzyL0aZdp');
+    }).base('appC93ECZN8lT2JTO');
 
     const fetchData = async (carreerList, yearList) => {
       try {
@@ -39,14 +39,14 @@ const FilterMenu = () => {
         let records;
 
         if (carreerList.length === 0 && yearList.length === 0) {
-          records = await base('Egresados').select().all();
+          records = await base('Personas egresadas WEB CETAV').select().all();
         } else {
           if (carreerList.length === 0) {
             carreerList = [
-              'Animación',
-              'Imagen Comercial',
-              'Web',
-              'Post-Producción',
+              'Animación 3D',
+              'Mercadeo Comercial y Diseño',
+              'Diseño y Desarrollo WEB',
+              'Postproducción Audiovisual',
             ];
           }
           if (yearList.length === 0) {
@@ -55,10 +55,10 @@ const FilterMenu = () => {
 
           for (let i = 0; i < carreerList.length; i++) {
             for (let j = 0; j < yearList.length; j++) {
-              const filtered = await base('Egresados')
+              const filtered = await base('Personas egresadas WEB CETAV')
                 .select({
                   view: 'Grid view',
-                  filterByFormula: `AND(year = "${yearList[j]}", FIND("${carreerList[i]}", {career}))`,
+                  filterByFormula: `AND(Generacion = "${yearList[j]}", FIND("${carreerList[i]}", {Programaegreso}))`,
                 })
                 .firstPage();
               records = records ? records.concat(filtered) : filtered;
