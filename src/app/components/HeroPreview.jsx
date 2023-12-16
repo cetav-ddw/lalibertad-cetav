@@ -1,20 +1,17 @@
-const HeroPreview = () => {
-  const posterImageUrl = '/images/poster-CETAV-2023.png';
-  const localVideoUrl = '/videos/Reel-CETAV-2023.mp4';
+import { Box } from '@chakra-ui/react';
 
+const HeroPreview = ({ posterImageUrl }) => {
   return (
-    <video
-      loop
-      autoPlay
-      muted
-      style={{
-        boxShadow: '0 10px 10px rgba(0, 0, 0, 0.2)',
-        borderRadius: '10px',
-      }}
-      poster={posterImageUrl}
-    >
-      <source src={localVideoUrl} type="video/mp4" />
-    </video>
+    <Box
+      boxShadow="0 10px 10px rgba(0, 0, 0, 0.2)"
+      borderRadius="10px"
+      backgroundImage={posterImageUrl}
+      backgroundRepeat="no-repeat"
+      backgroundPosition="center"
+      backgroundSize="cover"
+      width={{ base: '80', lg: '90%' }}
+      paddingTop={['55%', '280']}
+    />
   );
 };
 
