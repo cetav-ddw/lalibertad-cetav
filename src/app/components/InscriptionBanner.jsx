@@ -50,7 +50,7 @@ export default function InscriptionBanner() {
           alignItems="center"
         >
           <Image
-            src="/images/inscription-banner-image.png"
+            src="/images/se-parte-del-cetav.png"
             maxW="100%"
             h={{ base: '100%', md: 'auto' }}
             w="100%"

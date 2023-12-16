@@ -73,12 +73,14 @@ const CourseListItem = ({
           as={url ? NextLink : 'h3'}
           href={url}
           pos="absolute"
-          bottom="0.5"
+          bottom="0"
           left="3"
-          color="white"
+          color="#E1E7F8"
           fontSize="md"
           my="5"
           dropShadow="lg"
+          fontWeight="bold"
+          textShadow="2px 2px 2px #333333"
         >
           {title}
         </HeadingComponent>

@@ -14,10 +14,13 @@ const AdvisoryBoard = () => {
         El Consejo Asesor está compuesto por:
       </Text>
       <List
-        mb="8"
+        mb="10"
+        mt="10"
         spacing={2}
         textAlign="left"
         fontSize={{ base: 'md', md: 'lg' }}
+        w="90%"
+        ml="auto"
       >
         <ListItem>
           <ListIcon as={MdCheckCircle} color="#313677" />

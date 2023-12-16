@@ -58,13 +58,13 @@ const headingInfo = {
     title: 'Nuestros',
     titleColor: 'cursos libres',
     text: 'Los Cursos Libres de Diseño elevan tus habilidades en herramientas clave para la industria, mejorando tu perfil profesional y conectando mejor con tu audiencia. Centros de Cómputo ofrece certificaciones en habilidades digitales y ofimáticas, adaptándose a tus horarios, para destacar en el mercado laboral.',
-    imgSrc: '/images/animacion-3d.jpg',
+    imgSrc: '/images/nuestros-cursos-libres.png',
   },
   carrerasT: {
     title: 'Nuestras',
     titleColor: 'carreras técnicas',
     text: 'Los programas técnicos de formación laboral se actualizan en cada generación, siguiendo el Marco Nacional de Cualificaciones y supervisados por el INA y el sector empresarial para satisfacer las necesidades del mercado. Además, el CETAV promueve un modelo educativo integral que integra programación, currículo y formación, fomentando un entorno dinámico de enseñanza-aprendizaje centrado en el estudiante como protagonista de su desarrollo.',
-    imgSrc: '/images/animacion-3d.jpg',
+    imgSrc: '/images/carreras-tecnicas.png',
   },
   egresados: {
     title: 'Conoce a nuestros',

@@ -14,7 +14,8 @@ const OurTeamCard = () => {
             borderRadius="lg"
             position="relative"
             width="300px"
-            height="200px"
+            height="360px"
+            bg="gray"
           >
             <Image
               src={team.photo}
@@ -24,7 +25,13 @@ const OurTeamCard = () => {
               objectFit="cover"
               borderRadius="lg"
             />
-            <Box position="absolute" bottom="10px" left="10px" color="white">
+            <Box
+              fontWeight="600"
+              position="absolute"
+              bottom="1"
+              left="4"
+              color="white"
+            >
               {/* TODO AGREGAR COLOR AL THEME */}
               <Text textShadow="2px 2px 2px #333333">{team.name}</Text>
               <Text textShadow="2px 2px 2px #333333">{team.position}</Text>
