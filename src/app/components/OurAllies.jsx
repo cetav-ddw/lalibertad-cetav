@@ -11,12 +11,13 @@ const OurAllies = ({ images }) => {
         {images.map((imageObj, index) => (
           <Box
             key={index}
-            height={{ base: '60px', md: '100px' }}
-            width={{ base: '60px', md: '100px' }}
-            backgroundSize="cover"
+            height={{ base: '60px', md: '120px' }}
+            width={{ base: '60px', md: '175px' }}
+            backgroundSize="contain"
             backgroundPosition="center"
             backgroundImage={`url(${imageObj.url})`}
-            mr={{ base: '20px', md: index % 7 === 6 ? '0' : '74px' }}
+            backgroundRepeat="no-repeat"
+            mr={{ base: '20px', md: index % 7 === 6 ? '0' : '25px' }}
             position="relative"
           >
             <VisuallyHidden>{imageObj.description}</VisuallyHidden>
